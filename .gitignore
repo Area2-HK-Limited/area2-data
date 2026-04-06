@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# Only track .md files in specific dirs (no negation, just direct)
+# We will git add the specific dirs we want
+
+# Obsidian config files - don't track these
+.app.json
+.appearance.json
+.community-plugins.json
+.core-plugins.json
+.workspace-mobile.json
+workspace
+*.js
+*.css
+
