@@ -1,0 +1,218 @@
+[
+  {
+    "text": "list列表",
+    "href": "/cms/User"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/User/add"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/Role"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/Role/add"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/Permission"
+  },
+  {
+    "text": "addAll",
+    "href": "/cms/Permission/all"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/Permission/add"
+  },
+  {
+    "text": "download匯出",
+    "href": "/cms/Permission/export"
+  },
+  {
+    "text": "translate翻譯",
+    "href": "/cms/Translate"
+  },
+  {
+    "text": "menu選單",
+    "href": "/cms/System/menu"
+  },
+  {
+    "text": "dns伺服器",
+    "href": "/cms/System"
+  },
+  {
+    "text": "settings設定",
+    "href": "/cms/System/setting"
+  },
+  {
+    "text": "mail郵件測試",
+    "href": "/cms/System/mailtest"
+  },
+  {
+    "text": "phpPHP資訊",
+    "href": "/cms/System/phpinfo"
+  },
+  {
+    "text": "packagePackage",
+    "href": "/cms/System/package"
+  },
+  {
+    "text": "tableTable",
+    "href": "/cms/System/database/table"
+  },
+  {
+    "text": "cloud_download備份",
+    "href": "/cms/System/database/backup"
+  },
+  {
+    "text": "cloud_upload還原",
+    "href": "/cms/System/database/restore"
+  },
+  {
+    "text": "eventEvent",
+    "href": "/cms/System/database/event"
+  },
+  {
+    "text": "memoryProcess",
+    "href": "/cms/System/database/process"
+  },
+  {
+    "text": "check_circleCheck & Fix",
+    "href": "/cms/System/database/check"
+  },
+  {
+    "text": "table_convertMigrate",
+    "href": "/cms/System/database/migrate"
+  },
+  {
+    "text": "description使用者紀錄",
+    "href": "/cms/UserLog"
+  },
+  {
+    "text": "description郵件紀錄",
+    "href": "/cms/MailLog"
+  },
+  {
+    "text": "description事件紀錄",
+    "href": "/cms/EventLog"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/SystemValue"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/SystemValue/add"
+  },
+  {
+    "text": "folder檔案系統",
+    "href": "/cms/System/fs"
+  },
+  {
+    "text": "link\nDashboard",
+    "href": "/cms/"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/Job"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/Job/add"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/Client"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/Client/add"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/Item"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/Item/add"
+  },
+  {
+    "text": "inventory_2庫存紀錄",
+    "href": "/cms/ItemStock"
+  },
+  {
+    "text": "link\n執貨",
+    "href": "/cms/Pickup"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/Shop"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/Shop/add"
+  },
+  {
+    "text": "description\n報價單",
+    "href": "/cms/Quotation"
+  },
+  {
+    "text": "receipt_long\n發票",
+    "href": "/cms/Invoice"
+  },
+  {
+    "text": "link\n付款",
+    "href": "/cms/Payment"
+  },
+  {
+    "text": "list列表",
+    "href": "/cms/TermsNotes"
+  },
+  {
+    "text": "add新增",
+    "href": "/cms/TermsNotes/add"
+  },
+  {
+    "text": "list\n列表",
+    "href": "/cms/PurchaseOrder"
+  },
+  {
+    "text": "add\n新增",
+    "href": "/cms/PurchaseOrder/add"
+  },
+  {
+    "text": "list\n列表",
+    "href": "/cms/Supplier"
+  },
+  {
+    "text": "add\n新增",
+    "href": "/cms/Supplier/add"
+  },
+  {
+    "text": "link\n產品成本",
+    "href": "/cms/ItemCost"
+  },
+  {
+    "text": "link\n收貨單",
+    "href": "/cms/ReceivingSlip"
+  },
+  {
+    "text": "link\nTransaction",
+    "href": "/cms/Transaction"
+  },
+  {
+    "text": "listmyClientData",
+    "href": "/cms/Client"
+  },
+  {
+    "text": "listmyRecords",
+    "href": "/cms/Job"
+  },
+  {
+    "text": "folder\n文件管理器",
+    "href": "/cms/FileManager"
+  }
+]

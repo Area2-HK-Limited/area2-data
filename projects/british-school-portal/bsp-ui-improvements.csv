@@ -1,0 +1,23 @@
+編號,類別,難度,頁面/位置,問題描述,建議改法,狀態
+L1,Bug Fix,低,顧問 School Admission List,顧問 Phase 連結 URL Bug — 點擊後跳去首頁，完全睇唔到申請詳情,將 #/phase/45 改為 /en/profile/consultant#/phase/45,待開發
+L2,文案,低,學生 School Place Applicant Details,頁面標題錯別字："SCHOOL PLACE APPLICAT DETAILS"（少咗個 N）,改為 "Your Application Profile" 或 "School Application Details",待開發
+L3,UX,低,學校 Phase Detail,"Contact Education Consultant 按鈕冇指派顧問時靜默消失，學校唔知發生咩事",改為灰色 disabled 狀態 + tooltip："No consultant assigned. Assign one above.",待開發
+L4,UX,低,學校 School Admission List,所有申請平排顯示，冇分類，難以找到需要處理嘅申請,加 Filter Tab → All / Pending Review / Interview Stage / Completed / Rejected,待開發
+L5,文案,低,學校 Sidebar + Header Dropdown,同一功能兩個名：Sidebar 叫「Photo Upload」Header 叫「School Photo」,統一命名（建議用 School Photo）,待開發
+L6,文案,低,學校 Header Dropdown,"SCHOOL ADMISSION SETTING" 全大寫，其他連結係 Title Case，不一致,改為 "School Admission Setting",待開發
+L7,Bug Fix,低,學校+顧問 Profile / Partnered List / Report,地址欄位顯示資料庫 ID（如 169, 172, 173）而非可讀文字,修復 foreign key lookup，resolve 成正確地址文字,待開發
+L8,UX,低,顧問 FAQ List,預設示範 Q&A 係 BSP 系統說明，顧問以為係系統內容唔係自己嘅 Q&A 空間,改為通用示範或加 placeholder 提示（如「問：你哋服務係咩？答：[你嘅回答]」）,待開發
+L9,UX,低,全站（三個帳戶）,登入後 cookie consent banner 持續顯示，遮擋底部 UI,登入後自動 dismiss 或改細 banner 位置,待開發
+M1,UX,中,學校 Phase Detail,學校指派顧問流程唔透明 — 指派機制埋藏在 Phase 3 入面，學校唔知點做,"每個申請 detail 頁頂部加明顯 ""Assign to Consultant"" dropdown，選好後有 Confirm 按鈕",待開發
+M2,UX,中,學生 School Admission List / Dashboard,學生登入後直接見到 "No Apply"，冇任何引導，唔知點開始申請,"加 Onboarding banner：Step 1 填寫 Applicant Profile → Step 2 搵學校 → Step 3 點 Apply，確保學校 Detail 頁有清晰 Apply Now 按鈕",待開發
+M3,UX,中,顧問 Phase Detail,Phase detail 同時顯示整份學生表格（readonly）+ Interview 填寫欄位，極度混亂,"預設只顯示 Interview section，學生表格 collapsed，加 ""View Student Full Details ▼"" 展開",待開發
+M4,UX,中,學生 Phase Detail,學生完全唔知係學校自己做面試定有顧問跟進,"喺學生 Admission Phase view 加 ""Your application is being handled by: [顧問名]""（如有分派）",待開發
+M5,UX,中,顧問 Phase Detail,顧問只見 Phase 3，唔知整個 9-Phase 流程全局,"加 read-only Phase indicator bar：Phase 1 ✅ | Phase 2 ✅ | Phase 3 ⏳ (You) | Phase 4-9 (School)",待開發
+M6,UX,中,三個帳戶 Dashboard,"登入後直接去 Profile Edit form，冇 overview、冇待辦事項、冇統計數字","加 Dashboard 首頁：學校顯示待處理申請數、顧問顯示待填 Interview 評估數、學生顯示申請進度同下一步",待開發
+M7,UX,中,顧問 Enquiry List,Enquiry 列表項目唔可點擊（冇 Detail button），但 Admission List 有，行為不一致,加 View 按鈕或點擊整行進入 enquiry detail,待開發
+M8,UX,中,顧問 Enquiry List,只顯示 sender 名同日期，冇 subject/標題，需要點入先知內容,列表加 Subject 欄位,待開發
+M9,UX,中,顧問 School Partnership Application,"頁面顯示 ""No Partnership Application""，冇引導如何申請新合作","加 ""Find Schools to Partner"" 按鈕，連去學校搜尋頁",待開發
+M10,Bug Fix,中,顧問 Membership & Transaction,頁面完全空白（連 title 都冇），用戶完全唔知自己嘅會員狀態,"加 empty state：""No active membership. View plans →"" 或顯示基本帳戶資訊",待開發
+M11,Bug Fix,中,顧問 Report,"Country 顯示 ""--Please Select: 4""，Curriculum 顯示 "": 4""，Date picker 冇 widget",修復 dropdown value resolve；加 date picker component,待開發
+M12,UX,中,學生 Header,右上角兩個 icon（chat bubble、building）冇 tooltip/label，唔知用途,加 tooltip 或 label,待開發
+M13,文案,低,學生 Sidebar,"School Place Applicant Details" 喺 sidebar 換兩行顯示，視覺上 awkward,縮短為 "Application Profile" 或 "Applicant Details",待開發

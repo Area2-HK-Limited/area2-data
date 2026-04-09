@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>British School Portal — 為香港家長而設</title>
+  <style>
+    @page{size:800px 2800px;margin:0;}
+    body{margin:0;padding:0;background:#f3efe7;font-family:Arial,'Noto Sans CJK HK','PingFang HK','Microsoft JhengHei',sans-serif;color:#1f2a37;-webkit-font-smoothing:antialiased;}
+    table{border-spacing:0;border-collapse:collapse;}
+    .outer{width:100%;background:#f3efe7;padding:34px 0;}
+    .container{width:100%;max-width:600px;background:#fffdf9;border:1px solid #e2d9c6;box-shadow:0 28px 70px rgba(30,28,24,.10);overflow:hidden;}
+
+    /* Top bar */
+    .topbar{background:#0c1c33;padding:0;}
+    .topbar-inner{padding:14px 30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#c9ad6e;font-weight:600;}
+
+    /* Hero with overlay */
+    .hero-wrap{position:relative;width:100%;height:420px;background-image:url('file:///home/openclaw/.openclaw/workspace/data/projects/british-school-portal/edm-hero-bsp-hk-banner-2026-03-20.jpg');background-position:center center;background-size:cover;background-repeat:no-repeat;overflow:hidden;}
+    .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(10,24,48,0.38) 0%,rgba(10,24,48,0.72) 60%,rgba(10,24,48,0.92) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:0 44px 42px;box-sizing:border-box;}
+    .hero-badge{display:inline-block;background:rgba(200,170,90,0.18);border:1px solid rgba(200,170,90,0.45);color:#f0dfa0;font-size:11px;letter-spacing:1.8px;text-transform:uppercase;padding:6px 14px;margin-bottom:18px;font-weight:600;width:fit-content;}
+    .hero-h1{margin:0 0 10px;font-size:38px;line-height:1.22;font-weight:800;color:#ffffff;letter-spacing:-0.5px;text-shadow:0 2px 12px rgba(0,0,0,0.3);}
+    .hero-h2{margin:0 0 14px;font-size:21px;line-height:1.4;font-weight:600;color:#f0dfa0;letter-spacing:0.3px;}
+    .hero-small{margin:0;font-size:14px;line-height:1.7;color:rgba(255,255,255,0.78);max-width:440px;}
+
+    /* Gold divider */
+    .gold-divider{height:3px;background:linear-gradient(90deg,#c9a94e 0%,#e8d28a 50%,#c9a94e 100%);}
+
+    /* Intro section */
+    .intro-section{padding:38px 42px 32px;background:#fffdf9;}
+    .intro-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b08e3e;font-weight:700;margin:0 0 14px;}
+    .intro-text{font-size:16px;line-height:1.95;color:#4b5563;margin:0;}
+
+    /* Features */
+    .section{padding:0 42px 36px;background:#fffdf9;}
+    .gold-box{background:linear-gradient(180deg,#faf5ea 0%,#f5edd9 100%);border:1px solid #e3d5b5;padding:28px 28px 18px;}
+    .gold-title{margin:0 0 6px;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;color:#9a7a2e;font-weight:700;}
+    .gold-title-main{margin:0 0 20px;font-size:23px;color:#12284a;font-weight:800;line-height:1.3;}
+    .feature{padding:16px 0;border-bottom:1px solid #e5dac3;}
+    .feature:last-child{border-bottom:none;padding-bottom:8px;}
+    .feature-icon{font-size:20px;display:inline-block;margin-right:8px;vertical-align:middle;}
+    .feature-title{font-size:17px;font-weight:700;color:#10233e;margin:0 0 5px;display:inline;vertical-align:middle;}
+    .feature-text{font-size:14.5px;line-height:1.82;color:#5a6472;margin:6px 0 0;}
+
+    /* Pain points */
+    .painbox{background:#f4f8fd;border:1px solid #d0dfef;padding:26px 28px;}
+    .painbox h2{margin:0 0 16px;font-size:21px;color:#0f2d57;font-weight:800;}
+    .list{margin:0;padding:0;list-style:none;}
+    .list li{padding:8px 0 8px 28px;position:relative;font-size:15px;line-height:1.78;color:#3d5570;}
+    .list li:before{content:'✓';position:absolute;left:0;top:8px;color:#b88a3b;font-weight:800;font-size:16px;}
+
+    /* Stats */
+    .stats-section{padding:0 42px 36px;background:#fffdf9;}
+    .stat{width:31%;background:#fff;border:1px solid #e7dcc8;padding:20px 14px;text-align:center;}
+    .stat-num{font-size:26px;font-weight:800;color:#10233e;display:block;margin-bottom:6px;letter-spacing:-0.3px;}
+    .stat-label{font-size:12.5px;line-height:1.6;color:#6b7280;}
+
+    /* Quote */
+    .quote-section{padding:0 42px 36px;}
+    .quote{background:linear-gradient(135deg,#0f1f38 0%,#1a3358 100%);color:#f1ece0;padding:28px 30px;font-size:17px;line-height:1.85;font-style:italic;border-left:3px solid #c9a94e;position:relative;}
+    .quote:before{content:'\201C';position:absolute;top:8px;left:14px;font-size:48px;color:rgba(200,170,90,0.25);font-style:normal;line-height:1;}
+
+    /* CTA */
+    .cta{padding:14px 42px 46px;text-align:center;background:#fffdf9;}
+    .cta-rule{width:60px;height:2px;background:#c9a94e;margin:0 auto 20px;}
+    .cta h2{margin:0 0 10px;font-size:26px;color:#10233e;font-weight:800;line-height:1.3;}
+    .cta p{margin:0 0 22px;font-size:15px;line-height:1.85;color:#5d6876;max-width:460px;display:inline-block;}
+    .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:15px 30px;margin:6px 6px;}
+    .btn-primary{background:linear-gradient(135deg,#c9a94e 0%,#a8862e 100%);color:#fffef9;border-radius:3px;letter-spacing:0.3px;}
+    .btn-secondary{background:transparent;color:#10233e;border:1.5px solid #c9a94e;border-radius:3px;}
+
+    /* Footer */
+    .footer{padding:26px 30px 32px;background:#f0ead9;text-align:center;font-size:11.5px;line-height:1.85;color:#8a8a7e;}
+    .footer a{color:#8a8a7e;text-decoration:underline;}
+
+    @media only screen and (max-width:620px){
+      .hero-wrap{height:340px !important;}
+      .hero-overlay{padding:0 22px 30px !important;}
+      .hero-h1{font-size:28px !important;}
+      .hero-h2{font-size:18px !important;}
+      .intro-section,.section,.cta,.stats-section,.quote-section{padding-left:22px !important;padding-right:22px !important;}
+      .gold-box,.painbox{padding:20px 18px !important;}
+      .split,.split tbody,.split tr,.split td{display:block !important;width:100% !important;}
+      .stat{width:100% !important;margin-bottom:12px !important;display:block !important;}
+      .btn{display:block !important;margin:10px 0 !important;}
+    }
+  </style>
+</head>
+<body>
+<div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">British School Portal — 為香港家長而設，精準搜尋英國私校。集中比較學校資料，了解英國教育制度與入學資訊。</div>
+<table role="presentation" class="outer" width="100%">
+  <tr>
+    <td align="center">
+      <table role="presentation" class="container" width="600">
+
+        <!-- Top Bar -->
+        <tr><td class="topbar"><div class="topbar-inner">British School Portal &nbsp;·&nbsp; Hong Kong Edition</div></td></tr>
+
+        <!-- Hero with Overlay Text -->
+        <tr>
+          <td>
+            <div class="hero-wrap">
+              <div class="hero-overlay">
+                <div class="hero-badge">Hong Kong 🇭🇰</div>
+                <div class="hero-h1">為香港家長而設</div>
+                <div class="hero-h2">精準搜尋英國私校</div>
+                <div class="hero-small">一站式了解英國寄宿學校、入學制度與升學部署</div>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Gold Divider -->
+        <tr><td><div class="gold-divider"></div></td></tr>
+
+        <!-- Intro -->
+        <tr>
+          <td class="intro-section">
+            <div class="intro-label">關於 British School Portal</div>
+            <p class="intro-text">British School Portal 專為有意了解英國教育嘅香港家庭而設，將學校搜尋、篩選同教育資訊集中喺同一個平台。無論你正準備移英、考慮寄宿學校，還是想提早為子女規劃升學路線，都可以更有系統地開展你嘅學校搜尋旅程。</p>
+          </td>
+        </tr>
+
+        <!-- Features -->
+        <tr>
+          <td class="section">
+            <div class="gold-box">
+              <div class="gold-title">核心功能</div>
+              <h2 class="gold-title-main">British School Portal 幫到你乜嘢？</h2>
+              <div class="feature">
+                <span class="feature-icon">🔍</span><div class="feature-title">一站式搜尋英國私校</div>
+                <p class="feature-text">按學校類型、地區、課程、寄宿／走讀、入學政策、男女校、宗教背景等條件篩選，快速縮窄範圍。</p>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">📊</span><div class="feature-title">深入了解每間學校</div>
+                <p class="feature-text">查閱 school data、inspection report、fees &amp; bursaries、課外活動同成就，唔只係一份名單咁簡單。</p>
+              </div>
+              <div class="feature">
+                <span class="feature-icon">📖</span><div class="feature-title">英國教育制度全面解說</div>
+                <p class="feature-text">涵蓋教育制度總覽、學校類型比較、Grammar School、學術資格同入學流程，幫你做決定前建立清晰概念。</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Pain Points -->
+        <tr>
+          <td class="section">
+            <div class="painbox">
+              <h2>特別適合以下家庭</h2>
+              <ul class="list">
+                <li>準備移英，想先了解唔同地區同學校選擇</li>
+                <li>考慮為子女報讀英國 independent school 或 boarding school</li>
+                <li>唔想逐個網站慢慢搵，希望先 shortlist 再深入比較</li>
+                <li>想更快掌握學校資訊，同時了解英國入學制度</li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Stats -->
+        <tr>
+          <td class="stats-section">
+            <table role="presentation" width="100%" class="split">
+              <tr>
+                <td class="stat"><span class="stat-num">55,000+</span><span class="stat-label">已整合註冊教育機構資料</span></td>
+                <td width="3%"></td>
+                <td class="stat"><span class="stat-num">1 平台</span><span class="stat-label">集中搜尋、篩選、內容同查詢</span></td>
+                <td width="3%"></td>
+                <td class="stat"><span class="stat-num">全英國</span><span class="stat-label">涵蓋英格蘭、蘇格蘭、威爾斯及北愛爾蘭</span></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Quote -->
+        <tr>
+          <td class="quote-section">
+            <div class="quote">
+              「British School Portal 唔止係搵學校工具 — 而係幫你將英國升學搜尋流程整理得更有方向、更省時間、更容易做出明智選擇。」
+            </div>
+          </td>
+        </tr>
+
+        <!-- CTA -->
+        <tr>
+          <td class="cta">
+            <div class="cta-rule"></div>
+            <h2>開始你嘅英國升學搜尋</h2>
+            <p>如果你想更快了解學校選項、減少資料搜集時間，British School Portal 會係一個實用嘅起點。</p>
+            <br>
+            <a class="btn btn-primary" href="https://www.britishschoolportal.co.uk/en/independent-school">瀏覽英國私校</a>
+            <a class="btn btn-secondary" href="https://www.britishschoolportal.co.uk/en/about_us">了解更多</a>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td class="footer">
+            © 2026 British School Portal. All rights reserved.<br>
+            Hong Kong Edition — Designed for families exploring UK education.<br>
+            <a href="https://www.britishschoolportal.co.uk">www.britishschoolportal.co.uk</a>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

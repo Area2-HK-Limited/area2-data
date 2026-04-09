@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Setting — British School Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #1B3A5C;
+    --navy-dark: #122843;
+    --navy-light: #254d78;
+    --navy-hover: rgba(27,58,92,0.08);
+    --red: #C0392B;
+    --gray-bg: #F8F9FA;
+    --gray-border: #E2E8F0;
+    --gray-text: #64748B;
+    --text: #1E293B;
+    --white: #FFFFFF;
+    --sidebar-w: 240px;
+    --header-h: 64px;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+    --radius: 12px;
+    --radius-sm: 8px;
+    --green: #16a34a;
+    --amber: #d97706;
+  }
+
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    background: var(--gray-bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--header-h);
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-border);
+    box-shadow: var(--shadow-sm);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    gap: 16px;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    text-decoration: none;
+  }
+  .header-logo-icon {
+    width: 36px; height: 36px;
+    background: var(--navy);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .header-logo-text {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .header-logo-text span { color: var(--red); }
+  .header-divider {
+    width: 1px;
+    height: 32px;
+    background: var(--gray-border);
+    flex-shrink: 0;
+  }
+  .header-school-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    flex: 1;
+  }
+  .header-school-name small {
+    display: block;
+    font-size: 11px;
+    color: var(--gray-text);
+    font-weight: 500;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .header-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(22,163,74,0.1);
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 100px;
+  }
+  .header-badge i { font-size: 10px; }
+  .header-notif {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-border);
+    background: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    color: var(--gray-text);
+    position: relative;
+    transition: all 0.2s;
+    font-size: 15px;
+  }
+  .header-notif:hover { background: var(--gray-bg); color: var(--navy); }
+  .notif-dot {
+    width: 8px; height: 8px;
+    background: var(--red);
+    border-radius: 50%;
+    position: absolute;
+    top: 7px; right: 7px;
+    border: 2px solid white;
+  }
+  .header-avatar {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, var(--navy), var(--navy-light));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .mobile-menu-btn {
+    display: none;
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-border);
+    background: var(--white);
+    align-items: center; justify-content: center;
+    cursor: pointer;
+    color: var(--navy);
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  /* ===== LAYOUT ===== */
+  .layout {
+    display: flex;
+    padding-top: var(--header-h);
+    min-height: 100vh;
+  }
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    width: var(--sidebar-w);
+    background: var(--white);
+    border-right: 1px solid var(--gray-border);
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 90;
+  }
+  .sidebar-section {
+    padding: 16px 12px 8px;
+  }
+  .sidebar-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray-text);
+    padding: 0 8px;
+    margin-bottom: 6px;
+  }
+  .sidebar-nav { list-style: none; }
+  .sidebar-nav li { margin-bottom: 2px; }
+  .sidebar-nav a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all 0.15s;
+  }
+  .sidebar-nav a:hover {
+    background: var(--navy-hover);
+    color: var(--navy);
+  }
+  .sidebar-nav a.active {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .sidebar-nav a .nav-icon {
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: 14px;
+  }
+  .sidebar-nav a .nav-badge {
+    margin-left: auto;
+    background: var(--red);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 100px;
+    line-height: 1.4;
+  }
+  .sidebar-nav a.active .nav-badge {
+    background: rgba(255,255,255,0.25);
+  }
+  .sidebar-footer {
+    margin-top: auto;
+    padding: 16px 12px;
+    border-top: 1px solid var(--gray-border);
+  }
+  .sidebar-footer a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: all 0.15s;
+  }
+  .sidebar-footer a:hover { background: var(--gray-bg); color: var(--navy); }
+  .sidebar-footer a.logout { color: var(--red); }
+  .sidebar-footer a.logout:hover { background: rgba(192,57,43,0.08); }
+
+  /* ===== MAIN CONTENT ===== */
+  .main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    padding: 32px;
+    min-width: 0;
+    max-width: 900px;
+  }
+
+  /* ===== PAGE HEADER ===== */
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .page-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .page-subtitle {
+    font-size: 13px;
+    color: var(--gray-text);
+    margin-top: 4px;
+    font-weight: 500;
+  }
+
+  /* ===== WIZARD STEPS ===== */
+  .wizard-steps {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 32px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 20px 28px;
+    border: 1.5px solid var(--gray-border);
+    position: relative;
+  }
+  .wizard-step {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    position: relative;
+  }
+  .wizard-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 32px;
+    background: var(--gray-border);
+  }
+  .step-number {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+    border: 2px solid var(--gray-border);
+    color: var(--gray-text);
+    background: var(--white);
+    transition: all 0.3s;
+  }
+  .step-number.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: white;
+    box-shadow: 0 0 0 4px rgba(27,58,92,0.15);
+  }
+  .step-number.completed {
+    background: var(--green);
+    border-color: var(--green);
+    color: white;
+  }
+  .step-info {}
+  .step-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .step-desc {
+    font-size: 11px;
+    color: var(--gray-text);
+    font-weight: 500;
+    margin-top: 2px;
+  }
+  .step-number.active + .step-info .step-name { color: var(--navy); }
+  .step-number.completed + .step-info .step-name { color: var(--green); }
+
+  /* ===== CARDS ===== */
+  .card {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1.5px solid var(--gray-border);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: opacity 0.3s;
+  }
+  .card.greyed {
+    opacity: 0.55;
+    pointer-events: none;
+  }
+  .card-header {
+    padding: 18px 24px 14px;
+    border-bottom: 1px solid var(--gray-border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .card-icon {
+    width: 38px; height: 38px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .icon-navy { background: rgba(27,58,92,0.1); color: var(--navy); }
+  .icon-green { background: rgba(22,163,74,0.1); color: var(--green); }
+  .icon-amber { background: rgba(217,119,6,0.1); color: var(--amber); }
+  .icon-red { background: rgba(192,57,43,0.1); color: var(--red); }
+  .card-title-group { flex: 1; }
+  .card-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+  }
+  .card-subtitle {
+    font-size: 12px;
+    color: var(--gray-text);
+    margin-top: 2px;
+    font-weight: 500;
+  }
+  .card-body {
+    padding: 24px;
+  }
+
+  /* ===== TOGGLE SWITCH ===== */
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .toggle-label-group { flex: 1; }
+  .toggle-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .toggle-sublabel {
+    font-size: 12px;
+    color: var(--gray-text);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  .tooltip-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: rgba(27,58,92,0.1);
+    color: var(--navy);
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .tooltip-btn:hover .tooltip-popup {
+    display: block;
+  }
+  .tooltip-popup {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--navy-dark);
+    color: white;
+    font-size: 11.5px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    width: 220px;
+    text-align: left;
+    line-height: 1.5;
+    z-index: 200;
+    box-shadow: var(--shadow-md);
+    pointer-events: none;
+  }
+  .tooltip-popup::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--navy-dark);
+  }
+  .toggle-switch {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .toggle-slider {
+    position: absolute;
+    inset: 0;
+    border-radius: 100px;
+    background: var(--gray-border);
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .toggle-slider::before {
+    content: '';
+    position: absolute;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: white;
+    top: 3px; left: 3px;
+    transition: transform 0.3s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .toggle-switch input:checked + .toggle-slider {
+    background: var(--green);
+  }
+  .toggle-switch input:checked + .toggle-slider::before {
+    transform: translateX(24px);
+  }
+
+  /* ===== STATUS BANNERS ===== */
+  .status-banner {
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .status-banner.warning {
+    background: rgba(192,57,43,0.08);
+    color: var(--red);
+    border: 1px solid rgba(192,57,43,0.2);
+  }
+  .status-banner.success {
+    background: rgba(22,163,74,0.08);
+    color: var(--green);
+    border: 1px solid rgba(22,163,74,0.2);
+  }
+  .status-banner.info {
+    background: rgba(27,58,92,0.06);
+    color: var(--navy);
+    border: 1px solid rgba(27,58,92,0.15);
+  }
+  .banner-icon { font-size: 16px; flex-shrink: 0; }
+
+  /* ===== PHASE CARDS ===== */
+  .phase-card {
+    border: 1.5px solid var(--gray-border);
+    border-radius: var(--radius-sm);
+    padding: 18px 20px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+  }
+  .phase-card:last-child { margin-bottom: 0; }
+  .phase-card:hover { border-color: var(--navy-light); }
+  .phase-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+  .phase-name {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .phase-num {
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .phase-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 5px; }
+  .form-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .form-input {
+    padding: 9px 13px;
+    border: 1.5px solid var(--gray-border);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-family: inherit;
+    color: var(--text);
+    font-weight: 600;
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  .form-input:focus { border-color: var(--navy); }
+  .phase-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid var(--gray-border);
+    gap: 12px;
+  }
+  .phase-status {
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .status-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .status-dot.open { background: var(--green); }
+  .status-dot.closed { background: var(--red); }
+  .phase-status.open { color: var(--green); }
+  .phase-status.closed { color: var(--red); }
+
+  /* ===== ADD PHASE BTN ===== */
+  .btn-add-phase {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    background: transparent;
+    color: var(--navy);
+    border: 1.5px dashed var(--navy);
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-top: 8px;
+  }
+  .btn-add-phase:hover { background: var(--navy-hover); border-style: solid; }
+
+  /* ===== APPLICATION WINDOWS ===== */
+  .adm-window {
+    border: 1.5px solid var(--gray-border);
+    border-radius: var(--radius-sm);
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  .adm-win-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background: var(--gray-bg);
+    border-bottom: 1.5px solid var(--gray-border);
+  }
+  .adm-win-header.disabled { opacity: 0.5; }
+  .win-lock-badge {
+    font-size: 11px;
+    background: #e2e8f0;
+    color: #475569;
+    border-radius: 100px;
+    padding: 2px 8px;
+    font-weight: 700;
+  }
+  .win-custom-badge {
+    font-size: 11px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 100px;
+    padding: 2px 8px;
+    font-weight: 700;
+  }
+  .win-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--navy);
+  }
+  .win-delete-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .win-delete-btn:hover { background: #fee2e2; }
+  .adm-win-body {
+    padding: 18px;
+  }
+  .adm-win-body.hidden { display: none; }
+  .adm-dates-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  /* Year Group chips */
+  .adm-yg-section { margin-top: 4px; }
+  .adm-yg-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .adm-yg-groups { display: flex; flex-direction: column; gap: 12px; }
+  .adm-yg-group {}
+  .adm-yg-group-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    opacity: 0.7;
+  }
+  .adm-yg-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .yg-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 11px;
+    border: 1.5px solid var(--gray-border);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-text);
+    background: white;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+  }
+  .yg-chip input[type=checkbox] { display: none; }
+  .yg-chip.checked,
+  .yg-chip:has(input:checked) {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: white;
+  }
+  .yg-chip:hover { border-color: var(--navy); }
+  .adm-yg-error {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-add-window {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    background: transparent;
+    color: var(--navy);
+    border: 1.5px dashed var(--navy);
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+    justify-content: center;
+    transition: all 0.2s;
+    margin-top: 8px;
+  }
+  .btn-add-window:hover { background: var(--navy-hover); border-style: solid; }
+
+  /* ===== WIZARD NAV ===== */
+  .wizard-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .btn-back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 22px;
+    background: transparent;
+    color: var(--gray-text);
+    border: 1.5px solid var(--gray-border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .btn-back:hover { border-color: var(--navy); color: var(--navy); }
+  .btn-next {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 28px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+  }
+  .btn-next:hover { background: var(--navy-dark); }
+  .btn-save {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 36px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-save:hover { background: var(--navy-dark); box-shadow: var(--shadow-md); }
+
+  /* ===== REVIEW SECTION ===== */
+  .review-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--gray-border);
+  }
+  .review-item:last-child { border-bottom: none; }
+  .review-icon {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .review-content { flex: 1; }
+  .review-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 3px;
+  }
+  .review-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .review-value.enabled { color: var(--green); }
+  .review-value.disabled { color: var(--red); }
+  .review-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+  .review-tag.green { background: rgba(22,163,74,0.1); color: var(--green); }
+  .review-tag.amber { background: rgba(217,119,6,0.1); color: var(--amber); }
+  .review-tag.red { background: rgba(192,57,43,0.1); color: var(--red); }
+
+  /* ===== MOBILE MENU OVERLAY ===== */
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 89;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .main { padding: 20px; }
+    .phase-row { grid-template-columns: 1fr; }
+    .wizard-step .step-desc { display: none; }
+  }
+  @media (max-width: 720px) {
+    .sidebar {
+      transform: translateX(-100%);
+      transition: transform 0.25s;
+    }
+    .sidebar.open { transform: translateX(0); }
+    .main { margin-left: 0; }
+    .mobile-menu-btn { display: flex; }
+    .wizard-steps { flex-direction: column; gap: 12px; padding: 16px 20px; }
+    .wizard-step { width: 100%; }
+    .wizard-step:not(:last-child)::after { display: none; }
+    .wizard-step::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 20px;
+      background: var(--gray-border);
+    }
+    .header-school-name { display: none; }
+    .header-badge { display: none; }
+    .page-header { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <button class="mobile-menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open'); document.querySelector('.sidebar-overlay').style.display = document.querySelector('.sidebar').classList.contains('open') ? 'block' : 'none';">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <a href="index.html" class="header-logo">
+    <div class="header-logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+    <span class="header-logo-text">British<span>School</span>Portal</span>
+  </a>
+  <div class="header-divider"></div>
+  <div class="header-school-name">
+    Wellington Primary School
+    <small>Admission Setting</small>
+  </div>
+  <div class="header-right">
+    <div class="header-badge">
+      <i class="fa-solid fa-circle"></i>
+      Active Listing
+    </div>
+    <div class="header-notif">
+      <i class="fa-regular fa-bell"></i>
+      <div class="notif-dot"></div>
+    </div>
+    <div class="header-avatar" title="Sarah Mitchell">SM</div>
+  </div>
+</header>
+
+<!-- SIDEBAR OVERLAY (mobile) -->
+<div class="sidebar-overlay" onclick="document.querySelector('.sidebar').classList.remove('open'); this.style.display='none';"></div>
+
+<!-- LAYOUT -->
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Overview</div>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="index.html">
+            <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+            Dashboard
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">School Info</div>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="#photos">
+            <span class="nav-icon"><i class="fa-solid fa-images"></i></span>
+            Photos
+          </a>
+        </li>
+        <li>
+          <a href="#faq">
+            <span class="nav-icon"><i class="fa-solid fa-circle-question"></i></span>
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="#fees">
+            <span class="nav-icon"><i class="fa-solid fa-sterling-sign"></i></span>
+            Fee Setting
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Admissions</div>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="term_dates.html">
+            <span class="nav-icon"><i class="fa-solid fa-calendar-days"></i></span>
+            Term Dates
+          </a>
+        </li>
+        <li>
+          <a href="#vacancies">
+            <span class="nav-icon"><i class="fa-solid fa-briefcase"></i></span>
+            Vacancies
+          </a>
+        </li>
+        <li>
+          <a href="#admission-list">
+            <span class="nav-icon"><i class="fa-solid fa-list-check"></i></span>
+            Admission List
+          </a>
+        </li>
+        <li>
+          <a href="admission_setting.html" class="active">
+            <span class="nav-icon"><i class="fa-solid fa-sliders"></i></span>
+            Admission Setting
+          </a>
+        </li>
+        <li>
+          <a href="#applications">
+            <span class="nav-icon"><i class="fa-solid fa-inbox"></i></span>
+            Applications<span class="nav-badge">5</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#settings">
+        <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+        Settings
+      </a>
+      <a href="#" class="logout">
+        <span class="nav-icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+        Logout
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Admission Setting</h1>
+        <div class="page-subtitle">Configure when and how parents can submit applications</div>
+      </div>
+    </div>
+
+    <!-- WIZARD STEPS -->
+    <div class="wizard-steps">
+      <div class="wizard-step">
+        <div class="step-number active">
+          <i class="fa-solid fa-power-off"></i>
+        </div>
+        <div class="step-info">
+          <div class="step-name">Enable Admissions</div>
+          <div class="step-desc">Open or close admissions</div>
+        </div>
+      </div>
+      <div class="wizard-step">
+        <div class="step-number">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div class="step-info">
+          <div class="step-name">Configure Admission Types</div>
+          <div class="step-desc">Main Rounds &amp; In-Year Admission</div>
+        </div>
+      </div>
+      <div class="wizard-step">
+        <div class="step-number">
+          <i class="fa-solid fa-check-double"></i>
+        </div>
+        <div class="step-info">
+          <div class="step-name">Review &amp; Save</div>
+          <div class="step-desc">Confirm and publish settings</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STEP 1: ENABLE ADMISSIONS ===== -->
+    <div class="card" id="step1">
+      <div class="card-header">
+        <div class="card-icon icon-navy">
+          <i class="fa-solid fa-power-off"></i>
+        </div>
+        <div class="card-title-group">
+          <div class="card-title">Enable Admissions</div>
+          <div class="card-subtitle">Control whether your school accepts new applications</div>
+        </div>
+      </div>
+      <div class="card-body">
+
+        <!-- Toggle -->
+        <div class="toggle-row">
+          <div class="toggle-label-group">
+            <div class="toggle-label">
+              Accept Applications
+              <button class="tooltip-btn" type="button">
+                ?
+                <div class="tooltip-popup">When enabled, parents and education consultants can submit applications to your school through BSP. When disabled, the application form will be hidden and no new submissions accepted.</div>
+              </button>
+            </div>
+            <div class="toggle-sublabel">Turn this on to open your admissions to applicants</div>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="admission-toggle" onchange="handleToggle(this)">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+
+        <!-- Warning Banner (shown when disabled) -->
+        <div class="status-banner warning" id="banner-closed">
+          <div class="banner-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div>
+            <strong>Admissions are currently closed.</strong><br>
+            No new applications will be accepted. Your school's public profile remains visible, but parents cannot submit applications.
+          </div>
+        </div>
+
+        <!-- Success Banner (shown when enabled) -->
+        <div class="status-banner success" id="banner-open" style="display:none;">
+          <div class="banner-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div>
+            <strong>Admissions are open.</strong><br>
+            Applications will appear in your Applications list as they come in. You can close admissions at any time.
+          </div>
+        </div>
+
+        <!-- Info callout -->
+        <div class="status-banner info" style="margin-top:16px;">
+          <div class="banner-icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div>
+            <strong>Tip:</strong> You can configure your application phases below before opening admissions. Phase dates control when parents can submit — not when your school reviews applications.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== STEP 2: APPLICATION WINDOWS ===== -->
+    <div class="card greyed" id="step2">
+      <div class="card-header">
+        <div class="card-icon icon-amber">
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+        <div class="card-title-group">
+          <div class="card-title">Application Windows</div>
+          <div class="card-subtitle">Set up admission windows and select which year groups each one accepts</div>
+        </div>
+      </div>
+      <div class="card-body">
+
+        <!-- Reminder banner -->
+        <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:20px;display:flex;align-items:flex-start;gap:10px;">
+          <span style="font-size:16px;">📅</span>
+          <div style="font-size:12px;color:#92400e;line-height:1.6;">
+            <strong>Tip:</strong> Set Main Round dates <strong>2–3 years ahead</strong> so consultants and families can plan early. Each window can accept different year groups.
+          </div>
+        </div>
+
+        <!-- windows container -->
+        <div id="windows-container">
+
+        <!-- ══ WINDOW 1: MAIN ROUND (locked) ══ -->
+        <div class="adm-window" id="win-main">
+          <div class="adm-win-header">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span class="win-lock-badge">🔒 DEFAULT</span>
+              <span class="win-title">Main Round</span>
+              <button class="tooltip-btn" type="button">?
+                <div class="tooltip-popup">Annual intake for specific year groups. Runs once a year with a fixed application window. Schools typically plan 2–3 years ahead.</div>
+              </button>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked onchange="handleWinToggle('win-main-body',this)">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div class="adm-win-body" id="win-main-body">
+            <div class="adm-dates-row">
+              <div class="form-group" style="flex:1;">
+                <label class="form-label">Application Opens</label>
+                <input type="date" class="form-input" value="2026-09-01">
+              </div>
+              <div class="form-group" style="flex:1;">
+                <label class="form-label">Application Closes</label>
+                <input type="date" class="form-input" value="2026-10-31">
+              </div>
+            </div>
+
+            <!-- Year Groups -->
+            <div class="adm-yg-section">
+              <div class="adm-yg-label">Accepting applications for:</div>
+              <div class="adm-yg-groups">
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Primary — Lower</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip"><input type="checkbox"><span>Reception</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 1</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 2</span></label>
+                  </div>
+                </div>
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Primary — Upper</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip"><input type="checkbox"><span>Year 3</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 4</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 5</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 6</span></label>
+                  </div>
+                </div>
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Secondary — GCSE</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 7</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 8</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 9</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 10</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 11</span></label>
+                  </div>
+                </div>
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Sixth Form — A-Level</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 12</span></label>
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 13</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="adm-yg-error" id="yg-error-main" style="display:none;">
+                <i class="fa-solid fa-triangle-exclamation"></i> Please select at least one year group.
+              </div>
+            </div>
+          </div>
+        </div><!-- /win-main -->
+
+        <!-- ══ WINDOW 2: IN-YEAR ADMISSION (locked) ══ -->
+        <div class="adm-window" id="win-inyear">
+          <div class="adm-win-header">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <span class="win-lock-badge">🔒 DEFAULT</span>
+              <span class="win-title">In-Year Admission</span>
+              <button class="tooltip-btn" type="button">?
+                <div class="tooltip-popup">For transfer students joining mid-year, outside the Main Round schedule. When enabled, applications can be submitted year-round at any time.</div>
+              </button>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked onchange="handleWinToggle('win-inyear-body',this)">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div class="adm-win-body" id="win-inyear-body">
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:#f0fdf4;border:1px solid #86efac;border-radius:var(--radius-sm);margin-bottom:16px;font-size:12px;color:#15803d;font-weight:600;">
+              <i class="fa-solid fa-circle-check"></i>
+              Year-round — transfer applications accepted at any time
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px;">
+              <div>
+                <div style="font-size:13px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:6px;">
+                  Response Time Target
+                  <button class="tooltip-btn" type="button">?
+                    <div class="tooltip-popup">How quickly your school aims to respond to transfer applications. Shown to parents as a guide — not a hard legal deadline.</div>
+                  </button>
+                </div>
+                <div style="font-size:12px;color:var(--gray-text);margin-top:2px;">Displayed to parents when they apply</div>
+              </div>
+              <select style="border:1px solid var(--gray-border);border-radius:var(--radius-sm);padding:8px 12px;font-family:inherit;font-size:13px;font-weight:600;color:var(--text);background:white;cursor:pointer;">
+                <option>5 working days</option>
+                <option selected>10 working days</option>
+                <option>14 working days</option>
+                <option>28 working days</option>
+              </select>
+            </div>
+
+            <!-- Year Groups -->
+            <div class="adm-yg-section">
+              <div class="adm-yg-label">Accepting applications for:</div>
+              <div class="adm-yg-groups">
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Primary — Lower</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip"><input type="checkbox"><span>Reception</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 1</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 2</span></label>
+                  </div>
+                </div>
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Primary — Upper</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip"><input type="checkbox"><span>Year 3</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 4</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 5</span></label>
+                    <label class="yg-chip"><input type="checkbox"><span>Year 6</span></label>
+                  </div>
+                </div>
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Secondary — GCSE</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 7</span></label>
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 8</span></label>
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 9</span></label>
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 10</span></label>
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 11</span></label>
+                  </div>
+                </div>
+                <div class="adm-yg-group">
+                  <div class="adm-yg-group-title">Sixth Form — A-Level</div>
+                  <div class="adm-yg-chips">
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 12</span></label>
+                    <label class="yg-chip checked"><input type="checkbox" checked><span>Year 13</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="adm-yg-error" id="yg-error-inyear" style="display:none;">
+                <i class="fa-solid fa-triangle-exclamation"></i> Please select at least one year group.
+              </div>
+            </div>
+          </div>
+        </div><!-- /win-inyear -->
+
+        <!-- ══ CUSTOM WINDOWS (added by school) ══ -->
+        <div id="custom-windows-list"></div>
+
+        <!-- Add Window button -->
+        <button type="button" class="btn-add-window" onclick="addCustomWindow()">
+          <i class="fa-solid fa-plus"></i>
+          Add Application Window
+        </button>
+
+        </div><!-- /windows-container -->
+
+      </div>
+    </div>
+
+    <!-- ===== STEP 3: REVIEW & SAVE ===== -->
+    <div class="card greyed" id="step3">
+      <div class="card-header">
+        <div class="card-icon icon-green">
+          <i class="fa-solid fa-check-double"></i>
+        </div>
+        <div class="card-title-group">
+          <div class="card-title">Review &amp; Save</div>
+          <div class="card-subtitle">Confirm your admission settings before publishing</div>
+        </div>
+      </div>
+      <div class="card-body">
+
+        <!-- Summary of all settings -->
+        <div class="review-item">
+          <div class="review-icon icon-navy" style="background:rgba(27,58,92,0.1);color:var(--navy);">
+            <i class="fa-solid fa-power-off"></i>
+          </div>
+          <div class="review-content">
+            <div class="review-label">Admissions Status</div>
+            <div class="review-value disabled" id="review-status">
+              <i class="fa-solid fa-xmark-circle"></i> &nbsp;Closed
+            </div>
+            <div class="review-tag red" id="review-status-tag">
+              <i class="fa-solid fa-triangle-exclamation"></i> Parents cannot apply
+            </div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <div class="review-icon icon-green" style="background:rgba(22,163,74,0.1);color:var(--green);">
+            <i class="fa-solid fa-calendar-days"></i>
+          </div>
+          <div class="review-content">
+            <div class="review-label">Main Rounds</div>
+            <div class="review-value" id="review-p1">
+              <i class="fa-regular fa-calendar"></i> &nbsp;3 years configured (2025/26 – 2027/28)
+            </div>
+            <div class="review-tag green" id="review-p1-tag">
+              <i class="fa-solid fa-circle" style="font-size:7px;"></i> &nbsp;2025/26 Active · 2026/27 Scheduled
+            </div>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <div class="review-icon icon-amber" style="background:rgba(217,119,6,0.1);color:var(--amber);">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <div class="review-content">
+            <div class="review-label">In-Year Admission</div>
+            <div class="review-value" id="review-p2">
+              <i class="fa-solid fa-circle-check" style="color:var(--green);"></i> &nbsp;Enabled — Transfer applications accepted
+            </div>
+            <div class="review-tag green" id="review-p2-tag">
+              <i class="fa-solid fa-circle" style="font-size:7px;"></i> &nbsp;Response time: 10 working days
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="margin-top:24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;">
+          <button class="btn-save" type="button" onclick="handleSave()">
+            <i class="fa-solid fa-floppy-disk"></i>
+            Save Changes
+          </button>
+          <p style="font-size:12px;color:var(--gray-text);font-weight:500;max-width:300px;line-height:1.5;">
+            Your settings will be applied immediately. You can change them at any time from this page.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- WIZARD NAV -->
+    <div class="wizard-nav">
+      <button class="btn-back" type="button" disabled style="opacity:0.4;cursor:not-allowed;">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+      </button>
+      <button class="btn-next" type="button" onclick="goToStep(2)">
+        Next: Configure Admission Types
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+  </main>
+</div>
+
+<script>
+  // Wizard navigation
+  let currentStep = 1;
+
+  function goToStep(step) {
+    currentStep = step;
+
+    // Update step indicators
+    document.querySelectorAll('.wizard-step .step-number').forEach((el, idx) => {
+      el.classList.remove('active', 'completed');
+      if (idx + 1 < step) el.classList.add('completed');
+      if (idx + 1 === step) el.classList.add('active');
+    });
+
+    // Enable/disable cards
+    const step1 = document.getElementById('step1');
+    const step2 = document.getElementById('step2');
+    const step3 = document.getElementById('step3');
+    const btnBack = document.querySelector('.btn-back');
+    const btnNext = document.querySelector('.btn-next');
+
+    step1.classList.toggle('greyed', step < 1);
+    step2.classList.toggle('greyed', step < 2);
+    step3.classList.toggle('greyed', step < 3);
+
+    // Scroll to active step
+    const activeCard = document.getElementById('step' + step);
+    activeCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Update nav buttons
+    btnBack.disabled = step <= 1;
+    btnBack.style.opacity = step <= 1 ? '0.4' : '1';
+    btnBack.style.cursor = step <= 1 ? 'not-allowed' : 'pointer';
+
+    if (step === 3) {
+      btnNext.style.display = 'none';
+      btnBack.style.display = 'flex';
+    } else {
+      btnNext.style.display = 'flex';
+      btnBack.style.display = 'flex';
+    }
+
+    // Update next button label
+    if (step === 1) {
+      btnNext.innerHTML = 'Next: Configure Admission Types <i class="fa-solid fa-arrow-right"></i>';
+      btnNext.onclick = () => goToStep(2);
+    } else if (step === 2) {
+      btnNext.innerHTML = 'Next: Review &amp; Save <i class="fa-solid fa-arrow-right"></i>';
+      btnNext.onclick = () => goToStep(3);
+    }
+
+    updateReviewSummary();
+  }
+
+  // Toggle handler for admission switch
+  function handleToggle(el) {
+    const bannerClosed = document.getElementById('banner-closed');
+    const bannerOpen = document.getElementById('banner-open');
+    if (el.checked) {
+      bannerClosed.style.display = 'none';
+      bannerOpen.style.display = 'flex';
+    } else {
+      bannerClosed.style.display = 'flex';
+      bannerOpen.style.display = 'none';
+    }
+    updateReviewSummary();
+  }
+
+  // Update review summary
+  function updateReviewSummary() {
+    const isEnabled = document.getElementById('admission-toggle').checked;
+    const reviewStatus = document.getElementById('review-status');
+    const reviewStatusTag = document.getElementById('review-status-tag');
+    if (isEnabled) {
+      reviewStatus.className = 'review-value enabled';
+      reviewStatus.innerHTML = '<i class="fa-solid fa-check-circle"></i> &nbsp;Open';
+      reviewStatusTag.className = 'review-tag green';
+      reviewStatusTag.innerHTML = '<i class="fa-solid fa-circle" style="font-size:7px;"></i> &nbsp;Parents can apply now';
+    } else {
+      reviewStatus.className = 'review-value disabled';
+      reviewStatus.innerHTML = '<i class="fa-solid fa-xmark-circle"></i> &nbsp;Closed';
+      reviewStatusTag.className = 'review-tag red';
+      reviewStatusTag.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> &nbsp;Parents cannot apply';
+    }
+  }
+
+  // Save handler
+  function handleSave() {
+    const btn = document.querySelector('.btn-save');
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Saving...';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fa-solid fa-check"></i> Saved!';
+      btn.style.background = 'var(--green)';
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 2500);
+    }, 1200);
+  }
+
+
+  // Toggle any admission window body
+  function handleWinToggle(bodyId, checkbox) {
+    const body = document.getElementById(bodyId);
+    if (body) body.classList.toggle('hidden', !checkbox.checked);
+  }
+
+  // Add a custom application window
+  let customWinCount = 0;
+  function addCustomWindow() {
+    customWinCount++;
+    const id = 'win-custom-' + customWinCount;
+    const bodyId = id + '-body';
+    const YG_HTML = `
+      <div class="adm-yg-section">
+        <div class="adm-yg-label">Accepting applications for:</div>
+        <div class="adm-yg-groups">
+          <div class="adm-yg-group">
+            <div class="adm-yg-group-title">Primary \u2014 Lower</div>
+            <div class="adm-yg-chips">
+              <label class="yg-chip"><input type="checkbox"><span>Reception</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 1</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 2</span></label>
+            </div>
+          </div>
+          <div class="adm-yg-group">
+            <div class="adm-yg-group-title">Primary \u2014 Upper</div>
+            <div class="adm-yg-chips">
+              <label class="yg-chip"><input type="checkbox"><span>Year 3</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 4</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 5</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 6</span></label>
+            </div>
+          </div>
+          <div class="adm-yg-group">
+            <div class="adm-yg-group-title">Secondary \u2014 GCSE</div>
+            <div class="adm-yg-chips">
+              <label class="yg-chip"><input type="checkbox"><span>Year 7</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 8</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 9</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 10</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 11</span></label>
+            </div>
+          </div>
+          <div class="adm-yg-group">
+            <div class="adm-yg-group-title">Sixth Form \u2014 A-Level</div>
+            <div class="adm-yg-chips">
+              <label class="yg-chip"><input type="checkbox"><span>Year 12</span></label>
+              <label class="yg-chip"><input type="checkbox"><span>Year 13</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="adm-yg-error" id="yg-error-${id}" style="display:none;">
+          <i class="fa-solid fa-triangle-exclamation"></i> Please select at least one year group.
+        </div>
+      </div>`;
+
+    const div = document.createElement('div');
+    div.className = 'adm-window';
+    div.id = id;
+    div.innerHTML = `
+      <div class="adm-win-header">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span class="win-custom-badge">\u270f\ufe0f CUSTOM</span>
+          <input type="text" value="New Window" placeholder="Window name" style="font-size:14px;font-weight:800;color:var(--navy);border:none;background:transparent;font-family:inherit;outline:none;min-width:120px;" onclick="this.select()">
+          <button class="tooltip-btn" type="button">?
+            <div class="tooltip-popup">Custom admission window. You can name it anything (e.g. \u201cScholarship Round\u201d, \u201c6th Form Entry\u201d) and choose which year groups it applies to.</div>
+          </button>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <label class="toggle-switch">
+            <input type="checkbox" checked onchange="handleWinToggle('${bodyId}',this)">
+            <span class="toggle-slider"></span>
+          </label>
+          <button class="win-delete-btn" type="button" onclick="removeCustomWindow('${id}')" title="Delete this window">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <div class="adm-win-body" id="${bodyId}">
+        <div class="adm-dates-row">
+          <div class="form-group" style="flex:1;">
+            <label class="form-label">Application Opens</label>
+            <input type="date" class="form-input">
+          </div>
+          <div class="form-group" style="flex:1;">
+            <label class="form-label">Application Closes</label>
+            <input type="date" class="form-input">
+          </div>
+        </div>
+        ${YG_HTML}
+      </div>`;
+
+    document.getElementById('custom-windows-list').appendChild(div);
+    // scroll into view
+    div.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function removeCustomWindow(id) {
+    const el = document.getElementById(id);
+    if (el) el.remove();
+  }
+
+  // Chip toggle: clicking chip label toggles .checked class
+  document.addEventListener('change', function(e) {
+    if (e.target && e.target.type === 'checkbox' && e.target.closest('.yg-chip')) {
+      e.target.closest('.yg-chip').classList.toggle('checked', e.target.checked);
+    }
+  });
+</script>
+
+</body>
+</html>

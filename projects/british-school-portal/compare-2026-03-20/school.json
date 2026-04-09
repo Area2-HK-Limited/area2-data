@@ -1,0 +1,261 @@
+{
+  "label": "school",
+  "email": "demo_school@britishschoolportal.co.uk",
+  "loginUrl": "https://www.britishschoolportal.co.uk/en/login",
+  "postLoginUrl": "https://www.britishschoolportal.co.uk/en/login",
+  "title": "British School Portal",
+  "bodyText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nLOGIN\nSign in with facebook\nSign in with Google\nLOGIN\nREGISTER\nPERSONAL ACCOUNT\nSCHOOL ACCOUNT\nEDUCATIONAL CONSULTANT ACCOUNT\nBUSINESS ACCOUNT\nForget password?\nRe-send the verification email\nBy logging into your account you confirm that you agree to our website term & condition of use, our privacy policy and consent to cookies being stored on your device.\nREGISTRATION REMINDER\n\nFacebook and Google register only for student registration.\n\nAre you sure register the student account?\n\n**If you are school staff or consultant, please click here.\n\nSURE\nCANCEL",
+  "links": [
+    {
+      "text": "LOGIN / REGISTER FOR FREE",
+      "href": "https://www.britishschoolportal.co.uk/en/login"
+    },
+    {
+      "text": "",
+      "href": "https://www.britishschoolportal.co.uk/en"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.britishschoolportal.co.uk/en/about_us"
+    },
+    {
+      "text": "Independent Schools",
+      "href": "https://www.britishschoolportal.co.uk/en/independent-school"
+    },
+    {
+      "text": "Other Schools",
+      "href": "https://www.britishschoolportal.co.uk/en/other-school"
+    },
+    {
+      "text": "Educational Consultant",
+      "href": "https://www.britishschoolportal.co.uk/en/consultant"
+    },
+    {
+      "text": "Business",
+      "href": "https://www.britishschoolportal.co.uk/en/business"
+    },
+    {
+      "text": "Blogs",
+      "href": "https://www.britishschoolportal.co.uk/en/blogs"
+    },
+    {
+      "text": "Content Area",
+      "href": "https://www.britishschoolportal.co.uk/en/content"
+    },
+    {
+      "text": "繁",
+      "href": "https://www.britishschoolportal.co.uk/tc/login"
+    },
+    {
+      "text": "Sign in with facebook",
+      "href": "javascript:void(0);"
+    },
+    {
+      "text": "Sign in with Google",
+      "href": "javascript:void(0);"
+    },
+    {
+      "text": "PERSONAL ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/student"
+    },
+    {
+      "text": "SCHOOL ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/school"
+    },
+    {
+      "text": "EDUCATIONAL CONSULTANT ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/consultant"
+    },
+    {
+      "text": "BUSINESS ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/business"
+    },
+    {
+      "text": "Forget password?",
+      "href": "https://www.britishschoolportal.co.uk/en/forget_password"
+    },
+    {
+      "text": "Re-send the verification email",
+      "href": "https://www.britishschoolportal.co.uk/en/resend_verify"
+    },
+    {
+      "text": "term & condition of use",
+      "href": "https://www.britishschoolportal.co.uk/en/terms_and_conditions_of_use"
+    },
+    {
+      "text": "our privacy policy",
+      "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+    },
+    {
+      "text": "here",
+      "href": "https://www.britishschoolportal.co.uk/register"
+    },
+    {
+      "text": "SURE",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "CANCEL",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "\"Privacy Policy\"",
+      "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+    }
+  ],
+  "buttons": [
+    "×",
+    "LOGIN",
+    "Accept",
+    "Cancel"
+  ],
+  "applicationCandidates": [
+    {
+      "text": "LOGIN / REGISTER FOR FREE",
+      "href": "https://www.britishschoolportal.co.uk/en/login"
+    },
+    {
+      "text": "",
+      "href": "https://www.britishschoolportal.co.uk/en"
+    },
+    {
+      "text": "About Us",
+      "href": "https://www.britishschoolportal.co.uk/en/about_us"
+    },
+    {
+      "text": "Independent Schools",
+      "href": "https://www.britishschoolportal.co.uk/en/independent-school"
+    },
+    {
+      "text": "Other Schools",
+      "href": "https://www.britishschoolportal.co.uk/en/other-school"
+    },
+    {
+      "text": "Educational Consultant",
+      "href": "https://www.britishschoolportal.co.uk/en/consultant"
+    },
+    {
+      "text": "Business",
+      "href": "https://www.britishschoolportal.co.uk/en/business"
+    },
+    {
+      "text": "Blogs",
+      "href": "https://www.britishschoolportal.co.uk/en/blogs"
+    },
+    {
+      "text": "Content Area",
+      "href": "https://www.britishschoolportal.co.uk/en/content"
+    },
+    {
+      "text": "繁",
+      "href": "https://www.britishschoolportal.co.uk/tc/login"
+    },
+    {
+      "text": "PERSONAL ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/student"
+    },
+    {
+      "text": "SCHOOL ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/school"
+    },
+    {
+      "text": "EDUCATIONAL CONSULTANT ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/consultant"
+    },
+    {
+      "text": "BUSINESS ACCOUNT",
+      "href": "https://www.britishschoolportal.co.uk/en/register/business"
+    },
+    {
+      "text": "Forget password?",
+      "href": "https://www.britishschoolportal.co.uk/en/forget_password"
+    },
+    {
+      "text": "Re-send the verification email",
+      "href": "https://www.britishschoolportal.co.uk/en/resend_verify"
+    },
+    {
+      "text": "term & condition of use",
+      "href": "https://www.britishschoolportal.co.uk/en/terms_and_conditions_of_use"
+    },
+    {
+      "text": "our privacy policy",
+      "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+    },
+    {
+      "text": "here",
+      "href": "https://www.britishschoolportal.co.uk/register"
+    },
+    {
+      "text": "\"Privacy Policy\"",
+      "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+    }
+  ],
+  "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-dashboard.png",
+  "visited": [
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/login",
+      "text": "LOGIN / REGISTER FOR FREE",
+      "title": "British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/login",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nLOGIN\nSign in with facebook\nSign in with Google\nLOGIN\nREGISTER\nPERSONAL ACCOUNT\nSCHOOL ACCOUNT\nEDUCATIONAL CONSULTANT ACCOUNT\nBUSINESS ACCOUNT\nForget password?\nRe-send the verification email\nBy logging into your account you confirm that you agree to our website term & condition of use, our privacy policy and consent to cookies being stored on your device.\nREGISTRATION REMINDER\n\nFacebook and Google register only for student registration.\n\nAre you sure register the student account?\n\n**If you are school staff or consultant, please click here.\n\nSURE\nCANCEL",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en",
+      "text": "",
+      "title": "British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nThis is where you will find the most suitable school in the UK\nWe aim to provide a user-friendly platform assisting parents and students on schools and related services searching in the UK for FREE\nFIND SCHOOL NEAR YOU\nSearch Radius\nWithin 10 miles\nWithin 8 miles\nWithin 3 miles\nWithin 2 miles\nWithin 1 mile\nResidency Types\nGender Group\nCurriculum Covered\nSEARCH\nNews\nPrevious\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\nRead More...\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\nRead More...\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nNext\n1\n2\n3\n4\nFantastic website! I found a lof of useful information in this website. And do help me a lot of find a very good school for my little son. Good job. Marvellous website.\nMs Yip\nHelpful and informative. I found it helpful and easy to search for the different level of schools in the area.\nEmily\nExcellent, easy to use, so much information consolidate in one website.\nSelina\n1\n2\nSee the Schools Near You On Map\nCAN BE FILTERED BY\nType of School\nCurriculum Covered\nResidency Type\nAdmission Policy\nGender Groups\nReligious affiliation\nInspection report\nSpecial Educational Needs and Disability\nFurther School’s Information\nSchool Data\nPerformance\nUser’s review*\nFees & Bursaries*\nExtracurricular*\nNotable achievements & Alumni*\nEnquiry function to ask the school*\nFAQ section*\n*Subject to availability\nInformation About The Education In The UK\nCONTINUOUSLY UPDATED CONTENT AREA FOR LOCAL AND OVERSEAS STUDENTS\nThe education system in the UK\nType of schools in the UK\nGrammar Schools in England\nAcademic qualification in the UK\nSchool admission\nFAQ about this platform\nRelated Service Provider Business List\nALWAYS SHOW YOU THE QUALITY ONE\nEducational consultant\nGuardian service\nLanguages learning\nTaxi service\nLocal /International Removal\nImmigration consulta",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/about_us",
+      "text": "About Us",
+      "title": "About British School Portal | British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/about_us",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nABOUT BRITISH SCHOOL PORTAL\nABOUT BRITISH SCHOOL PORTAL\n\nEvery parent wants the best for their children, and we understand that the process of choosing schools and related services in the UK can be daunting. That's why our goal is to provide you with the most current information to make the decision-making process easier.\n\nSince our launch in 2020, we have integrated the UK government's database with over 55,000 registered educational institutions across England, Scotland, Wales, and Northern Ireland. We have transformed this vast database into an easy-to-use platform, with a simple interface that anyone can navigate.\n\nWith just one click, you can view different types of schools near you, including \"Special Education,\" \"Home Office licensed Student Sponsor on Student Visa,\" and \"Grammar Schools,\" all displayed on a map.\n\nWe have also partnered with various service providers, including Guardian Services, International and Local Removal Companies, Car Rentals, Educational Resources, and many more. This helps you save time in planning your journey to the new school by eliminating the need for additional searches.\n\nIn the future, we plan to analyze more data to provide parents with a comprehensive search platform. Our ultimate goal is to make the school searching process in the UK as seamless and stress-free as possible for you and your family.\n\nBS Portal\nWe wish you can find a suitable school very soon.",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/independent-school",
+      "text": "Independent Schools",
+      "title": "British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/independent-school",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nREFINE SEARCH\nLocation / Name\nSearch Radius\nBy Distance\n1 mile\n2 miles\n3 miles\n8 miles\n10 miles\nSpecial Educational Needs and Disability (SEND)\nLicensed Student Sponsor (Student Visa)\nCurriculum Covered\nResidency Types\nAdmission Policy\nGender Groups\nReligious Affiliation\nInspection Report\nMin Fee £\nto\nMax Fee £\nCLEAR FILTERS\nENTER\nIndependent\nNursery\nPrimary\nSecondary\nUniversity\nAll through school (Nursery & Primary)\nAll through school (Primary & Secondary)\nAll through school (Nursery, Primary & Secondary)\nChildren's Centre\n There are too many schools in this area. Please zoom in for the result.\nMap\nSatellite\nKeyboard shortcuts\nMap data ©2026 GeoBasis-DE/BKG (©2009), Google\nTerms",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/other-school",
+      "text": "Other Schools",
+      "title": "British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/other-school",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nREFINE SEARCH\nLocation / Name\nSearch Radius\nBy Distance\n1 mile\n2 miles\n3 miles\n8 miles\n10 miles\nSpecial Educational Needs and Disability (SEND)\nLicensed Student Sponsor (Student Visa)\nType of School\nCurriculum Covered\nResidency Types\nAdmission Policy\nGender Groups\nReligious Affiliation\nInspection Report\nMin Fee £\nto\nMax Fee £\nCLEAR FILTERS\nENTER\nIndependent\nNursery\nPrimary\nSecondary\nUniversity\nAll through school (Nursery & Primary)\nAll through school (Primary & Secondary)\nAll through school (Nursery, Primary & Secondary)\nChildren's Centre\n There are too many schools in this area. Please zoom in for the result.\nMap\nSatellite\nKeyboard shortcuts\nMap data ©2026 GeoBasis-DE/BKG (©2009), Google\nTerms",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/consultant",
+      "text": "Educational Consultant",
+      "title": "Educational Consultant Search | British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/consultant",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nFINDAN EDUCATIONAL CONSULTANT\nCurriculum Covered\nWhere is the consultant based?\nAll\nUnited Kingdom\nHong Kong\nEgypt\nENTER\nCONSULTANTS\n1-10 / 21 Results\nView\n10\n \n20\n \n30\n \nBritish School Portal - Educational Consultancy Service\nLondon, United Kingdom\neducationalconsultant@britishschoolportal.co.uk\nUNIKEY Academy\n1705, 17/F, Far East Consortium Building, 113-125A Des Voeux Road Central, Hong Kong, Hong Kong\ninfo@unikeyacademy.com\n+852 6112 9409\nAEC Education Consultancy\nRoom 1402, Causeway Bay Plaza 1, 489 Hennessy Road, Causeway Bay, Hong, Hong Kong\nenquiry@aecl.com.hk\n00852 2598 6166\nEF Education First\n1703-08, Tower 2, Times Square, Causeway Bay, Hong Kong, Hong Kong, Hong Kong\nhkapp.admission@ef.com\n00852 2111 2370\nADHD Solutions UK\nSt Gabriels Community Centre, Kerrysdale Avenue , Leicester, United Kingdom, LE4 7GH\nfrontdoor@adhdsolutions.org\ndadi Overseas Studies Service Centre\nRoom 703, T.O.P. No. 700 Nathan Road, Hong Kong\n+852 2314 8312\nYui Education Limited\nRoom 42, 20/F, 77 Leighton Rd, Causeway Bay, Hong Kong, Hong Kong\ninfo@yuieducation.com\n+852 9532 1138\nNorton House\n22/F, Leighton Centre, Causeway Bay, Hong Kong\nadmission@nh.edu.hk\n+852 2972 2698\nHKIES Overseas Education Centre\nUnit 1302-03 Pilkem Commercial Centre 8 Pilkem Street, Kowloon, Hong Kong, Hong Kong\n+852 2264 8990\nLINKEDU\n11/F, Central 88, 88-98 Des Voeux Rd Central, Central, Hong Kong, Hong Kong\nenquiry@linkedu.hk\n+852 2157 3822\n«\n1\n(current)\n2\n3\n»",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/business",
+      "text": "Business",
+      "title": "Business Search | British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/business",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nFIND A BUSINESS\nType of Business?\nInternational Removal\nGuardian Service\nCar Rental\nTaxi Service\nWhere is the business based?\nAll\nHong Kong\nUnited Kingdom\nENTER\nBUSINESS\n1-5 / 5 Results\n10\n \n20\n \n30\n \nJP MOVER SERVICE\nSHOP 16 1/F TAK WUN SHOPPING ARCADE 12-16 PAK KUNG STREET HUNGHOM, KLN, Hong Kong\njason@jpmover.org\n+852 9281 1940\nThe Guardian Family Network Ltd\n3 Warren Yard, Wolverton Mill, Milton Keynes, United Kingdom, MK12 5NW\nGuardian Service\noffice@guardianfamily.co.uk\n01865893213\nCambridge Guardians Limited\n78 Hartington Grove, Cambridge, CB17UB, United Kingdom\nGuardian Service\nheather@cambridgeguardians.co.uk\n01223570116\nEnterprise Rent-A-Car®\nUnited Kingdom\nCar Rental\nUkprocab\nUnit 2 Chapel works, 16 Canterbury Road, Nottingham, United Kingdom, NG8 1PQ\nukprocab2009@outlook.com\n07721143475\n«\n1\n(current)\n»",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    },
+    {
+      "href": "https://www.britishschoolportal.co.uk/en/blogs",
+      "text": "Blogs",
+      "title": "Blog | British School Portal",
+      "url": "https://www.britishschoolportal.co.uk/en/blogs",
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nBLOGS\nBLOGS\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\n2025-06-30\n* { box-sizing: border-box; } body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", ...\nREAD MORE\nA.I. POWERED EDUCATIONAL CONSULTANT\n2024-09-05\nAre you looking for the perfect school for your child in the UK? Look no further! I'm a professional UK school search consultant, and I'm here to guide you through ...\nREAD MORE\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK 2022/23\n2024-06-01\nTop 20 A-Level Secondary Schools in the UK 2022/23 King's College London Maths School - 55.90 (A*-) St Paul's Girls' School - 54.68 (A+) Westminster School - 54.13 (A+) Queen Elizabeth's School, Barnet - 54.06 ...\nREAD MORE\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\n2023-12-24\nMerry Christmas from the Heart of British School Portal! Dear British School Portal Family, As we gather around the tree and share the warmth of the season, we want to take a ...\nREAD MORE\nTHE UK EDUCATION GUIDE 2023 IS NOW AVAILABLE FOR PURCHASE ONLINE!\n2023-05-29\nThe UK Education Guide 2023 is now available for purchase online! Whether you're considering a state or independent school, day school or boarding school, this guide has all the information ...\nREAD MORE\nCELEBRATE OF KING CORONATION\n2023-05-06\nJoin us as we celebrate the historic coronation of #KingCoronation As we welcome a new era, we invite you to explore our platform and discover how we can assist you in ...\nREAD MORE\nCAN MY FRIEND BE MY CHILD’S GUARDIAN?\n2023-05-05\nCome and check out which criteria you need to become a guardian for your friend's boarding school child in the UK. https://www.youtube.com/@BritishSchoolPortal ...\nREAD MORE\nHOW TO FIND GRAMMAR SCHOOLS NEAR YOU ?\n2023-04-26\nAre you struggling to find the right school for your child in the UK? This video will guide you through the process of finding independent and grammar schools near you. Take ...\nREAD MORE\n«\n1\n(current)\n2\n3\n4\n»",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-20/school-aHR0cHM6Ly93d3cuYnJpdGlzaHNjaG9vbHBvcnRh.png"
+    }
+  ]
+}

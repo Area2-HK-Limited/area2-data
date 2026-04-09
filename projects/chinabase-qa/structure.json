@@ -1,0 +1,1548 @@
+{
+  "timestamp": "2026-03-10T15:05:40.284Z",
+  "frontend_url": "https://chinabase.hlhk.net",
+  "cms_url": "https://chinabase.hlhk.net/cms",
+  "framework": "nuxt",
+  "siteMap": [
+    {
+      "url": "https://chinabase.hlhk.net",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 0,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 1,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/#about",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 2,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/about_us/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/about_us/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/about_us/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/about_us/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/about_us/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/about_us/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/about_us/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/introdution/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/introdution/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/introdution/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/introdution/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/introdution/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/introdution/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/introdution/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/equipment_introduction/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/developing/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/developing/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/developing/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/developing/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/developing/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/developing/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/developing/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/organization/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/organization/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/organization/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/organization/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/organization/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/organization/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/organization/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/certificate/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/certificate/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/certificate/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/certificate/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/certificate/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/certificate/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/certificate/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/partner/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/partner/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/partner/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/partner/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/partner/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/partner/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/partner/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/#products",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/#search",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/#clients",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/recruit/",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/recruit/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/recruit/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/recruit/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/recruit/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/recruit/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/recruit/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/#contact",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    },
+    {
+      "url": "https://chinabase.hlhk.net/#news",
+      "title": "香港創基電子科技有限公司 | 繁體中文",
+      "depth": 3,
+      "links": [
+        {
+          "text": "首頁",
+          "href": "https://chinabase.hlhk.net/"
+        },
+        {
+          "text": "公司介紹",
+          "href": "https://chinabase.hlhk.net/#about"
+        },
+        {
+          "text": "關於我們",
+          "href": "https://chinabase.hlhk.net/about_us/"
+        },
+        {
+          "text": "公司簡介",
+          "href": "https://chinabase.hlhk.net/introdution/"
+        },
+        {
+          "text": "公司厰區設備介紹",
+          "href": "https://chinabase.hlhk.net/equipment_introduction/"
+        },
+        {
+          "text": "發展里程",
+          "href": "https://chinabase.hlhk.net/developing/"
+        },
+        {
+          "text": "企業架構",
+          "href": "https://chinabase.hlhk.net/organization/"
+        },
+        {
+          "text": "專利證書",
+          "href": "https://chinabase.hlhk.net/certificate/"
+        },
+        {
+          "text": "合作夥伴",
+          "href": "https://chinabase.hlhk.net/partner/"
+        },
+        {
+          "text": "產品介紹",
+          "href": "https://chinabase.hlhk.net/#products"
+        },
+        {
+          "text": "產品搜尋",
+          "href": "https://chinabase.hlhk.net/#search"
+        },
+        {
+          "text": "客戶反饋",
+          "href": "https://chinabase.hlhk.net/#clients"
+        },
+        {
+          "text": "誠聘英才",
+          "href": "https://chinabase.hlhk.net/recruit/"
+        },
+        {
+          "text": "聯絡我們",
+          "href": "https://chinabase.hlhk.net/#contact"
+        },
+        {
+          "text": "最新消息",
+          "href": "https://chinabase.hlhk.net/#news"
+        }
+      ]
+    }
+  ],
+  "cmsModules": {
+    "admin": {
+      "flatModules": [
+        {
+          "text": "translate翻譯",
+          "href": "https://chinabase.hlhk.net/cms/Translate"
+        },
+        {
+          "text": "folder檔案系統",
+          "href": "https://chinabase.hlhk.net/cms/System/fs"
+        },
+        {
+          "text": "link 電郵訂閱",
+          "href": "https://chinabase.hlhk.net/cms/Subscriber"
+        },
+        {
+          "text": "link 產品查詢",
+          "href": "https://chinabase.hlhk.net/cms/ProductInquiry"
+        },
+        {
+          "text": "link 客戶反饋",
+          "href": "https://chinabase.hlhk.net/cms/Enquiry"
+        },
+        {
+          "text": "list最新消息",
+          "href": "https://chinabase.hlhk.net/cms/News"
+        },
+        {
+          "text": "link誠聘英才",
+          "href": "https://chinabase.hlhk.net/cms/Recruitment"
+        },
+        {
+          "text": "link發展里程",
+          "href": "https://chinabase.hlhk.net/cms/Developing"
+        },
+        {
+          "text": "link橫額圖片",
+          "href": "https://chinabase.hlhk.net/cms/BannerImage"
+        },
+        {
+          "text": "link專利證書",
+          "href": "https://chinabase.hlhk.net/cms/Certificate"
+        },
+        {
+          "text": "link產品分類",
+          "href": "https://chinabase.hlhk.net/cms/Category"
+        },
+        {
+          "text": "link產品",
+          "href": "https://chinabase.hlhk.net/cms/Product"
+        },
+        {
+          "text": "link產品文件分類",
+          "href": "https://chinabase.hlhk.net/cms/DocCategory"
+        },
+        {
+          "text": "link產品文件",
+          "href": "https://chinabase.hlhk.net/cms/DocSubCategory"
+        },
+        {
+          "text": "folder 文件管理器",
+          "href": "https://chinabase.hlhk.net/cms/FileManager"
+        },
+        {
+          "text": "add 新增",
+          "href": "https://chinabase.hlhk.net/cms/Product/add"
+        },
+        {
+          "text": "upload 匯入產品列表",
+          "href": "https://chinabase.hlhk.net/cms/Product/import_list"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11163/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11163/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11162/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11162/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11161/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11161/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11160/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11160/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11159/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11159/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11158/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11158/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11157/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11157/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11156/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11156/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11155/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11155/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11154/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11154/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11153/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11153/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11152/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11152/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11151/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11151/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11150/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11150/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11149/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11149/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11148/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11148/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11147/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11147/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11146/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11146/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11145/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11145/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11144/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11144/edit"
+        }
+      ],
+      "moduleTree": []
+    },
+    "testUser": {
+      "flatModules": [
+        {
+          "text": "translate翻譯",
+          "href": "https://chinabase.hlhk.net/cms/Translate"
+        },
+        {
+          "text": "folder檔案系統",
+          "href": "https://chinabase.hlhk.net/cms/System/fs"
+        },
+        {
+          "text": "link 電郵訂閱",
+          "href": "https://chinabase.hlhk.net/cms/Subscriber"
+        },
+        {
+          "text": "link 產品查詢",
+          "href": "https://chinabase.hlhk.net/cms/ProductInquiry"
+        },
+        {
+          "text": "link 客戶反饋",
+          "href": "https://chinabase.hlhk.net/cms/Enquiry"
+        },
+        {
+          "text": "list最新消息",
+          "href": "https://chinabase.hlhk.net/cms/News"
+        },
+        {
+          "text": "link誠聘英才",
+          "href": "https://chinabase.hlhk.net/cms/Recruitment"
+        },
+        {
+          "text": "link發展里程",
+          "href": "https://chinabase.hlhk.net/cms/Developing"
+        },
+        {
+          "text": "link橫額圖片",
+          "href": "https://chinabase.hlhk.net/cms/BannerImage"
+        },
+        {
+          "text": "link專利證書",
+          "href": "https://chinabase.hlhk.net/cms/Certificate"
+        },
+        {
+          "text": "link產品分類",
+          "href": "https://chinabase.hlhk.net/cms/Category"
+        },
+        {
+          "text": "link產品",
+          "href": "https://chinabase.hlhk.net/cms/Product"
+        },
+        {
+          "text": "link產品文件分類",
+          "href": "https://chinabase.hlhk.net/cms/DocCategory"
+        },
+        {
+          "text": "link產品文件",
+          "href": "https://chinabase.hlhk.net/cms/DocSubCategory"
+        },
+        {
+          "text": "folder 文件管理器",
+          "href": "https://chinabase.hlhk.net/cms/FileManager"
+        },
+        {
+          "text": "add 新增",
+          "href": "https://chinabase.hlhk.net/cms/Product/add"
+        },
+        {
+          "text": "upload 匯入產品列表",
+          "href": "https://chinabase.hlhk.net/cms/Product/import_list"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11163/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11163/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11162/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11162/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11161/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11161/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11160/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11160/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11159/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11159/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11158/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11158/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11157/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11157/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11156/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11156/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11155/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11155/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11154/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11154/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11153/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11153/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11152/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11152/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11151/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11151/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11150/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11150/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11149/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11149/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11148/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11148/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11147/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11147/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11146/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11146/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11145/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11145/edit"
+        },
+        {
+          "text": "search",
+          "href": "https://chinabase.hlhk.net/cms/Product/11144/view"
+        },
+        {
+          "text": "edit",
+          "href": "https://chinabase.hlhk.net/cms/Product/11144/edit"
+        }
+      ],
+      "moduleTree": []
+    }
+  }
+}

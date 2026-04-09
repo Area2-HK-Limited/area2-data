@@ -1,0 +1,269 @@
+[
+  {
+    "name": "School 01",
+    "profile": {
+      "filled": [
+        "Display Email",
+        "Main Phone",
+        "Facebook",
+        "School Description"
+      ],
+      "failed": [
+        "Head of School",
+        "PostCode",
+        "Address",
+        "School Website",
+        "Size Boys",
+        "Size Girls",
+        "Principal's Message",
+        "Extracurricular",
+        "Notable Achievements",
+        "Open Event",
+        "Account Name",
+        "Account Phone Office",
+        "Account Phone Mobile",
+        "Main Contact Name",
+        "Main Contact Phone Office",
+        "Main Contact Phone Mobile",
+        "Main Contact Email"
+      ]
+    },
+    "termDates": [
+      {
+        "year": "2025/26",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2025/26",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2025/26",
+        "term": "Summer",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Summer",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Summer",
+        "status": "add_failed"
+      }
+    ],
+    "fees": {
+      "filled": [],
+      "failed": [
+        "Per Term Local",
+        "Per Term Overseas",
+        "Annual Local",
+        "Annual Overseas",
+        "Registration Fee",
+        "Deposit Local",
+        "Deposit Overseas"
+      ]
+    }
+  },
+  {
+    "name": "School 02",
+    "profile": {
+      "filled": [
+        "Display Email",
+        "Main Phone",
+        "Facebook",
+        "School Description"
+      ],
+      "failed": [
+        "Head of School",
+        "PostCode",
+        "Address",
+        "School Website",
+        "Size Boys",
+        "Size Girls",
+        "Principal's Message",
+        "Extracurricular",
+        "Notable Achievements",
+        "Open Event",
+        "Account Name",
+        "Account Phone Office",
+        "Account Phone Mobile",
+        "Main Contact Name",
+        "Main Contact Phone Office",
+        "Main Contact Phone Mobile",
+        "Main Contact Email"
+      ]
+    },
+    "termDates": [
+      {
+        "year": "2025/26",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2025/26",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2025/26",
+        "term": "Summer",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Summer",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Summer",
+        "status": "add_failed"
+      }
+    ],
+    "fees": {
+      "filled": [],
+      "failed": [
+        "Per Term Local",
+        "Per Term Overseas",
+        "Annual Local",
+        "Annual Overseas",
+        "Registration Fee",
+        "Deposit Local",
+        "Deposit Overseas"
+      ]
+    }
+  },
+  {
+    "name": "BS Portal Demo School",
+    "profile": {
+      "filled": [
+        "Display Email",
+        "Main Phone",
+        "Facebook",
+        "School Description"
+      ],
+      "failed": [
+        "Head of School",
+        "PostCode",
+        "Address",
+        "School Website",
+        "Size Boys",
+        "Size Girls",
+        "Principal's Message",
+        "Extracurricular",
+        "Notable Achievements",
+        "Open Event",
+        "Account Name",
+        "Account Phone Office",
+        "Account Phone Mobile",
+        "Main Contact Name",
+        "Main Contact Phone Office",
+        "Main Contact Phone Mobile",
+        "Main Contact Email"
+      ]
+    },
+    "termDates": [
+      {
+        "year": "2025/26",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2025/26",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2025/26",
+        "term": "Summer",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2026/27",
+        "term": "Summer",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Autumn",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Spring",
+        "status": "add_failed"
+      },
+      {
+        "year": "2027/28",
+        "term": "Summer",
+        "status": "add_failed"
+      }
+    ],
+    "fees": {
+      "filled": [],
+      "failed": [
+        "Per Term Local",
+        "Per Term Overseas",
+        "Annual Local",
+        "Annual Overseas",
+        "Registration Fee",
+        "Deposit Local",
+        "Deposit Overseas"
+      ]
+    }
+  }
+]

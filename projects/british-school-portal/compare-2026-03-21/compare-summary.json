@@ -1,0 +1,587 @@
+{
+  "generatedAt": "2026-03-20T18:15:56.033Z",
+  "outputDir": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21",
+  "school": {
+    "login": {
+      "landingUrl": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+      "title": "British School Portal",
+      "accountVisible": true,
+      "logoutVisible": true,
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/school-home.png",
+      "homeRouteCandidates": [
+        {
+          "text": "PROFILE",
+          "href": "/en/profile/school#/profile"
+        },
+        {
+          "text": "SCHOOL PHOTO",
+          "href": "/en/profile/school#/school_photo"
+        },
+        {
+          "text": "CHANGE PASSWORD",
+          "href": "/en/profile/school#/change_password"
+        },
+        {
+          "text": "FAQ LIST",
+          "href": "/en/profile/school#/faq"
+        },
+        {
+          "text": "SCHOOL ADMISSION LIST",
+          "href": "/en/profile/school#/school_admission_list"
+        },
+        {
+          "text": "SCHOOL ADMISSION SETTING",
+          "href": "/en/profile/school#/school_admission_setting"
+        },
+        {
+          "text": "ENQUIRY LIST",
+          "href": "/en/profile/school#/enquiry"
+        },
+        {
+          "text": "PARTNERSHIP APPLICATION",
+          "href": "/en/profile/school#/partnership_applies"
+        },
+        {
+          "text": "PARTNERED LIST",
+          "href": "/en/profile/school#/partnered"
+        },
+        {
+          "text": "REPORT",
+          "href": "/en/profile/school#/report"
+        },
+        {
+          "text": "MEMBERSHIP & TRANSACTION",
+          "href": "/en/profile/school#/transaction"
+        },
+        {
+          "text": "FEE SETTING",
+          "href": "/en/profile/school#/fee"
+        },
+        {
+          "text": "TERM DATES SETTING",
+          "href": "/en/profile/school#/term"
+        },
+        {
+          "text": "SCHOOLS VACANCIES SETTING",
+          "href": "/en/profile/school#/vacancies"
+        },
+        {
+          "text": "",
+          "href": "/profile/school#/enquiry"
+        },
+        {
+          "text": "",
+          "href": "/profile/school#/school_admission_list"
+        }
+      ],
+      "routeMatches": [
+        "/en/profile/school#/apply_school_form_option",
+        "/en/profile/school#/change_password",
+        "/en/profile/school#/enquiry",
+        "/en/profile/school#/faq",
+        "/en/profile/school#/fee",
+        "/en/profile/school#/partnered",
+        "/en/profile/school#/partnership_applies",
+        "/en/profile/school#/profile",
+        "/en/profile/school#/report",
+        "/en/profile/school#/school_admission_list",
+        "/en/profile/school#/school_admission_setting",
+        "/en/profile/school#/school_photo",
+        "/en/profile/school#/term",
+        "/en/profile/school#/transaction",
+        "/en/profile/school#/vacancies",
+        "/profile/school#/enquiry",
+        "/profile/school#/school_admission_list"
+      ],
+      "cookieNames": [
+        "acceptCookie",
+        "PHPSESSID",
+        "_gcl_au",
+        "IDE",
+        "G_ENABLED_IDPS",
+        "_gid",
+        "_gat_gtag_UA_182346688_1",
+        "_ga_36N4QJ6DF1",
+        "_ga_X571R7JSKQ",
+        "_ga",
+        "FCCDCF",
+        "FCNEC"
+      ],
+      "localStorageKeys": [
+        "_gcl_ls",
+        "google_ama_config"
+      ],
+      "notes": "登入後返回首頁，但 header/account dropdown DOM 內存在 school profile 相關入口。"
+    },
+    "profile": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/profile",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/school-profile.png",
+      "headingPreview": [
+        "PROFILE",
+        "School Information",
+        "Account",
+        "Contact",
+        "Login Information",
+        "Cookies and similar technologies"
+      ],
+      "textPreview": "BS PORTAL DEMO SCHOOL About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Photo Upload Change Password FAQ List Enquiry List School Admission List School Admission Setting Partnership Application Partnered List Report Membership & Transaction Fee Setting Term Dates Setting Schools Vacancies Setting PROFILE EDIT PROFILE School Information School Logo (Best resolution is 120px x 120px) Display Name of School BS Portal Demo School URN 999999999 UKPRN 162 Old URN 001 Display Email Main Office contact number (UK Only) Second Office contact number (UK Only) Head of School 177 178 179 PostCode of School (Main campus) 174 Address of School 169 172 173 United Kingdom Curriculum Covered Nursery /Pre-school (Age 2-4) Reception (Age 4-5) Year 1 (Age 5-6) Year 2 (Age 6-7) Year 3 (Age 7-8) Year 4 (Age 8-9) Year 5 (Age 9-10) Year 6 (Age 10-11) Year 7 (Age 11-12) Year 8 (Age 12-13) Year 9 (Age 13-14) Year 10 (Age 14-15) Year 11 (Age 15-16) Year 12 (Age 16-17) Year 13 (Age 17-18) Gender Group Mixed Boys Girls Residency Type Data from GOV.UK : 132 Full Boarding Half Boarding Day School Religious affiliation Non-denominational Christian"
+    },
+    "admission": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list",
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/school-admission-list.png",
+      "countVisible": 20,
+      "records": [
+        {
+          "phaseId": "54",
+          "source": "chu chu",
+          "status": "Rejected",
+          "submitDate": "2023-06-28 05:31:45",
+          "raw": "chu chu Application Rejected Application Submit Time: 2023-06-28 05:31:45 Detail"
+        },
+        {
+          "phaseId": "53",
+          "source": "Application Completed",
+          "status": "Completed",
+          "submitDate": "2022-08-19 19:17:00",
+          "raw": "Editor @BSP Application Completed Application Submit Time: 2022-08-19 19:17:00 Detail"
+        },
+        {
+          "phaseId": "52",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2022-08-19 19:07:53",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2022-08-19 19:07:53 Detail"
+        },
+        {
+          "phaseId": "49",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-11-22 13:35:44",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-11-22 13:35:44 Detail"
+        },
+        {
+          "phaseId": "48",
+          "source": "Application Completed",
+          "status": "Completed",
+          "submitDate": "2021-10-18 12:36:47",
+          "raw": "Editor @BSP Application Completed Application Submit Time: 2021-10-18 12:36:47 Detail"
+        },
+        {
+          "phaseId": "47",
+          "source": "Application Completed",
+          "status": "Completed",
+          "submitDate": "2021-10-18 12:27:07",
+          "raw": "Editor @BSP Application Completed Application Submit Time: 2021-10-18 12:27:07 Detail"
+        },
+        {
+          "phaseId": "46",
+          "source": "Application Completed",
+          "status": "Completed",
+          "submitDate": "2021-10-18 12:14:12",
+          "raw": "Editor @BSP Application Completed Application Submit Time: 2021-10-18 12:14:12 Detail"
+        },
+        {
+          "phaseId": "45",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-22 10:26:08",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-22 10:26:08 Detail"
+        },
+        {
+          "phaseId": "44",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-22 10:17:17",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-22 10:17:17 Detail"
+        },
+        {
+          "phaseId": "41",
+          "source": "Application Completed",
+          "status": "Completed",
+          "submitDate": "2021-07-21 11:52:57",
+          "raw": "Editor @BSP Application Completed Application Submit Time: 2021-07-21 11:52:57 Detail"
+        },
+        {
+          "phaseId": "40",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-21 11:39:40",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-21 11:39:40 Detail"
+        },
+        {
+          "phaseId": "37",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-20 20:20:42",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-20 20:20:42 Detail"
+        },
+        {
+          "phaseId": "36",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-20 19:56:07",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-20 19:56:07 Detail"
+        },
+        {
+          "phaseId": "35",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-20 19:49:00",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-20 19:49:00 Detail"
+        },
+        {
+          "phaseId": "33",
+          "source": "Application Completed",
+          "status": "Completed",
+          "submitDate": "2021-07-18 17:45:51",
+          "raw": "Editor @BSP Application Completed Application Submit Time: 2021-07-18 17:45:51 Detail"
+        },
+        {
+          "phaseId": "32",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 17:44:21",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-18 17:44:21 Detail"
+        },
+        {
+          "phaseId": "31",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:53:07",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-18 16:53:07 Detail"
+        },
+        {
+          "phaseId": "30",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:45:35",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-18 16:45:35 Detail"
+        },
+        {
+          "phaseId": "29",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:24:55",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-18 16:24:55 Detail"
+        },
+        {
+          "phaseId": "28",
+          "source": "Application Rejected",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 14:02:55",
+          "raw": "Editor @BSP Application Rejected Application Submit Time: 2021-07-18 14:02:55 Detail"
+        }
+      ],
+      "textPreview": "BS PORTAL DEMO SCHOOL About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Photo Upload Change Password FAQ List Enquiry List School Admission List School Admission Setting Partnership Application Partnered List Report Membership & Transaction Fee Setting Term Dates Setting Schools Vacancies Setting SCHOOL ADMISSION LIST Recruit List chu chu Application Rejected Application Submit Time: 2023-06-28 05:31:45 Detail Editor @BSP Application Completed Application Submit Time: 2022-08-19 19:17:00 Detail Editor @BSP Application Rejected Application Submit Time: 2022-08-19 19:07:53 Detail Editor @BSP Application Rejected Application Submit Time: 2021-11-22 13:35:44 Detail Editor @BSP Application Completed Application Submit Time: 2021-10-18 12:36:47 Detail Editor @BSP Application Completed Application Submit Time: 2021-10-18 12:27:07 Detail Editor @BSP Application Completed Application Submit Time: 2021-10-18 12:14:12 Detail Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-22 10:26:08 Detail Editor @BSP Application Rejected Application Submit Time: 2021-07-22 10:17:17 Detail Editor @BSP Application Completed Application Submit Time: 2021-07-21 11:52:57 Detail Editor @BSP Application Rejected Application Submit Time: 2021-07-21 11:39:40 Detail Editor @BSP Application Rejected Application Submit Time: 2021-07-20 20:20:42 Detail Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-20 19:56:07 Detail Editor @BSP Application Rejected Application Submit Time: 2021-07-20 19:49:00 Detail Editor @BSP Application Completed Application Submit Time: 2021-07-18 17:45:51 Detail Editor @BSP"
+    },
+    "routeProbe": {
+      "enProfileRoot": {
+        "url": "https://www.britishschoolportal.co.uk/en/profile/school#/",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/school-route-en-profile-root.png",
+        "textPreview": "BS PORTAL DEMO SCHOOL About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Photo Upload Change Password FAQ List Enquiry List School Admission List School Admission Setting Partnership Application Partnered List Report Membership & Transaction Fee Setting Term Dates Setting Schools Vacancies Setting PROFILE EDIT PROFILE School Informa"
+      },
+      "noEnProfileRoot": {
+        "url": "https://www.britishschoolportal.co.uk/profile/school#/",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/school-route-noen-profile-root.png",
+        "textPreview": "BS PORTAL DEMO SCHOOL About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Photo Upload Change Password FAQ List Enquiry List School Admission List School Admission Setting Partnership Application Partnered List Report Membership & Transaction Fee Setting Term Dates Setting Schools Vacancies Setting PROFILE EDIT PROFILE School Informa"
+      }
+    }
+  },
+  "consultant": {
+    "login": {
+      "landingUrl": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+      "title": "British School Portal",
+      "accountVisible": true,
+      "logoutVisible": true,
+      "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/consultant-home.png",
+      "homeRouteCandidates": [
+        {
+          "text": "PROFILE",
+          "href": "/en/profile/consultant#/profile"
+        },
+        {
+          "text": "CONSULTANT PHOTO",
+          "href": "/en/profile/consultant#/photo"
+        },
+        {
+          "text": "CHANGE PASSWORD",
+          "href": "/en/profile/consultant#/password"
+        },
+        {
+          "text": "Q&A LIST",
+          "href": "/en/profile/consultant#/faq"
+        },
+        {
+          "text": "ENQUIRY LIST",
+          "href": "/en/profile/consultant#/enquiry"
+        },
+        {
+          "text": "SCHOOL ADMISSION LIST",
+          "href": "/en/profile/consultant#/school_admission_list"
+        },
+        {
+          "text": "SCHOOL PARTNERSHIP APPLICATION",
+          "href": "/en/profile/consultant#/partner_applies"
+        },
+        {
+          "text": "PARTNERED SCHOOL",
+          "href": "/en/profile/consultant#/partner"
+        },
+        {
+          "text": "REPORT",
+          "href": "/en/profile/consultant#/report"
+        },
+        {
+          "text": "MEMBERSHIP & TRANSACTION",
+          "href": "/en/profile/consultant#/transaction"
+        },
+        {
+          "text": "",
+          "href": "/profile/consultant#/enquiry"
+        },
+        {
+          "text": "",
+          "href": "/profile/consultant#/school_admission_list"
+        }
+      ],
+      "routeMatches": [
+        "/en/profile/consultant#/enquiry",
+        "/en/profile/consultant#/faq",
+        "/en/profile/consultant#/partner",
+        "/en/profile/consultant#/partner_applies",
+        "/en/profile/consultant#/password",
+        "/en/profile/consultant#/photo",
+        "/en/profile/consultant#/profile",
+        "/en/profile/consultant#/report",
+        "/en/profile/consultant#/school_admission_list",
+        "/en/profile/consultant#/transaction",
+        "/profile/consultant#/enquiry",
+        "/profile/consultant#/school_admission_list"
+      ],
+      "cookieNames": [
+        "acceptCookie",
+        "PHPSESSID",
+        "_gcl_au",
+        "IDE",
+        "_gid",
+        "_gat_gtag_UA_182346688_1",
+        "G_ENABLED_IDPS",
+        "_ga_36N4QJ6DF1",
+        "_ga_X571R7JSKQ",
+        "_ga",
+        "__gads",
+        "__gpi",
+        "__eoi",
+        "uid",
+        "FCCDCF",
+        "suid",
+        "_tracker",
+        "obuid",
+        "_pangle",
+        "OAU",
+        "__cf_bm",
+        "FCNEC"
+      ],
+      "localStorageKeys": [
+        "google_adsense_settings",
+        "_gcl_ls",
+        "google_ama_config"
+      ],
+      "notes": "登入後同樣返回首頁，但 account dropdown DOM 內存在 consultant profile modules。"
+    },
+    "modules": {
+      "enquiry": {
+        "url": "https://www.britishschoolportal.co.uk/en/profile/consultant#/enquiry",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/consultant-enquiry.png",
+        "headings": [
+          "ENQUIRY LIST",
+          "@BSP Editor",
+          "British School Portal Business Account",
+          "BSP Testing Account 243 BSP Testing Account 243",
+          "Cookies and similar technologies"
+        ],
+        "textPreview": "BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Change Password Photo Upload FAQ List Enquiry List School Admission List School Partnership Application Partnered School Report Membership & Transaction ENQUIRY LIST All School Consultant Business Student @BSP Editor 2021-06-18 10:25:45 British School Portal Business Account London, United Kingdom 2021-04-30 12:45:22 BSP Testing Account 243 BSP Testing Account 243 2021-04-30 13:23:16",
+        "summary": "有 tabs：All / School / Consultant / Business / Student；見到 2021-06-18 10:25:45 enquiry（British School Portal Business Account）；見到 BSP Testing Account 243 enquiry",
+        "phaseLinks": []
+      },
+      "school_admission_list": {
+        "url": "https://www.britishschoolportal.co.uk/en/profile/consultant#/school_admission_list",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/consultant-school_admission_list.png",
+        "headings": [
+          "SCHOOL ADMISSION LIST",
+          "School Admission List",
+          "Editor @BSP",
+          "Cookies and similar technologies"
+        ],
+        "textPreview": "BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Change Password Photo Upload FAQ List Enquiry List School Admission List School Partnership Application Partnered School Report Membership & Transaction SCHOOL ADMISSION LIST School Admission List Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-22 10:26:08 Detail Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-20 19:56:07 Detail Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:45:35 Detail Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:24:55 Detail",
+        "summary": "可見 4 筆 admission 記錄",
+        "phaseLinks": [
+          {
+            "text": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-22 10:26:08 Detail",
+            "href": "#/phase/45"
+          },
+          {
+            "text": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-20 19:56:07 Detail",
+            "href": "#/phase/36"
+          },
+          {
+            "text": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:45:35 Detail",
+            "href": "#/phase/30"
+          },
+          {
+            "text": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:24:55 Detail",
+            "href": "#/phase/29"
+          }
+        ],
+        "records": [
+          {
+            "phaseId": "45",
+            "schoolName": "BS Portal Demo School",
+            "status": "Rejected",
+            "submitDate": "2021-07-22 10:26:08",
+            "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-22 10:26:08 Detail"
+          },
+          {
+            "phaseId": "36",
+            "schoolName": "BS Portal Demo School",
+            "status": "Rejected",
+            "submitDate": "2021-07-20 19:56:07",
+            "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-20 19:56:07 Detail"
+          },
+          {
+            "phaseId": "30",
+            "schoolName": "BS Portal Demo School",
+            "status": "Rejected",
+            "submitDate": "2021-07-18 16:45:35",
+            "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:45:35 Detail"
+          },
+          {
+            "phaseId": "29",
+            "schoolName": "BS Portal Demo School",
+            "status": "Rejected",
+            "submitDate": "2021-07-18 16:24:55",
+            "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:24:55 Detail"
+          }
+        ]
+      },
+      "partner_applies": {
+        "url": "https://www.britishschoolportal.co.uk/en/profile/consultant#/partner_applies",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/consultant-partner_applies.png",
+        "headings": [
+          "SCHOOL PARTNERSHIP APPLICATION",
+          "Cookies and similar technologies"
+        ],
+        "textPreview": "BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Change Password Photo Upload FAQ List Enquiry List School Admission List School Partnership Application Partnered School Report Membership & Transaction SCHOOL PARTNERSHIP APPLICATION No Partnership Application",
+        "summary": "空白狀態：No Partnership Application",
+        "phaseLinks": []
+      },
+      "partner": {
+        "url": "https://www.britishschoolportal.co.uk/en/profile/consultant#/partner",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/consultant-partner.png",
+        "headings": [
+          "PARTNERED SCHOOL",
+          "BS Portal Demo School",
+          "Cookies and similar technologies"
+        ],
+        "textPreview": "BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Change Password Photo Upload FAQ List Enquiry List School Admission List School Partnership Application Partnered School Report Membership & Transaction PARTNERED SCHOOL BS Portal Demo School 169, 172, 173, United Kingdom, 174 176 WITHDRAW FROM THIS PARTNERSHIP",
+        "summary": "見到已合作學校 BS Portal Demo School",
+        "phaseLinks": []
+      },
+      "report": {
+        "url": "https://www.britishschoolportal.co.uk/en/profile/consultant#/report",
+        "screenshot": "/home/openclaw/.openclaw/workspace/data/projects/british-school-portal/compare-2026-03-21/consultant-report.png",
+        "headings": [
+          "REPORT",
+          "Report Period",
+          "Cookies and similar technologies"
+        ],
+        "textPreview": "BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁 HOME PROFILE Profile Change Password Photo Upload FAQ List Enquiry List School Admission List School Partnership Application Partnered School Report Membership & Transaction REPORT Report Period From To Type Data Total Application of that year 4 Success Applicantion 0 Success Rate 0% New Applicantion 0 Applicantion in progress 0 Total rejected application of that year 4 Gender Boys: 4 Girls: 0 Country --Please Select: 4 Applied Curriculum : 4 Partnership list 1",
+        "summary": "Total Application of that year: 4；Success Applicantion: 0；Success Rate: 0%；Total rejected application of that year: 4；Partnership list: 1",
+        "phaseLinks": []
+      }
+    }
+  },
+  "comparison": {
+    "consultantAdmissionCount": 4,
+    "schoolAdmissionCount": 20,
+    "consultantMatches": [
+      {
+        "consultant": {
+          "phaseId": "45",
+          "schoolName": "BS Portal Demo School",
+          "status": "Rejected",
+          "submitDate": "2021-07-22 10:26:08",
+          "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-22 10:26:08 Detail"
+        },
+        "schoolMatch": {
+          "phaseId": "45",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-22 10:26:08",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-22 10:26:08 Detail"
+        }
+      },
+      {
+        "consultant": {
+          "phaseId": "36",
+          "schoolName": "BS Portal Demo School",
+          "status": "Rejected",
+          "submitDate": "2021-07-20 19:56:07",
+          "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-20 19:56:07 Detail"
+        },
+        "schoolMatch": {
+          "phaseId": "36",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-20 19:56:07",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-20 19:56:07 Detail"
+        }
+      },
+      {
+        "consultant": {
+          "phaseId": "30",
+          "schoolName": "BS Portal Demo School",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:45:35",
+          "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:45:35 Detail"
+        },
+        "schoolMatch": {
+          "phaseId": "30",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:45:35",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-18 16:45:35 Detail"
+        }
+      },
+      {
+        "consultant": {
+          "phaseId": "29",
+          "schoolName": "BS Portal Demo School",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:24:55",
+          "raw": "Editor @BSP BS Portal Demo School , From Application Rejected Submit date: 2021-07-18 16:24:55 Detail"
+        },
+        "schoolMatch": {
+          "phaseId": "29",
+          "source": "British School Portal - Educational Consultancy Service",
+          "status": "Rejected",
+          "submitDate": "2021-07-18 16:24:55",
+          "raw": "Editor @BSP British School Portal - Educational Consultancy Service Application Rejected Application Submit Time: 2021-07-18 16:24:55 Detail"
+        }
+      }
+    ],
+    "overlapSubmitDates": [
+      "2021-07-22 10:26:08",
+      "2021-07-20 19:56:07",
+      "2021-07-18 16:45:35",
+      "2021-07-18 16:24:55"
+    ],
+    "consultantOnlySubmitDates": [],
+    "analysis": {
+      "schoolLandingBehavior": "兩個帳戶登入後都先回 /en/?msg=login-success 首頁，不會自動進 profile dashboard。",
+      "schoolEntranceConclusion": "school 端並非無入口；首頁 account dropdown / DOM 已提供 /en/profile/school#/profile、/en/profile/school#/school_admission_list 及無 /en 版本路徑，而且直接輸入 route 可正常打開。",
+      "admissionCompareConclusion": "consultant 端見到的 4 筆 admission records，school 端全部都見到對應同 submit time 的紀錄；school 端可見資料範圍更大。",
+      "diagnosis": "問題核心較似導航/UX，而唔係 school 帳戶無權限。登入後只回首頁會令人誤以為無 dashboard；但實際 school profile/admission routes 可用。consultant admission list 應只顯示屬於該 consultant 的紀錄；school admission list 顯示本校所有申請紀錄，因此數量更多。"
+    }
+  }
+}

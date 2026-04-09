@@ -1,0 +1,68 @@
+import { H as Head } from "./components-7B7l7irn.js";
+import { defineComponent, withCtx, createVNode, useSSRContext } from "vue";
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderList, ssrInterpolate } from "vue/server-renderer";
+import "../server.mjs";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/ofetch/dist/node.mjs";
+import "#internal/nuxt/paths";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/hookable/dist/index.mjs";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/unctx/dist/index.mjs";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/h3/dist/index.mjs";
+import "vue-router";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/defu/dist/defu.mjs";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/ufo/dist/index.mjs";
+import "tailwindcss/colors";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/klona/dist/index.mjs";
+import "/home/openclaw/.openclaw/workspace/data/projects/personai/website/node_modules/@unhead/vue/dist/index.mjs";
+import "@iconify/vue";
+const _sfc_main = /* @__PURE__ */ defineComponent({
+  __name: "privacy",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const sections = [
+      { title: "1. 資料收集", content: "PersonAI 收集你在登記、使用服務時提供的個人資料，包括姓名、電郵地址、WhatsApp 號碼、公司名稱及服務使用記錄。" },
+      { title: "2. 資料使用", content: "所收集的資料用於提供 PersonAI 服務、回覆查詢、發送服務通知及改善服務質素。我們不會將你的個人資料用於廣告定向或出售予第三方。" },
+      { title: "3. 資料儲存", content: "你的對話記錄及個人資料儲存於 Tencent Cloud 亞太區（日本）數據中心，受企業級安全措施保護，唔會傳送至美國或其他司法管轄區。" },
+      { title: "4. 資料安全", content: "我們採用 TLS 1.3 加密傳輸、端到端加密儲存、定期安全審計及嚴格的存取控制措施，確保你的資料安全。" },
+      { title: "5. AI 模型訓練", content: "我們承諾不會使用任何用戶對話記錄或個人資料訓練 AI 模型。你的業務資料只用於你自己的 PersonAI 服務。" },
+      { title: "6. 香港 PDPO 合規", content: "PersonAI 完全符合香港《個人資料（私隱）條例》（PDPO）的要求，包括資料收集目的告知、資料存取權利及資料保留期限。" },
+      { title: "7. 你的權利", content: "你有權存取、更正或要求刪除你的個人資料。如需行使上述權利，請聯絡我們。" },
+      { title: "8. Cookie 使用", content: "我們的網站使用必要的 Cookie 確保網站正常運作及統計訪問數據，以改善用戶體驗。" },
+      { title: "9. 政策更新", content: "我們可能不定期更新本私隱政策。重大變更時，我們會以 WhatsApp 或電郵通知現有用戶。" }
+    ];
+    return (_ctx, _push, _parent, _attrs) => {
+      const _component_Head = Head;
+      _push(`<main${ssrRenderAttrs(_attrs)}>`);
+      _push(ssrRenderComponent(_component_Head, null, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<title${_scopeId}>私隱政策 | PersonAI</title><meta name="description" content="PersonAI 私隱政策。了解我們如何收集、使用和保護你的個人資料，符合香港 PDPO 要求。"${_scopeId}>`);
+          } else {
+            return [
+              createVNode("title", null, "私隱政策 | PersonAI"),
+              createVNode("meta", {
+                name: "description",
+                content: "PersonAI 私隱政策。了解我們如何收集、使用和保護你的個人資料，符合香港 PDPO 要求。"
+              })
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`<section class="section-bg py-16"><div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8"><h1 class="text-3xl font-black text-gray-900 mb-2">私隱政策</h1><p class="text-gray-400 text-sm mb-8">最後更新：2026 年 3 月</p><div class="prose prose-gray max-w-none space-y-6"><!--[-->`);
+      ssrRenderList(sections, (section) => {
+        _push(`<div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"><h2 class="font-black text-lg text-gray-900 mb-3">${ssrInterpolate(section.title)}</h2><p class="text-gray-600 text-sm leading-relaxed">${ssrInterpolate(section.content)}</p></div>`);
+      });
+      _push(`<!--]--><div class="bg-blue-50 rounded-2xl p-6 border border-blue-100"><p class="text-blue-700 text-sm">如有任何關於私隱的問題，請 WhatsApp <strong>+852 9645 6787</strong> 或 Email <strong>eric@hostlink.com.hk</strong> 聯絡我哋。</p></div></div></div></section></main>`);
+    };
+  }
+});
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/privacy.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+export {
+  _sfc_main as default
+};
+//# sourceMappingURL=privacy-DywV-4Xc.js.map

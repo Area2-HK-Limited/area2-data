@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Green Tea SEM Report v7</title>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    
+    @page {
+        size: A4;
+        margin: 1.5cm 2cm;
+        @bottom-center {
+            content: "Page " counter(page);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 10px;
+            color: #666;
+        }
+    }
+    
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+        color: #333;
+        line-height: 1.5;
+        font-size: 12px;
+        margin: 0;
+        background-color: #ffffff;
+    }
+
+    /* Colors */
+    :root {
+        --primary: #1A4F8A;
+        --success: #2E7D32;
+        --warning: #E65100;
+        --danger: #D32F2F;
+        --bg: #F5F7FA;
+        --stripe: #EBF3FF;
+        --guide-bg: #E1F5FE;
+    }
+
+    h1, h2, h3 { color: var(--primary); margin-top: 20px; margin-bottom: 10px; }
+    h1 { font-size: 24px; font-weight: 700; }
+    h2 { font-size: 18px; border-bottom: 2px solid var(--primary); padding-bottom: 5px; margin-top: 30px; page-break-after: avoid; }
+    h3 { font-size: 14px; color: #555; font-weight: 700; margin-top: 15px; page-break-after: avoid; }
+
+    /* Cover Page */
+    .cover {
+        height: 260mm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(135deg, #1A4F8A 0%, #0D2B4D 100%);
+        color: white;
+        margin: -1.5cm -2cm;
+        padding: 2cm;
+        page-break-after: always;
+    }
+    .cover img.logo-img {
+        width: 180px;
+        border-radius: 12px;
+        background: white;
+        padding: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        margin-bottom: 40px;
+    }
+    .cover h1 { color: white; font-size: 36px; border: none; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+    .cover .subtitle { font-size: 18px; opacity: 0.9; margin-bottom: 40px; letter-spacing: 1px; }
+    .cover .meta { margin-top: auto; font-size: 12px; opacity: 0.8; }
+    
+    /* Reading Guide */
+    .guide-section {
+        background-color: var(--guide-bg);
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+    .guide-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .guide-card {
+        background: white;
+        padding: 12px;
+        border-radius: 6px;
+        border-left: 4px solid var(--primary);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .guide-term { color: var(--primary); font-weight: 700; font-size: 13px; margin-bottom: 5px; display: block; }
+    .guide-def { font-size: 11px; margin-bottom: 4px; display: block; }
+    .guide-analogy { font-size: 10px; color: #666; font-style: italic; display: block; margin-bottom: 4px; }
+    .guide-bench { font-size: 10px; color: var(--success); font-weight: 700; display: block; background: #E8F5E9; padding: 2px 5px; border-radius: 3px; display: inline-block; }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; margin-bottom: 15px; font-size: 10px; }
+    th { background-color: var(--primary); color: white; padding: 8px; text-align: left; font-weight: 500; }
+    td { padding: 6px 8px; border-bottom: 1px solid #ddd; }
+    tr:nth-child(even) { background-color: var(--stripe); }
+    
+    /* Insights Box */
+    .insight-box {
+        padding: 12px;
+        border-radius: 6px;
+        margin: 15px 0 25px 0;
+        font-size: 11px;
+        border-left: 4px solid #ccc;
+    }
+    .insight-orange { background-color: #FFF3E0; border-left-color: var(--warning); color: #BF360C; }
+    .insight-red { background-color: #FFEBEE; border-left-color: var(--danger); color: #B71C1C; }
+    .insight-green { background-color: #E8F5E9; border-left-color: var(--success); color: #1B5E20; }
+    .insight-title { font-weight: 700; display: block; margin-bottom: 4px; font-size: 12px; }
+    
+    /* KPI Grid */
+    .kpi-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; }
+    .kpi-card {
+        flex: 1 1 22%; background: white; border: 1px solid #ddd; padding: 15px;
+        border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: center;
+    }
+    .kpi-card.success { border-top: 3px solid var(--success); }
+    .kpi-card.warning { border-top: 3px solid var(--warning); }
+    .kpi-card.neutral { border-top: 3px solid #777; }
+    .kpi-value { font-size: 18px; font-weight: 700; color: var(--primary); display: block; margin-bottom: 4px; }
+    .kpi-label { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* Charts */
+    .chart-container { margin: 20px 0; padding: 15px; background: var(--bg); border-radius: 8px; }
+    .bar-row { display: flex; align-items: center; margin-bottom: 8px; font-size: 11px; }
+    .bar-label { width: 120px; flex-shrink: 0; font-weight: 500; }
+    .bar-track { flex-grow: 1; background: #e0e0e0; height: 16px; border-radius: 3px; overflow: hidden; margin: 0 10px; }
+    .bar-fill { height: 100%; background: var(--primary); display: flex; align-items: center; padding-left: 5px; color: white; font-size: 9px; }
+    .bar-value { width: 40px; text-align: right; font-weight: 700; }
+    
+    /* Recommendations */
+    .rec-item { margin-bottom: 15px; background: white; border: 1px solid #eee; padding: 15px; border-radius: 4px; page-break-inside: avoid; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .rec-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .rec-title { font-weight: 700; color: var(--primary); font-size: 13px; }
+    .rec-tag { font-size: 10px; padding: 3px 8px; border-radius: 4px; color: white; font-weight: 700; }
+    .tag-0 { background: #B71C1C; } /* Immediate */
+    .tag-1 { background: #D32F2F; } /* High */
+    .tag-2, .tag-3 { background: #F57C00; }
+    .tag-4, .tag-5 { background: #1976D2; }
+    .rec-content p { margin: 4px 0; font-size: 11px; }
+    .rec-label { font-weight: 700; color: #555; }
+
+    .highlight-gold { background-color: #FFF8E1 !important; border-left: 3px solid #FFC107; }
+    .page-break { page-break-after: always; }
+    
+    .footer-section { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; font-size: 9px; color: #777; text-align: center; }
+</style>
+
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div class="cover">
+        <!-- Logo Image with white container -->
+        <img src="file:///home/openclaw/.openclaw/workspace/data/projects/green-tea-sem/area2_logo.jpg" alt="Area2 Logo" class="logo-img">
+        
+        <h1>Green Tea</h1>
+        <div class="subtitle">Google Ads 成效分析報告</div>
+        <div style="width: 50px; height: 2px; background: white; margin: 20px 0;"></div>
+        <p>報告期間：2026-01-22 至 2026-02-22</p>
+        <!-- Account number removed as requested -->
+        
+        <div class="meta">
+            <p>製作：Area2 (HK) Limited 廣告顧問團隊</p>
+            <p>日期：2026-03-12</p>
+        </div>
+    </div>
+
+    <!-- Page 2: How to Read This Report -->
+    <h2>如何閱讀本報告</h2>
+    <p>為了讓閣下更輕鬆掌握廣告成效，我們整理了報告中常見的專業術語解釋。</p>
+    
+    <div class="guide-section">
+        <div class="guide-grid">
+            <div class="guide-card">
+                <span class="guide-term">展示次數 (Impressions)</span>
+                <span class="guide-def">廣告被看見幾多次</span>
+                <span class="guide-analogy">類比：好比廣告牌俾幾多人路過睇過</span>
+                <span class="guide-bench">越多越好，代表觸及面廣</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">點擊次數 (Clicks)</span>
+                <span class="guide-def">幾多人見到廣告後主動按入去</span>
+                <span class="guide-analogy">類比：幾多人見到招牌後走入去間舖</span>
+                <span class="guide-bench">越多越好</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">點擊率 (CTR)</span>
+                <span class="guide-def">100個見到廣告的人中，幾多個會點擊</span>
+                <span class="guide-analogy">計算：點擊 ÷ 展示 × 100%</span>
+                <span class="guide-bench">本期：2.14% (✅ 正常水平)</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">每次點擊成本 (CPC)</span>
+                <span class="guide-def">每一個點擊平均花幾多錢</span>
+                <span class="guide-analogy">類比：每一個人走入舖的代價</span>
+                <span class="guide-bench">本期：HK$1.57 (✅ 合理)</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">轉換 (Conversion)</span>
+                <span class="guide-def">用戶點入廣告後完成目標（填表/購買）</span>
+                <span class="guide-analogy">類比：走入舖後真係買嘢的顧客</span>
+                <span class="guide-bench">廣告最核心目標</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">每次轉換成本 (CPA)</span>
+                <span class="guide-def">成功獲得一個客人平均花幾多錢</span>
+                <span class="guide-analogy">類比：成功「追到一個客」的成本</span>
+                <span class="guide-bench">本期：HK$46.11 (✅ 合理)</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">出價 (Bid)</span>
+                <span class="guide-def">願意為每次點擊出多少錢的上限</span>
+                <span class="guide-analogy">類比：拍賣競價</span>
+                <span class="guide-bench">影響廣告排名</span>
+            </div>
+            
+            <div class="guide-card">
+                <span class="guide-term">投資回報率 (ROAS)</span>
+                <span class="guide-def">每花 $1 廣告費，帶來幾多 $$ 收入</span>
+                <span class="guide-analogy">類比：投資回報率</span>
+                <span class="guide-bench">建議設置收入追蹤以計算</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-break"></div>
+
+    <!-- Page 3: Overview & Campaigns -->
+    <h2>管理層摘要 & 關鍵指標</h2>
+    <p style="margin-bottom: 20px;">本期投入 <b>HK$1,427.31</b>，獲得 <b>907</b> 次點擊。香港市場轉換表現穩定（CPA HK$46.11），日本市場點擊率優異但需完善追蹤。</p>
+    
+    <div class="kpi-grid">
+        <div class="kpi-card neutral"><span class="kpi-value">HK$1,427</span><span class="kpi-label">總費用</span></div>
+        <div class="kpi-card success"><span class="kpi-value">907</span><span class="kpi-label">總點擊</span></div>
+        <div class="kpi-card neutral"><span class="kpi-value">42k</span><span class="kpi-label">總展示</span></div>
+        <div class="kpi-card success"><span class="kpi-value">2.14%</span><span class="kpi-label">整體 CTR</span></div>
+        <div class="kpi-card success"><span class="kpi-value">HK$1.57</span><span class="kpi-label">平均 CPC</span></div>
+        <div class="kpi-card success"><span class="kpi-value">24</span><span class="kpi-label">總轉換</span></div>
+        <div class="kpi-card success"><span class="kpi-value">HK$46</span><span class="kpi-label">HK CPA</span></div>
+        <div class="kpi-card warning"><span class="kpi-value">3.05%</span><span class="kpi-label">JP CTR</span></div>
+    </div>
+    
+    <h3>Campaign 詳細數據</h3>
+    <table>
+        <thead><tr><th>指標</th><th>Green Tea - HK</th><th>Green Tea - JP</th><th>合計/平均</th></tr></thead>
+        <tbody>
+        <tr><td>廣告費用</td><td>HK$1,106.63</td><td>HK$320.68</td><td>HK$1,427.31</td></tr>
+        <tr><td>點擊次數</td><td>620</td><td>287</td><td>907</td></tr>
+        <tr><td>展示次數</td><td>32,987</td><td>9,418</td><td>42,405</td></tr>
+        <tr><td>點擊率 (CTR)</td><td>1.88%</td><td>3.05%</td><td>2.14%</td></tr>
+        <tr><td>平均 CPC</td><td>HK$1.78</td><td>HK$1.12</td><td>HK$1.57</td></tr>
+        <tr><td>轉換次數</td><td>24</td><td>0</td><td>24</td></tr>
+        <tr><td>CPA</td><td>HK$46.11</td><td>-</td><td>HK$59.47</td></tr>
+        </tbody>
+    </table>
+
+    <div class="page-break"></div>
+
+    <!-- Page 4: Detailed Analysis -->
+    <h2>投放成效深度分析</h2>
+    
+    <h3>1. 裝置使用分析 — 誰在用甚麼裝置見到廣告？</h3>
+    <div style="display: flex; gap: 20px;">
+        <div style="flex: 1;">
+            <h4>Green Tea - HK</h4>
+            <table>
+                <thead><tr><th>裝置</th><th>點擊</th><th>費用</th><th>轉換</th><th>CPA</th></tr></thead>
+                <tbody>
+                <tr><td>手機</td><td>480</td><td>HK$850</td><td>6</td><td>HK$141.71</td></tr>
+                <tr class="highlight-gold"><td>平板</td><td>140</td><td>HK$255</td><td>18</td><td>HK$14.21</td></tr>
+                <tr><td>電腦</td><td>0</td><td>HK$0.5</td><td>0</td><td>-</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="flex: 1;">
+            <h4>Green Tea - JP</h4>
+            <table>
+                <thead><tr><th>裝置</th><th>點擊</th><th>費用</th><th>轉換</th></tr></thead>
+                <tbody>
+                <tr><td>手機</td><td>280</td><td>HK$312</td><td>0</td></tr>
+                <tr><td>平板</td><td>6</td><td>HK$7</td><td>0</td></tr>
+                <tr><td>電腦</td><td>1</td><td>HK$0.6</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="insight-box insight-orange">
+        <span class="insight-title">⚡ 關鍵洞察：平板效益極高</span>
+        HK 市場 75% 轉換（18/24）來自平板電腦，CPA 僅 HK$14.21（比手機低 10 倍！）。手機雖然點擊多，但 CPA 高達 HK$141，效益較差。建議大幅調高平板出價。
+    </div>
+
+    <h3>2. 廣告頻道效益 — 錢花喺邊度最值？</h3>
+    <table>
+        <thead><tr><th>頻道 (HK)</th><th>展示</th><th>點擊</th><th>費用</th><th>轉換</th><th>CPA</th><th>評估</th></tr></thead>
+        <tbody>
+        <tr class="highlight-gold"><td>Display Network</td><td>22,501</td><td>428</td><td>HK$607.29</td><td>24</td><td>HK$25.30</td><td>✅ 最高效</td></tr>
+        <tr><td>YouTube</td><td>6,373</td><td>83</td><td>HK$203.65</td><td>0</td><td>-</td><td>❌ 無轉換</td></tr>
+        <tr><td>搜尋/探索</td><td>4,112</td><td>109</td><td>HK$295.70</td><td>0</td><td>-</td><td>❌ 無轉換</td></tr>
+        </tbody>
+    </table>
+    
+    <div class="insight-box insight-red">
+        <span class="insight-title">⚠️ 預算警示：無效花費佔比高</span>
+        YouTube 及探索頻道共燒 HK$499.35，但 0 次轉換。相反，Google 多媒體廣告聯盟 (Display) 貢獻了 100% 轉換，CPA 低至 HK$25.30。建議立即暫停 YouTube 及探索投放。
+    </div>
+
+    <h3>3. 廣告展示位置分佈 (Display)</h3>
+    <div class="chart-container">
+        <div class="bar-row"><div class="bar-label">流動應用軟件</div><div class="bar-track"><div class="bar-fill" style="width: 52.1%"></div></div><div class="bar-value">52.1%</div></div>
+        <div class="bar-row"><div class="bar-label">YouTube 影片</div><div class="bar-track"><div class="bar-fill" style="width: 29.4%"></div></div><div class="bar-value">29.4%</div></div>
+        <div class="bar-row"><div class="bar-label">網站</div><div class="bar-track"><div class="bar-fill" style="width: 21.4%"></div></div><div class="bar-value">21.4%</div></div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- Page 5: Recommendations -->
+    <h2>優化建議與行動計劃</h2>
+    
+    <div class="recommendations">
+        <!-- P0 Recommendation -->
+        <div class="rec-item" style="border-left: 5px solid #B71C1C;">
+            <div class="rec-header">
+                <span class="rec-title">⚡ 立即行動：大幅調整裝置出價</span>
+                <span class="rec-tag tag-0">P0 緊急</span>
+            </div>
+            <div class="rec-content">
+                <p><span class="rec-label">發現：</span>平板 CPA (HK$14) 比手機 (HK$141) 平 10 倍，轉換率極高。</p>
+                <p><span class="rec-label">行動：</span>1. 平板電腦出價調整 <b>+50%</b> ⬆️<br>2. 手機出價調整 <b>-30%</b> ⬇️</p>
+                <p><span class="rec-label">預期：</span>CPA 降低 20-30%，同預算下多 3-5 個轉換。</p>
+            </div>
+        </div>
+
+        <!-- P1 Recommendation -->
+        <div class="rec-item" style="border-left: 5px solid #D32F2F;">
+            <div class="rec-header">
+                <span class="rec-title">⚡ 立即行動：停止 YouTube 及探索投放</span>
+                <span class="rec-tag tag-1">P1 重要</span>
+            </div>
+            <div class="rec-content">
+                <p><span class="rec-label">發現：</span>YouTube + 探索共燒 HK$499 (35% 預算) 但 0 轉換。</p>
+                <p><span class="rec-label">行動：</span>在 Performance Max / Display 設定中排除 YouTube 及探索頻道，將預算集中在 Display Network。</p>
+                <p><span class="rec-label">預期：</span>節省 35% 預算，重投 Display 可多獲 6-8 個轉換。</p>
+            </div>
+        </div>
+
+        <!-- P2 Recommendation -->
+        <div class="rec-item">
+            <div class="rec-header">
+                <span class="rec-title">#3 立即為 JP 市場設置轉換追蹤</span>
+                <span class="rec-tag tag-2">P2</span>
+            </div>
+            <div class="rec-content">
+                <p><span class="rec-label">行動：</span>為 Green Tea - JP 設置轉換動作（表單/購買）。</p>
+                <p><span class="rec-label">原因：</span>JP CTR 達 3.05% 表現優異，需確認實際回報以決定擴大投放。</p>
+            </div>
+        </div>
+        
+        <!-- P3 Recommendation -->
+        <div class="rec-item">
+            <div class="rec-header">
+                <span class="rec-title">#4 集中資源於最佳時段</span>
+                <span class="rec-tag tag-3">P3</span>
+            </div>
+            <div class="rec-content">
+                <p><span class="rec-label">行動：</span>重點投放 <b>週六 09:00-13:00</b> 及 <b>週四 14:00-19:00</b>。</p>
+                <p><span class="rec-label">預期：</span>配合裝置調整，將整體 CPA 壓至 HK$35 以下。</p>
+            </div>
+        </div>
+        
+        <!-- P4 Recommendation -->
+        <div class="rec-item">
+            <div class="rec-header">
+                <span class="rec-title">#5 優化廣告刊登位置</span>
+                <span class="rec-tag tag-4">P4</span>
+            </div>
+            <div class="rec-content">
+                <p><span class="rec-label">行動：</span>排除低效流動應用軟件（遊戲類 App）。</p>
+                <p><span class="rec-label">預期：</span>提升流量質素，減少誤點擊。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-section">
+        <p><b>免責聲明：</b>本報告基於 Google Ads 官方數據製作。所有建議僅供參考。</p>
+        <p>Area2 (HK) Limited | 旺角彌敦道 610 號荷李活商業中心 18 樓 1805-06 室 | info@area2.com</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+URL: https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting
+
+=== PAGE TEXT ===
+ DEMO SCHOOL 01
+About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁
+HOME
+PROFILE
+ Profile
+ Photo Upload
+ Change Password
+ FAQ List
+ Enquiry List
+ School Admission List
+ School Admission Setting
+ Partnered List
+ Report
+ Membership & Transaction
+ Fee Setting
+ Term Dates Setting
+ Schools Vacancies Setting
+SCHOOL ADMISSIONSETTING
+Setting
+School apply function
+EnableDisable
+Application Phase 
+SAVE
+COOKIES AND SIMILAR TECHNOLOGIES
+We use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the "Accept" button means you accept analytics and cookies. For more information please refer to "Privacy Policy".
+Accept Cancel
+
+=== TOGGLES ===
+[]
+
+=== INPUTS ===
+[{'label': 'Enable', 'type': 'radio', 'value': 'true'}, {'label': 'Disable', 'type': 'radio', 'value': 'false'}]
+
+=== RADIO STATE ===
+[{'name': 'apply', 'value': 'true', 'checked': False, 'id': 'apply_enable', 'labelText': 'Enable'}, {'name': 'apply', 'value': 'false', 'checked': True, 'id': 'apply_disable', 'labelText': 'Disable'}]
+Phase: []

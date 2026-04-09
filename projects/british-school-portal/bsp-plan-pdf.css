@@ -1,0 +1,50 @@
+@page {
+  size: A4;
+  margin: 14mm 12mm 16mm 12mm;
+}
+body {
+  font-family: 'Noto Sans CJK TC', 'Noto Sans CJK SC', 'Noto Sans TC', 'PingFang TC', sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.65;
+  color: #222;
+}
+h1, h2, h3, h4 {
+  color: #0f3460;
+  margin-top: 1.1em;
+  margin-bottom: 0.45em;
+  page-break-after: avoid;
+}
+h1 { font-size: 22pt; border-bottom: 2px solid #ca132a; padding-bottom: 6px; }
+h2 { font-size: 16pt; border-left: 4px solid #ca132a; padding-left: 8px; }
+h3 { font-size: 13pt; }
+p, li { orphans: 3; widows: 3; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 16px;
+  table-layout: fixed;
+  font-size: 9pt;
+}
+th, td {
+  border: 1px solid #d7d7d7;
+  padding: 6px 7px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+th {
+  background: #f4f7fb;
+  color: #0f3460;
+}
+blockquote {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-left: 4px solid #ca132a;
+  background: #fafafa;
+}
+code {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 8.5pt;
+}
+hr { border: 0; border-top: 1px solid #ddd; }
+ul, ol { padding-left: 20px; }
+strong { color: #111; }

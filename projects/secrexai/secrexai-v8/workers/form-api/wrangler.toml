@@ -1,0 +1,12 @@
+name = "form-api"
+main = "index.js"
+compatibility_date = "2024-01-01"
+account_id = "26231b88e55400605c8294af1e0ef4bb"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "form-submissions"
+database_id = "cd77a236-65f3-4f9a-9ffd-c440dd48addd"
+
+[vars]
+STRIPE_PUBLISHABLE_KEY = "pk_live_51Pkn9aDif42x0i2Oy7MhP2uH19o1pOodT8woX77WmOxVmGOtR66OJ3E3GH7kERQj44cs2E3ScnOsyZqIKVMDmQtZ00HFPrr2Sz"

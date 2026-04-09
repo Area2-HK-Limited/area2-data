@@ -1,0 +1,5 @@
+const app_vue_vue_type_style_index_0_scoped_f2933b10_lang = ".nav-link[data-v-f2933b10]{border-radius:8px;color:#94a3b8;font-size:.9rem;font-weight:500;padding:8px 14px;text-decoration:none;transition:all .2s ease}.nav-link.router-link-active[data-v-f2933b10],.nav-link[data-v-f2933b10]:hover{background:#33415580;color:#e2e8f0}.mobile-nav-link[data-v-f2933b10]{border-radius:8px;color:#94a3b8;display:block;font-size:.95rem;padding:12px 16px;text-decoration:none;transition:all .2s ease}.mobile-nav-link[data-v-f2933b10]:hover{background:#33415580;color:#e2e8f0}.footer-link[data-v-f2933b10]{color:#64748b;font-size:.875rem;text-decoration:none;transition:color .2s ease}.footer-link[data-v-f2933b10]:hover{color:#e2e8f0}";
+export {
+  app_vue_vue_type_style_index_0_scoped_f2933b10_lang as default
+};
+//# sourceMappingURL=entry-styles-3.mjs-Brvqk98e.js.map
