@@ -2288,6 +2288,7 @@ Employee (WhatsApp/SMS)
   - Stock 估值完全空白（FIFO/LIFO/AVCO 全部沒有）
   - API 限制分析 + SecrexAI 推薦架構
   - SME 適用場景 + 6 個月功能路線圖
+  - **實景：洗樓王式 Marketing Solution 公司使用情景**（4 個完整場景：物資準備/活動中/請款結算/月結報告）
 
 ---
 
@@ -2484,16 +2485,104 @@ sent_invoice / paid_invoice / create_invoice
 
 ---
 
+### E.11 實景：洗樓王式 Marketing Solution 公司
+
+**公司背景：**
+- 名稱：MarketPro Marketing Ltd（虛構）
+- 業務：幫客戶做樓盤地鋪洗樓推廣、展銷會、快閃推廣
+- 規模：30 個推廣員、5 個客戶經理、1 個 admin
+- 痛點：人手記錄客戶資料、經常甩單、請款慢
+
+---
+
+#### 場景一：推廣活動開始前 — 物資準備
+
+| 步驟 | 傳統做法（人手） | SecrexAI + Invoice Ninja |
+|------|----------------|------------------------|
+| 1. 確認客戶項目 | Admin 查 email → 抄低 requirements | **WhatsApp：「今個月有幾多個 active 項目？」** → AI 回：「3個：恒基A盤、領展商場、新都城三期」 |
+| 2. 檢查推廣物資 | 張三：「我嗰度仲有 500 張傳單」 | **WhatsApp：「Tmall-001 傳單庫存？」** → 「3,200 張」 |
+| 3. 評估夠唔夠 | 靠估 + 経験 | **WhatsApp：「恒基A盤需要 2,000 張，依家得 3,200 張，夠嗎？」** → 「夠，但建議補 1,000 張備用」 |
+| 4. 申請物資 | 填紙表 → 經理批 → 等發貨 | **WhatsApp：「申請 1,000 張 Tmall-001 傳單」** → AI 生成 PO → 經理 WhatsApp 審批 → 自动發送供應商 |
+
+**背後流程：**
+```
+Admin WhatsApp 指令
+  → SecrexAI 自然語言解析
+  → GET /api/v1/products（Tmall-001 current_qty）
+  → 計算需要數量
+  → POST /api/v1/purchase_orders
+  → Lark 審批（Webhook 通知經理）
+  → 經理 WhatsApp 批准
+  → PO auto-send supplier
+```
+
+---
+
+#### 場景二：推廣活動進行中 — 實時物資追蹤
+
+| 步驟 | 傳統做法（人手） | SecrexAI + Invoice Ninja |
+|------|----------------|------------------------|
+| 1. 物資送達 | 推廣員張三：收到物資，但 admin 唔知 | **Invoice Ninja PO marked received** → **SecrexAI 自動 WhatsApp 更新**：「Tmall-001 傳單已入庫，現有 4,200 張」 |
+| 2. 物資分配 | 張三話收到，李四話冇 | **WhatsApp：「張三分配 500 張，李四分配 300 張」** → SecrexAI 記錄 + 更新庫存 |
+| 3. 物資唔夠 | 推廣員：打電話 / 補申請 | **低庫存 Alert → WhatsApp 通知**：「Tmall-001 傳單低於 500 張，恒基A盤仍需 3 日，請確認補充」 |
+| 4. 緊急補貨 | 等 admin 處理，慢 | **緊急補貨審批** → 經理即時 WhatsApp 批准 → 供應商當日送到 |
+
+---
+
+#### 場景三：活動完成後 — 請款與結算
+
+| 步驟 | 傳統做法（人手） | SecrexAI + Invoice Ninja |
+|------|----------------|------------------------|
+| 1. 統計實際使用 | Admin 問每個推廣員，張三話用咗 450 張 | **WhatsApp：「幫我計恒基A盤今次用咗幾多傳單」** → AI 讀取 Invoice Ninja PO received qty vs 使用記錄 → 「用了 1,820 張」 |
+| 2. 計算 Servuction 費用 | Excel 計 | **AI 自動生成 Invoice** → 聯絡人/項目/日期自動填充 → 草擬稿 WhatsApp 發給客戶經理確認 |
+| 3. 客戶確認 | 客户經理來回來回 email | **WhatsApp：「恒基A盤 Servuction invoice 已發送，等客戶確認」** |
+| 4. 款項到账 | 客戶話已付，但未更新 | **Payment received webhook** → **WhatsApp：「恒基A盤款項已到，謝謝！」** |
+
+---
+
+#### 場景四：月結報告 — 客户視圖
+
+**客戶（恒基地產）想要知道：**
+- 今個月推廣活動用了多少物資
+- Servuction 總費用幾多
+- 有沒有低庫存導致推廣受影響
+
+**傳統做法：** Admin 抄 + Excel → PDF → email → 客户話睇唔明
+
+**SecrexAI做法：**
+```
+WhatsApp：「恒基A盤今個月 summary」
+  → AI 生成月結報告：
+  - 推廣活動：12 場
+  - 總傳單使用：18,200 張
+  - Servuction 總費用：$48,000
+  - 客戶滿意度：NPS +72
+  → WhatsApp 直接發送 PDF 報告
+```
+
+---
+
+#### 為什麼 Invoice Ninja + SecrexAI 特別適合 Marketing Solution 公司
+
+| 痛點 | Invoice Ninja 解決 | SecrexAI 升級 |
+|------|-------------------|---------------|
+| 物資管理靠人手 | Product Library 追蹤所有物資 | WhatsApp 語音/文字查詢 |
+| 請款慢/易甩單 | Recurring invoice + auto-send | AI 生成 + WhatsApp 審批 |
+| 推廣員物資分配唔清楚 | PO + Received 功能 | AI 分配建議 + 審批 workflow |
+| 客户查進度要等 | Invoice Ninja client portal | **WhatsApp 即時回覆** |
+| 月結報告要人手做 | Reports 功能 | AI 自然語言生成報告 |
+| 低庫存影響推廣 | Email alert（太慢） | **WhatsApp 即時 Alert + 緊急審批** |
+
+**最關鍵差異：** 推廣員 / 客户經理 / Admin 全部用 WhatsApp，**完全唔需要登入任何系統**。
+
+---
+
 **Research Method:**
 - ClawTeam multi-agent swarm (5 parallel research agents: 3 initial + 2 inventory-depth)
 - SME data: web_search (Perplexity Sonar) × multiple queries
 - Invoice Ninja: web research + existing Area2 setup analysis
 - Lark: web research via Feishu Open Platform documentation
 - Inventory: ClawTeam researcher-1 (功能研究) + researcher-2 (API 研究)
-- ClawTeam multi-agent swarm (3 parallel research agents)
-- SME data: web_search (Perplexity Sonar) × multiple queries
-- Invoice Ninja: web research + existing Area2 setup analysis
-- Lark: web research via Feishu Open Platform documentation
 
 **Not changed:** All existing Sections 1-11 and appendices from v5.2
 
