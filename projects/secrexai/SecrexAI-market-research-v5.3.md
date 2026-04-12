@@ -2282,8 +2282,214 @@ Employee (WhatsApp/SMS)
   - 6 key differentiators to double down on
   - Target ICP profile
   - Competitive positioning statement
+- **Appendix E**: Invoice Ninja 貨存（Inventory）深度功能分析（2026-04-12 補充）
+  - 貨存功能現況 vs 期望（variant/多倉庫/條碼全部缺失）
+  - 低庫存 alert 只得 email（WhatsApp 係最大切入點）
+  - Stock 估值完全空白（FIFO/LIFO/AVCO 全部沒有）
+  - API 限制分析 + SecrexAI 推薦架構
+  - SME 適用場景 + 6 個月功能路線圖
+
+---
+
+## Appendix E: Invoice Ninja 貨存（Inventory）深度功能分析
+
+*研究日期：2026-04-12 | 數據來源：ClawTeam 雙 agent 並行研究（功能組 + API 組）*
+
+---
+
+### E.1 貨存功能現況：比你想像中 basic
+
+Invoice Ninja 的貨存功能**不是完整的倉庫管理系統**，準確定位是「**追蹤發票相關的 stock 變動**」。
+
+| 功能模組 | 計劃要求 | 評價 |
+|---------|---------|------|
+| 基本 stock tracking（auto-deduct on invoice） | Free 已包含 | ⭐⭐⭐ 夠用 |
+| 低庫存 email alert | Free 已包含 | ⭐⭐ 弱（只有 email）|
+| 產品變體（尺寸/顏色） | ❌ 完全沒有 | ❌ 重大限制 |
+| 多倉庫/多地點 | ❌ 完全沒有 | ❌ 重大限制 |
+| 條碼掃描 | ❌ 完全沒有 | ❌ 重大限制 |
+| Stock 估值（FIFO/LIFO/平均成本） | ❌ 完全沒有 | ❌ 重大限制 |
+| COGS 自動化 | ⚠️ 有 cost field 但 invoice 不能編輯 | ❌ 雞肋 |
+| 庫存調整記錄（Stock Adjustment） | Pro/Enterprise | ⭐⭐ 一般 |
+| 採購訂單（Purchase Orders） | Pro/Enterprise | ⭐⭐ 一般 |
+| 產品自訂欄位（最多 4 個） | Pro | ⭐⭐⭐ 實用 |
+
+---
+
+### E.2 如何開啟貨存追蹤
+
+1. **開啟追蹤**：Settings → Products → Toggle **Track Inventory** 為 ON
+2. **設定全域低庫存閾值**：Settings → Products → Notification Threshold（如：低於 10 件就 alert）
+3. **顯示 Stock Quantity 欄**：Products list → column selector → 開啟 **Stock Quantity** + **Notification Threshold** 欄
+4. **為每個產品設定初始庫存**：Edit 每個 product → 填寫 **Current Stock** 數字
+5. **開啟成本價顯示**：Settings → Products → Toggle **Show Product Cost** 為 ON
+
+---
+
+### E.3 庫存 API：關鍵限制（對 SecrexAI 最重要）
+
+| 限制 | 細節 | 對 SecrexAI 的影響 |
+|------|------|-------------------|
+| **沒有專用 inventory endpoint** | 所有操作走 `/api/v1/products` | 讀寫 stock 靠同一個端點 |
+| **沒有 stock change webhook** | 只能 polling 或靠 invoice webhook 推斷 | 低庫存 alert 只能定時輪詢 |
+| **不能批量更新 stock** | 每個 product 獨立 PUT | 大批量操作效率低 |
+| **沒有多元倉庫** | 單一 stock figure per product | 倉庫管理場景無法支持 |
+| **Rate limit 未公開** | 要聯絡 support 才能知道限額 | 需要做好 429 處理 |
+| **Webhook 可靠性一般** | 社區反映有間歇性丟失 | 不能完全依赖實时 webhook |
+
+**推薦架構（針對 SecrexAI）：**
+
+```
+SecrexAI Platform
+├── Cron Job（每 4-6 小時）
+│   GET /api/v1/products?per_page=100
+│   Filter: track_inventory=true AND current_qty <= threshold
+│   → 滿足條件 → WhatsApp alert
+├── Invoice Webhook（sent_invoice / paid_invoice）
+│   → 收到通知 → 計算 expected stock change → 更新緩存
+└── AI Brain
+    → 自然語言庫存查詢 → GET /api/v1/products/{id}
+    → 「帮我入 500 件 WIDGET-001」→ PUT /api/v1/products/{id}
+```
+
+---
+
+### E.4 產品變體（Variant）：最大痛點
+
+Invoice Ninja **完全沒有產品變體功能**。
+
+**現有 workaround：**
+- 手動建立獨立 product（如 "T-Shirt-Red-S"、"T-Shirt-Red-M"）
+- 用 product custom fields 記錄變體屬性（但不能追蹤每個變體的庫存）
+- 用 naming convention 區分
+
+**對零售/餐飲/時裝 SME 的影響：**
+- 每個尺寸/顏色/口味 = 獨立 product → 管理混亂
+- 庫存數量不能按子類別細分
+- Invoice 上顯示不直觀
+
+**SecrexAI 差異化機會：**
+> 「告訴 SecrexAI『T-Shirt 有 5 個顏色 × 4 個尺寸』，自動建立 20 個子 SKU，並追蹤每個子 SKU 的庫存」
+
+---
+
+### E.5 Stock 估值：完全空白
+
+Invoice Ninja **不支援任何庫存估值方法**：
+
+- ❌ FIFO（先進先出）
+- ❌ LIFO（後進先出）
+- ❌ Average Cost（加權平均成本）
+- ❌ 任何形式的自動庫存價值計算
+
+**實際影響：**
+- Balance Sheet 上的庫存價值需要靠外部工具計算
+- 香港 SME 如果要做審計，庫存估值需要另外準備
+- 不能直接從 Invoice Ninja 得出gross profit（需要 cost + selling price）
+
+**SecrexAI 差異化機會：**
+> 「每月自動生成 FIFO/Average Cost 庫存估值報告」
+
+---
+
+### E.6 低庫存 Alert：Email 是唯一選擇
+
+Invoice Ninja 的低庫存通知：
+- **只有 email** 到帳戶 email
+- **沒有** WhatsApp / Slack / SMS
+- **沒有** per-user notification rules
+- **沒有** escalation（如果庫存持續低，不會重複提醒）
+- **沒有** visual dashboard
+
+**這是 SecrexAI 最直接的切入點：**
+
+| 現有（Invoice Ninja） | SecrexAI 升級版 |
+|---------------------|----------------|
+| Email alert（容易被忽視） | **WhatsApp alert**（即時打開率高） |
+| 沒有 urgency 分級 | **緊急程度分級**（Critical / Warning / Watch） |
+| 沒有視覺化 dashboard | **Visual dashboard**（所有低庫存一目了然） |
+| 沒有 lead-time aware | **智能 threshold**（根據供應商交貨期調整） |
+| 沒有分析 | **趨勢分析**（「WIDGET-001 過去 30 日用咗幾多？」） |
+
+---
+
+### E.7 採購訂單（Purchase Orders）：API 可以做到
+
+Invoice Ninja 的 PO 功能（Pro/Enterprise）：
+- 可以建立 PO（`POST /api/v1/purchase_orders`）
+- Mark PO 為 received → 自動增加 `current_qty`
+- 可以設定 vendor_id 對接供應商
+
+**SecrexAI 可以實現的自動化：**
+
+```
+低庫存檢測
+  ↓
+AI 分析：根據過去 usage 計算建議採購量
+  ↓
+草案 PO → WhatsApp 審批（「幫你生成 PO，要批准嗎？」）
+  ↓
+Approved → POST /api/v1/purchase_orders → 發送供應商
+```
+
+---
+
+### E.8 SME 適用場景分析
+
+| 行業 | 適用程度 | 原因 |
+|------|---------|------|
+| **零售（時裝/電子配件）** | ⭐ 不適合 | 沒有 variant tracking，多店庫存無法管理 |
+| **餐飲/食品** | ⭐⭐ 有限適用 | 追蹤食材庫存可以，但冇 per-recipe BOM |
+| **小型倉庫/批發** | ⭐⭐⭐ 基本適用 | 單一地點、簡單 in/out 可以應付 |
+| **專業服務** | ⭐⭐⭐⭐ 適用 | 主要用 invoice + recurring，不靠貨存 |
+| **訂閱制/SaaS** | ⭐⭐⭐⭐⭐ 非常適用 | 完全不需要庫存，只有 invoice |
+
+**結論：** Invoice Ninja 的貨存功能對**零售/餐飲** SME 偏弱，但對**服務型公司**（會計師事務所、顧問公司、訂閱制 SaaS）完全夠用。
+
+---
+
+### E.9 SecrexAI 貨存功能路線圖建議
+
+| 階段 | 功能 | 優先級 | 原因 |
+|------|------|--------|------|
+| **Phase 1（立即）** | WhatsApp 低庫存 Alert | 🔴 高 | 最小阻力，最大 impact |
+| **Phase 1** | 自然語言庫存查詢 | 🔴 高 | 「查下 WIDGET-001 庫存」立即可用 |
+| **Phase 2（1-3 個月）** | AI PO 建議 + 審批 | 🟡 中 | 需要 PO approval workflow |
+| **Phase 2** | Stock Adjustment 助手 | 🟡 中 | 「入 50 件 WIDGET-001」口頭操作 |
+| **Phase 3（3-6 個月）** | Variant Management Layer | 🟢 低優先 | 餐飲/時裝客戶才需要 |
+| **Phase 3** | Stock Valuation Report | 🟢 低優先 | 需要 FIFO/AVCO engine，複雜 |
+
+---
+
+### E.10 API 關鍵端點速查
+
+```
+# 讀取所有產品（含 stock 數據）
+GET  /api/v1/products?per_page=100
+
+# 讀取單一產品
+GET  /api/v1/products/{id}
+
+# 更新 stock quantity
+PUT  /api/v1/products/{id}
+Body: { "current_qty": 500 }
+
+# 建立採購訂單（增加庫存）
+POST /api/v1/purchase_orders
+Body: { vendor_id, line_items: [{product_key, quantity, cost}] }
+
+# Webhook 事件（用於推斷 stock 變動）
+sent_invoice / paid_invoice / create_invoice
+```
+
+---
 
 **Research Method:**
+- ClawTeam multi-agent swarm (5 parallel research agents: 3 initial + 2 inventory-depth)
+- SME data: web_search (Perplexity Sonar) × multiple queries
+- Invoice Ninja: web research + existing Area2 setup analysis
+- Lark: web research via Feishu Open Platform documentation
+- Inventory: ClawTeam researcher-1 (功能研究) + researcher-2 (API 研究)
 - ClawTeam multi-agent swarm (3 parallel research agents)
 - SME data: web_search (Perplexity Sonar) × multiple queries
 - Invoice Ninja: web research + existing Area2 setup analysis
@@ -2291,4 +2497,4 @@ Employee (WhatsApp/SMS)
 
 **Not changed:** All existing Sections 1-11 and appendices from v5.2
 
-*Compiled by A2 + ClawTeam agents: researcher-ai, researcher-invoice, researcher-lark | 2026-04-12*
+*Compiled by A2 + ClawTeam agents: researcher-ai, researcher-invoice, researcher-lark, researcher-1, researcher-2 | 2026-04-12*
