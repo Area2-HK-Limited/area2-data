@@ -8,15 +8,15 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Media cache
-*.mp3
-*.wav
-*.mp4
-*.avi
-*.mov
-*.pdf
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
+# Media cache - disabled: push all files
+# *.mp3
+# *.wav
+# *.mp4
+# *.avi
+# *.mov
+# *.pdf
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.webp
