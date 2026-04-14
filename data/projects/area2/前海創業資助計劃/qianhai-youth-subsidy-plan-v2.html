@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>前海港澳青年創業資助計劃 — Area2</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', 'Noto Sans TC', Arial, sans-serif; font-size: 10.5pt; color: #1a1a2e; background: #fff; line-height: 1.65; }
+@page {
+  size: A4;
+  margin: 18mm 15mm 18mm 15mm;
+  @top-center { content: "CONFIDENTIAL — Qianhai Youth Subsidy Plan — Area2"; font-size: 7pt; color: #888; }
+  @bottom-right { content: "Page " counter(page) " of " counter(pages); font-size: 8pt; color: #888; }
+}
+.cover-page {
+  page-break-after: always; min-height: 250mm; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: 40px 20px; background: linear-gradient(160deg, #0d2137 0%, #1a3a5c 60%, #1e5480 100%); color: #fff;
+}
+.cover-title { font-size: 25pt; font-weight: 800; margin-bottom: 10px; line-height: 1.2; }
+.cover-subtitle { font-size: 13pt; color: #b9d6ef; margin-bottom: 32px; }
+.cover-badge { display:inline-block; background: rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3); border-radius:6px; padding:4px 14px; font-size:9pt; color:#d0e8ff; margin-bottom:40px; }
+.cover-meta-box { background: rgba(255,255,255,0.1); border-radius:10px; padding:24px 32px; width:100%; max-width:460px; text-align:left; }
+.cover-meta-row { display:flex; margin-bottom:10px; font-size:9.5pt; }
+.cover-meta-label { width:120px; color:#a8c8e8; font-weight:600; flex-shrink:0; }
+.cover-meta-value { color:#fff; }
+.cover-confidential { margin-top:28px; font-size:8pt; color:#c3d7ea; max-width:420px; border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:10px 16px; }
+.chapter-break { page-break-before: always; }
+h1.chapter-title { font-size: 19pt; font-weight: 700; color: #1a3a5c; padding: 14px 0 10px 0; border-bottom: 3px solid #1a3a5c; margin-bottom: 20px; }
+h1.chapter-title span { color:#4a9fd5; margin-right:10px; }
+h2.section-title { font-size: 13pt; font-weight: 700; color: #1a3a5c; margin: 22px 0 10px 0; padding-left: 10px; border-left: 4px solid #4a9fd5; }
+p { margin-bottom: 10px; }
+ul { margin: 8px 0 14px 20px; }
+li { margin-bottom: 6px; }
+.note, .highlight, .card { border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; page-break-inside: avoid; }
+.note { background:#fff8e8; border:1px solid #f2d389; }
+.highlight { background:#eef6ff; border:1px solid #cfe0f2; }
+.card { background:#f8fbfd; border:1px solid #d6e2ec; }
+table { width:100%; border-collapse: collapse; margin: 12px 0 18px 0; font-size: 9.5pt; }
+th, td { border:1px solid #d4dee8; padding:10px 9px; vertical-align: top; }
+th { background:#1a3a5c; color:#fff; font-weight:600; }
+tr:nth-child(even) td { background:#f7fafc; }
+.small { font-size:8.5pt; color:#666; }
+.kpi-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin:16px 0 20px 0; }
+.kpi-box { border:1px solid #d0dde8; border-radius:10px; padding:14px; text-align:center; background:#fff; }
+.kpi-label { font-size:8.5pt; color:#5d6b7a; margin-bottom:6px; }
+.kpi-value { font-size:16pt; font-weight:800; color:#1a3a5c; }
+.kpi-sub { font-size:8.5pt; color:#7c8b99; margin-top:4px; }
+.footer-space { height: 10px; }
+</style>
+</head>
+<body>
+  <section class="cover-page">
+    <div class="cover-title">前海港澳青年創業資助計劃</div>
+    <div class="cover-subtitle">Area2 (HK) Limited — 內部規劃方案</div>
+    <div class="cover-badge">Internal Planning Draft · 2026-03-23</div>
+    <div class="cover-meta-box">
+      <div class="cover-meta-row"><div class="cover-meta-label">文件名稱</div><div class="cover-meta-value">前海港澳青年創業資助計劃</div></div>
+      <div class="cover-meta-row"><div class="cover-meta-label">公司</div><div class="cover-meta-value">Area2 (HK) Limited</div></div>
+      <div class="cover-meta-row"><div class="cover-meta-label">用途</div><div class="cover-meta-value">內部財務及合作方案評估</div></div>
+      <div class="cover-meta-row"><div class="cover-meta-label">版本</div><div class="cover-meta-value">v2.0</div></div>
+      <div class="cover-meta-row"><div class="cover-meta-label">狀態</div><div class="cover-meta-value">規劃中</div></div>
+    </div>
+    <div class="cover-confidential">本文件只供 Eric / Area2 內部評估使用，包含資助估算、合作分成、現金流及風險假設，請勿對外轉發。</div>
+  </section>
+
+  <section>
+    <h1 class="chapter-title"><span>01</span>計劃概覽</h1>
+    <p>Area2 (HK) Limited 擬申請深圳前海港澳青年創業相關資助，以 3 名符合資格港籍員工名義提交申請，目標獲取個人補貼及相關企業支持，並評估整體財務可行性、現金流壓力，以及合作伙伴分成安排。</p>
+    <div class="kpi-grid">
+      <div class="kpi-box"><div class="kpi-label">每人 3 年預計資助</div><div class="kpi-value">¥110,000</div><div class="kpi-sub">就業補貼 + 一筆過補貼</div></div>
+      <div class="kpi-box"><div class="kpi-label">3 人總收入</div><div class="kpi-value">¥330,000</div><div class="kpi-sub">理論上限</div></div>
+      <div class="kpi-box"><div class="kpi-label">預計淨利潤</div><div class="kpi-value">¥84,000</div><div class="kpi-sub">未計額外風險折讓</div></div>
+    </div>
+
+    <h2 class="section-title">資助金額（每人頭）</h2>
+    <table>
+      <tr><th>補貼類型</th><th>每月</th><th>36 個月總計</th><th>說明</th></tr>
+      <tr><td>就業補貼</td><td>約 ¥2,500</td><td>¥90,000</td><td>扣除社保等費用後淨收入估算</td></tr>
+      <tr><td>一筆過補貼</td><td>—</td><td>¥20,000</td><td>按政策條件發放</td></tr>
+      <tr><td><strong>每人合計</strong></td><td>—</td><td><strong>¥110,000</strong></td><td>理論總額</td></tr>
+    </table>
+
+    <h2 class="section-title">申請人配置</h2>
+    <table>
+      <tr><th>#</th><th>身份</th><th>資格</th><th>備註</th></tr>
+      <tr><td>1</td><td>Eric Tong</td><td>大學學歷</td><td>Area2 創辦人</td></tr>
+      <tr><td>2</td><td>Maverick</td><td>大學學歷</td><td>借用資料，以 Area2 員工身份申請</td></tr>
+      <tr><td>3</td><td>待定</td><td>待確認</td><td>第 3 個人頭</td></tr>
+    </table>
+  </section>
+
+  <section class="chapter-break">
+    <h1 class="chapter-title"><span>02</span>財務模型與現金流</h1>
+    <h2 class="section-title">3 年財務估算</h2>
+    <table>
+      <tr><th>項目</th><th>金額</th></tr>
+      <tr><td>3 人 × ¥110,000</td><td><strong>¥330,000</strong></td></tr>
+    </table>
+    <table>
+      <tr><th>成本項目</th><th>每月</th><th>36 個月</th></tr>
+      <tr><td>社保 × 3 人</td><td>¥4,500</td><td>¥162,000</td></tr>
+      <tr><td>租工作枱 × 1 張（3 人共用）</td><td>¥1,500</td><td>¥54,000</td></tr>
+      <tr><td>Agent fee（公司註冊、租枱、銀行開戶）</td><td>—</td><td>¥30,000</td></tr>
+      <tr><td><strong>成本合計</strong></td><td>—</td><td><strong>¥246,000</strong></td></tr>
+      <tr><td><strong>預計淨利潤</strong></td><td>—</td><td><strong>¥84,000</strong></td></tr>
+    </table>
+
+    <h2 class="section-title">現金流運作模式</h2>
+    <div class="card">
+      <p>Area2 每月出糧給員工（含社保） → 員工收到糧後回水返 Area2 → 政府每半年發放一次資助 → Area2 收到資助款。</p>
+    </div>
+    <div class="note">
+      <strong>注意：</strong>此計劃需要先墊資出糧及社保，之後才於半年後收到資助。按目前估算，首 6 個月週轉壓力約為 <strong>¥36,000</strong>。
+    </div>
+  </section>
+
+  <section class="chapter-break">
+    <h1 class="chapter-title"><span>03</span>Maverick 合作分成方案</h1>
+    <h2 class="section-title">合作背景</h2>
+    <ul>
+      <li>Maverick 為 Hostlink 正職同事，以 Area2 員工身份借資料申請。</li>
+      <li>由於出糧 → 回水流程透明，Maverick 會知道每人資助的大概金額。</li>
+      <li>他毋須擔任法人代表，亦不直接承擔公司法律責任。</li>
+      <li>整體需配合 3 年週期，屬中長期合作安排。</li>
+      <li>前海資助屬半年發放一次，實際到帳時間可能延遲，因此不適合高額 upfront 一炮過支付。</li>
+    </ul>
+
+    <h2 class="section-title">推薦方案：小額啟動費 + 實收分成</h2>
+    <table>
+      <tr><th>項目</th><th>建議</th><th>備註</th></tr>
+      <tr><td>每人頭預計 3 年總資助</td><td><strong>¥110,000</strong></td><td>理論總額</td></tr>
+      <tr><td>Maverick 分成比例</td><td><strong>20%</strong></td><td>按實收計算</td></tr>
+      <tr><td>Maverick 理論總收入</td><td><strong>¥22,000 / 人頭</strong></td><td>若全額收足</td></tr>
+      <tr><td>前期啟動費</td><td><strong>¥2,000 / 人頭</strong></td><td>確認合作開始</td></tr>
+      <tr><td>後續分成</td><td><strong>餘下 ¥20,000 按實際收款再分配</strong></td><td>不寫死每期固定額</td></tr>
+    </table>
+
+    <div class="highlight">
+      <strong>付款邏輯：</strong>先支付小額啟動費，作為誠意金及合作起動信號；其後只按 Area2 每次實際收到的前海資助款項，再依協議比例分成。若政府延遲發放、分批發放、或最終金額低於預期，則按實收金額重算。
+    </div>
+
+    <h2 class="section-title">此方案的好處</h2>
+    <table>
+      <tr><th>對象</th><th>好處</th></tr>
+      <tr><td>Maverick</td><td>前期已有回報，感受到合作已正式開始，不是口頭承諾。</td></tr>
+      <tr><td>Area2</td><td>避免在未收資助前承擔過高現金流壓力。</td></tr>
+      <tr><td>雙方關係</td><td>付款節奏綁定實際收款，減少未來爭議及 expectation mismatch。</td></tr>
+    </table>
+
+    <h2 class="section-title">條款建議</h2>
+    <ul>
+      <li>分成基礎：只按 <strong>實際收到資助款項</strong> 計算。</li>
+      <li>不按申請金額、預計金額或批核金額作結算依據。</li>
+      <li>每次資助到帳後 <strong>14–30 日內</strong> 進行分配。</li>
+      <li>Maverick 需按協議配合整個申請及後續收款週期。</li>
+      <li>雖然理論上可分約 6 期，但 <strong>不建議寫死每期固定金額</strong>。</li>
+    </ul>
+  </section>
+
+  <section class="chapter-break">
+    <h1 class="chapter-title"><span>04</span>申請條件、前置工作與風險</h1>
+    <h2 class="section-title">申請條件（政策要求）</h2>
+    <ul>
+      <li>45 歲以下</li>
+      <li>中國國籍港澳居民</li>
+      <li>在前海合作區就業 / 創業</li>
+      <li>在前海繳納社保</li>
+      <li>深圳無自有房產（居住補貼要求）</li>
+      <li>2024 年 7 月後首次在前海就業 / 創業</li>
+    </ul>
+
+    <h2 class="section-title">前置工作</h2>
+    <ul>
+      <li>深圳前海公司註冊</li>
+      <li>租工作枱（1 張）</li>
+      <li>申請公司銀行戶口</li>
+      <li>估算前置成本：約 ¥30,000</li>
+    </ul>
+
+    <h2 class="section-title">待確認事項</h2>
+    <ul>
+      <li>第 3 個人頭人選</li>
+      <li>Maverick 最終意願及協議條款</li>
+      <li>出糧 → 回水流程的稅務影響（個人所得稅）</li>
+      <li>前海公司是否需要更高程度真實營運證據</li>
+      <li>Maverick 出糧金額是否需達最低工資標準</li>
+      <li>資助申報截止日期及實際批核節奏</li>
+    </ul>
+
+    <h2 class="section-title">主要風險</h2>
+    <table>
+      <tr><th>風險</th><th>影響</th><th>應對</th></tr>
+      <tr><td>政策變動 / 資助取消</td><td>已投入成本無法回收</td><td>持續關注政策更新，避免過早大額投入</td></tr>
+      <tr><td>Maverick 中途退出</td><td>少一個人頭收入</td><td>簽協議約定配合期及退出安排</td></tr>
+      <tr><td>稅務審查</td><td>出糧 → 回水或被視為虛假僱傭</td><td>建立真實勞動關係證據及文件</td></tr>
+      <tr><td>前海公司需真實營運</td><td>或需業務流水 / 實體運營</td><td>規劃將 Area2 部分 AI 業務放入前海主體</td></tr>
+      <tr><td>資助半年發放一次</td><td>現金流壓力</td><td>預留最少 ¥36,000 週轉資金</td></tr>
+    </table>
+
+    <div class="note">
+      <strong>總結判斷：</strong>若以「小額啟動費 + 實收分成」模式與 Maverick 合作，整體比高額一筆過付款更可控，亦更貼合前海資助半年發放一次的現金流現實。不過，落實前仍需先釐清稅務、真實僱傭及合作約束條款。
+    </div>
+    <p class="small">Document generated for internal review only.</p>
+  </section>
+</body>
+</html>

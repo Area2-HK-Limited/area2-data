@@ -1,0 +1,119 @@
+# ============================================================
+# docker-compose.yml — OCM Private Skill Registry
+#
+# Deployment model:
+#   - Same host as OpenClaw Docker (Tencent Lighthouse Japan)
+#   - Independent compose project (project name: ocm)
+#   - Other OpenClaw containers reach the API via:
+#       http://host.docker.internal:3721   (Docker Desktop / OrbStack)
+#       http://<HOST_INTERNAL_IP>:3721     (Linux Docker, e.g. 172.17.0.1)
+#       http://ocm-api:3721                (if on same Docker network)
+#
+# Port allocation (conservative, avoids OpenClaw defaults):
+#   3721 — Registry API
+#   5439 — PostgreSQL  (avoid 5432 in case host already has postgres)
+#   9010 — MinIO API   (avoid 9000 commonly used by other services)
+#   9011 — MinIO Console UI
+#
+# Usage:
+#   docker compose -p ocm up -d
+#   docker compose -p ocm down
+# ============================================================
+
+name: ocm
+
+services:
+
+  # ── Registry API ─────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: apps/registry-api/Dockerfile
+    image: ocm-registry-api:latest
+    container_name: ocm-api
+    restart: unless-stopped
+    ports:
+      - "${API_HOST:-127.0.0.1}:${API_PORT:-3721}:3721"
+    environment:
+      NODE_ENV: production
+      PORT: 3721
+      HOST: 0.0.0.0
+      DATABASE_URL: postgresql://${POSTGRES_USER:-ocm}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-ocm}
+      MINIO_ENDPOINT: minio
+      MINIO_PORT: "9000"
+      MINIO_USE_SSL: "false"
+      MINIO_ACCESS_KEY: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
+      MINIO_BUCKET: ${MINIO_BUCKET:-ocm-skills}
+      MAX_BUNDLE_SIZE_MB: ${MAX_BUNDLE_SIZE_MB:-50}
+      CORS_ORIGIN: "false"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    networks:
+      - ocm-internal
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3721/v1/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  # ── PostgreSQL ───────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: ocm-postgres
+    restart: unless-stopped
+    ports:
+      - "${POSTGRES_HOST:-127.0.0.1}:${POSTGRES_EXTERNAL_PORT:-5439}:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-ocm}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:-ocm}
+    volumes:
+      - ocm-postgres-data:/var/lib/postgresql/data
+    networks:
+      - ocm-internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-ocm} -d ${POSTGRES_DB:-ocm}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── MinIO Object Storage ─────────────────────────────────────
+  minio:
+    image: minio/minio:latest
+    container_name: ocm-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    ports:
+      - "${MINIO_HOST:-127.0.0.1}:${MINIO_API_PORT:-9010}:9000"
+      - "${MINIO_HOST:-127.0.0.1}:${MINIO_CONSOLE_PORT:-9011}:9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY}
+    volumes:
+      - ocm-minio-data:/data
+    networks:
+      - ocm-internal
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+# ── Networks ─────────────────────────────────────────────────
+networks:
+  ocm-internal:
+    driver: bridge
+    # Optionally attach to external OpenClaw network:
+    # external: true
+    # name: openclaw_default
+
+# ── Volumes ──────────────────────────────────────────────────
+volumes:
+  ocm-postgres-data:
+  ocm-minio-data:

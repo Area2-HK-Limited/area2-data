@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>BSP Development Plan v1.1</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="bsp-plan-pdf.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">BSP Development Plan v1.1</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#british-school-portal-bsp--3-年產品與商業發展計劃-v11">British School Portal (BSP) — 3 年產品與商業發展計劃 v1.1</a>
+<ul>
+<li><a href="#目錄">目錄</a></li>
+<li><a href="#1-產品重新定位">1. 產品重新定位</a>
+<ul>
+<li><a href="#現狀定位directorysearch-平台">現狀定位（Directory/Search 平台）</a></li>
+<li><a href="#目標定位reverse-matching--multi-school-application-workflow-平台">目標定位（Reverse-Matching + Multi-School Application Workflow 平台）</a></li>
+</ul></li>
+<li><a href="#2-現有功能-vs-建議新增功能">2. 現有功能 vs 建議新增功能</a>
+<ul>
+<li><a href="#2a-現有可用功能already-exists">2A. 現有可用功能（Already Exists）</a></li>
+<li><a href="#2b-介面流程修改即可完成的功能ui--workflow-upgrade">2B. 介面／流程修改即可完成的功能（UI / Workflow Upgrade）</a></li>
+<li><a href="#2c-全新功能net-new-feature">2C. 全新功能（Net-New Feature）</a></li>
+<li><a href="#2d-一眼看懂哪些是已有哪些是改介面就得哪些是真新功能">2D. 一眼看懂：哪些是「已有」、哪些是「改介面就得」、哪些是「真新功能」</a></li>
+</ul></li>
+<li><a href="#3-功能-roadmap">3. 功能 Roadmap</a>
+<ul>
+<li><a href="#mvp-功能群目標3-5-個月完成核心可用版">MVP 功能群（目標：3-5 個月完成核心可用版）</a></li>
+<li><a href="#phase-2-功能群目標完成-mvp-後-3-4-個月">Phase 2 功能群（目標：完成 MVP 後 3-4 個月）</a></li>
+<li><a href="#phase-3-功能群目標完成-phase-2-後-4-6-個月">Phase 3 功能群（目標：完成 Phase 2 後 4-6 個月）</a></li>
+</ul></li>
+<li><a href="#4-12-個月月度-roadmap">4. 12 個月月度 Roadmap</a>
+<ul>
+<li><a href="#季度總覽">季度總覽</a></li>
+<li><a href="#月份細節">月份細節</a></li>
+<li><a href="#pilot-建議按-school-segment">Pilot 建議：按 School Segment</a></li>
+</ul></li>
+<li><a href="#5-商業模式設計">5. 商業模式設計</a>
+<ul>
+<li><a href="#5a-現有收費架構">5A. 現有收費架構</a></li>
+<li><a href="#5b-建議分層收費架構">5B. 建議分層收費架構</a></li>
+<li><a href="#5c-關於學生申請費registration-fee是否應收">5C. 關於學生申請費（Registration Fee）——是否應收？</a></li>
+</ul></li>
+<li><a href="#6-基礎營運成本估算">6. 基礎營運成本估算</a>
+<ul>
+<li><a href="#6a-雲端--hosting">6A. 雲端 / Hosting</a></li>
+<li><a href="#6b-通訊服務">6B. 通訊服務</a></li>
+<li><a href="#6c-支付手續費">6C. 支付手續費</a></li>
+<li><a href="#6d-客服--營運工具">6D. 客服 / 營運工具</a></li>
+<li><a href="#6e-法務--會計--資料保護">6E. 法務 / 會計 / 資料保護</a></li>
+<li><a href="#6f-總月度營運成本早期估計">6F. 總月度營運成本（早期估計）</a></li>
+</ul></li>
+<li><a href="#7-單-founder-人力規劃">7. 單 Founder 人力規劃</a>
+<ul>
+<li><a href="#7a-現在0-12個月solo-founder-模式">7A. 現在（0-12個月）：Solo Founder 模式</a></li>
+<li><a href="#7b-招聘觸發條件--優先職位">7B. 招聘觸發條件 + 優先職位</a></li>
+<li><a href="#7c-人力發展時序建議">7C. 人力發展時序建議</a></li>
+</ul></li>
+<li><a href="#8-財務模型">8. 財務模型</a>
+<ul>
+<li><a href="#8a-關鍵假設">8A. 關鍵假設</a></li>
+<li><a href="#8b-年度財務預測">8B. 年度財務預測</a></li>
+<li><a href="#8c-財務模型總覽表">8C. 財務模型總覽表</a></li>
+</ul></li>
+<li><a href="#9-最後建議">9. 最後建議</a>
+<ul>
+<li><a href="#9a-最值得先做的-5-個功能">9A. 最值得先做的 5 個功能</a></li>
+<li><a href="#9b-最不建議過早做的-5-個功能">9B. 最不建議過早做的 5 個功能</a></li>
+<li><a href="#9c-investor-friendly-positioning一句話">9C. Investor-Friendly Positioning（一句話）</a></li>
+<li><a href="#9d-對-founder-最直白的建議一句話">9D. 對 Founder 最直白的建議（一句話）</a></li>
+</ul></li>
+<li><a href="#附錄待確認事項">附錄：待確認事項</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="british-school-portal-bsp--3-年產品與商業發展計劃-v11">British School Portal (BSP) — 3 年產品與商業發展計劃 v1.1</h1>
+<blockquote>
+<p>撰寫日期：2026 年 3 月（以 2026 年 3 月為基準）<br />
+語言：繁體中文（香港用語）<br />
+定稿版本：v1.1（已加入：現有功能 / 介面修改即可 / 全新功能 三分類）</p>
+</blockquote>
+<hr />
+<h2 id="目錄">目錄</h2>
+<ol>
+<li><a href="#1-產品重新定位">產品重新定位</a></li>
+<li><a href="#2-現有功能-vs-建議新增功能">現有功能 vs 建議新增功能</a></li>
+<li><a href="#3-功能-roadmap">功能 Roadmap：MVP / Phase 2 / Phase 3</a></li>
+<li><a href="#4-12-個月月度-roadmap">12 個月月度 Roadmap + Pilot 建議</a></li>
+<li><a href="#5-商業模式設計">商業模式設計</a></li>
+<li><a href="#6-基礎營運成本估算">基礎營運成本估算</a></li>
+<li><a href="#7-單-founder-人力規劃">單 Founder 人力規劃</a></li>
+<li><a href="#8-財務模型">財務模型（1年 / 2年 / 3年）</a></li>
+<li><a href="#9-最後建議">最後建議</a></li>
+</ol>
+<hr />
+<h2 id="1-產品重新定位">1. 產品重新定位</h2>
+<h3 id="現狀定位directorysearch-平台">現狀定位（Directory/Search 平台）</h3>
+<p>BSP 目前定位為英國學校資料目錄與搜尋平台，提供：學校基本資訊、公開考試成績（A-Level/GCSE）查詢、學生填表/初步申請、學校/顧問/商業公司年費訂閱。本質上係「被動黃頁」——學生搜學校，學校等學生嚟。</p>
+<h3 id="目標定位reverse-matching--multi-school-application-workflow-平台">目標定位（Reverse-Matching + Multi-School Application Workflow 平台）</h3>
+<p><strong>核心轉型：從「讓學生找學校」→「讓合適的學校主動找到合適的學生」</strong></p>
+<p>新定位的三個核心差異：</p>
+<table>
+<thead>
+<tr class="header">
+<th>維度</th>
+<th>舊定位</th>
+<th>新定位</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>流量邏輯</strong></td>
+<td>學生 → 搜尋 → 學校</td>
+<td>學生資料 → AI 匹配 → 學校主動聯絡</td>
+</tr>
+<tr class="even">
+<td><strong>核心產品</strong></td>
+<td>目錄 + 成績查詢</td>
+<td>Workflow 管理 + 多校申請協作</td>
+</tr>
+<tr class="odd">
+<td><strong>變現方式</strong></td>
+<td>年費</td>
+<td>年費 + Lead Fee + Success Fee + Workflow Seat</td>
+</tr>
+<tr class="even">
+<td><strong>競爭護城河</strong></td>
+<td>資料量</td>
+<td>申請數據網絡效應 + 顧問協作生態</td>
+</tr>
+</tbody>
+</table>
+<p><strong>參考定位標語（Investor Pitch）：</strong></p>
+<blockquote>
+<p>"The only platform connecting international families, education consultants, and UK independent schools through a structured, data-driven application workflow — built for a sector under enrollment pressure."</p>
+</blockquote>
+<p><strong>市場時機說明：</strong><br />
+根據 ISC 2025 Census 數據，英國獨立學校 2024-2025 年學生人數按年下跌 2.4%（13,363 人），入學年級（Reception / Y3 / Y7）跌幅超 5%，國際生更由 2020 年 29,500 人跌至 2024 年 25,500 人（-13.6%）。[來源：ISC Census 2025，BAISIS 報告] 在此背景下，學校有強烈動機主動尋找優質國際生 leads，BSP 的 reverse-matching 定位切入時機恰當。</p>
+<hr />
+<h2 id="2-現有功能-vs-建議新增功能">2. 現有功能 vs 建議新增功能</h2>
+<blockquote>
+<p><strong>重要：本版本已明確分成三類</strong></p>
+<ol>
+<li><strong>現有功能（Already Exists）</strong>：系統已有可用功能/模組</li>
+<li><strong>介面／流程修改即可（UI / Workflow Upgrade）</strong>：底層大致已有，但需要重新命名、重組流程、加 CTA、改 dashboard 或加少量欄位</li>
+<li><strong>全新功能（Net-New Feature）</strong>：目前平台未真正具備，需要新開發 module / logic / workflow</li>
+</ol>
+</blockquote>
+<h3 id="2a-現有可用功能already-exists">2A. 現有可用功能（Already Exists）</h3>
+<table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>功能</th>
+<th>說明</th>
+<th>狀態判斷</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F01</td>
+<td>學校資料目錄</td>
+<td>學校基本資訊、地點、類型、年齡段等</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="even">
+<td>F02</td>
+<td>公開考試成績數據</td>
+<td>A-Level / GCSE 成績公開數據展示</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="odd">
+<td>F03</td>
+<td>學生註冊/填表</td>
+<td>學生可填寫個人資料表格</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="even">
+<td>F04</td>
+<td>學校年費訂閱</td>
+<td>學校付年費獲取展示/更多功能</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="odd">
+<td>F05</td>
+<td>顧問年費訂閱</td>
+<td>教育顧問付年費使用平台功能</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="even">
+<td>F06</td>
+<td>商業公司年費訂閱</td>
+<td>相關服務公司的廣告/展示年費</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="odd">
+<td>F07</td>
+<td>PayPal 收款</td>
+<td>現有支付基建</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="even">
+<td>F08</td>
+<td>學生 Profile 頁</td>
+<td>學生帳戶已有 Profile / Change Password / Enquiry / Bookmark 等選單</td>
+<td><strong>現有功能</strong>（已實測）</td>
+</tr>
+<tr class="odd">
+<td>F09</td>
+<td>學生收藏學校</td>
+<td>Student 帳戶已有 Bookmarked School</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="even">
+<td>F10</td>
+<td>學生訊息/Enquiry 列表</td>
+<td>Student 帳戶已有 Enquiry List</td>
+<td><strong>現有功能</strong></td>
+</tr>
+<tr class="odd">
+<td>F11</td>
+<td>學生申請/入學相關列表</td>
+<td>Student 帳戶已有 School Place Applicant Details / School Admission List</td>
+<td><strong>現有功能</strong>（但體驗未成流程）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2b-介面流程修改即可完成的功能ui--workflow-upgrade">2B. 介面／流程修改即可完成的功能（UI / Workflow Upgrade）</h3>
+<table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>功能名稱</th>
+<th>現況</th>
+<th>建議修改</th>
+<th>類別</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>M01</td>
+<td>學生 Dashboard 首頁重組</td>
+<td>現有 student menu 偏散，登入後唔知下一步</td>
+<td>改成 dashboard + 主 CTA：Complete Profile / Find Matching Schools / Start Application</td>
+<td><strong>介面修改即可</strong></td>
+</tr>
+<tr class="even">
+<td>M02</td>
+<td>Profile Completion 進度條</td>
+<td>現有已有大量學生欄位，但缺少完成度提示</td>
+<td>加 profile completeness %、必填欄位提示、未完成阻擋 matching</td>
+<td><strong>介面修改即可</strong></td>
+</tr>
+<tr class="odd">
+<td>M03</td>
+<td>Menu 命名白話化</td>
+<td><code>School Place Applicant Details</code>、<code>School Admission List</code> 名稱唔夠直觀</td>
+<td>改為 <code>My Application Profile</code>、<code>My School Applications</code> 等</td>
+<td><strong>介面修改即可</strong></td>
+</tr>
+<tr class="even">
+<td>M04</td>
+<td>Empty-state 引導</td>
+<td>Bookmark / Enquiry / Apply 為 0 時畫面容易空白</td>
+<td>加 empty-state CTA：去搜尋、去收藏、去開始匹配</td>
+<td><strong>介面修改即可</strong></td>
+</tr>
+<tr class="odd">
+<td>M05</td>
+<td>學校端 Lead/CTA 入口</td>
+<td>學校帳戶現有基礎帳號結構，但未突出招生工作流</td>
+<td>在 school account 首頁加 Leads / Interested Students / Application Pipeline 入口</td>
+<td><strong>介面修改 + 少量資料欄位</strong></td>
+</tr>
+<tr class="even">
+<td>M06</td>
+<td>顧問端工作台重命名/重組</td>
+<td>顧問端已有 apply list 類骨架，但未 productize</td>
+<td>重整成顧問工作台，以學生案件為中心</td>
+<td><strong>介面修改 + 流程重組</strong></td>
+</tr>
+<tr class="odd">
+<td>M07</td>
+<td>學校資料頁加 Apply / Match 入口</td>
+<td>目前較偏資訊頁</td>
+<td>在可申請學校上加 Apply / Save / Ask School / Match Me CTA</td>
+<td><strong>介面修改即可</strong></td>
+</tr>
+<tr class="even">
+<td>M08</td>
+<td>現有學生表格結構化</td>
+<td>現有填表存在，但未明顯以 admissions decision 為核心</td>
+<td>將現有欄位整理為學術、預算、住宿、興趣、入學時間等結構</td>
+<td><strong>現有功能重組</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2c-全新功能net-new-feature">2C. 全新功能（Net-New Feature）</h3>
+<table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>功能名稱</th>
+<th>類別</th>
+<th>Phase</th>
+<th>類型判斷</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>N01</td>
+<td>學生結構化申請 Profile</td>
+<td>核心 Workflow</td>
+<td>MVP</td>
+<td><strong>新功能（基於現有表格大幅升級）</strong></td>
+</tr>
+<tr class="even">
+<td>N02</td>
+<td>Reverse-Matching 引擎（規則式）</td>
+<td>核心匹配</td>
+<td>MVP</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="odd">
+<td>N03</td>
+<td>學校 Lead Dashboard</td>
+<td>學校側工具</td>
+<td>MVP</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="even">
+<td>N04</td>
+<td>多校申請追蹤器</td>
+<td>學生側工具</td>
+<td>MVP</td>
+<td><strong>新功能（現有列表升級成 workflow tracker）</strong></td>
+</tr>
+<tr class="odd">
+<td>N05</td>
+<td>顧問協作工作台</td>
+<td>顧問側工具</td>
+<td>MVP</td>
+<td><strong>新功能（現有骨架升級成工作台）</strong></td>
+</tr>
+<tr class="even">
+<td>N06</td>
+<td>通知系統（Email）</td>
+<td>基礎溝通</td>
+<td>MVP</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="odd">
+<td>N07</td>
+<td>學校回覆/篩選工具</td>
+<td>學校側工具</td>
+<td>Phase 2</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="even">
+<td>N08</td>
+<td>申請文件上傳（成績單/推薦信等）</td>
+<td>文件管理</td>
+<td>Phase 2</td>
+<td><strong>新功能</strong>（前台正式啟用）</td>
+</tr>
+<tr class="odd">
+<td>N09</td>
+<td>在線支付：申請費代收</td>
+<td>支付擴展</td>
+<td>Phase 2</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="even">
+<td>N10</td>
+<td>學生/顧問溝通訊息功能</td>
+<td>溝通系統</td>
+<td>Phase 2</td>
+<td><strong>新功能 / 現有 enquiry 升級</strong></td>
+</tr>
+<tr class="odd">
+<td>N11</td>
+<td>學校 Open Day 預約功能</td>
+<td>學校工具</td>
+<td>Phase 2</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="even">
+<td>N12</td>
+<td>AI 匹配評分引擎</td>
+<td>AI 升級</td>
+<td>Phase 3</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="odd">
+<td>N13</td>
+<td>顧問白標（White-label）Portal</td>
+<td>顧問產品</td>
+<td>Phase 3</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="even">
+<td>N14</td>
+<td>申請結果追蹤 + Success Fee 觸發</td>
+<td>商業化</td>
+<td>Phase 3</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="odd">
+<td>N15</td>
+<td>數據報告 Dashboard（學校）</td>
+<td>分析工具</td>
+<td>Phase 3</td>
+<td><strong>新功能</strong></td>
+</tr>
+<tr class="even">
+<td>N16</td>
+<td>API 接入（第三方 MIS 系統）</td>
+<td>技術整合</td>
+<td>Phase 3</td>
+<td><strong>新功能</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2d-一眼看懂哪些是已有哪些是改介面就得哪些是真新功能">2D. 一眼看懂：哪些是「已有」、哪些是「改介面就得」、哪些是「真新功能」</h3>
+<table>
+<thead>
+<tr class="header">
+<th>類別</th>
+<th>代表項目</th>
+<th>Founder 理解方式</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>現有功能</strong></td>
+<td>學校資料、公開成績、學生帳戶、Bookmark、Enquiry、Admission List、年費、PayPal</td>
+<td><strong>已經有，只係未包裝成一條完整 journey</strong></td>
+</tr>
+<tr class="even">
+<td><strong>介面／流程修改即可</strong></td>
+<td>Dashboard CTA、menu rename、empty-state、profile completeness、school/consultant 首頁重組</td>
+<td><strong>唔一定要重寫 backend，主要係產品設計同流程重組</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>全新功能</strong></td>
+<td>Reverse-matching、Lead Dashboard、真正 application workflow、文件中心、代收申請費、AI ranking、白標顧問 portal</td>
+<td><strong>需要新開發，係未來 12-24 個月價值所在</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-功能-roadmap">3. 功能 Roadmap</h2>
+<h3 id="mvp-功能群目標3-5-個月完成核心可用版">MVP 功能群（目標：3-5 個月完成核心可用版）</h3>
+<hr />
+<h4 id="n01學生結構化申請-profile">N01：學生結構化申請 Profile</h4>
+<p><strong>功能說明：</strong><br />
+學生填寫標準化申請資料：學業成績（在讀年級、考試預期成績）、課外活動、語言能力（IELTS/托福等）、申請年級、入學時間、預算範圍、偏好學校類型（boarding/day、地區、宗教背景等）。</p>
+<p><strong>依賴：</strong> 現有 F03 學生填表系統基礎上擴充。</p>
+<p><strong>開發難度：</strong> ⭐⭐（中低）— 主要係表單設計 + 資料結構，前端工作量較大。</p>
+<p><strong>估計時間：</strong> 3-4 週（外判全端 contractor 執行）</p>
+<p><strong>估計成本：</strong> £1,500–£2,500（假設：外判 contractor £400-500/week，HKD 粗算 $15,000–$25,000）</p>
+<p><strong>完成後商業價值：</strong> 這係整個 reverse-matching 嘅數據基礎，無此功能其他一切無法運作。</p>
+<hr />
+<h4 id="n02reverse-matching-引擎規則式">N02：Reverse-Matching 引擎（規則式）</h4>
+<p><strong>功能說明：</strong><br />
+基於學生 Profile 與學校偏好設定（理想學生成績、語言要求、入學年份、接受國際生）做自動匹配，生成「適合申請清單」。第一版用規則式匹配（非 AI），例如：成績達標 + 年級符合 + 地區偏好 = 推薦。</p>
+<p><strong>依賴：</strong> N01、學校需填寫「招生偏好設定」（現有 F04 帳戶增加字段）。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐（中）— 匹配邏輯設計需要謹慎，但技術實現不難。</p>
+<p><strong>估計時間：</strong> 3-5 週</p>
+<p><strong>估計成本：</strong> £2,000–£3,500（HKD $20,000–$35,000）</p>
+<p><strong>完成後商業價值：</strong> 這係 BSP 差異化核心，讓平台從「黃頁」升級為「智能推薦引擎」，直接驅動學校付費的意願（你幫我找學生 → 我願意付錢）。</p>
+<hr />
+<h4 id="n03學校-lead-dashboard">N03：學校 Lead Dashboard</h4>
+<p><strong>功能說明：</strong><br />
+學校登入後可以看到：本月收到幾多個符合條件的學生 leads、每個 lead 的簡要資料（年級、成績範圍、申請時間）、點擊解鎖完整 lead 詳情（可設計為付費觸發點）。</p>
+<p><strong>依賴：</strong> N01、N02。</p>
+<p><strong>開發難度：</strong> ⭐⭐（中低）— 標準 CRUD Dashboard 實現。</p>
+<p><strong>估計時間：</strong> 2-3 週</p>
+<p><strong>估計成本：</strong> £1,200–£2,000（HKD $12,000–$20,000）</p>
+<p><strong>完成後商業價值：</strong> 這係學校「感受到平台價值」的直接介面，也係 Lead Fee / 解鎖付費的商業化入口。</p>
+<hr />
+<h4 id="n04多校申請追蹤器學生側">N04：多校申請追蹤器（學生側）</h4>
+<p><strong>功能說明：</strong><br />
+學生可以看到自己申請了哪些學校、每間學校的處理狀態（已提交/審查中/需補資料/已回覆/拒絕/Offer），集中管理所有申請進度。</p>
+<p><strong>依賴：</strong> N01、N03。</p>
+<p><strong>開發難度：</strong> ⭐⭐（中低）</p>
+<p><strong>估計時間：</strong> 2-3 週</p>
+<p><strong>估計成本：</strong> £1,000–£1,800（HKD $10,000–$18,000）</p>
+<p><strong>完成後商業價值：</strong> 提升學生黏性，讓 BSP 成為學生申請旅程的必備工具，降低流失率。</p>
+<hr />
+<h4 id="n05顧問協作工作台">N05：顧問協作工作台</h4>
+<p><strong>功能說明：</strong><br />
+顧問登入後可以：查看旗下學生列表、代學生填寫/審核申請 Profile、看到各學生的匹配結果和申請進度、批量管理多個學生案例。</p>
+<p><strong>依賴：</strong> N01、N04，顧問帳戶需關聯學生帳戶的授權系統。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐（中）— 帳戶關聯邏輯 + 授權系統設計較複雜。</p>
+<p><strong>估計時間：</strong> 3-4 週</p>
+<p><strong>估計成本：</strong> £2,000–£3,000（HKD $20,000–$30,000）</p>
+<p><strong>完成後商業價值：</strong> 顧問係 BSP 最穩定的付費客戶類型（年費收入），工作台令顧問對 BSP 產生業務依賴，提高 retention。</p>
+<hr />
+<h4 id="n06通知系統email">N06：通知系統（Email）</h4>
+<p><strong>功能說明：</strong><br />
+觸發式 Email 通知：新 lead 配對成功（通知學校）、申請狀態更新（通知學生/顧問）、帳戶到期提醒等。使用 SendGrid / Mailgun 等 transactional email 服務。</p>
+<p><strong>依賴：</strong> 所有上述功能觸發點。</p>
+<p><strong>開發難度：</strong> ⭐（低）— 成熟 API 整合。</p>
+<p><strong>估計時間：</strong> 1-2 週</p>
+<p><strong>估計成本：</strong> £500–£1,000 開發成本 + £20-50/月運營費（HKD 開發 $5,000–$10,000）</p>
+<p><strong>完成後商業價值：</strong> 通知係工作流程的神經系統，無此功能用戶體驗不完整，影響所有 KPI。</p>
+<hr />
+<h3 id="phase-2-功能群目標完成-mvp-後-3-4-個月">Phase 2 功能群（目標：完成 MVP 後 3-4 個月）</h3>
+<hr />
+<h4 id="n07學校回覆篩選工具">N07：學校回覆/篩選工具</h4>
+<p><strong>功能說明：</strong><br />
+學校可以在平台內對 leads 做標記（感興趣/不符合/待審查）、直接發送初步回覆給學生（預設模板），不用跳出到 email 操作。</p>
+<p><strong>依賴：</strong> N03 + N10（訊息功能）。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐（中）</p>
+<p><strong>估計時間：</strong> 3-4 週<br />
+<strong>估計成本：</strong> £2,000–£3,500（HKD $20,000–$35,000）</p>
+<p><strong>完成後商業價值：</strong> 完整 workflow loop（配對→回覆→追蹤），為 success fee 收費奠定基礎。</p>
+<hr />
+<h4 id="n08申請文件上傳">N08：申請文件上傳</h4>
+<p><strong>功能說明：</strong><br />
+學生可上傳：學校成績單、語言考試證書（IELTS/托福）、推薦信、護照首頁等。學校和顧問可以查閱。需要安全存儲（UK region S3 equivalent）。</p>
+<p><strong>依賴：</strong> N01，雲端存儲配置。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐（中）— 主要係安全合規設計（GDPR 文件存儲）。</p>
+<p><strong>估計時間：</strong> 3-4 週<br />
+<strong>估計成本：</strong> £2,500–£4,000（HKD $25,000–$40,000）</p>
+<p><strong>完成後商業價值：</strong> 讓 BSP 成為「完整申請文件中心」，提高平台不可替代性。</p>
+<hr />
+<h4 id="n09申請費代收">N09：申請費代收</h4>
+<p><strong>功能說明：</strong><br />
+學生透過 BSP 向學校繳交 registration fee（£100-500 常見範圍）。BSP 代收後扣除服務費（建議 3-5%）後轉帳學校。需要 Stripe/GoCardless 替換或補充現有 PayPal。</p>
+<p><strong>依賴：</strong> N08，支付合規設定（Payment Facilitation 監管要求）。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐⭐（中高）— 涉及 payment facilitation 監管（需確認是否需要 FCA 授權，詳見第 9 節待確認事項）。</p>
+<p><strong>估計時間：</strong> 4-6 週<br />
+<strong>估計成本：</strong> £3,000–£5,000 開發 + 法律諮詢費 £500-1,500（HKD $35,000–$65,000）</p>
+<p><strong>完成後商業價值：</strong> 代收申請費係重要的交易量收入，亦可作為「成功申請」的數據信號（用於觸發 success fee）。</p>
+<hr />
+<h4 id="n10學生顧問學校訊息功能">N10：學生/顧問/學校訊息功能</h4>
+<p><strong>功能說明：</strong><br />
+平台內 Messaging 系統，讓學校可以直接向學生/顧問發送個人化訊息，學生/顧問亦可回覆。確保所有溝通留在平台內（方便追蹤，也係商業化護城河）。</p>
+<p><strong>依賴：</strong> N03、N05。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐（中）— 需要 real-time 或 near-real-time 設計。</p>
+<p><strong>估計時間：</strong> 4-5 週<br />
+<strong>估計成本：</strong> £3,000–£5,000（HKD $30,000–$50,000）</p>
+<p><strong>完成後商業價值：</strong> 溝通閉環係防止學校繞過平台直接聯絡的關鍵，也係 seat fee 收費的基礎。</p>
+<hr />
+<h4 id="n11學校-open-day-預約功能">N11：學校 Open Day 預約功能</h4>
+<p><strong>功能說明：</strong><br />
+學校可以在平台發布 Open Day 活動，學生/顧問可預約參加（線上/線下），自動發送確認郵件。</p>
+<p><strong>依賴：</strong> N06（通知系統）。</p>
+<p><strong>開發難度：</strong> ⭐⭐（中低）</p>
+<p><strong>估計時間：</strong> 2-3 週<br />
+<strong>估計成本：</strong> £1,500–£2,500（HKD $15,000–$25,000）</p>
+<p><strong>完成後商業價值：</strong> 增加學校活躍使用場景，提升年費 renewal 率；可作為 featured/premium 功能收費。</p>
+<hr />
+<h3 id="phase-3-功能群目標完成-phase-2-後-4-6-個月">Phase 3 功能群（目標：完成 Phase 2 後 4-6 個月）</h3>
+<hr />
+<h4 id="n12ai-匹配評分引擎">N12：AI 匹配評分引擎</h4>
+<p><strong>功能說明：</strong><br />
+升級 N02 的規則式匹配為機器學習模型，根據歷史申請成功率、學校特徵、學生背景做更精準的匹配分數（0-100 分），並解釋匹配原因。需要累積足夠數據量（建議有 500+ 完整申請 case 後才做）。</p>
+<p><strong>依賴：</strong> 足夠的歷史申請數據（N01-N07 完整運行至少 6 個月）。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐⭐⭐（高）— 需要 ML 工程師，數據質量管理，模型評估。</p>
+<p><strong>估計時間：</strong> 8-12 週（需專業 AI 工程師外判）<br />
+<strong>估計成本：</strong> £8,000–£15,000（HKD $80,000–$150,000）</p>
+<p><strong>完成後商業價值：</strong> AI 護城河，競爭優勢最大化，支持 premium tier 定價。</p>
+<hr />
+<h4 id="n13顧問白標white-labelportal">N13：顧問白標（White-label）Portal</h4>
+<p><strong>功能說明：</strong><br />
+讓大型顧問公司可以用自己的品牌（Logo + 域名）部署一個「私有版」BSP，但後端數據共用。顧問公司向自己的客戶收費，並向 BSP 繳付 white-label 授權費。</p>
+<p><strong>依賴：</strong> N05（顧問工作台完整），品牌定制技術能力。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐⭐（中高）— 多租戶架構 + 品牌定制系統。</p>
+<p><strong>估計時間：</strong> 6-8 週<br />
+<strong>估計成本：</strong> £5,000–£8,000（HKD $50,000–$80,000）</p>
+<p><strong>完成後商業價值：</strong> 每個白標客戶係穩定的高額年費收入（建議£3,000-5,000/年），且顧問帶來更多學生流量（數據雙贏）。</p>
+<hr />
+<h4 id="n14申請結果追蹤--success-fee-觸發">N14：申請結果追蹤 + Success Fee 觸發</h4>
+<p><strong>功能說明：</strong><br />
+系統追蹤每個申請的最終結果（Offer / 拒絕 / 待定），當學生接受 Offer 並確認入讀時，自動觸發向學校收取 success fee 的賬單。需要學校確認機制（防止作弊）。</p>
+<p><strong>依賴：</strong> N07、N09，合同條款設計（與學校的服務協議）。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐⭐（中高）— 主要係業務邏輯設計 + 防欺詐機制。</p>
+<p><strong>估計時間：</strong> 4-6 週<br />
+<strong>估計成本：</strong> £3,000–£5,000 + 法律文件費用（HKD $30,000–$50,000）</p>
+<p><strong>完成後商業價值：</strong> Success fee 係 BSP 長遠最大單項收入來源（建議每個成功申請收取相當於 1-2 週學費，即 £300-800）。</p>
+<hr />
+<h4 id="n15數據報告-dashboard學校">N15：數據報告 Dashboard（學校）</h4>
+<p><strong>功能說明：</strong><br />
+學校可以看到：收到的 leads 趨勢、申請轉化率、學生來源地區分佈、與競爭學校的匿名對比等。類似 Google Analytics 但針對招生數據。</p>
+<p><strong>依賴：</strong> 大量歷史數據積累。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐（中）</p>
+<p><strong>估計時間：</strong> 4-5 週<br />
+<strong>估計成本：</strong> £3,000–£4,500（HKD $30,000–$45,000）</p>
+<p><strong>完成後商業價值：</strong> 支持 Premium 年費定價，增加學校對平台的依賴度。</p>
+<hr />
+<h4 id="n16api-接入第三方-mis-系統">N16：API 接入（第三方 MIS 系統）</h4>
+<p><strong>功能說明：</strong><br />
+提供 API 讓學校的現有 MIS（如 iSAMS、SIMS）自動接收 BSP 的 lead 資料，無需手動複製。需要 API 文件 + 合作學校測試。</p>
+<p><strong>依賴：</strong> N03、穩定的數據結構。</p>
+<p><strong>開發難度：</strong> ⭐⭐⭐⭐（中高）— 對接不同 MIS 系統工作量大。</p>
+<p><strong>估計時間：</strong> 6-8 週（每個 MIS 系統單獨對接）<br />
+<strong>估計成本：</strong> £4,000–£7,000/個 MIS 系統（HKD $40,000–$70,000）</p>
+<p><strong>完成後商業價值：</strong> 大型學校的技術採購決策一大考慮因素；但工作量大，建議放 Phase 3 後期。</p>
+<hr />
+<h2 id="4-12-個月月度-roadmap">4. 12 個月月度 Roadmap</h2>
+<blockquote>
+<p>以 2026 年 3 月為起點。</p>
+</blockquote>
+<h3 id="季度總覽">季度總覽</h3>
+<table>
+<thead>
+<tr class="header">
+<th>季度</th>
+<th>時間</th>
+<th>主要目標</th>
+<th>里程碑</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Q1</td>
+<td>3月–5月</td>
+<td>MVP 核心開發</td>
+<td>學生 Profile + 規則匹配引擎完成</td>
+</tr>
+<tr class="even">
+<td>Q2</td>
+<td>6月–8月</td>
+<td>MVP 上線 + 首批 Pilot</td>
+<td>顧問工作台 + 首 10 間學校試用</td>
+</tr>
+<tr class="odd">
+<td>Q3</td>
+<td>9月–11月</td>
+<td>Phase 2 開發 + 規模化</td>
+<td>文件上傳 + 訊息系統 + 30 間學校</td>
+</tr>
+<tr class="even">
+<td>Q4</td>
+<td>12月–翌年2月</td>
+<td>Phase 2 完整 + Phase 3 啟動</td>
+<td>代收申請費 + AI 匹配規劃</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="月份細節">月份細節</h3>
+<h4 id="3月現在整頓--規劃">3月（現在）：整頓 + 規劃</h4>
+<ul>
+<li>整理現有代碼庫、確認技術架構（monolith vs microservices？）</li>
+<li>決定 contractor 聘用方式（Upwork / 本地？）</li>
+<li>完成學生 Profile 表單設計稿（UX wire-frame）</li>
+<li>起草顧問 + 學校「早鳥合作意向書」（非綁定）</li>
+</ul>
+<h4 id="4月mvp-開發-sprint-1">4月：MVP 開發 Sprint 1</h4>
+<ul>
+<li>開始 N01（學生 Profile）開發</li>
+<li>並行開始 N02（匹配引擎）邏輯設計</li>
+<li>向現有年費客戶（如有）告知平台升級方向</li>
+</ul>
+<h4 id="5月mvp-開發-sprint-2">5月：MVP 開發 Sprint 2</h4>
+<ul>
+<li>N01 完成 + 內部測試</li>
+<li>N02 匹配引擎 v1 完成</li>
+<li>N03（學校 Lead Dashboard）開發</li>
+<li>N06（Email 通知）整合</li>
+</ul>
+<h4 id="6月mvp-完成--alpha-上線">6月：MVP 完成 + Alpha 上線</h4>
+<ul>
+<li>N04（學生申請追蹤器）+ N05（顧問工作台）完成</li>
+<li><strong>內部 Alpha 測試</strong>（Founder + 2-3 個熟識顧問試用）</li>
+<li>收集反饋，快速修復 bugs</li>
+</ul>
+<h4 id="7月首批-pilot-邀請">7月：<strong>首批 Pilot 邀請</strong></h4>
+<ul>
+<li><strong>邀請目標：中小型英國私立寄宿學校（boarding schools）</strong>
+<ul>
+<li>特別針對：國際生佔比較高（30%+）、過去幾年國際生數目下跌、規模 200-600 人的學校</li>
+<li>原因：這類學校招生壓力最大（ISC 2025 數據顯示國際生自 2020 年跌 14%），最願意嘗試新工具；且規模適中，易於溝通和迭代</li>
+<li>目標：Pilot 5-8 間學校（免費或大幅折扣試用 3-6 個月）</li>
+</ul></li>
+<li>同步邀請 3-5 個已有客戶基礎的教育顧問公司試用顧問工作台</li>
+</ul>
+<h4 id="8月pilot-數據收集--優化">8月：Pilot 數據收集 + 優化</h4>
+<ul>
+<li>收集 pilot 學校的 feedback（Lead 質素、介面易用性、資料準確度）</li>
+<li>快速迭代 N02 匹配邏輯（根據實際使用調整規則）</li>
+<li>開始規劃 Phase 2 開發</li>
+</ul>
+<h4 id="9月phase-2-sprint-1重要9月是英國學校招生季開始">9月：Phase 2 Sprint 1（重要：9月是英國學校招生季開始）</h4>
+<ul>
+<li>N07（學校回覆工具）開發</li>
+<li>N08（文件上傳）開發</li>
+<li><strong>擴大 Pilot 至 15-20 間學校</strong>
+<ul>
+<li>可以開始加入：Day school（通勤制私立學校）— 特別是位於倫敦、曼徹斯特、愛丁堡等城市的 day school，近年受 VAT 影響較大，同樣有招生壓力</li>
+<li>Grammar-adjacent / academic-focused schools：雖然 grammar school 多屬公立，但有些私立 academically selective 學校（類似 grammar school 取向）亦開始收費升學服務，可作為試點</li>
+</ul></li>
+</ul>
+<h4 id="10月phase-2-sprint-2">10月：Phase 2 Sprint 2</h4>
+<ul>
+<li>N10（訊息系統）開發</li>
+<li>N11（Open Day 預約）開發</li>
+<li>將 Pilot 學校轉換為正式付費客戶（年費 renewal / upgrade）</li>
+<li>向現有年費客戶銷售新功能 tier</li>
+</ul>
+<h4 id="11月phase-2-收尾--商業化深化">11月：Phase 2 收尾 + 商業化深化</h4>
+<ul>
+<li>Phase 2 全部功能測試完成</li>
+<li><strong>開始銷售 Lead Fee 套餐</strong>（學校每月按 lead 數量付費）</li>
+<li>評估 N09（申請費代收）的法律可行性（見第 9 節）</li>
+</ul>
+<h4 id="12月翌年1月phase-3-規劃--假期銷售">12月–翌年1月：Phase 3 規劃 + 假期銷售</h4>
+<ul>
+<li>12月：AI 匹配引擎（N12）技術規劃 + 招募 ML contractor</li>
+<li>1月：<strong>新招生季</strong>（英國學校 1 月是 GCSE/A-Level 申請高峰）
+<ul>
+<li>目標：在招生旺季前有完整 Phase 2 功能</li>
+<li>擴展至 30-40 間學校</li>
+</ul></li>
+</ul>
+<h4 id="翌年2月phase-3-啟動">翌年2月：Phase 3 啟動</h4>
+<ul>
+<li>N12（AI 匹配）開發啟動（需 500+ 申請數據基礎）</li>
+<li>N13（顧問白標 Portal）銷售測試（向頭 3 個大型顧問公司提案）</li>
+<li>規劃 Year 2 目標</li>
+</ul>
+<hr />
+<h3 id="pilot-建議按-school-segment">Pilot 建議：按 School Segment</h3>
+<p><strong>第一批 Pilot（7-8月，5-8 間）：英國私立寄宿學校（Boarding Schools）</strong></p>
+<ul>
+<li>優先選：國際生比例高（30%+）、近年招生數字有壓力的中型寄宿學校</li>
+<li>Profile：女生/男生/混合寄宿，Y7/Y9/Sixth Form 入學，學費 £30,000-45,000/年</li>
+<li>為何優先：招生壓力最大，動機最強，願意付費嘗試新方案；且通常有專職招生人員（Admissions Director），溝通效率高</li>
+<li>⚠️ 注意：頂尖精英寄宿學校（如 Eton / Winchester / Harrow 等）暫時不列入目標，這類學校不缺 leads，對 BSP 需求低，且決策流程長</li>
+</ul>
+<p><strong>第二批 Pilot（9月，擴展至 15-20 間）：城市私立 Day School</strong></p>
+<ul>
+<li>優先選：位於大城市（倫敦、曼徹斯特、伯明翰、愛丁堡）的私立 day school</li>
+<li>Profile：Y7 或 Y12 入學，學費 £15,000-25,000/年，受 VAT 影響較大</li>
+<li>為何加入：Day school 數量比 boarding 多，基數大；受 2025 年 VAT 衝擊，招生壓力明顯；國際化程度參差，對 BSP 係潛力市場</li>
+</ul>
+<p><strong>第三批（10-11月，目標 30 間）：學術型私立學校 / Grammar-Adjacent Schools</strong></p>
+<ul>
+<li>包括：私立 academically selective school、部分獨立學校的 Sixth Form College</li>
+<li>這類學校學術聲譽好，對學生質素要求高 → BSP 的結構化成績匹配對佢哋特別有用</li>
+</ul>
+<p><strong>觀望至 Phase 2+：Specialist Music / Sports / Arts Schools</strong></p>
+<ul>
+<li>例如：Yehudi Menuhin School（音樂）、Millfield（體育）、RADA / BRIT School 類型</li>
+<li>這類學校的申請流程非常獨特（試奏/試唱/試技），BSP 現有 workflow 未完全適配</li>
+<li>建議 Phase 2 文件上傳 + 訊息功能完善後才邀請試用</li>
+</ul>
+<hr />
+<h2 id="5-商業模式設計">5. 商業模式設計</h2>
+<h3 id="5a-現有收費架構">5A. 現有收費架構</h3>
+<table>
+<thead>
+<tr class="header">
+<th>客戶類型</th>
+<th>現有收費</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>學校</td>
+<td>年費（PayPal）</td>
+</tr>
+<tr class="even">
+<td>顧問</td>
+<td>年費（PayPal）</td>
+</tr>
+<tr class="odd">
+<td>商業公司</td>
+<td>年費（PayPal）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5b-建議分層收費架構">5B. 建議分層收費架構</h3>
+<h4 id="學校收費分層">學校收費分層</h4>
+<table>
+<thead>
+<tr class="header">
+<th>套餐</th>
+<th>說明</th>
+<th>建議定價</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Starter</strong></td>
+<td>學校目錄展示 + 考試成績公開 + 最多 10 個 leads/月查看</td>
+<td>£500/年</td>
+</tr>
+<tr class="even">
+<td><strong>Growth</strong></td>
+<td>Starter + Lead Dashboard 完整功能 + Open Day 預約 + 20 leads/月解鎖</td>
+<td>£1,200/年</td>
+</tr>
+<tr class="odd">
+<td><strong>Pro</strong></td>
+<td>Growth + 訊息系統 + 文件查閱 + 無限 leads + 招生數據報告</td>
+<td>£2,500/年</td>
+</tr>
+<tr class="even">
+<td><strong>Enterprise</strong></td>
+<td>Pro + API 接入 MIS + 白標合作 + 專屬 Account Manager</td>
+<td>議價，估計 £4,000-8,000/年</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lead Fee（附加收費）：</strong></p>
+<ul>
+<li>Growth/Pro 學校可選擇按 lead 付費（不計入年費額度）</li>
+<li>建議：£15-30/個解鎖 lead（未 reveal 完整學生資料前免費查看摘要）</li>
+<li>考慮：以「credits」制度設計，學校預購 credit pack 更好管理</li>
+</ul>
+<p><strong>Success Fee（Phase 3 啟動）：</strong></p>
+<ul>
+<li>學生通過 BSP 申請並最終入讀確認後收取</li>
+<li>建議：相當於 2 週學費，約 £250-600/個成功入讀（視乎學校類型）</li>
+<li>⚠️ 實際執行挑戰大（需要可靠的入讀確認機制，防止學校私下繞過平台）</li>
+<li>建議初期以「誠信制度」+ 合同條款執行，長遠考慮技術鎖定（例如申請費代收）</li>
+</ul>
+<hr />
+<h4 id="顧問收費分層">顧問收費分層</h4>
+<table>
+<thead>
+<tr class="header">
+<th>套餐</th>
+<th>說明</th>
+<th>建議定價</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Basic</strong></td>
+<td>顧問個人資料展示 + 最多 5 個學生案例</td>
+<td>£300/年</td>
+</tr>
+<tr class="even">
+<td><strong>Professional</strong></td>
+<td>完整顧問工作台 + 無限學生案例 + 匹配報告</td>
+<td>£800/年</td>
+</tr>
+<tr class="odd">
+<td><strong>White-label</strong></td>
+<td>顧問品牌 Portal + 完整功能 + 優先 leads</td>
+<td>£3,000-5,000/年</td>
+</tr>
+</tbody>
+</table>
+<p><strong>附加：Workflow Seat Fee</strong></p>
+<ul>
+<li>針對顧問公司（多人使用）：每個額外顧問帳戶 £200/年</li>
+<li>例如：4 人顧問公司 = Professional £800 + 3 seats × £200 = £1,400/年</li>
+</ul>
+<hr />
+<h4 id="商業公司收費廣告推廣">商業公司收費（廣告/推廣）</h4>
+<table>
+<thead>
+<tr class="header">
+<th>套餐</th>
+<th>說明</th>
+<th>建議定價</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Standard Listing</strong></td>
+<td>服務商目錄展示</td>
+<td>£400/年</td>
+</tr>
+<tr class="even">
+<td><strong>Featured Listing</strong></td>
+<td>置頂顯示 + Logo 展示 + 學校/顧問頁面側欄廣告</td>
+<td>£1,200/年</td>
+</tr>
+<tr class="odd">
+<td><strong>Sponsored Content</strong></td>
+<td>BSP Newsletter 或文章贊助</td>
+<td>£500-1,500/次（假設，視受眾規模而定）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="5c-關於學生申請費registration-fee是否應收">5C. 關於學生申請費（Registration Fee）——是否應收？</h3>
+<p><strong>英國私立學校的市場慣例：</strong><br />
+大部分英國私立學校收取 £100-500 的 registration fee，屬不退款費用，用於行政處理申請。部分精英學校（如 Harrow）更高至 £450+。[來源：edvision-group.com，Harrow School 官網]</p>
+<p><strong>BSP 的三個選擇分析：</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>選項</th>
+<th>說明</th>
+<th>優缺點</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A. 暫時不收</strong></td>
+<td>學生申請 BSP 免費，學校單獨直接向學生收 reg fee</td>
+<td>✅ 最易執行；✅ 降低學生入場門檻；❌ BSP 少一個收入來源</td>
+</tr>
+<tr class="even">
+<td><strong>B. BSP 代收</strong></td>
+<td>學生在 BSP 繳交 reg fee，BSP 代轉學校</td>
+<td>✅ BSP 可收 2-5% 服務費；✅ 數據閉環（付款即確認申請意向）；❌ 需 payment facilitation 合規設置（可能需要 FCA 授權）；❌ 增加開發複雜度</td>
+</tr>
+<tr class="odd">
+<td><strong>C. BSP 直接收取自己的服務費</strong></td>
+<td>BSP 向學生收取「申請服務費」（£50-100）作為使用 BSP workflow 的費用，與學校 reg fee 分開</td>
+<td>✅ 直接收入；❌ 學生會抗拒（免費同行更多）；❌ 增加入場門檻</td>
+</tr>
+</tbody>
+</table>
+<p><strong>建議：</strong></p>
+<ul>
+<li><strong>短期（MVP + Phase 2）：選 A（暫時不收）</strong> — 優先建立學生和學校的雙邊網絡，流量比收費更重要。學生申請應免費，降低摩擦。</li>
+<li><strong>中期（Phase 2 後期）：考慮選 B（代收）</strong> — 當平台有足夠活躍度後，代收 reg fee 既能增加收入，又能讓 BSP 成為申請流程不可繞過的節點。但要先確認 FCA/支付合規要求（見第 9 節待確認事項）。</li>
+<li><strong>長遠永遠避免選 C</strong> — 直接向學生收費的定位不符 BSP「幫學生找學校」的品牌形象。</li>
+</ul>
+<hr />
+<h2 id="6-基礎營運成本估算">6. 基礎營運成本估算</h2>
+<blockquote>
+<p>⚠️ 以下估算以英國部署為基礎，數字係合理範圍估計，實際成本視使用量而定。標有「假設」字樣者尤其需要實際報價確認。</p>
+</blockquote>
+<h3 id="6a-雲端--hosting">6A. 雲端 / Hosting</h3>
+<table>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>說明</th>
+<th>估計月費（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>App Server（2x t3.medium equivalent，AWS London）</td>
+<td>主 Web Application + API</td>
+<td>£60-120</td>
+</tr>
+<tr class="even">
+<td>Database（RDS PostgreSQL，small instance）</td>
+<td>主數據庫</td>
+<td>£40-80</td>
+</tr>
+<tr class="odd">
+<td>File Storage（S3 equivalent，初期 100GB）</td>
+<td>文件上傳存儲</td>
+<td>£5-15</td>
+</tr>
+<tr class="even">
+<td>CDN（CloudFront / Cloudflare）</td>
+<td>靜態資源加速</td>
+<td>£10-20</td>
+</tr>
+<tr class="odd">
+<td>Backup + Monitoring（基礎）</td>
+<td>自動備份 + 基礎監控</td>
+<td>£20-40</td>
+</tr>
+<tr class="even">
+<td><strong>小計</strong></td>
+<td></td>
+<td><strong>£135–£275/月</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>早期可用 Render.com 或 Railway 等 PaaS 服務降低成本（估計 £50-100/月 all-in），犧牲部分靈活性。[假設：基於 AWS 定價計算器公開資料，見搜索結果]</p>
+</blockquote>
+<h3 id="6b-通訊服務">6B. 通訊服務</h3>
+<table>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>說明</th>
+<th>估計月費（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Transactional Email（Mailgun / SendGrid）</td>
+<td>通知郵件，每月約 10,000 封</td>
+<td>£15-30</td>
+</tr>
+<tr class="even">
+<td>SMS（可選，Twilio UK）</td>
+<td>重要通知短訊，初期可選</td>
+<td>£20-50（假設，視用量）</td>
+</tr>
+<tr class="odd">
+<td>WhatsApp Business API（可選）</td>
+<td>顧問/學校通知，初期非必要</td>
+<td>£30-100（假設）</td>
+</tr>
+<tr class="even">
+<td><strong>小計（只用 Email）</strong></td>
+<td></td>
+<td><strong>£15–30/月</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="6c-支付手續費">6C. 支付手續費</h3>
+<table>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>說明</th>
+<th>估計費率</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PayPal（現有）</td>
+<td>標準年費收款</td>
+<td>2.9% + £0.30/筆 [來源：PayPal UK 官網]</td>
+</tr>
+<tr class="even">
+<td>Stripe（建議替換/補充）</td>
+<td>更好的 SaaS 訂閱管理</td>
+<td>1.4% + £0.20（歐洲卡）/ 2.9% + £0.30（非歐洲卡）[假設，基於 Stripe UK 公開定價]</td>
+</tr>
+<tr class="odd">
+<td>估計年費支付手續費</td>
+<td>假設平均年費 £800，50 個客戶</td>
+<td>約 £1,000-1,500/年總費用（假設）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>建議遷移至 Stripe</strong>：PayPal 雖然現有用戶熟悉，但 Stripe 的訂閱管理（Billing Portal）更適合 SaaS 模式，有自動 renewal、發票管理等功能。費率相近，但功能遠優於 PayPal。</p>
+</blockquote>
+<h3 id="6d-客服--營運工具">6D. 客服 / 營運工具</h3>
+<table>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>說明</th>
+<th>估計月費（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercom / Crisp（客服聊天）</td>
+<td>初期用免費/入門 plan</td>
+<td>£0-29</td>
+</tr>
+<tr class="even">
+<td>Notion / Linear（項目管理）</td>
+<td>Founder 自用</td>
+<td>£0-15</td>
+</tr>
+<tr class="odd">
+<td>Google Workspace（Email + Docs）</td>
+<td><a href="mailto:info@britishschoolportal.com">info@britishschoolportal.com</a></td>
+<td>£10-15</td>
+</tr>
+<tr class="even">
+<td>Zapier / Make（自動化，可選）</td>
+<td>初期可不用</td>
+<td>£0-30</td>
+</tr>
+<tr class="odd">
+<td><strong>小計</strong></td>
+<td></td>
+<td><strong>£10–90/月</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="6e-法務--會計--資料保護">6E. 法務 / 會計 / 資料保護</h3>
+<table>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>說明</th>
+<th>估計年費（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ICO Data Protection Fee（UK GDPR 註冊）</td>
+<td>Tier 1（微型企業）</td>
+<td>£52/年 [來源：ICO 官網 2025 更新後費率]</td>
+</tr>
+<tr class="even">
+<td>Privacy Policy / Terms of Service 起草</td>
+<td>一次性法律諮詢（UK 律師）</td>
+<td>£500-1,500（假設）</td>
+</tr>
+<tr class="odd">
+<td>年度會計 / 稅務申報</td>
+<td>小型公司</td>
+<td>£500-1,200/年（假設）</td>
+</tr>
+<tr class="even">
+<td>GDPR DPA（Data Processing Agreement）模板</td>
+<td>與學校/顧問簽署</td>
+<td>£300-500 一次性（假設）</td>
+</tr>
+<tr class="odd">
+<td>Payment Facilitation 合規評估</td>
+<td>如實施代收 reg fee</td>
+<td>£500-1,500 一次性（假設）</td>
+</tr>
+<tr class="even">
+<td><strong>法務/會計小計</strong></td>
+<td></td>
+<td><strong>£1,800–£5,700/年（前期） → £1,000–£2,500/年（穩定後）</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="6f-總月度營運成本早期估計">6F. 總月度營運成本（早期估計）</h3>
+<table>
+<thead>
+<tr class="header">
+<th>項目</th>
+<th>低端（GBP/月）</th>
+<th>高端（GBP/月）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>雲端 / Hosting</td>
+<td>£135</td>
+<td>£275</td>
+</tr>
+<tr class="even">
+<td>通訊服務</td>
+<td>£15</td>
+<td>£80</td>
+</tr>
+<tr class="odd">
+<td>支付手續費</td>
+<td>£80</td>
+<td>£150</td>
+</tr>
+<tr class="even">
+<td>客服/營運工具</td>
+<td>£10</td>
+<td>£90</td>
+</tr>
+<tr class="odd">
+<td>法務/會計（月均）</td>
+<td>£150</td>
+<td>£475</td>
+</tr>
+<tr class="even">
+<td><strong>月度總計</strong></td>
+<td><strong>£390</strong></td>
+<td><strong>£1,070</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>年度總計</strong></td>
+<td><strong>~£4,680</strong></td>
+<td><strong>~£12,840</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>結論：BSP 早期基礎營運成本相對低，約 £400-1,000/月（HKD $4,000-10,000/月）。主要成本係人手（開發外判），而非雲端基建。</strong> 這對 solo founder 來說是個好消息——現金流壓力較低，但需要小心控制外判開發成本。</p>
+</blockquote>
+<hr />
+<h2 id="7-單-founder-人力規劃">7. 單 Founder 人力規劃</h2>
+<h3 id="7a-現在0-12個月solo-founder-模式">7A. 現在（0-12個月）：Solo Founder 模式</h3>
+<p><strong>可行前提條件：</strong></p>
+<ul>
+<li>Founder 有足夠技術能力管理外判 contractor（唔需要自己全部寫，但要能審查代碼/提需求）</li>
+<li>或者 Founder 本人係全端開發者，可以自己做 MVP 大部分工作</li>
+</ul>
+<p><strong>建議操作模式：</strong></p>
+<ol>
+<li><p><strong>外判 Full-Stack Contractor（兼職）</strong>：找 1 個靠譜的 full-stack contractor（每週 2-3 天），負責核心功能開發。建議找有 SaaS / edtech 背景者。</p>
+<ul>
+<li>成本：£300-500/天，每週 £600-1,500（月 £2,500-6,000）</li>
+<li>Upwork 或 UK-based 自由職業者平台</li>
+</ul></li>
+<li><p><strong>Founder 自己負責</strong>：產品設計、客戶銷售、學校關係、顧問關係、策略決策</p></li>
+<li><p><strong>自動化代替人手</strong>：早期大量使用自動化工具（Zapier/Make）代替客服和重複工作</p></li>
+</ol>
+<h3 id="7b-招聘觸發條件--優先職位">7B. 招聘觸發條件 + 優先職位</h3>
+<h4 id="職位-1full-stack-product-engineer全端產品工程師">職位 1：Full-Stack Product Engineer（全端產品工程師）</h4>
+<ul>
+<li><strong>觸發條件：</strong> 收入達到 £5,000/月 OR 外判 contractor 成本超過 £3,000/月連續 3 個月</li>
+<li><strong>主要工作：</strong> 獨立負責核心功能開發、技術維護、API 整合</li>
+<li><strong>建議形式：</strong> 先兼職/外判（0-6個月） → 轉全職（穩定收入後）</li>
+<li><strong>全職薪酬估計：</strong> £45,000-65,000/年（倫敦 full-stack，2024-2025 市場）[假設，基於市場調查]</li>
+</ul>
+<h4 id="職位-2school-success-manager學校成功經理">職位 2：School Success Manager（學校成功經理）</h4>
+<ul>
+<li><strong>觸發條件：</strong> 付費學校達到 20 間 OR founder 花在學校溝通的時間超過工作時間 40%</li>
+<li><strong>主要工作：</strong> 學校 onboarding、技術支援、年費 renewal、收集 feedback</li>
+<li><strong>建議形式：</strong> 先兼職（£15-20/小時，遠端），穩定後轉全職</li>
+<li><strong>全職薪酬估計：</strong> £30,000-40,000/年（UK 市場）[假設]</li>
+</ul>
+<h4 id="職位-3admissions--content-ops招生數據內容運營">職位 3：Admissions / Content Ops（招生數據/內容運營）</h4>
+<ul>
+<li><strong>觸發條件：</strong> 學生 Profile 超過 200 個/月需要質量審核，或需要定期更新學校數據</li>
+<li><strong>主要工作：</strong> 學校數據維護、學生 Profile QA、Content creation（學校指南/博客）</li>
+<li><strong>建議形式：</strong> 兼職或外包（英國在校生實習？）</li>
+<li><strong>成本：</strong> £12-18/小時兼職（£1,500-3,000/月）[假設]</li>
+</ul>
+<h4 id="職位-4sales--business-development">職位 4：Sales / Business Development</h4>
+<ul>
+<li><strong>觸發條件：</strong> 付費學校超過 50 間 OR 需要拓展顧問白標業務</li>
+<li><strong>主要工作：</strong> 新學校 outreach、顧問公司合作、商業公司廣告銷售</li>
+<li><strong>建議形式：</strong> 先外包（commission-based agent，成功收費），後全職</li>
+<li><strong>全職薪酬：</strong> £35,000-50,000 + 佣金 [假設]</li>
+</ul>
+<h4 id="職位-5customer-support--operations">職位 5：Customer Support / Operations</h4>
+<ul>
+<li><strong>觸發條件：</strong> 每日客服問題超過 10 條 OR 有學生申請糾紛需要處理</li>
+<li><strong>主要工作：</strong> 學生/顧問/學校客服，退款/糾紛處理</li>
+<li><strong>建議形式：</strong> 先用 AI 客服（Intercom + ChatGPT 整合）代替，真人做監督</li>
+<li><strong>成本：</strong> 早期 AI 工具約 £50-100/月，後期真人 £25,000-30,000/年 [假設]</li>
+</ul>
+<h3 id="7c-人力發展時序建議">7C. 人力發展時序建議</h3>
+<table>
+<thead>
+<tr class="header">
+<th>時間</th>
+<th>人力狀態</th>
+<th>月人力成本估計</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0-6個月</td>
+<td>Founder + 1 外判 contractor（兼職）</td>
+<td>£2,500-6,000</td>
+</tr>
+<tr class="even">
+<td>6-12個月</td>
+<td>Founder + contractor（增加時數） + 兼職 ops</td>
+<td>£4,000-8,000</td>
+</tr>
+<tr class="odd">
+<td>12-18個月</td>
+<td>Founder + 全職 engineer + 兼職 school success</td>
+<td>£8,000-12,000</td>
+</tr>
+<tr class="even">
+<td>18-30個月</td>
+<td>+School Success 全職 + Sales 兼職</td>
+<td>£15,000-22,000</td>
+</tr>
+<tr class="odd">
+<td>30-36個月</td>
+<td>視收入擴展 customer support / data ops</td>
+<td>£20,000-30,000</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-財務模型">8. 財務模型</h2>
+<blockquote>
+<p>⚠️ 以下為粗略模型，所有數字均為估計，標有「假設」字樣。實際結果受市場接受度、銷售執行、競爭格局等影響極大。</p>
+</blockquote>
+<h3 id="8a-關鍵假設">8A. 關鍵假設</h3>
+<p><strong>收入假設：</strong></p>
+<ul>
+<li>學校年費（Starter/Growth/Pro）平均 ARR：假設平均 £1,200/間/年（混合 tier）</li>
+<li>顧問年費平均 ARR：假設 £600/位/年</li>
+<li>商業公司年費平均：£800/間/年</li>
+<li>Lead Fee 收入：假設每間付費學校月均消費 £50-200 額外 lead credits</li>
+<li>Featured Listing 廣告：每單 £600-1,500/年</li>
+<li>Phase 3 Success Fee：每個確認入讀約 £400 平均（假設）</li>
+</ul>
+<p><strong>客戶增長假設：</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th>說明</th>
+<th>Y1 學校數</th>
+<th>Y2 學校數</th>
+<th>Y3 學校數</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>穩健增長，銷售執行力良好</td>
+<td>30</td>
+<td>80</td>
+<td>180</td>
+</tr>
+<tr class="even">
+<td>Upside</td>
+<td>顧問渠道爆發，口碑傳播</td>
+<td>50</td>
+<td>150</td>
+<td>350</td>
+</tr>
+<tr class="odd">
+<td>Downside</td>
+<td>銷售進展緩慢，學校觀望期長</td>
+<td>15</td>
+<td>40</td>
+<td>90</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="8b-年度財務預測">8B. 年度財務預測</h3>
+<h4 id="year-12026年3月2027年2月建立期">Year 1（2026年3月–2027年2月）：建立期</h4>
+<p><strong>Base Scenario</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>收入項目</th>
+<th>假設</th>
+<th>金額（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>學校年費（30間 × £1,200）</td>
+<td>假設</td>
+<td>£36,000</td>
+</tr>
+<tr class="even">
+<td>顧問年費（20位 × £600）</td>
+<td>假設</td>
+<td>£12,000</td>
+</tr>
+<tr class="odd">
+<td>商業公司（5間 × £800）</td>
+<td>假設</td>
+<td>£4,000</td>
+</tr>
+<tr class="even">
+<td>Lead Fee / Featured Listing</td>
+<td>小量</td>
+<td>£3,000</td>
+</tr>
+<tr class="odd">
+<td><strong>總收入</strong></td>
+<td></td>
+<td><strong>£55,000</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>支出項目</th>
+<th>假設</th>
+<th>金額（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>雲端/工具（月均 £500）</td>
+<td>假設</td>
+<td>£6,000</td>
+</tr>
+<tr class="even">
+<td>外判開發（月均 £4,000，前 9 個月）</td>
+<td>假設</td>
+<td>£36,000</td>
+</tr>
+<tr class="odd">
+<td>法務/會計</td>
+<td>假設</td>
+<td>£5,000</td>
+</tr>
+<tr class="even">
+<td>銷售/市場（展覽/出差/廣告）</td>
+<td>假設</td>
+<td>£5,000</td>
+</tr>
+<tr class="odd">
+<td>Founder 薪酬（最低限度）</td>
+<td>假設</td>
+<td>£20,000</td>
+</tr>
+<tr class="even">
+<td><strong>總支出</strong></td>
+<td></td>
+<td><strong>£72,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Year 1 Base：虧損 £-17,000</strong>（仍需外部資金或 Founder 自資渡過）</p>
+<p><strong>Upside：</strong> 學校 50 間，收入 £90,000，虧損縮小至 £-5,000 至接近 breakeven<br />
+<strong>Downside：</strong> 學校 15 間，收入 £30,000，虧損擴大至 £-30,000+</p>
+<hr />
+<h4 id="year-22027年3月2028年2月成長期">Year 2（2027年3月–2028年2月）：成長期</h4>
+<p><strong>Base Scenario</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>收入項目</th>
+<th>假設</th>
+<th>金額（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>學校年費（80間 × £1,200）</td>
+<td>假設</td>
+<td>£96,000</td>
+</tr>
+<tr class="even">
+<td>顧問年費（50位 × £700 平均）</td>
+<td>假設</td>
+<td>£35,000</td>
+</tr>
+<tr class="odd">
+<td>商業公司（15間 × £900）</td>
+<td>假設</td>
+<td>£13,500</td>
+</tr>
+<tr class="even">
+<td>Lead Fee（80 間 × £100/月均）</td>
+<td>假設</td>
+<td>£96,000</td>
+</tr>
+<tr class="odd">
+<td>Featured / Ads</td>
+<td>假設</td>
+<td>£8,000</td>
+</tr>
+<tr class="even">
+<td>Success Fee（每月 20 個入讀 × £400 × 12）</td>
+<td>假設，Phase 3 啟動</td>
+<td>£96,000</td>
+</tr>
+<tr class="odd">
+<td><strong>總收入</strong></td>
+<td></td>
+<td><strong>£344,500</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>支出項目</th>
+<th>假設</th>
+<th>金額（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>雲端/工具（月均 £800）</td>
+<td>假設</td>
+<td>£9,600</td>
+</tr>
+<tr class="even">
+<td>全職工程師</td>
+<td>假設</td>
+<td>£55,000</td>
+</tr>
+<tr class="odd">
+<td>School Success 兼職→全職</td>
+<td>假設</td>
+<td>£35,000</td>
+</tr>
+<tr class="even">
+<td>法務/會計</td>
+<td>假設</td>
+<td>£4,000</td>
+</tr>
+<tr class="odd">
+<td>銷售/市場</td>
+<td>假設</td>
+<td>£15,000</td>
+</tr>
+<tr class="even">
+<td>Founder 薪酬</td>
+<td>假設</td>
+<td>£40,000</td>
+</tr>
+<tr class="odd">
+<td><strong>總支出</strong></td>
+<td></td>
+<td><strong>£158,600</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Year 2 Base：利潤 £+185,900</strong>（EBITDA，未計稅）</p>
+<p><strong>Upside：</strong> 學校 150 間，收入 ~£600,000，利潤 ~£350,000<br />
+<strong>Downside：</strong> 學校 40 間，收入 ~£120,000，大致 breakeven 或小虧</p>
+<blockquote>
+<p>⚠️ Year 2 的 success fee 收入（£96,000）依賴 Phase 3 上線 + 有效的入讀確認機制，實際執行可能延後或打折扣。建議財務計劃中將 success fee 列為「上行空間」而非核心假設。</p>
+</blockquote>
+<hr />
+<h4 id="year-32028年3月2029年2月規模化期">Year 3（2028年3月–2029年2月）：規模化期</h4>
+<p><strong>Base Scenario</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>收入項目</th>
+<th>假設</th>
+<th>金額（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>學校年費（180間 × £1,500 平均，因 tier 升級）</td>
+<td>假設</td>
+<td>£270,000</td>
+</tr>
+<tr class="even">
+<td>顧問年費（120位 × £800）</td>
+<td>假設</td>
+<td>£96,000</td>
+</tr>
+<tr class="odd">
+<td>顧問白標 Portal（5 間顧問公司 × £4,000）</td>
+<td>假設</td>
+<td>£20,000</td>
+</tr>
+<tr class="even">
+<td>商業公司（30間 × £1,000）</td>
+<td>假設</td>
+<td>£30,000</td>
+</tr>
+<tr class="odd">
+<td>Lead Fee（180 間 × £150/月）</td>
+<td>假設</td>
+<td>£324,000</td>
+</tr>
+<tr class="even">
+<td>Success Fee（月均 40 個入讀 × £400 × 12）</td>
+<td>假設</td>
+<td>£192,000</td>
+</tr>
+<tr class="odd">
+<td>數據/API 授權</td>
+<td>假設</td>
+<td>£15,000</td>
+</tr>
+<tr class="even">
+<td><strong>總收入</strong></td>
+<td></td>
+<td><strong>£947,000</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>支出項目</th>
+<th>假設</th>
+<th>金額（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>雲端/工具</td>
+<td>假設</td>
+<td>£18,000</td>
+</tr>
+<tr class="even">
+<td>工程團隊（2-3人）</td>
+<td>假設</td>
+<td>£120,000</td>
+</tr>
+<tr class="odd">
+<td>School Success（2人）</td>
+<td>假設</td>
+<td>£70,000</td>
+</tr>
+<tr class="even">
+<td>Sales（1人）</td>
+<td>假設</td>
+<td>£45,000</td>
+</tr>
+<tr class="odd">
+<td>支援/Ops</td>
+<td>假設</td>
+<td>£30,000</td>
+</tr>
+<tr class="even">
+<td>法務/會計</td>
+<td>假設</td>
+<td>£8,000</td>
+</tr>
+<tr class="odd">
+<td>銷售/市場</td>
+<td>假設</td>
+<td>£40,000</td>
+</tr>
+<tr class="even">
+<td>Founder 薪酬</td>
+<td>假設</td>
+<td>£60,000</td>
+</tr>
+<tr class="odd">
+<td><strong>總支出</strong></td>
+<td></td>
+<td><strong>£391,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Year 3 Base：利潤 £+556,000</strong>（EBITDA）</p>
+<p><strong>Upside（350 間學校）：收入 ~£1.8M，利潤 ~£1.1M</strong><br />
+<strong>Downside（90 間學校）：收入 ~£420,000，利潤 ~£100,000（仍係正數）</strong></p>
+<hr />
+<h3 id="8c-財務模型總覽表">8C. 財務模型總覽表</h3>
+<table>
+<thead>
+<tr class="header">
+<th>年份</th>
+<th>Scenario</th>
+<th>學校數</th>
+<th>總收入（GBP）</th>
+<th>總支出（GBP）</th>
+<th>EBITDA（GBP）</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Year 1</td>
+<td>Base</td>
+<td>30</td>
+<td>£55,000</td>
+<td>£72,000</td>
+<td>-£17,000</td>
+</tr>
+<tr class="even">
+<td>Year 1</td>
+<td>Upside</td>
+<td>50</td>
+<td>£90,000</td>
+<td>£75,000</td>
+<td>+£15,000</td>
+</tr>
+<tr class="odd">
+<td>Year 1</td>
+<td>Downside</td>
+<td>15</td>
+<td>£30,000</td>
+<td>£65,000</td>
+<td>-£35,000</td>
+</tr>
+<tr class="even">
+<td>Year 2</td>
+<td>Base</td>
+<td>80</td>
+<td>£344,500</td>
+<td>£158,600</td>
+<td>+£185,900</td>
+</tr>
+<tr class="odd">
+<td>Year 2</td>
+<td>Upside</td>
+<td>150</td>
+<td>£600,000</td>
+<td>£200,000</td>
+<td>+£400,000</td>
+</tr>
+<tr class="even">
+<td>Year 2</td>
+<td>Downside</td>
+<td>40</td>
+<td>£120,000</td>
+<td>£130,000</td>
+<td>-£10,000</td>
+</tr>
+<tr class="odd">
+<td>Year 3</td>
+<td>Base</td>
+<td>180</td>
+<td>£947,000</td>
+<td>£391,000</td>
+<td>+£556,000</td>
+</tr>
+<tr class="even">
+<td>Year 3</td>
+<td>Upside</td>
+<td>350</td>
+<td>£1,800,000</td>
+<td>£700,000</td>
+<td>+£1,100,000</td>
+</tr>
+<tr class="odd">
+<td>Year 3</td>
+<td>Downside</td>
+<td>90</td>
+<td>£420,000</td>
+<td>£320,000</td>
+<td>+£100,000</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ 所有數字均為假設估算，並非財務預測保證。Year 2-3 的 lead fee + success fee 假設依賴功能如期上線及市場接受。</p>
+</blockquote>
+<hr />
+<h2 id="9-最後建議">9. 最後建議</h2>
+<h3 id="9a-最值得先做的-5-個功能">9A. 最值得先做的 5 個功能</h3>
+<ol>
+<li><strong>N01：學生結構化申請 Profile</strong> — 萬事俱備，只欠數據。無此功能，其他一切無法啟動。</li>
+<li><strong>N02：Reverse-Matching 引擎（規則式）</strong> — 這係 BSP 的核心差異化，讓學校從「感覺有用」變成「確實有用」。</li>
+<li><strong>N03：學校 Lead Dashboard</strong> — 讓學校「看見」平台的價值，係付費留存的關鍵。</li>
+<li><strong>N05：顧問協作工作台</strong> — 顧問係 BSP 最穩定的付費群體，也是流量引入的最佳渠道。做好顧問體驗，顧問自然帶學生來。</li>
+<li><strong>N06：Email 通知系統</strong> — 低成本、高影響，讓整個 workflow 活起來。</li>
+</ol>
+<h3 id="9b-最不建議過早做的-5-個功能">9B. 最不建議過早做的 5 個功能</h3>
+<ol>
+<li><strong>N12：AI 匹配評分引擎</strong> — 無足夠數據的 AI 是玄學，不是產品。至少等到 500+ 真實申請 cases 才有意義做。</li>
+<li><strong>N13：顧問白標 Portal</strong> — 需要多租戶架構，工程複雜度高，早期資源浪費。等到有 5+ 顧問公司真實需求才做。</li>
+<li><strong>N16：API 接入 MIS 系統</strong> — 對接 iSAMS / SIMS 等系統工作量巨大，且每個 MIS 都要單獨適配。除非有大客戶要求且願意為此付費，否則先放。</li>
+<li><strong>N14：Success Fee 自動觸發</strong> — 概念吸引，但執行難度係技術和業務雙重難題。早期先用合同 + 誠信制度，等代收申請費（N09）上線後才能形成自然閉環。</li>
+<li><strong>獨立 Mobile App</strong> — 早期做 responsive web 足夠。Native App 的開發和維護成本遠超收益，且並非 B2B SaaS 的必要條件。</li>
+</ol>
+<hr />
+<h3 id="9c-investor-friendly-positioning一句話">9C. Investor-Friendly Positioning（一句話）</h3>
+<blockquote>
+<p>"BSP is building the first structured application workflow layer for UK independent schools — connecting schools under enrollment pressure with qualified international student leads, while giving education consultants a collaborative operating system."</p>
+</blockquote>
+<hr />
+<h3 id="9d-對-founder-最直白的建議一句話">9D. 對 Founder 最直白的建議（一句話）</h3>
+<blockquote>
+<p><strong>你最大的風險唔係技術，而係學校銷售太慢——學校是傳統機構，決策週期長，所以 Year 1 最緊要的工作係親自打電話/出席展覽，讓 10-20 間真實學校在平台上活躍，而唔係去完善每一個功能細節。</strong></p>
+</blockquote>
+<hr />
+<h2 id="附錄待確認事項">附錄：待確認事項</h2>
+<p>以下事項建議 Founder 在推進前確認，可能影響商業模式設計：</p>
+<ol>
+<li><p><strong>Payment Facilitation 監管要求：</strong> BSP 如果代收學生向學校繳交的 registration fee（即自己不是服務的最終提供者），是否需要向英國 FCA（Financial Conduct Authority）申請 Payment Institution 牌照？建議諮詢英國 fintech/payments 法律顧問。</p></li>
+<li><p><strong>Success Fee 的合法性與可執行性：</strong> 向學校收取 success fee（以學生入讀為觸發）在法律上屬於什麼服務類型？是否類似招聘仲介？是否受任何行業監管？需要在服務協議中明確。</p></li>
+<li><p><strong>學生個人資料的 GDPR 合規：</strong> BSP 處理學生（尤其 18 歲以下未成年學生）的個人資料，需要符合 UK GDPR + COPPA-equivalent 要求（英國的 Age Appropriate Design Code）。建議早期諮詢 DPO 顧問。</p></li>
+<li><p><strong>現有年費客戶的合同條款：</strong> 升級平台功能定位時，現有付費客戶是否有合同保護條款？升級收費時需要如何通知/再簽？</p></li>
+<li><p><strong>BSP 域名/品牌的英國商標保護：</strong> 品牌名稱是否已在英國 IPO 註冊？建議早期完成（費用約 £170-400/類別）[假設，基於英國 IPO 公開收費表]。</p></li>
+</ol>
+<hr />
+<p><em>文件版本：v1.0 草稿 | 撰寫日期：2026年3月 | 供內部決策參考，所有估算數字均為假設，不構成財務建議</em></p>
+</body>
+</html>

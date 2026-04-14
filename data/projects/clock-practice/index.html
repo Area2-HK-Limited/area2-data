@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學睇時鐘 🕐 - 大囡囡</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Microsoft JhengHei', cursive, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #FFE5EC 0%, #E8F4F8 50%, #E5F4FF 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6B9D;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0px #FFE66D;
+        }
+
+        .difficulty-selector {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .diff-btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+        }
+
+        .diff-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .diff-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+        }
+
+        .diff-btn.active {
+            box-shadow: 0 4px 0 rgba(0,0,0,0.3), inset 0 2px 5px rgba(255,255,255,0.5);
+            transform: translateY(2px);
+        }
+
+        .diff-btn.easy { background: #7ED957; color: #2D5A1B; }
+        .diff-btn.medium { background: #FFB347; color: #8B4513; }
+        .diff-btn.hard { background: #FF6B6B; color: #8B0000; }
+
+        .scoreboard {
+            background: white;
+            border-radius: 20px;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            display: inline-flex;
+            gap: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .score-item {
+            text-align: center;
+        }
+
+        .score-label {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .score-value {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .score-value.correct { color: #4CAF50; }
+        .score-value.wrong { color: #FF5252; }
+
+        .clock-container {
+            background: white;
+            border-radius: 50%;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15), inset 0 0 30px rgba(255,255,255,0.5);
+            position: relative;
+        }
+
+        @media (max-width: 400px) {
+            .clock-container {
+                width: 250px;
+                height: 250px;
+                padding: 15px;
+            }
+        }
+
+        #clockCanvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .question {
+            font-size: 1.5rem;
+            color: #5C7AEA;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .option-btn {
+            padding: 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            background: white;
+            color: #333;
+            box-shadow: 0 6px 0 rgba(0,0,0,0.15);
+        }
+
+        .option-btn:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 9px 0 rgba(0,0,0,0.15);
+        }
+
+        .option-btn:active:not(:disabled) {
+            transform: translateY(3px);
+            box-shadow: 0 3px 0 rgba(0,0,0,0.15);
+        }
+
+        .option-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .option-btn.correct {
+            background: #4CAF50 !important;
+            color: white !important;
+            animation: pulse 0.5s ease;
+        }
+
+        .option-btn.wrong {
+            background: #FF5252 !important;
+            color: white !important;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes celebrate {
+            0% { transform: scale(0) rotate(0deg); opacity: 0; }
+            50% { transform: scale(1.5) rotate(180deg); opacity: 1; }
+            100% { transform: scale(1) rotate(360deg); opacity: 1; }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .celebration {
+            position: fixed;
+            font-size: 3rem;
+            pointer-events: none;
+            animation: celebrate 0.8s ease forwards;
+            z-index: 1000;
+        }
+
+        .feedback {
+            font-size: 1.5rem;
+            font-weight: bold;
+            min-height: 40px;
+            margin: 15px 0;
+        }
+
+        .feedback.correct {
+            color: #4CAF50;
+        }
+
+        .feedback.wrong {
+            color: #FF5252;
+        }
+
+        .next-btn {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            background: #5C7AEA;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-weight: bold;
+            box-shadow: 0 5px 0 #3D5AC9;
+            transition: all 0.3s ease;
+        }
+
+        .next-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 0 #3D5AC9;
+        }
+
+        .next-btn:active {
+            transform: translateY(3px);
+            box-shadow: 0 2px 0 #3D5AC9;
+        }
+
+        .start-screen {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .start-screen h2 {
+            color: #FF6B9D;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .start-screen p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .start-btn {
+            padding: 20px 60px;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #FF6B9D, #FF8E53);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 8px 0 #E85A80, 0 15px 30px rgba(255,107,157,0.4);
+            transition: all 0.3s ease;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 0 #E85A80, 0 20px 40px rgba(255,107,157,0.4);
+        }
+
+        .start-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0 4px 0 #E85A80, 0 8px 20px rgba(255,107,157,0.4);
+        }
+
+        .game-area {
+            display: none;
+        }
+
+        .game-area.active {
+            display: block;
+        }
+
+        .clock-face-decoration {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0.3;
+        }
+
+        .hint {
+            background: #FFF3CD;
+            border: 2px solid #FFC107;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 10px;
+            color: #856404;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕐 學睇時鐘 🕐</h1>
+        
+        <div class="start-screen" id="startScreen">
+            <h2>大囡囡你好！👋</h2>
+            <p>我哋一齊學睇時間啦！<br>睇住時鐘，揀啱啱嘅時間<br>答啱就有星星⭐同掌聲👏</p>
+            <button class="start-btn" onclick="startGame()">開始遊戲 ▶️</button>
+        </div>
+
+        <div class="game-area" id="gameArea">
+            <div class="difficulty-selector">
+                <button class="diff-btn easy active" onclick="setDifficulty('easy')">🌟 初級</button>
+                <button class="diff-btn medium" onclick="setDifficulty('medium')">🌙 中級</button>
+                <button class="diff-btn hard" onclick="setDifficulty('hard')">🔥 進階</button>
+            </div>
+
+            <div class="scoreboard">
+                <div class="score-item">
+                    <div class="score-label">啱啱 ✅</div>
+                    <div class="score-value correct" id="correctCount">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label">錯咗 ❌</div>
+                    <div class="score-value wrong" id="wrongCount">0</div>
+                </div>
+            </div>
+
+            <div class="question" id="question">時鐘顯示緊幾點幾分？</div>
+
+            <div class="clock-container">
+                <canvas id="clockCanvas" width="260" height="260"></canvas>
+            </div>
+
+            <div class="feedback" id="feedback"></div>
+
+            <div class="options" id="options"></div>
+
+            <button class="next-btn" id="nextBtn" style="display:none" onclick="nextQuestion()">
+                下一題 ▶️
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Audio context for sound effects
+        let audioCtx = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        function playCorrectSound() {
+            initAudio();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.frequency.setValueAtTime(523, audioCtx.currentTime);
+            osc.frequency.setValueAtTime(659, audioCtx.currentTime + 0.1);
+            osc.frequency.setValueAtTime(784, audioCtx.currentTime + 0.2);
+            gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gain.gain.exponentialDecayTo && gain.gain.exponentialDecayTo(0.01, audioCtx.currentTime + 0.4);
+            gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+            gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.4);
+            osc.start(audioCtx.currentTime);
+            osc.stop(audioCtx.currentTime + 0.4);
+        }
+
+        function playWrongSound() {
+            initAudio();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.frequency.setValueAtTime(200, audioCtx.currentTime);
+            osc.type = 'sawtooth';
+            gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+            gain.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+            osc.start(audioCtx.currentTime);
+            osc.stop(audioCtx.currentTime + 0.3);
+        }
+
+        // Game state
+        let currentDifficulty = 'easy';
+        let correctCount = 0;
+        let wrongCount = 0;
+        let currentTime = { hours: 0, minutes: 0 };
+        let currentAnswer = '';
+        let isAnswered = false;
+
+        // Canvas setup
+        const canvas = document.getElementById('clockCanvas');
+        const ctx = canvas.getContext('2d');
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = canvas.width / 2 - 10;
+
+        function drawClock(hours, minutes) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Clock face background
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+            const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius);
+            gradient.addColorStop(0, '#FFFEF0');
+            gradient.addColorStop(1, '#F5F5DC');
+            ctx.fillStyle = gradient;
+            ctx.fill();
+            ctx.strokeStyle = '#8B4513';
+            ctx.lineWidth = 4;
+            ctx.stroke();
+
+            // Hour markers
+            for (let i = 1; i <= 12; i++) {
+                const angle = (i * 30 - 90) * Math.PI / 180;
+                const x1 = centerX + (radius - 15) * Math.cos(angle);
+                const y1 = centerY + (radius - 15) * Math.sin(angle);
+                const x2 = centerX + (radius - 5) * Math.cos(angle);
+                const y2 = centerY + (radius - 5) * Math.sin(angle);
+                
+                ctx.beginPath();
+                ctx.moveTo(x1, y1);
+                ctx.lineTo(x2, y2);
+                ctx.strokeStyle = '#5C7AEA';
+                ctx.lineWidth = i % 3 === 0 ? 4 : 2;
+                ctx.stroke();
+
+                // Hour numbers
+                const textX = centerX + (radius - 25) * Math.cos(angle);
+                const textY = centerY + (radius - 25) * Math.sin(angle);
+                ctx.font = 'bold 16px Microsoft JhengHei';
+                ctx.fillStyle = '#333';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(i, textX, textY);
+            }
+
+            // Minute markers
+            for (let i = 0; i < 60; i++) {
+                if (i % 5 !== 0) {
+                    const angle = (i * 6 - 90) * Math.PI / 180;
+                    const x1 = centerX + (radius - 8) * Math.cos(angle);
+                    const y1 = centerY + (radius - 8) * Math.sin(angle);
+                    const x2 = centerX + (radius - 3) * Math.cos(angle);
+                    const y2 = centerY + (radius - 3) * Math.sin(angle);
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(x1, y1);
+                    ctx.lineTo(x2, y2);
+                    ctx.strokeStyle = '#AAA';
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
+
+            // Draw hour hand
+            const hourAngle = ((hours % 12) + minutes / 60) * 30 * Math.PI / 180 - Math.PI / 2;
+            const hourLength = radius * 0.5;
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX + hourLength * Math.cos(hourAngle), centerY + hourLength * Math.sin(hourAngle));
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 6;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+
+            // Draw minute hand
+            const minuteAngle = (minutes * 6 - 90) * Math.PI / 180;
+            const minuteLength = radius * 0.7;
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(centerX + minuteLength * Math.cos(minuteAngle), centerY + minuteLength * Math.sin(minuteAngle));
+            ctx.strokeStyle = '#FF6B9D';
+            ctx.lineWidth = 4;
+            ctx.lineCap = 'round';
+            ctx.stroke();
+
+            // Center dot
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 8, 0, Math.PI * 2);
+            ctx.fillStyle = '#FF6B9D';
+            ctx.fill();
+            ctx.strokeStyle = '#FFF';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        }
+
+        function formatTime(hours, minutes) {
+            if (minutes === 0) {
+                return `${hours}點`;
+            } else if (minutes === 30) {
+                return `${hours}點半`;
+            } else {
+                return `${hours}點${minutes}分`;
+            }
+        }
+
+        function generateQuestion() {
+            let hours, minutes;
+
+            if (currentDifficulty === 'easy') {
+                // Hours only (1-12)
+                hours = Math.floor(Math.random() * 12) + 1;
+                minutes = 0;
+            } else if (currentDifficulty === 'medium') {
+                // Half past
+                hours = Math.floor(Math.random() * 12) + 1;
+                minutes = 30;
+            } else {
+                // Every 5 minutes
+                hours = Math.floor(Math.random() * 12) + 1;
+                minutes = Math.floor(Math.random() * 12) * 5;
+            }
+
+            currentTime = { hours, minutes };
+            currentAnswer = formatTime(hours, minutes);
+
+            drawClock(hours, minutes);
+            generateOptions();
+            isAnswered = false;
+            document.getElementById('feedback').textContent = '';
+            document.getElementById('nextBtn').style.display = 'none';
+        }
+
+        function generateOptions() {
+            const options = [currentAnswer];
+            const usedTimes = new Set([currentAnswer]);
+
+            while (options.length < 4) {
+                let h, m, timeStr;
+                
+                if (currentDifficulty === 'easy') {
+                    h = Math.floor(Math.random() * 12) + 1;
+                    m = 0;
+                } else if (currentDifficulty === 'medium') {
+                    h = Math.floor(Math.random() * 12) + 1;
+                    m = 30;
+                } else {
+                    h = Math.floor(Math.random() * 12) + 1;
+                    m = Math.floor(Math.random() * 12) * 5;
+                }
+                
+                timeStr = formatTime(h, m);
+                
+                if (!usedTimes.has(timeStr)) {
+                    options.push(timeStr);
+                    usedTimes.add(timeStr);
+                }
+            }
+
+            // Shuffle options
+            for (let i = options.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [options[i], options[j]] = [options[j], options[i]];
+            }
+
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+
+            options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = opt;
+                btn.onclick = () => checkAnswer(opt, btn);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selected, btn) {
+            if (isAnswered) return;
+            isAnswered = true;
+
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(b => b.disabled = true);
+
+            if (selected === currentAnswer) {
+                btn.classList.add('correct');
+                correctCount++;
+                document.getElementById('correctCount').textContent = correctCount;
+                document.getElementById('feedback').textContent = '勁啱呀！👏⭐';
+                document.getElementById('feedback').className = 'feedback correct';
+                playCorrectSound();
+                showCelebration();
+            } else {
+                btn.classList.add('wrong');
+                wrongCount++;
+                document.getElementById('wrongCount').textContent = wrongCount;
+                document.getElementById('feedback').textContent = '再試過啦！💪';
+                document.getElementById('feedback').className = 'feedback wrong';
+                playWrongSound();
+                
+                // Show correct answer
+                buttons.forEach(b => {
+                    if (b.textContent === currentAnswer) {
+                        b.classList.add('correct');
+                    }
+                });
+
+                // Show hint
+                const hint = document.createElement('div');
+                hint.className = 'hint';
+                hint.textContent = `提示：短針係時針，長針係分針。分針指到 ${currentTime.minutes === 0 ? '12' : currentTime.minutes} 就係 ${currentTime.minutes === 0 ? '整點' : currentTime.minutes + '分'}！`;
+                document.getElementById('feedback').parentNode.appendChild(hint);
+            }
+
+            document.getElementById('nextBtn').style.display = 'inline-block';
+        }
+
+        function showCelebration() {
+            const emojis = ['⭐', '🌟', '✨', '💫', '🎉'];
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const el = document.createElement('div');
+                    el.className = 'celebration';
+                    el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                    el.style.left = Math.random() * window.innerWidth + 'px';
+                    el.style.top = Math.random() * window.innerHeight + 'px';
+                    document.body.appendChild(el);
+                    setTimeout(() => el.remove(), 1000);
+                }, i * 150);
+            }
+        }
+
+        function nextQuestion() {
+            // Remove hint if exists
+            const hint = document.querySelector('.hint');
+            if (hint) hint.remove();
+
+            generateQuestion();
+        }
+
+        function setDifficulty(level) {
+            currentDifficulty = level;
+            
+            document.querySelectorAll('.diff-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.diff-btn.${level}`).classList.add('active');
+
+            // Reset score when difficulty changes
+            correctCount = 0;
+            wrongCount = 0;
+            document.getElementById('correctCount').textContent = '0';
+            document.getElementById('wrongCount').textContent = '0';
+            
+            generateQuestion();
+        }
+
+        function startGame() {
+            document.getElementById('startScreen').style.display = 'none';
+            document.getElementById('gameArea').classList.add('active');
+            generateQuestion();
+        }
+
+        // Initialize clock face on load
+        drawClock(12, 0);
+    </script>
+</body>
+</html>

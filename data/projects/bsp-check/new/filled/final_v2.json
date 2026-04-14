@@ -1,0 +1,227 @@
+{
+  "School 01": {
+    "termDates": {
+      "2025/2026": {
+        "Autumn": {
+          "start": true,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      },
+      "2026/2027": {
+        "Autumn": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      },
+      "2027/2028": {
+        "Autumn": {
+          "start": true,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      }
+    },
+    "fees": {
+      "perTerm": 4,
+      "annual": 4,
+      "registrationFee": true,
+      "depositLocal": true,
+      "depositOversea": true,
+      "saved": true
+    }
+  },
+  "School 02": {
+    "termDates": {
+      "2025/2026": {
+        "Autumn": {
+          "start": true,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      },
+      "2026/2027": {
+        "Autumn": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      },
+      "2027/2028": {
+        "Autumn": {
+          "start": true,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      }
+    },
+    "fees": {
+      "perTerm": 4,
+      "annual": 4,
+      "registrationFee": true,
+      "depositLocal": true,
+      "depositOversea": true,
+      "saved": true
+    }
+  },
+  "BS Portal Demo School": {
+    "termDates": {
+      "2025/2026": {
+        "Autumn": {
+          "start": true,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      },
+      "2026/2027": {
+        "Autumn": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      },
+      "2027/2028": {
+        "Autumn": {
+          "start": true,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Spring": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "Summer": {
+          "start": false,
+          "end": false,
+          "halfStart": false,
+          "halfEnd": false
+        },
+        "saved": true
+      }
+    },
+    "fees": {
+      "perTerm": 60,
+      "annual": 60,
+      "registrationFee": true,
+      "depositLocal": true,
+      "depositOversea": true,
+      "saved": true
+    }
+  }
+}

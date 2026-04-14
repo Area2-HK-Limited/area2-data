@@ -1,0 +1,197 @@
+{
+  "School 01": {
+    "2025/2026": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    },
+    "2026/2027": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    },
+    "2027/2028": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    }
+  },
+  "School 02": {
+    "2025/2026": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    },
+    "2026/2027": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    },
+    "2027/2028": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    }
+  },
+  "BS Portal Demo School": {
+    "2025/2026": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    },
+    "2026/2027": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    },
+    "2027/2028": {
+      "Autumn": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Spring": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "Summer": {
+        "start": true,
+        "end": true,
+        "halfStart": true,
+        "halfEnd": true
+      },
+      "saved": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run generate
+        env:
+          STRIPE_PUBLISHABLE_KEY: ${{ github.ref == 'refs/heads/dev' && secrets.STRIPE_TEST_PUBLISHABLE_KEY || secrets.STRIPE_LIVE_PUBLISHABLE_KEY }}

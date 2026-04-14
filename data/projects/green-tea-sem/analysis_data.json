@@ -1,0 +1,584 @@
+{
+  "period": "2026-01-22 至 2026-02-22",
+  "client": "Green Tea",
+  "account_id": "546-079-5892",
+  "generated_at": "2026-03-12",
+  "summary": {
+    "total_spend": 1427.31,
+    "total_clicks": 907,
+    "total_impressions": 42405,
+    "ctr": 2.14,
+    "avg_cpc": 1.57,
+    "total_conversions": 24,
+    "cpa": 59.47,
+    "campaign_count": 2,
+    "active_days": 32
+  },
+  "campaigns": [
+    {
+      "name": "Green Tea - HK",
+      "status": "已結束",
+      "region": "香港",
+      "language": "繁體中文、簡體中文、英文",
+      "daily_budget": 33.0,
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-22",
+      "spend": 1106.63,
+      "clicks": 620,
+      "impressions": 32987,
+      "ctr": 1.88,
+      "avg_cpc": 1.78,
+      "conversions": 24,
+      "cpa": 46.11,
+      "conversion_rate": 3.87
+    },
+    {
+      "name": "Green Tea - JP",
+      "status": "已結束",
+      "region": "日本",
+      "language": "日文",
+      "daily_budget": 15.0,
+      "start_date": "2026-01-19",
+      "end_date": "2026-02-22",
+      "spend": 320.68,
+      "clicks": 287,
+      "impressions": 9418,
+      "ctr": 3.05,
+      "avg_cpc": 1.12,
+      "conversions": 0,
+      "cpa": null,
+      "conversion_rate": 0,
+      "note": "日本市場未設置轉換追蹤，無法計算轉換數據"
+    }
+  ],
+  "daily_trend": [
+    {
+      "date": "2026-01-22",
+      "weekday": "週四",
+      "clicks": 20,
+      "impressions": 1092,
+      "cpc": 0.51,
+      "spend": 10.14,
+      "ctr": 1.83
+    },
+    {
+      "date": "2026-01-23",
+      "weekday": "週五",
+      "clicks": 23,
+      "impressions": 892,
+      "cpc": 2.34,
+      "spend": 53.83,
+      "ctr": 2.58
+    },
+    {
+      "date": "2026-01-24",
+      "weekday": "週六",
+      "clicks": 51,
+      "impressions": 3013,
+      "cpc": 1.51,
+      "spend": 77.18,
+      "ctr": 1.69
+    },
+    {
+      "date": "2026-01-25",
+      "weekday": "週日",
+      "clicks": 49,
+      "impressions": 2117,
+      "cpc": 1.76,
+      "spend": 86.46,
+      "ctr": 2.31
+    },
+    {
+      "date": "2026-01-26",
+      "weekday": "週一",
+      "clicks": 21,
+      "impressions": 546,
+      "cpc": 1.72,
+      "spend": 36.2,
+      "ctr": 3.85
+    },
+    {
+      "date": "2026-01-27",
+      "weekday": "週二",
+      "clicks": 51,
+      "impressions": 1488,
+      "cpc": 1.53,
+      "spend": 78.16,
+      "ctr": 3.43
+    },
+    {
+      "date": "2026-01-28",
+      "weekday": "週三",
+      "clicks": 20,
+      "impressions": 1175,
+      "cpc": 2.39,
+      "spend": 47.77,
+      "ctr": 1.7
+    },
+    {
+      "date": "2026-01-29",
+      "weekday": "週四",
+      "clicks": 15,
+      "impressions": 709,
+      "cpc": 2.38,
+      "spend": 35.65,
+      "ctr": 2.12
+    },
+    {
+      "date": "2026-01-30",
+      "weekday": "週五",
+      "clicks": 4,
+      "impressions": 92,
+      "cpc": 0.68,
+      "spend": 2.74,
+      "ctr": 4.35
+    },
+    {
+      "date": "2026-01-31",
+      "weekday": "週六",
+      "clicks": 36,
+      "impressions": 424,
+      "cpc": 0.81,
+      "spend": 29.05,
+      "ctr": 8.49
+    },
+    {
+      "date": "2026-02-01",
+      "weekday": "週日",
+      "clicks": 15,
+      "impressions": 195,
+      "cpc": 0.58,
+      "spend": 8.75,
+      "ctr": 7.69
+    },
+    {
+      "date": "2026-02-02",
+      "weekday": "週一",
+      "clicks": 19,
+      "impressions": 223,
+      "cpc": 1.1,
+      "spend": 20.98,
+      "ctr": 8.52
+    },
+    {
+      "date": "2026-02-03",
+      "weekday": "週二",
+      "clicks": 6,
+      "impressions": 219,
+      "cpc": 1.88,
+      "spend": 11.25,
+      "ctr": 2.74
+    },
+    {
+      "date": "2026-02-04",
+      "weekday": "週三",
+      "clicks": 35,
+      "impressions": 1455,
+      "cpc": 2.29,
+      "spend": 80.09,
+      "ctr": 2.41
+    },
+    {
+      "date": "2026-02-05",
+      "weekday": "週四",
+      "clicks": 46,
+      "impressions": 1369,
+      "cpc": 1.95,
+      "spend": 89.49,
+      "ctr": 3.36
+    },
+    {
+      "date": "2026-02-06",
+      "weekday": "週五",
+      "clicks": 65,
+      "impressions": 1188,
+      "cpc": 1.27,
+      "spend": 82.23,
+      "ctr": 5.47
+    },
+    {
+      "date": "2026-02-07",
+      "weekday": "週六",
+      "clicks": 12,
+      "impressions": 133,
+      "cpc": 4.53,
+      "spend": 54.41,
+      "ctr": 9.02
+    },
+    {
+      "date": "2026-02-08",
+      "weekday": "週日",
+      "clicks": 2,
+      "impressions": 15,
+      "cpc": 1.55,
+      "spend": 3.1,
+      "ctr": 13.33
+    },
+    {
+      "date": "2026-02-09",
+      "weekday": "週一",
+      "clicks": 1,
+      "impressions": 1165,
+      "cpc": 23.27,
+      "spend": 23.27,
+      "ctr": 0.09
+    },
+    {
+      "date": "2026-02-10",
+      "weekday": "週二",
+      "clicks": 39,
+      "impressions": 1061,
+      "cpc": 2.21,
+      "spend": 86.12,
+      "ctr": 3.68
+    },
+    {
+      "date": "2026-02-11",
+      "weekday": "週三",
+      "clicks": 32,
+      "impressions": 1166,
+      "cpc": 1.6,
+      "spend": 51.2,
+      "ctr": 2.74
+    },
+    {
+      "date": "2026-02-12",
+      "weekday": "週四",
+      "clicks": 44,
+      "impressions": 1769,
+      "cpc": 0.6,
+      "spend": 26.5,
+      "ctr": 2.49
+    },
+    {
+      "date": "2026-02-13",
+      "weekday": "週五",
+      "clicks": 31,
+      "impressions": 1484,
+      "cpc": 1.19,
+      "spend": 36.89,
+      "ctr": 2.09
+    },
+    {
+      "date": "2026-02-14",
+      "weekday": "週六",
+      "clicks": 26,
+      "impressions": 589,
+      "cpc": 1.54,
+      "spend": 40.15,
+      "ctr": 4.41
+    },
+    {
+      "date": "2026-02-15",
+      "weekday": "週日",
+      "clicks": 48,
+      "impressions": 1535,
+      "cpc": 1.02,
+      "spend": 48.81,
+      "ctr": 3.13
+    },
+    {
+      "date": "2026-02-16",
+      "weekday": "週一",
+      "clicks": 24,
+      "impressions": 1042,
+      "cpc": 1.39,
+      "spend": 33.46,
+      "ctr": 2.3
+    },
+    {
+      "date": "2026-02-17",
+      "weekday": "週二",
+      "clicks": 27,
+      "impressions": 1869,
+      "cpc": 1.25,
+      "spend": 33.73,
+      "ctr": 1.44
+    },
+    {
+      "date": "2026-02-18",
+      "weekday": "週三",
+      "clicks": 23,
+      "impressions": 2695,
+      "cpc": 2.66,
+      "spend": 61.1,
+      "ctr": 0.85
+    },
+    {
+      "date": "2026-02-19",
+      "weekday": "週四",
+      "clicks": 17,
+      "impressions": 2141,
+      "cpc": 2.56,
+      "spend": 43.59,
+      "ctr": 0.79
+    },
+    {
+      "date": "2026-02-20",
+      "weekday": "週五",
+      "clicks": 21,
+      "impressions": 1779,
+      "cpc": 1.61,
+      "spend": 33.87,
+      "ctr": 1.18
+    },
+    {
+      "date": "2026-02-21",
+      "weekday": "週六",
+      "clicks": 58,
+      "impressions": 3941,
+      "cpc": 1.02,
+      "spend": 59.22,
+      "ctr": 1.47
+    },
+    {
+      "date": "2026-02-22",
+      "weekday": "週日",
+      "clicks": 26,
+      "impressions": 3824,
+      "cpc": 1.61,
+      "spend": 41.93,
+      "ctr": 0.68
+    }
+  ],
+  "cny_analysis": {
+    "pre_cny": {
+      "label": "農曆新年前（1/22-1/28）",
+      "start_date": "2026-01-22",
+      "end_date": "2026-01-28",
+      "days": 7,
+      "total_clicks": 235,
+      "total_impressions": 10323,
+      "total_spend": 389.74,
+      "avg_daily_clicks": 33.6,
+      "avg_daily_impressions": 1474.7,
+      "avg_daily_spend": 55.68,
+      "avg_cpc": 1.66,
+      "ctr": 2.28
+    },
+    "cny": {
+      "label": "農曆新年假期（1/29-2/5）",
+      "start_date": "2026-01-29",
+      "end_date": "2026-02-05",
+      "days": 8,
+      "total_clicks": 176,
+      "total_impressions": 4686,
+      "total_spend": 278.0,
+      "avg_daily_clicks": 22.0,
+      "avg_daily_impressions": 585.8,
+      "avg_daily_spend": 34.75,
+      "avg_cpc": 1.58,
+      "ctr": 3.76
+    },
+    "post_cny": {
+      "label": "農曆新年後（2/6-2/22）",
+      "start_date": "2026-02-06",
+      "end_date": "2026-02-22",
+      "days": 17,
+      "total_clicks": 496,
+      "total_impressions": 27396,
+      "total_spend": 759.58,
+      "avg_daily_clicks": 29.2,
+      "avg_daily_impressions": 1611.5,
+      "avg_daily_spend": 44.68,
+      "avg_cpc": 1.53,
+      "ctr": 1.81
+    }
+  },
+  "placement_distribution": {
+    "note": "廣告刊登位置分佈（HK Campaign，以展示次數估算）",
+    "placements": [
+      {
+        "type": "流動應用軟件",
+        "alliance": "Google 多媒體廣告聯盟",
+        "estimated_percentage": 52.1,
+        "note": "最大投放渠道"
+      },
+      {
+        "type": "YouTube 影片",
+        "alliance": "YouTube",
+        "estimated_percentage": 29.4,
+        "note": "影片廣告版位"
+      },
+      {
+        "type": "網站",
+        "alliance": "Google 多媒體廣告聯盟",
+        "estimated_percentage": 21.4,
+        "note": "網頁橫額廣告"
+      }
+    ],
+    "gdn_total_placements": "8,797次聯盟曝光",
+    "top_youtube_channels_note": "廣告主要出現於香港本地時事、娛樂、生活類YouTube頻道"
+  },
+  "best_timeslots": [
+    {
+      "rank": 1,
+      "weekday": "星期六",
+      "time_range": "09:00-13:00",
+      "clicks": 45,
+      "impressions": 3465,
+      "ctr": 1.3,
+      "spend": 103.05,
+      "conversions": 4,
+      "conversion_rate": 8.89,
+      "cpa": 25.76,
+      "rating": "⭐⭐⭐⭐⭐",
+      "note": "最高轉換量，週末上午流量質素最高"
+    },
+    {
+      "rank": 2,
+      "weekday": "星期四",
+      "time_range": "14:00-19:00",
+      "clicks": 38,
+      "impressions": 1482,
+      "ctr": 2.56,
+      "spend": 42.56,
+      "conversions": 1,
+      "conversion_rate": 2.63,
+      "cpa": 42.56,
+      "rating": "⭐⭐⭐⭐",
+      "note": "工作日下午，CTR 高，成本效益好"
+    }
+  ],
+  "anomalies": [
+    {
+      "date": "2026-02-09",
+      "type": "極高CPC異常",
+      "severity": "高",
+      "description": "2/9（週一）CPC 高達 HK$23.27，全月最高，但僅有1次點擊，展示1,165次",
+      "cpc": 23.27,
+      "clicks": 1,
+      "impressions": 1165,
+      "spend": 23.27,
+      "possible_cause": "農曆年初十二，節後首週一，用戶瀏覽行為異常，競價對手可能大幅提高出價",
+      "recommendation": "監察競爭對手動態，考慮設置CPC上限"
+    },
+    {
+      "date": "2026-02-08",
+      "type": "極低展示量",
+      "severity": "中",
+      "description": "2/8（週日）展示次數僅15次，全月最低，點擊2次",
+      "cpc": 1.55,
+      "clicks": 2,
+      "impressions": 15,
+      "spend": 3.1,
+      "possible_cause": "農曆年初十一（元宵節前），用戶活動大幅減少",
+      "recommendation": "農曆新年尾聲期間可暫停廣告或大幅降低預算"
+    },
+    {
+      "date": "2026-02-06",
+      "type": "最高點擊日",
+      "severity": "正面",
+      "description": "2/6（週五）達到全月最高點擊65次，CTR 5.47%（相對同類展示量）",
+      "cpc": 1.27,
+      "clicks": 65,
+      "impressions": 1188,
+      "spend": 82.23,
+      "possible_cause": "農曆新年初九，年後首個工作週，消費意欲回升",
+      "recommendation": "建議年後首週增加預算，把握節後消費反彈"
+    },
+    {
+      "date": "2026-01-30",
+      "type": "最低點擊日",
+      "severity": "中",
+      "description": "1/30（週五，大年初二）僅有4次點擊，為非2/9異常日中的最低點",
+      "cpc": 0.68,
+      "clicks": 4,
+      "impressions": 92,
+      "spend": 2.74,
+      "possible_cause": "農曆新年初二，本地用戶外出拜年，網絡活動極低",
+      "recommendation": "大年初一至初三建議暫停投放，節省預算"
+    }
+  ],
+  "hk_vs_jp": {
+    "hk": {
+      "campaign": "Green Tea - HK",
+      "spend": 1106.63,
+      "clicks": 620,
+      "impressions": 32987,
+      "ctr": 1.88,
+      "avg_cpc": 1.79,
+      "conversions": 24,
+      "cpa": 46.11,
+      "conversion_rate": 3.87,
+      "daily_budget": 33.0,
+      "budget_utilization": 104.8
+    },
+    "jp": {
+      "campaign": "Green Tea - JP",
+      "spend": 320.68,
+      "clicks": 287,
+      "impressions": 9418,
+      "ctr": 3.05,
+      "avg_cpc": 1.12,
+      "conversions": 0,
+      "cpa": null,
+      "conversion_rate": 0,
+      "daily_budget": 15.0,
+      "budget_utilization": 66.8,
+      "note": "未設置轉換追蹤"
+    },
+    "comparison": {
+      "ctr_winner": "JP（CTR高出62%：3.05% vs 1.88%）",
+      "cpc_winner": "JP（CPC低37%：HK$1.12 vs HK$1.79）",
+      "conversion_winner": "HK（JP無轉換追蹤）",
+      "spend_ratio": "HK佔總費用77.5%，JP佔22.5%",
+      "efficiency_note": "JP市場雖然點擊率更高、CPC更低，但未設置轉換追蹤，無法評估實際ROI。建議優先為JP市場設置轉換追蹤，再評估擴展可能性。"
+    }
+  },
+  "insights": {
+    "wins": [
+      "HK市場成功達成24次轉換，CPA HK$46.11，表現良好",
+      "農曆新年後（2/6起）點擊量大幅反彈，最高達65次/天",
+      "星期六上午9-1時段為最佳轉換時段，CPA低至HK$25.76",
+      "JP市場CTR達3.05%，遠高於HK的1.88%，顯示廣告素材吸引力強",
+      "整體平均CPC HK$1.57，屬市場合理水平",
+      "2/21-22週末展示量激增至3,941和3,824次，廣告覆蓋明顯改善"
+    ],
+    "issues": [
+      "2/9出現異常CPC HK$23.27，單次點擊消耗HK$23.27，疑似競價異常",
+      "JP市場未設置轉換追蹤，HK$320.68費用缺乏ROI依據",
+      "農曆新年期間（1/30-2/1）流量極低，廣告費用幾乎浪費",
+      "2/8展示量僅15次，廣告系統可能存在觸達問題",
+      "流動應用軟件佔52.1%展示但轉換質素難以評估，App廣告轉換率通常較低",
+      "兩個Campaign均已結束，需要規劃下一期投放策略"
+    ],
+    "recommendations": [
+      {
+        "priority": 1,
+        "title": "立即為JP市場設置轉換追蹤",
+        "action": "在Google Ads後台為Green Tea - JP設置轉換動作，追蹤網站訪問、表單提交或購買行為",
+        "expected_outcome": "可評估JP市場真實ROI，決定是否加大投放（JP CTR達3.05%，潛力顯著）",
+        "timeline": "下期Campaign啟動前完成"
+      },
+      {
+        "priority": 2,
+        "title": "農曆新年投放策略優化",
+        "action": "年初一至初三暫停廣告；年初四起逐步恢復；年後首週（2/6起）將日預算提高至HK$50+",
+        "expected_outcome": "預計節省年初低效費用約HK$40-60，同時捕捉節後消費反彈",
+        "timeline": "2027年農曆新年前規劃"
+      },
+      {
+        "priority": 3,
+        "title": "集中資源於最佳時段",
+        "action": "啟用廣告時間排程，重點投放星期六09:00-13:00及星期四14:00-19:00；非高效時段降低出價20-30%",
+        "expected_outcome": "預計將整體CPA從HK$46.11降至HK$35-40",
+        "timeline": "下期Campaign即時執行"
+      },
+      {
+        "priority": 4,
+        "title": "設置CPC出價上限",
+        "action": "在智能出價策略中設置最高CPC上限HK$5，防止類似2/9 HK$23.27異常消費",
+        "expected_outcome": "消除單日異常高CPC事件，提升預算使用效率",
+        "timeline": "下期Campaign設置時執行"
+      },
+      {
+        "priority": 5,
+        "title": "優化廣告刊登位置",
+        "action": "排除低效流動應用軟件位置（特別是遊戲類App）；增加YouTube頻道白名單，專注本地時事娛樂類頻道",
+        "expected_outcome": "提升廣告相關性，預計CTR提升至2.5-3%，轉換率改善",
+        "timeline": "下期Campaign設置時執行"
+      }
+    ]
+  }
+}

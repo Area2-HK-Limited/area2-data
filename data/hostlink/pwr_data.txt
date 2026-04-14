@@ -1,0 +1,417 @@
+=== StaticPage rows (11) ===
+  Title[EN]
+	Title[TC]
+	Title[SC]
+	Status	Created Time
+	Created By	Updated Time
+	Updated By
+  Landing Disclaimer
+	
+	
+	
+Active
+	
+	
+admin
+	
+2026-03-06
+12:13:35
+	
+hkhsadmin
+  Footer Disclaimer
+	
+	
+	
+Active
+	
+2023-10-12
+16:56:05
+	
+hkhsadmin_bak
+	
+2025-04-25
+17:27:15
+	
+hkhsadmin
+  Email Disclaimer
+	
+	
+	
+Active
+	
+2023-12-05
+12:51:50
+	
+admin
+	
+2024-04-23
+10:18:53
+	
+hkhsadmin_bak
+  Copyright
+	
+	
+	
+Active
+	
+2024-01-16
+17:09:01
+	
+admin
+	
+2024-01-22
+12:39:04
+	
+admin
+  Accessibility
+	
+	
+	
+Active
+	
+2024-01-16
+17:09:30
+	
+admin
+	
+2024-04-05
+14:58:41
+	
+hkhsadmin_bak
+  Development
+	
+北部都會區發展
+	
+北部都会区发展
+	
+Active
+	
+2026-02-05
+12:05:15
+	
+admin
+	
+2026-03-06
+12:10:26
+	
+hkhsadmin
+  Floorplan-Global
+	
+平面圖-全域
+	
+平面图-全域
+	
+Active
+	
+2026-02-05
+12:05:15
+	
+admin
+	
+2026-03-06
+12:10:16
+	
+hkhsadmin
+  Floorplan-平面圖
+	
+平面圖-平面圖
+	
+平面图-平面圖
+	
+Active
+	
+2026-02-05
+12:05:15
+	
+admin
+	
+2026-03-06
+12:10:46
+	
+hkhsadmin
+  Gallery
+	
+媒體庫
+	
+媒体库
+	
+Active
+	
+2026-02-05
+12:05:15
+	
+admin
+	
+2026-03-06
+12:10:56
+	
+hkhsadmin
+  Dedicated Rehousing Estates
+	
+專用安置屋邨項目
+	
+专用安置屋村项目
+	
+Active
+	
+2026-02-05
+12:05:15
+	
+admin
+	
+2026-03-06
+12:11:04
+	
+hkhsadmin
+
+StaticPage edit links: []
+
+=== Updates selects (0) ===
+
+=== Updates rows (3) ===
+  Date
+	Title[EN]
+	Title[TC]
+	Title[SC]
+	Preview	Status	Created Time
+	Created By	Updated Time
+	Updated By
+  2025-04-29
+	
+Sales Brochure
+	
+售樓說明書
+	
+售楼说明书
+	
+	
+Active
+	
+2024-01-30
+17:08:36
+	
+hkhsadmin_bak
+	
+2025-04-23
+10:01:34
+	
+hkhsadmin
+  2024-03-13
+	
+SB 1 EN
+	
+SB 1 TC
+	
+SB 1 SC
+	
+EN TC SC
+	
+Inactive
+	
+2024-03-13
+11:24:37
+	
+admin
+
+Updates buttons/tabs:
+  [HKHS Admin
+Power Users,Users,CMS Admin] href=javascript:void(0);
+  [Sales Brochure] href=javascript:void(0)
+  [Price List] href=javascript:void(0)
+  [Sales Arrangements] href=javascript:void(0)
+  [Register of Transactions] href=javascript:void(0)
+  [Ballot Results] href=javascript:void(0)
+  [Deed of Mutual Covenant] href=javascript:void(0)
+  [Restrictions on Alienation] href=javascript:void(0)
+  [Premium Assessment] href=javascript:void(0)
+  [Mortgage Arrangement] href=javascript:void(0)
+  [Aerial Photograph] href=javascript:void(0)
+  [Latest Sales Status] href=javascript:void(0)
+  [Application Forms] href=javascript:void(0)
+  [Application Guide] href=javascript:void(0)
+
+=== Gallery/ae fields ===
+  [INPUT] name=title_en
+  [INPUT] name=title_tc
+  [INPUT] name=title_sc
+  [INPUT] name=
+  [INPUT] name=skinradio
+  [INPUT] name=skinradio
+  [INPUT] name=skinradio
+  [INPUT] name=skinsemidark
+  [INPUT] name=collapse-sidebar-switch
+  [INPUT] name=layoutWidth
+  [INPUT] name=layoutWidth
+  [INPUT] name=navType
+  [INPUT] name=navType
+  [INPUT] name=navType
+  [INPUT] name=navType
+  [INPUT] name=footerType
+  [INPUT] name=footerType
+  [INPUT] name=footerType
+
+=== HeaderMenu rows (11) ===
+  Seq
+	Title[EN]
+	Title[TC]
+	Title[SC]
+	Status	Segment
+  1
+	
+Strategic Location
+	
+策略性地利
+	
+策略性地利
+	
+Active
+	
+/development
+  2
+	
+Transportation Infrastructures
+	
+交通配套
+	
+交通配套
+	
+Active
+	
+/development
+  3
+	
+Surrounding Communities
+	
+周邊社區
+	
+周边社区
+	
+Active
+	
+/development
+  4
+	
+Floor Plan
+	
+平面圖
+	
+平面图
+	
+Active
+	
+/floorplan
+  5
+	
+Layout Plan
+	
+布局圖
+	
+布局图
+	
+Active
+	
+/floorplan
+  6
+	
+Clubhouse Layout Plan
+	
+會所布局圖
+	
+会所布局图
+	
+Active
+	
+/floorplan
+  7
+	
+Gallery
+	
+媒體庫
+	
+媒体库
+	
+Active
+	
+/gallery
+  8
+	
+Dedicated Rehousing Estates
+	
+專用安置屋邨計劃
+	
+专用安置屋邨计划
+	
+Active
+	
+/dedicated-rehousing-estates
+  9
+	
+Sales Brochure
+	
+售樓說明書
+	
+售楼说明书
+	
+Active
+	
+/sales-info
+  10
+	
+Price List
+	
+價單
+	
+价单
+	
+Active
+	
+/sales-info
+
+=== Config rows (11) ===
+  company
+	
+[DEV] CMS - Sierratower
+  company_logo
+	
+/uploads/static/logo.svg
+  company_url
+	
+https://sierratower.hlhk.net/
+  copyright_name
+	
+HostLink
+  copyright_year
+	
+2024
+  copyright_url
+	
+https://www.hostlink.com.hk
+  login_version
+	
+v1
+  two_step_verification
+	
+1
+  biometric_authentication
+	
+0
+  vx_url
+
+=== UserGroup rows (4) ===
+  Name
+	Code
+	Num of users
+  Power Users
+	
+	
+7
+  Users
+	
+	
+21
+  CMS Admin
+	
+	
+5
+
+Done!

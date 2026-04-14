@@ -1,0 +1,2633 @@
+{
+  "startedAt": "2026-03-28T16:33:28.404Z",
+  "baseUrl": "http://oc-market:3180",
+  "totalSkills": 126,
+  "published": [
+    {
+      "slug": "audio-handler",
+      "displayName": "Audio Handler",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/audio-handler",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:audio-handler",
+        "versionId": "version:audio-handler:1.0.0"
+      }
+    },
+    {
+      "slug": "batch-image-processor",
+      "displayName": "batch-image-processor",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/batch-image-processor",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "documents"
+      ],
+      "fileCount": 4,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:batch-image-processor",
+        "versionId": "version:batch-image-processor:1.0.0"
+      }
+    },
+    {
+      "slug": "bug-analyzer",
+      "displayName": "bug-analyzer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/bug-analyzer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development",
+        "video",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:bug-analyzer",
+        "versionId": "version:bug-analyzer:1.0.0"
+      }
+    },
+    {
+      "slug": "cf-proxy",
+      "displayName": "cf-proxy",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/cf-proxy",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "security"
+      ],
+      "fileCount": 4,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:cf-proxy",
+        "versionId": "version:cf-proxy:1.0.0"
+      }
+    },
+    {
+      "slug": "channel-aware-media-send",
+      "displayName": "channel-aware-media-send",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/channel-aware-media-send",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:channel-aware-media-send",
+        "versionId": "version:channel-aware-media-send:1.0.0"
+      }
+    },
+    {
+      "slug": "channel-config",
+      "displayName": "channel-config",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/channel-config",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:channel-config",
+        "versionId": "version:channel-config:1.0.0"
+      }
+    },
+    {
+      "slug": "clawteam",
+      "displayName": "clawteam",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/clawteam",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:clawteam",
+        "versionId": "version:clawteam:1.0.0"
+      }
+    },
+    {
+      "slug": "cloudflare-deploy",
+      "displayName": "cloudflare-deploy",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/cloudflare-deploy",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "deployment",
+        "development",
+        "image",
+        "productivity",
+        "integrations"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:cloudflare-deploy",
+        "versionId": "version:cloudflare-deploy:1.0.0"
+      }
+    },
+    {
+      "slug": "cms-manual-generator",
+      "displayName": "cms-manual-generator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/cms-manual-generator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "image",
+        "video",
+        "documents"
+      ],
+      "fileCount": 5,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:cms-manual-generator",
+        "versionId": "version:cms-manual-generator:1.0.0"
+      }
+    },
+    {
+      "slug": "dashscope-audio",
+      "displayName": "Dashscope Audio",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/dashscope-audio",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 4,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:dashscope-audio",
+        "versionId": "version:dashscope-audio:1.0.0"
+      }
+    },
+    {
+      "slug": "dashscope-vision",
+      "displayName": "Dashscope Vision",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/dashscope-vision",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:dashscope-vision",
+        "versionId": "version:dashscope-vision:1.0.0"
+      }
+    },
+    {
+      "slug": "development-plan-writer",
+      "displayName": "development-plan-writer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/development-plan-writer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:development-plan-writer",
+        "versionId": "version:development-plan-writer:1.0.0"
+      }
+    },
+    {
+      "slug": "docx-to-pdf",
+      "displayName": "Docx To Pdf",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/docx-to-pdf",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:docx-to-pdf",
+        "versionId": "version:docx-to-pdf:1.0.0"
+      }
+    },
+    {
+      "slug": "docx-translator",
+      "displayName": "docx-translator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/docx-translator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:docx-translator",
+        "versionId": "version:docx-translator:1.0.0"
+      }
+    },
+    {
+      "slug": "docx-translator-v2",
+      "displayName": "Docx Translator V2",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/docx-translator-v2",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 5,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:docx-translator-v2",
+        "versionId": "version:docx-translator-v2:1.0.0"
+      }
+    },
+    {
+      "slug": "domain-checker",
+      "displayName": "domain-checker",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/domain-checker",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "deployment",
+        "development",
+        "research"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:domain-checker",
+        "versionId": "version:domain-checker:1.0.0"
+      }
+    },
+    {
+      "slug": "edm-builder",
+      "displayName": "edm-builder",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/edm-builder",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "marketing"
+      ],
+      "fileCount": 5,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:edm-builder",
+        "versionId": "version:edm-builder:1.0.0"
+      }
+    },
+    {
+      "slug": "email-security",
+      "displayName": "Email Security",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/email-security",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:email-security",
+        "versionId": "version:email-security:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-contacts",
+      "displayName": "epost-contacts",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-contacts",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-contacts",
+        "versionId": "version:epost-contacts:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-delivery",
+      "displayName": "epost-delivery",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-delivery",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-delivery",
+        "versionId": "version:epost-delivery:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-groups",
+      "displayName": "epost-groups",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-groups",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-groups",
+        "versionId": "version:epost-groups:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-info",
+      "displayName": "epost-info",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-info",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-info",
+        "versionId": "version:epost-info:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-letters",
+      "displayName": "epost-letters",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-letters",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-letters",
+        "versionId": "version:epost-letters:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-schedules",
+      "displayName": "epost-schedules",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-schedules",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-schedules",
+        "versionId": "version:epost-schedules:1.0.0"
+      }
+    },
+    {
+      "slug": "epost-sms",
+      "displayName": "epost-sms",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-sms",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:epost-sms",
+        "versionId": "version:epost-sms:1.0.0"
+      }
+    },
+    {
+      "slug": "hk-open-data",
+      "displayName": "Hk Open Data",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/hk-open-data",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 7,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:hk-open-data",
+        "versionId": "version:hk-open-data:1.0.0"
+      }
+    },
+    {
+      "slug": "image-generation",
+      "displayName": "image-generation",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/image-generation",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "communications"
+      ],
+      "fileCount": 5,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:image-generation",
+        "versionId": "version:image-generation:1.0.0"
+      }
+    },
+    {
+      "slug": "invoice-ninja",
+      "displayName": "invoice-ninja",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/invoice-ninja",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio",
+        "billing"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:invoice-ninja",
+        "versionId": "version:invoice-ninja:1.0.0"
+      }
+    },
+    {
+      "slug": "lark-tasks",
+      "displayName": "lark-tasks",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/lark-tasks",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "research",
+        "productivity",
+        "security"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:lark-tasks",
+        "versionId": "version:lark-tasks:1.0.0"
+      }
+    },
+    {
+      "slug": "manual-generator",
+      "displayName": "Manual Generator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/manual-generator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:manual-generator",
+        "versionId": "version:manual-generator:1.0.0"
+      }
+    },
+    {
+      "slug": "marketing-research",
+      "displayName": "marketing-research",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/marketing-research",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "video",
+        "documents",
+        "research",
+        "communications",
+        "scraping"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:marketing-research",
+        "versionId": "version:marketing-research:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-lyrics",
+      "displayName": "minimax-lyrics",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-lyrics",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-lyrics",
+        "versionId": "version:minimax-lyrics:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-music",
+      "displayName": "minimax-music",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-music",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-music",
+        "versionId": "version:minimax-music:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-tts",
+      "displayName": "minimax-tts",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-tts",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio",
+        "documents"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-tts",
+        "versionId": "version:minimax-tts:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-tts-async",
+      "displayName": "minimax-tts-async",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-tts-async",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-tts-async",
+        "versionId": "version:minimax-tts-async:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-video",
+      "displayName": "minimax-video",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-video",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-video",
+        "versionId": "version:minimax-video:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-video-agent",
+      "displayName": "minimax-video-agent",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-video-agent",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-video-agent",
+        "versionId": "version:minimax-video-agent:1.0.0"
+      }
+    },
+    {
+      "slug": "minimax-voice-design",
+      "displayName": "minimax-voice-design",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-voice-design",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:minimax-voice-design",
+        "versionId": "version:minimax-voice-design:1.0.0"
+      }
+    },
+    {
+      "slug": "oc-market",
+      "displayName": "oc-market",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/oc-market",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research"
+      ],
+      "fileCount": 15,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:oc-market",
+        "versionId": "version:oc-market:1.0.0"
+      }
+    },
+    {
+      "slug": "openclaw-setup",
+      "displayName": "openclaw-setup",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/openclaw-setup",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 11,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:openclaw-setup",
+        "versionId": "version:openclaw-setup:1.0.0"
+      }
+    },
+    {
+      "slug": "pdf-to-docx",
+      "displayName": "Pdf To Docx",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/pdf-to-docx",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:pdf-to-docx",
+        "versionId": "version:pdf-to-docx:1.0.0"
+      }
+    },
+    {
+      "slug": "pdf-utils",
+      "displayName": "pdf-utils",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/pdf-utils",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "documents"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:pdf-utils",
+        "versionId": "version:pdf-utils:1.0.0"
+      }
+    },
+    {
+      "slug": "perplexity-search",
+      "displayName": "perplexity-search",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/perplexity-search",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:perplexity-search",
+        "versionId": "version:perplexity-search:1.0.0"
+      }
+    },
+    {
+      "slug": "planka",
+      "displayName": "Planka",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/planka",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "productivity"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:planka",
+        "versionId": "version:planka:1.0.0"
+      }
+    },
+    {
+      "slug": "playwright-browser",
+      "displayName": "Playwright Browser",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/playwright-browser",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "browser",
+        "automation",
+        "development"
+      ],
+      "fileCount": 39,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:playwright-browser",
+        "versionId": "version:playwright-browser:1.0.0"
+      }
+    },
+    {
+      "slug": "qa-testing",
+      "displayName": "qa-testing",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/qa-testing",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development",
+        "documents"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:qa-testing",
+        "versionId": "version:qa-testing:1.0.0"
+      }
+    },
+    {
+      "slug": "qr-code-generator",
+      "displayName": "qr-code-generator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/qr-code-generator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "marketing"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:qr-code-generator",
+        "versionId": "version:qr-code-generator:1.0.0"
+      }
+    },
+    {
+      "slug": "reminders",
+      "displayName": "Reminders",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/reminders",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:reminders",
+        "versionId": "version:reminders:1.0.0"
+      }
+    },
+    {
+      "slug": "screen-to-script",
+      "displayName": "screen-to-script",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/screen-to-script",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "video",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:screen-to-script",
+        "versionId": "version:screen-to-script:1.0.0"
+      }
+    },
+    {
+      "slug": "security-checker",
+      "displayName": "Security Checker",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/security-checker",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:security-checker",
+        "versionId": "version:security-checker:1.0.0"
+      }
+    },
+    {
+      "slug": "sem-report",
+      "displayName": "sem-report",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/sem-report",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents",
+        "marketing"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:sem-report",
+        "versionId": "version:sem-report:1.0.0"
+      }
+    },
+    {
+      "slug": "social-scraper",
+      "displayName": "social-scraper",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/social-scraper",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "scraping"
+      ],
+      "fileCount": 11,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:social-scraper",
+        "versionId": "version:social-scraper:1.0.0"
+      }
+    },
+    {
+      "slug": "spellquest-dev",
+      "displayName": "Spellquest Dev",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/spellquest-dev",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:spellquest-dev",
+        "versionId": "version:spellquest-dev:1.0.0"
+      }
+    },
+    {
+      "slug": "stock-market",
+      "displayName": "Stock Market",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/stock-market",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:stock-market",
+        "versionId": "version:stock-market:1.0.0"
+      }
+    },
+    {
+      "slug": "taobao-search",
+      "displayName": "Taobao Search",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/taobao-search",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "documents",
+        "research",
+        "communications"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:taobao-search",
+        "versionId": "version:taobao-search:1.0.0"
+      }
+    },
+    {
+      "slug": "task-router",
+      "displayName": "Task Router",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/task-router",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "productivity"
+      ],
+      "fileCount": 6,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:task-router",
+        "versionId": "version:task-router:1.0.0"
+      }
+    },
+    {
+      "slug": "tvp-report",
+      "displayName": "Tvp Report",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/tvp-report",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development",
+        "documents"
+      ],
+      "fileCount": 4,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:tvp-report",
+        "versionId": "version:tvp-report:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-accountant",
+      "displayName": "vc-accountant",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-accountant",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 6,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-accountant",
+        "versionId": "version:vc-accountant:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-ceo",
+      "displayName": "vc-ceo",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-ceo",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 10,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-ceo",
+        "versionId": "version:vc-ceo:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-designer",
+      "displayName": "vc-designer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-designer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 7,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-designer",
+        "versionId": "version:vc-designer:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-heartbeat",
+      "displayName": "vc-heartbeat",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-heartbeat",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 8,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-heartbeat",
+        "versionId": "version:vc-heartbeat:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-marketer",
+      "displayName": "vc-marketer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-marketer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 8,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-marketer",
+        "versionId": "version:vc-marketer:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-programmer",
+      "displayName": "vc-programmer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-programmer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development"
+      ],
+      "fileCount": 13,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-programmer",
+        "versionId": "version:vc-programmer:1.0.0"
+      }
+    },
+    {
+      "slug": "vc-worker",
+      "displayName": "vc-worker",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-worker",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "deployment"
+      ],
+      "fileCount": 7,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vc-worker",
+        "versionId": "version:vc-worker:1.0.0"
+      }
+    },
+    {
+      "slug": "video-analyzer",
+      "displayName": "video-analyzer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/video-analyzer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:video-analyzer",
+        "versionId": "version:video-analyzer:1.0.0"
+      }
+    },
+    {
+      "slug": "video-tools",
+      "displayName": "Video Tools",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/video-tools",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:video-tools",
+        "versionId": "version:video-tools:1.0.0"
+      }
+    },
+    {
+      "slug": "vpn-proxy",
+      "displayName": "Vpn Proxy",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vpn-proxy",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "scraping",
+        "security"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:vpn-proxy",
+        "versionId": "version:vpn-proxy:1.0.0"
+      }
+    },
+    {
+      "slug": "web-research-citation",
+      "displayName": "Web Research Citation",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/web-research-citation",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:web-research-citation",
+        "versionId": "version:web-research-citation:1.0.0"
+      }
+    },
+    {
+      "slug": "web-tester",
+      "displayName": "web-tester",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/web-tester",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "browser",
+        "automation",
+        "image"
+      ],
+      "fileCount": 36,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:web-tester",
+        "versionId": "version:web-tester:1.0.0"
+      }
+    },
+    {
+      "slug": "whatsapp-assistant",
+      "displayName": "whatsapp-assistant",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/whatsapp-assistant",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "productivity"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:whatsapp-assistant",
+        "versionId": "version:whatsapp-assistant:1.0.0"
+      }
+    },
+    {
+      "slug": "whatsapp-smart-reminder",
+      "displayName": "Whatsapp Smart Reminder",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/whatsapp-smart-reminder",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:whatsapp-smart-reminder",
+        "versionId": "version:whatsapp-smart-reminder:1.0.0"
+      }
+    },
+    {
+      "slug": "xero-receipt-importer",
+      "displayName": "xero-receipt-importer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/xero-receipt-importer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "audio",
+        "documents",
+        "communications",
+        "billing"
+      ],
+      "fileCount": 4,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:xero-receipt-importer",
+        "versionId": "version:xero-receipt-importer:1.0.0"
+      }
+    },
+    {
+      "slug": "youtube-summarizer",
+      "displayName": "youtube-summarizer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/youtube-summarizer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "video"
+      ],
+      "fileCount": 6,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:youtube-summarizer",
+        "versionId": "version:youtube-summarizer:1.0.0"
+      }
+    },
+    {
+      "slug": "1password",
+      "displayName": "1password",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/1password",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "security",
+        "integrations"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:1password",
+        "versionId": "version:1password:1.0.0"
+      }
+    },
+    {
+      "slug": "apple-notes",
+      "displayName": "apple-notes",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/apple-notes",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:apple-notes",
+        "versionId": "version:apple-notes:1.0.0"
+      }
+    },
+    {
+      "slug": "apple-reminders",
+      "displayName": "apple-reminders",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/apple-reminders",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:apple-reminders",
+        "versionId": "version:apple-reminders:1.0.0"
+      }
+    },
+    {
+      "slug": "bear-notes",
+      "displayName": "bear-notes",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/bear-notes",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:bear-notes",
+        "versionId": "version:bear-notes:1.0.0"
+      }
+    },
+    {
+      "slug": "blogwatcher",
+      "displayName": "blogwatcher",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/blogwatcher",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:blogwatcher",
+        "versionId": "version:blogwatcher:1.0.0"
+      }
+    },
+    {
+      "slug": "blucli",
+      "displayName": "blucli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/blucli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:blucli",
+        "versionId": "version:blucli:1.0.0"
+      }
+    },
+    {
+      "slug": "bluebubbles",
+      "displayName": "bluebubbles",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/bluebubbles",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:bluebubbles",
+        "versionId": "version:bluebubbles:1.0.0"
+      }
+    },
+    {
+      "slug": "camsnap",
+      "displayName": "camsnap",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/camsnap",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "video"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:camsnap",
+        "versionId": "version:camsnap:1.0.0"
+      }
+    },
+    {
+      "slug": "canvas",
+      "displayName": "Canvas",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/canvas",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "browser",
+        "automation"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:canvas",
+        "versionId": "version:canvas:1.0.0"
+      }
+    },
+    {
+      "slug": "clawhub",
+      "displayName": "clawhub",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/clawhub",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "qa",
+        "testing",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:clawhub",
+        "versionId": "version:clawhub:1.0.0"
+      }
+    },
+    {
+      "slug": "coding-agent",
+      "displayName": "coding-agent",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/coding-agent",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "communications",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:coding-agent",
+        "versionId": "version:coding-agent:1.0.0"
+      }
+    },
+    {
+      "slug": "discord",
+      "displayName": "discord",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/discord",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:discord",
+        "versionId": "version:discord:1.0.0"
+      }
+    },
+    {
+      "slug": "eightctl",
+      "displayName": "eightctl",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/eightctl",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:eightctl",
+        "versionId": "version:eightctl:1.0.0"
+      }
+    },
+    {
+      "slug": "gemini",
+      "displayName": "gemini",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gemini",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:gemini",
+        "versionId": "version:gemini:1.0.0"
+      }
+    },
+    {
+      "slug": "gh-issues",
+      "displayName": "gh-issues",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gh-issues",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "qa",
+        "testing",
+        "development",
+        "research",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:gh-issues",
+        "versionId": "version:gh-issues:1.0.0"
+      }
+    },
+    {
+      "slug": "gifgrep",
+      "displayName": "gifgrep",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gifgrep",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:gifgrep",
+        "versionId": "version:gifgrep:1.0.0"
+      }
+    },
+    {
+      "slug": "github",
+      "displayName": "github",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/github",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "browser",
+        "automation",
+        "development",
+        "documents",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:github",
+        "versionId": "version:github:1.0.0"
+      }
+    },
+    {
+      "slug": "gog",
+      "displayName": "gog",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gog",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:gog",
+        "versionId": "version:gog:1.0.0"
+      }
+    },
+    {
+      "slug": "goplaces",
+      "displayName": "goplaces",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/goplaces",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:goplaces",
+        "versionId": "version:goplaces:1.0.0"
+      }
+    },
+    {
+      "slug": "healthcheck",
+      "displayName": "healthcheck",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "deployment",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:healthcheck",
+        "versionId": "version:healthcheck:1.0.0"
+      }
+    },
+    {
+      "slug": "himalaya",
+      "displayName": "himalaya",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/himalaya",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "marketing"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:himalaya",
+        "versionId": "version:himalaya:1.0.0"
+      }
+    },
+    {
+      "slug": "imsg",
+      "displayName": "imsg",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/imsg",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:imsg",
+        "versionId": "version:imsg:1.0.0"
+      }
+    },
+    {
+      "slug": "mcporter",
+      "displayName": "mcporter",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/mcporter",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "security",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:mcporter",
+        "versionId": "version:mcporter:1.0.0"
+      }
+    },
+    {
+      "slug": "model-usage",
+      "displayName": "model-usage",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/model-usage",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development"
+      ],
+      "fileCount": 4,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:model-usage",
+        "versionId": "version:model-usage:1.0.0"
+      }
+    },
+    {
+      "slug": "nano-banana-pro",
+      "displayName": "nano-banana-pro",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/nano-banana-pro",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:nano-banana-pro",
+        "versionId": "version:nano-banana-pro:1.0.0"
+      }
+    },
+    {
+      "slug": "nano-pdf",
+      "displayName": "nano-pdf",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/nano-pdf",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:nano-pdf",
+        "versionId": "version:nano-pdf:1.0.0"
+      }
+    },
+    {
+      "slug": "notion",
+      "displayName": "notion",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/notion",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "deployment",
+        "productivity",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:notion",
+        "versionId": "version:notion:1.0.0"
+      }
+    },
+    {
+      "slug": "obsidian",
+      "displayName": "obsidian",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/obsidian",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:obsidian",
+        "versionId": "version:obsidian:1.0.0"
+      }
+    },
+    {
+      "slug": "openai-image-gen",
+      "displayName": "openai-image-gen",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openai-image-gen",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:openai-image-gen",
+        "versionId": "version:openai-image-gen:1.0.0"
+      }
+    },
+    {
+      "slug": "openai-whisper",
+      "displayName": "openai-whisper",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openai-whisper",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:openai-whisper",
+        "versionId": "version:openai-whisper:1.0.0"
+      }
+    },
+    {
+      "slug": "openai-whisper-api",
+      "displayName": "openai-whisper-api",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openai-whisper-api",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:openai-whisper-api",
+        "versionId": "version:openai-whisper-api:1.0.0"
+      }
+    },
+    {
+      "slug": "openhue",
+      "displayName": "openhue",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openhue",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:openhue",
+        "versionId": "version:openhue:1.0.0"
+      }
+    },
+    {
+      "slug": "oracle",
+      "displayName": "oracle",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/oracle",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:oracle",
+        "versionId": "version:oracle:1.0.0"
+      }
+    },
+    {
+      "slug": "ordercli",
+      "displayName": "ordercli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/ordercli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:ordercli",
+        "versionId": "version:ordercli:1.0.0"
+      }
+    },
+    {
+      "slug": "peekaboo",
+      "displayName": "peekaboo",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/peekaboo",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:peekaboo",
+        "versionId": "version:peekaboo:1.0.0"
+      }
+    },
+    {
+      "slug": "sag",
+      "displayName": "sag",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/sag",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:sag",
+        "versionId": "version:sag:1.0.0"
+      }
+    },
+    {
+      "slug": "session-logs",
+      "displayName": "session-logs",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/session-logs",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:session-logs",
+        "versionId": "version:session-logs:1.0.0"
+      }
+    },
+    {
+      "slug": "sherpa-onnx-tts",
+      "displayName": "sherpa-onnx-tts",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/sherpa-onnx-tts",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:sherpa-onnx-tts",
+        "versionId": "version:sherpa-onnx-tts:1.0.0"
+      }
+    },
+    {
+      "slug": "skill-creator",
+      "displayName": "skill-creator",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "security"
+      ],
+      "fileCount": 7,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:skill-creator",
+        "versionId": "version:skill-creator:1.0.0"
+      }
+    },
+    {
+      "slug": "slack",
+      "displayName": "slack",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/slack",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:slack",
+        "versionId": "version:slack:1.0.0"
+      }
+    },
+    {
+      "slug": "songsee",
+      "displayName": "songsee",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/songsee",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:songsee",
+        "versionId": "version:songsee:1.0.0"
+      }
+    },
+    {
+      "slug": "sonoscli",
+      "displayName": "sonoscli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/sonoscli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:sonoscli",
+        "versionId": "version:sonoscli:1.0.0"
+      }
+    },
+    {
+      "slug": "spotify-player",
+      "displayName": "spotify-player",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/spotify-player",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:spotify-player",
+        "versionId": "version:spotify-player:1.0.0"
+      }
+    },
+    {
+      "slug": "summarize",
+      "displayName": "summarize",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/summarize",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "video"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:summarize",
+        "versionId": "version:summarize:1.0.0"
+      }
+    },
+    {
+      "slug": "things-mac",
+      "displayName": "things-mac",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/things-mac",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:things-mac",
+        "versionId": "version:things-mac:1.0.0"
+      }
+    },
+    {
+      "slug": "tmux",
+      "displayName": "tmux",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/tmux",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications",
+        "scraping"
+      ],
+      "fileCount": 3,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:tmux",
+        "versionId": "version:tmux:1.0.0"
+      }
+    },
+    {
+      "slug": "trello",
+      "displayName": "trello",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/trello",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:trello",
+        "versionId": "version:trello:1.0.0"
+      }
+    },
+    {
+      "slug": "video-frames",
+      "displayName": "video-frames",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:video-frames",
+        "versionId": "version:video-frames:1.0.0"
+      }
+    },
+    {
+      "slug": "voice-call",
+      "displayName": "voice-call",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/voice-call",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:voice-call",
+        "versionId": "version:voice-call:1.0.0"
+      }
+    },
+    {
+      "slug": "wacli",
+      "displayName": "wacli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/wacli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:wacli",
+        "versionId": "version:wacli:1.0.0"
+      }
+    },
+    {
+      "slug": "weather",
+      "displayName": "weather",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/weather",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:weather",
+        "versionId": "version:weather:1.0.0"
+      }
+    },
+    {
+      "slug": "xurl",
+      "displayName": "xurl",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/xurl",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "billing",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:xurl",
+        "versionId": "version:xurl:1.0.0"
+      }
+    },
+    {
+      "slug": "acp-router",
+      "displayName": "acp-router",
+      "version": "1.0.0",
+      "source": "extension",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/extensions/acpx/skills/acp-router",
+      "tags": [
+        "latest",
+        "extension",
+        "acpx",
+        "development"
+      ],
+      "fileCount": 1,
+      "status": 200,
+      "response": {
+        "ok": true,
+        "skillId": "skill:acp-router",
+        "versionId": "version:acp-router:1.0.0"
+      }
+    }
+  ],
+  "failed": [],
+  "skipped": [],
+  "finishedAt": "2026-03-28T16:33:48.832Z"
+}

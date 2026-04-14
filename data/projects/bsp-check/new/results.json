@@ -1,0 +1,1670 @@
+[
+  {
+    "id": "01",
+    "name": "Demo School 01",
+    "email": "demo_school_01@britishschoolportal.co.uk",
+    "loginSuccess": true,
+    "loginUrl": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+    "schoolLinks": [
+      {
+        "text": "Demo School 01",
+        "href": "https://www.britishschoolportal.co.uk/en/school/detail/59701/demo-school-01"
+      },
+      {
+        "text": "Profile",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/profile"
+      },
+      {
+        "text": "School Photo",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_photo"
+      },
+      {
+        "text": "Change Password",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/change_password"
+      },
+      {
+        "text": "FAQ List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/faq"
+      },
+      {
+        "text": "School Admission List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list"
+      },
+      {
+        "text": "SCHOOL ADMISSION SETTING",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting"
+      },
+      {
+        "text": "Enquiry List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/enquiry"
+      },
+      {
+        "text": "Partnered List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/partnered"
+      },
+      {
+        "text": "Report",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/report"
+      }
+    ],
+    "homeContent": {
+      "fields": {
+        "searchFromHome": {
+          "value": "1",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "location": {
+          "value": "",
+          "type": "text",
+          "placeholder": "Location / Postcode",
+          "required": true,
+          "isEmpty": true
+        },
+        "zoom": {
+          "value": "",
+          "type": "select-one",
+          "required": false,
+          "isEmpty": true
+        },
+        "residencyNoboarders": {
+          "value": "No%20boarders",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "residencyBoardingschool": {
+          "value": "Boarding%20school",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "residencyChildren'shome(Boardingschool)": {
+          "value": "Children%27s%20home%20%28Boarding%20school%29",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "residencyCollege/FEresidentialaccommodation": {
+          "value": "College%20%2F%20FE%20residential%20accommodation",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "gender_profile0": {
+          "value": "0",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "gender_profile1": {
+          "value": "1",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "gender_profile2": {
+          "value": "2",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level0": {
+          "value": "0",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level1": {
+          "value": "1",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level2": {
+          "value": "2",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level3": {
+          "value": "3",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level4": {
+          "value": "4",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level5": {
+          "value": "5",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level6": {
+          "value": "6",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level7": {
+          "value": "7",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level8": {
+          "value": "8",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level9": {
+          "value": "9",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level10": {
+          "value": "10",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level11": {
+          "value": "11",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level12": {
+          "value": "12",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level13": {
+          "value": "13",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level14": {
+          "value": "14",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        }
+      },
+      "headings": [
+        "This is where you will find the most suitable school in the UK",
+        "Find School Near You",
+        "News",
+        "A.I. Powered educational consultant",
+        "Read More...",
+        "​​​​​​​Top 20 A-Level Secondary Schools in the UK&nbsp;2022/23",
+        "Read More...",
+        "Merry Christmas from the Heart of British School Portal!",
+        "Read More...",
+        "DSE Not Ideal? There’s Still a Path to University in the UK!",
+        "Read More...",
+        "A.I. Powered educational consultant",
+        "Read More...",
+        "​​​​​​​Top 20 A-Level Secondary Schools in the UK&nbsp;2022/23",
+        "Read More...",
+        "Merry Christmas from the Heart of British School Portal!",
+        "Read More...",
+        "DSE Not Ideal? There’s Still a Path to University in the UK!",
+        "Read More...",
+        "A.I. Powered educational consultant",
+        "Read More...",
+        "​​​​​​​Top 20 A-Level Secondary Schools in the UK&nbsp;2022/23",
+        "Read More...",
+        "Merry Christmas from the Heart of British School Portal!",
+        "Read More...",
+        "See the Schools Near You On MapCan be filtered by",
+        "Further School’s Information",
+        "Information About The Education In The UKContinuously updated content area for local and overseas students",
+        "Related Service Provider Business ListALWAYS SHOW YOU THE QUALITY ONE"
+      ],
+      "pageText": " DEMO SCHOOL 01\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\n  Login successfully.\n×\nThis is where you will find the most suitable school in the UK\nWe aim to provide a user-friendly platform assisting parents and students on schools and related services searching in the UK for FREE\nFIND SCHOOL NEAR YOU\nSearch Radius\nWithin 10 miles\nWithin 8 miles\nWithin 3 miles\nWithin 2 miles\nWithin 1 mile\nResidency Types\nGender Group\nCurriculum Covered\nSEARCH\nNews\nPrevious\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\nRead More...\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\nRead More...\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nNext\n1\n2\n3\n4\nFantastic website! I found a lof of useful information in this website. And do help me a lot of find a very good school for my little son. Good job. Marvellous website.\nMs Yip\nHelpful and informative. I found it helpful and easy to search for the different level of schools in the area.\nEmily\nExcellent, easy to use, so much information consolidate in one website.\nSelina\n1\n2\nSee the Schools Near You On Map\nCAN BE FILTERED BY\nType of School\nCurriculum Covered\nResidency Type\nAdmission Policy\nGender Groups\nReligious affiliation\nInspection report\nSpecial Educational Needs and Disability\nFurther School’s Information\nSchool Data\nPerformance\nUser’s review*\nFees & Bursaries*\nExtracurricular*\nNotable achievements & Alumni*\nEnquiry function to ask the school*\nFAQ section*\n*Subject to availability\nInformation About The Education In The UK\nCONTINUOUSLY UPDATED CONTENT AREA FOR LOCAL AND OVERSEAS STUDENTS\nThe education system in the UK\nType of schools in the UK\nGrammar Schools in England\nAcademic qualification in the UK\nSchool admission\nFAQ about this platform\nRelated Service Provider Business List\nALWAYS SHOW YOU THE QUALITY ONE\nEducational consultant\nGuardian service\nLanguages learning\nTaxi service\nLocal /International Removal\nImmigration consultant\nProperty management\nPet shipping\n*Subject to availability\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel"
+    },
+    "page__en_school_profile": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_school_dashboard": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/dashboard",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_school_settings": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/settings",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_portal": {
+      "url": "https://www.britishschoolportal.co.uk/en/portal",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_member": {
+      "url": "https://www.britishschoolportal.co.uk/en/member",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_manage": {
+      "url": "https://www.britishschoolportal.co.uk/en/manage",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_schoolprofile": {
+      "url": "https://www.britishschoolportal.co.uk/en/school-profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__school_profile": {
+      "url": "https://www.britishschoolportal.co.uk/school/profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "navLinks": [
+      {
+        "text": "Demo School 01",
+        "href": "https://www.britishschoolportal.co.uk/en/school/detail/59701/demo-school-01"
+      },
+      {
+        "text": "Profile",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/profile"
+      },
+      {
+        "text": "School Photo",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_photo"
+      },
+      {
+        "text": "Change Password",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/change_password"
+      },
+      {
+        "text": "FAQ List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/faq"
+      },
+      {
+        "text": "School Admission List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list"
+      },
+      {
+        "text": "SCHOOL ADMISSION SETTING",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting"
+      },
+      {
+        "text": "Enquiry List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/enquiry"
+      },
+      {
+        "text": "Partnered List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/partnered"
+      },
+      {
+        "text": "Report",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/report"
+      },
+      {
+        "text": "Membership & Transaction",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/transaction"
+      },
+      {
+        "text": "Fee Setting",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/fee"
+      },
+      {
+        "text": "Term Dates Setting",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/term"
+      },
+      {
+        "text": "Schools Vacancies Setting",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/vacancies"
+      },
+      {
+        "text": "Logout",
+        "href": "https://www.britishschoolportal.co.uk/en/logout"
+      },
+      {
+        "text": "About Us",
+        "href": "https://www.britishschoolportal.co.uk/en/about_us"
+      },
+      {
+        "text": "Independent Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/independent-school"
+      },
+      {
+        "text": "Other Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/other-school"
+      },
+      {
+        "text": "Educational Consultant",
+        "href": "https://www.britishschoolportal.co.uk/en/consultant"
+      },
+      {
+        "text": "Business",
+        "href": "https://www.britishschoolportal.co.uk/en/business"
+      },
+      {
+        "text": "Blogs",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs"
+      },
+      {
+        "text": "Content Area",
+        "href": "https://www.britishschoolportal.co.uk/en/content"
+      },
+      {
+        "text": "繁",
+        "href": "https://www.britishschoolportal.co.uk/tc/?msg=login-success"
+      },
+      {
+        "text": "A.I. Powered educational consultant\n              ",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/120?v=ai-powered-educational-consultant"
+      },
+      {
+        "text": "​​​​​​​Top 20 A-Level Secondary Schools in the UK&",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/119?v=top-20-alevel-secondary-schools-in-the-uknbsp202223"
+      },
+      {
+        "text": "Merry Christmas from the Heart of British School P",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/118?v=merry-christmas-from-the-heart-of-british-school-portal"
+      },
+      {
+        "text": "DSE Not Ideal? There’s Still a Path to University ",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/122?v=dse-not-ideal-theres-still-a-path-to-university-in-the-uk"
+      },
+      {
+        "text": "\"Privacy Policy\"",
+        "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+      }
+    ],
+    "section_profile": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/profile",
+      "headings": [
+        "Profile",
+        "School Information",
+        "Account",
+        "Contact",
+        "Login Information"
+      ],
+      "textPreview": " DEMO SCHOOL 01\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nPROFILE\n Profile\n Photo Upload\n Change Password\n FAQ List\n Enquiry List\n School Admission List\n School Admission Setting\n Partnered List\n Report\n Membership & Transaction\n Fee Setting\n Term Dates Setting\n Schools Vacancies Setting\nPROFILE\n EDIT PROFILE\nSchool Information\nSchool Logo\n(Best resolution is 120px x 120px) \nDisplay Name of School\n\nDemo School 01\n\nURN\n\n9999999991\n\nUKPRN\n\n9999999991\n\nOld URN\n\n9999999991\n\nDisplay Email \nMain Office contact number (UK Only) \nSecond Office contact number (UK Only)\nHead of School\n\nPostCode of School (Main campus)\n\nAddress of School\n\n--Please Select\n\nCurriculum Covered\nNursery /Pre-school (Age 2-4)\nReception (Age 4-5)\nYear 1 (Age 5-6)\nYear 2 (Age 6-7)\nYear 3 (Age 7-8)\nYear 4 (Age 8-9)\nYear 5 (Age 9-10)\nYear 6 (Age 10-11)\nYear 7 (Age 11-12)\nYear 8 (Age 12-13)\nYear 9 (Age 13-14)\nYear 10 (Age 14-15)\nYear 11 (Age 15-16)\nYear 12 (Age 16-1",
+      "fields": {
+        "type": {
+          "value": "1",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "logo": {
+          "value": "",
+          "type": "file",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": true
+        },
+        "display_email": {
+          "value": "info@demo-school-01.example.com",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "phone": {
+          "value": "02012340001",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_phone2": {
+          "value": "",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": true
+        },
+        "school_type[]": {
+          "value": "14",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_gender": {
+          "value": "0",
+          "type": "select-one",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_residency[]": {
+          "value": "2",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_religious": {
+          "value": "Non-denominational",
+          "type": "select-one",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_visa": {
+          "value": "DEMO01-TIER4-2024",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_exam[]": {
+          "value": "22",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_scholarship[]": {
+          "value": "5",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_web": {
+          "value": "https://demo-school-01.example.com",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_fb": {
+          "value": "https://www.facebook.com/demo-school-01",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "abstract": {
+          "value": "Demo School 01 is a fictional independent boarding school used for demonstration purposes. Located in London, UK, serving Year 7 to Year 13 students (approx. 450 pupils). This is a demo account only.",
+          "type": "textarea",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "--": {
+          "value": "Demo School 01 has a strong track record of university placements and academic achievements. (Demo content only)",
+          "type": "textarea",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_accountNameInput": {
+          "value": "Demo Manager 01",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_inCharge_officeNumInput": {
+          "value": "02012340001",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_inCharge_mobileNumInput": {
+          "value": "07912340001",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personNameInput": {
+          "value": "Demo Contact 01",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personOfficeNumtInput": {
+          "value": "02012340001",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personMobileNumInput": {
+          "value": "07912340001",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personEmailInput": {
+          "value": "info@demo-school-01.example.com",
+          "type": "email",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "staff_file": {
+          "value": "",
+          "type": "file",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": true
+        }
+      }
+    },
+    "section_admission": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list",
+      "headings": [
+        "School Admission List",
+        "Recruit List",
+        "No Enquiry"
+      ],
+      "textPreview": " DEMO SCHOOL 01\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nPROFILE\n Profile\n Photo Upload\n Change Password\n FAQ List\n Enquiry List\n School Admission List\n School Admission Setting\n Partnered List\n Report\n Membership & Transaction\n Fee Setting\n Term Dates Setting\n Schools Vacancies Setting\nSCHOOL ADMISSION LIST\nRecruit List\nNo Enquiry\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {
+        "enquiry-search": {
+          "value": "",
+          "type": "search",
+          "placeholder": "Search",
+          "required": false,
+          "isEmpty": true
+        }
+      }
+    },
+    "section_setting": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting",
+      "headings": [
+        "School AdmissionSetting",
+        "Setting",
+        "Application Phase"
+      ],
+      "textPreview": " DEMO SCHOOL 01\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nPROFILE\n Profile\n Photo Upload\n Change Password\n FAQ List\n Enquiry List\n School Admission List\n School Admission Setting\n Partnered List\n Report\n Membership & Transaction\n Fee Setting\n Term Dates Setting\n Schools Vacancies Setting\nSCHOOL ADMISSIONSETTING\nSetting\nSchool apply function\nEnableDisable\nApplication Phase \nSAVE\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {
+        "apply": {
+          "value": "false",
+          "type": "radio",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        }
+      }
+    },
+    "section_school": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/detail/59701/demo-school-01",
+      "headings": [
+        "Demo School 01",
+        "School Description",
+        "Principal's Message"
+      ],
+      "textPreview": " DEMO SCHOOL 01\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\n FIND A SCHOOL\nDEMO SCHOOL 01\nDemo School 01\n Previous School Information\nSchool Description\nDemo School 01 is a fictional independent boarding school used for demonstration purposes. Located in London, UK, serving Year 7 to Year 13 students (approx. 450 pupils). This is a demo account only.\nPrincipal's Message\nWelcome to Demo School 01. Our school provides a supportive and inspiring learning environment for all students. (Fictional demo account for testing purposes only.)\nSchool Data\n Print\nResidency Type\nDay School\nGender Profile\nMixed\nReligious affiliation\nNon-denominational\n\nExams Offered\nGCSE\nIGCSE\nAS Level\nA Level\nInternational Baccalaureate Diploma (IB)\nURN\n9999999991\nUKPRN\n9999999991\nScholarships & Bursaries offered\nAcademic scholarships\nAll Rounder awards\nArt scholarships\nSchool Performance\nExtracurricular\nNotable Achievements and Alumni\nComment\n☆☆☆☆☆\n★★★★★\nScho",
+      "fields": {
+        "lat": {
+          "value": "51.307394",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "lng": {
+          "value": "-3.471501",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_id": {
+          "value": "59701",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        }
+      }
+    }
+  },
+  {
+    "id": "02",
+    "name": "Demo School 02",
+    "email": "demo_school_02@britishschoolportal.co.uk",
+    "loginSuccess": true,
+    "loginUrl": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+    "schoolLinks": [
+      {
+        "text": "Demo School 02",
+        "href": "https://www.britishschoolportal.co.uk/en/school/detail/59702/demo-school-02"
+      },
+      {
+        "text": "Profile",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/profile"
+      },
+      {
+        "text": "School Photo",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_photo"
+      },
+      {
+        "text": "Change Password",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/change_password"
+      },
+      {
+        "text": "FAQ List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/faq"
+      },
+      {
+        "text": "School Admission List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list"
+      },
+      {
+        "text": "SCHOOL ADMISSION SETTING",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting"
+      },
+      {
+        "text": "Enquiry List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/enquiry"
+      },
+      {
+        "text": "Partnered List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/partnered"
+      },
+      {
+        "text": "Report",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/report"
+      }
+    ],
+    "homeContent": {
+      "fields": {
+        "searchFromHome": {
+          "value": "1",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "location": {
+          "value": "",
+          "type": "text",
+          "placeholder": "Location / Postcode",
+          "required": true,
+          "isEmpty": true
+        },
+        "zoom": {
+          "value": "",
+          "type": "select-one",
+          "required": false,
+          "isEmpty": true
+        },
+        "residencyNoboarders": {
+          "value": "No%20boarders",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "residencyBoardingschool": {
+          "value": "Boarding%20school",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "residencyChildren'shome(Boardingschool)": {
+          "value": "Children%27s%20home%20%28Boarding%20school%29",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "residencyCollege/FEresidentialaccommodation": {
+          "value": "College%20%2F%20FE%20residential%20accommodation",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "gender_profile0": {
+          "value": "0",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "gender_profile1": {
+          "value": "1",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "gender_profile2": {
+          "value": "2",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level0": {
+          "value": "0",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level1": {
+          "value": "1",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level2": {
+          "value": "2",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level3": {
+          "value": "3",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level4": {
+          "value": "4",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level5": {
+          "value": "5",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level6": {
+          "value": "6",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level7": {
+          "value": "7",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level8": {
+          "value": "8",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level9": {
+          "value": "9",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level10": {
+          "value": "10",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level11": {
+          "value": "11",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level12": {
+          "value": "12",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level13": {
+          "value": "13",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "level14": {
+          "value": "14",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        }
+      },
+      "headings": [
+        "This is where you will find the most suitable school in the UK",
+        "Find School Near You",
+        "News",
+        "A.I. Powered educational consultant",
+        "Read More...",
+        "​​​​​​​Top 20 A-Level Secondary Schools in the UK&nbsp;2022/23",
+        "Read More...",
+        "Merry Christmas from the Heart of British School Portal!",
+        "Read More...",
+        "DSE Not Ideal? There’s Still a Path to University in the UK!",
+        "Read More...",
+        "A.I. Powered educational consultant",
+        "Read More...",
+        "​​​​​​​Top 20 A-Level Secondary Schools in the UK&nbsp;2022/23",
+        "Read More...",
+        "Merry Christmas from the Heart of British School Portal!",
+        "Read More...",
+        "DSE Not Ideal? There’s Still a Path to University in the UK!",
+        "Read More...",
+        "A.I. Powered educational consultant",
+        "Read More...",
+        "​​​​​​​Top 20 A-Level Secondary Schools in the UK&nbsp;2022/23",
+        "Read More...",
+        "Merry Christmas from the Heart of British School Portal!",
+        "Read More...",
+        "See the Schools Near You On MapCan be filtered by",
+        "Further School’s Information",
+        "Information About The Education In The UKContinuously updated content area for local and overseas students",
+        "Related Service Provider Business ListALWAYS SHOW YOU THE QUALITY ONE"
+      ],
+      "pageText": " DEMO SCHOOL 02\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\n  Login successfully.\n×\nThis is where you will find the most suitable school in the UK\nWe aim to provide a user-friendly platform assisting parents and students on schools and related services searching in the UK for FREE\nFIND SCHOOL NEAR YOU\nSearch Radius\nWithin 10 miles\nWithin 8 miles\nWithin 3 miles\nWithin 2 miles\nWithin 1 mile\nResidency Types\nGender Group\nCurriculum Covered\nSEARCH\nNews\nPrevious\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\nRead More...\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nDSE NOT IDEAL? THERE’S STILL A PATH TO UNIVERSITY IN THE UK!\nRead More...\nA.I. POWERED EDUCATIONAL CONSULTANT\nRead More...\n​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23\nRead More...\nMERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!\nRead More...\nNext\n1\n2\n3\n4\nFantastic website! I found a lof of useful information in this website. And do help me a lot of find a very good school for my little son. Good job. Marvellous website.\nMs Yip\nHelpful and informative. I found it helpful and easy to search for the different level of schools in the area.\nEmily\nExcellent, easy to use, so much information consolidate in one website.\nSelina\n1\n2\nSee the Schools Near You On Map\nCAN BE FILTERED BY\nType of School\nCurriculum Covered\nResidency Type\nAdmission Policy\nGender Groups\nReligious affiliation\nInspection report\nSpecial Educational Needs and Disability\nFurther School’s Information\nSchool Data\nPerformance\nUser’s review*\nFees & Bursaries*\nExtracurricular*\nNotable achievements & Alumni*\nEnquiry function to ask the school*\nFAQ section*\n*Subject to availability\nInformation About The Education In The UK\nCONTINUOUSLY UPDATED CONTENT AREA FOR LOCAL AND OVERSEAS STUDENTS\nThe education system in the UK\nType of schools in the UK\nGrammar Schools in England\nAcademic qualification in the UK\nSchool admission\nFAQ about this platform\nRelated Service Provider Business List\nALWAYS SHOW YOU THE QUALITY ONE\nEducational consultant\nGuardian service\nLanguages learning\nTaxi service\nLocal /International Removal\nImmigration consultant\nProperty management\nPet shipping\n*Subject to availability\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel"
+    },
+    "page__en_school_profile": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_school_dashboard": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/dashboard",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_school_settings": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/settings",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_portal": {
+      "url": "https://www.britishschoolportal.co.uk/en/portal",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_member": {
+      "url": "https://www.britishschoolportal.co.uk/en/member",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_manage": {
+      "url": "https://www.britishschoolportal.co.uk/en/manage",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_schoolprofile": {
+      "url": "https://www.britishschoolportal.co.uk/en/school-profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__school_profile": {
+      "url": "https://www.britishschoolportal.co.uk/school/profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "navLinks": [
+      {
+        "text": "Demo School 02",
+        "href": "https://www.britishschoolportal.co.uk/en/school/detail/59702/demo-school-02"
+      },
+      {
+        "text": "Profile",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/profile"
+      },
+      {
+        "text": "School Photo",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_photo"
+      },
+      {
+        "text": "Change Password",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/change_password"
+      },
+      {
+        "text": "FAQ List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/faq"
+      },
+      {
+        "text": "School Admission List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list"
+      },
+      {
+        "text": "SCHOOL ADMISSION SETTING",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting"
+      },
+      {
+        "text": "Enquiry List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/enquiry"
+      },
+      {
+        "text": "Partnered List",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/partnered"
+      },
+      {
+        "text": "Report",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/report"
+      },
+      {
+        "text": "Membership & Transaction",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/transaction"
+      },
+      {
+        "text": "Fee Setting",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/fee"
+      },
+      {
+        "text": "Term Dates Setting",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/term"
+      },
+      {
+        "text": "Schools Vacancies Setting",
+        "href": "https://www.britishschoolportal.co.uk/en/profile/school#/vacancies"
+      },
+      {
+        "text": "Logout",
+        "href": "https://www.britishschoolportal.co.uk/en/logout"
+      },
+      {
+        "text": "About Us",
+        "href": "https://www.britishschoolportal.co.uk/en/about_us"
+      },
+      {
+        "text": "Independent Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/independent-school"
+      },
+      {
+        "text": "Other Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/other-school"
+      },
+      {
+        "text": "Educational Consultant",
+        "href": "https://www.britishschoolportal.co.uk/en/consultant"
+      },
+      {
+        "text": "Business",
+        "href": "https://www.britishschoolportal.co.uk/en/business"
+      },
+      {
+        "text": "Blogs",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs"
+      },
+      {
+        "text": "Content Area",
+        "href": "https://www.britishschoolportal.co.uk/en/content"
+      },
+      {
+        "text": "繁",
+        "href": "https://www.britishschoolportal.co.uk/tc/?msg=login-success"
+      },
+      {
+        "text": "A.I. Powered educational consultant\n              ",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/120?v=ai-powered-educational-consultant"
+      },
+      {
+        "text": "​​​​​​​Top 20 A-Level Secondary Schools in the UK&",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/119?v=top-20-alevel-secondary-schools-in-the-uknbsp202223"
+      },
+      {
+        "text": "Merry Christmas from the Heart of British School P",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/118?v=merry-christmas-from-the-heart-of-british-school-portal"
+      },
+      {
+        "text": "DSE Not Ideal? There’s Still a Path to University ",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs/detail/122?v=dse-not-ideal-theres-still-a-path-to-university-in-the-uk"
+      },
+      {
+        "text": "\"Privacy Policy\"",
+        "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+      }
+    ],
+    "section_profile": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/profile",
+      "headings": [
+        "Profile",
+        "School Information",
+        "Account",
+        "Contact",
+        "Login Information"
+      ],
+      "textPreview": " DEMO SCHOOL 02\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nPROFILE\n Profile\n Photo Upload\n Change Password\n FAQ List\n Enquiry List\n School Admission List\n School Admission Setting\n Partnered List\n Report\n Membership & Transaction\n Fee Setting\n Term Dates Setting\n Schools Vacancies Setting\nPROFILE\n EDIT PROFILE\nSchool Information\nSchool Logo\n(Best resolution is 120px x 120px) \nDisplay Name of School\n\nDemo School 02\n\nURN\n\n9999999992\n\nUKPRN\n\nOld URN\n\nDisplay Email \nMain Office contact number (UK Only) \nSecond Office contact number (UK Only)\nHead of School\n\nPostCode of School (Main campus)\n\nAddress of School\n\n--Please Select\n\nCurriculum Covered\nNursery /Pre-school (Age 2-4)\nReception (Age 4-5)\nYear 1 (Age 5-6)\nYear 2 (Age 6-7)\nYear 3 (Age 7-8)\nYear 4 (Age 8-9)\nYear 5 (Age 9-10)\nYear 6 (Age 10-11)\nYear 7 (Age 11-12)\nYear 8 (Age 12-13)\nYear 9 (Age 13-14)\nYear 10 (Age 14-15)\nYear 11 (Age 15-16)\nYear 12 (Age 16-17)\nYear 13 (Age 17-18)\nG",
+      "fields": {
+        "type": {
+          "value": "1",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "logo": {
+          "value": "",
+          "type": "file",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": true
+        },
+        "display_email": {
+          "value": "info@demo-school-02.example.com",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "phone": {
+          "value": "01865120002",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_phone2": {
+          "value": "",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": true
+        },
+        "school_type[]": {
+          "value": "14",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_gender": {
+          "value": "0",
+          "type": "select-one",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_residency[]": {
+          "value": "2",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_religious": {
+          "value": "Non-denominational",
+          "type": "select-one",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_visa": {
+          "value": "DEMO02-TIER4-2024",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_exam[]": {
+          "value": "22",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_scholarship[]": {
+          "value": "5",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_web": {
+          "value": "https://demo-school-02.example.com",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_fb": {
+          "value": "https://www.facebook.com/demo-school-02",
+          "type": "text",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "abstract": {
+          "value": "Demo School 02 is a fictional independent day school used for demonstration purposes. Located in Oxford, UK, serving Year 9 to Year 13 students (approx. 320 pupils). This is a demo account only.",
+          "type": "textarea",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "--": {
+          "value": "Demo School 02 supports strong university placement to leading institutions. (Demo content only)",
+          "type": "textarea",
+          "placeholder": "--",
+          "required": false,
+          "isEmpty": false
+        },
+        "school_accountNameInput": {
+          "value": "Demo Manager 02",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_inCharge_officeNumInput": {
+          "value": "01865120002",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_inCharge_mobileNumInput": {
+          "value": "07912340002",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personNameInput": {
+          "value": "Demo Contact 02",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personOfficeNumtInput": {
+          "value": "01865120002",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personMobileNumInput": {
+          "value": "07912340002",
+          "type": "text",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "school_1_personEmailInput": {
+          "value": "info@demo-school-02.example.com",
+          "type": "email",
+          "placeholder": "--",
+          "required": true,
+          "isEmpty": false
+        },
+        "staff_file": {
+          "value": "",
+          "type": "file",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": true
+        }
+      }
+    },
+    "section_admission": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_list",
+      "headings": [
+        "School Admission List",
+        "Recruit List",
+        "No Enquiry"
+      ],
+      "textPreview": " DEMO SCHOOL 02\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nPROFILE\n Profile\n Photo Upload\n Change Password\n FAQ List\n Enquiry List\n School Admission List\n School Admission Setting\n Partnered List\n Report\n Membership & Transaction\n Fee Setting\n Term Dates Setting\n Schools Vacancies Setting\nSCHOOL ADMISSION LIST\nRecruit List\nNo Enquiry\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {
+        "enquiry-search": {
+          "value": "",
+          "type": "search",
+          "placeholder": "Search",
+          "required": false,
+          "isEmpty": true
+        }
+      }
+    },
+    "section_setting": {
+      "url": "https://www.britishschoolportal.co.uk/en/profile/school#/school_admission_setting",
+      "headings": [
+        "School AdmissionSetting",
+        "Setting",
+        "Application Phase"
+      ],
+      "textPreview": " DEMO SCHOOL 02\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nPROFILE\n Profile\n Photo Upload\n Change Password\n FAQ List\n Enquiry List\n School Admission List\n School Admission Setting\n Partnered List\n Report\n Membership & Transaction\n Fee Setting\n Term Dates Setting\n Schools Vacancies Setting\nSCHOOL ADMISSIONSETTING\nSetting\nSchool apply function\nEnableDisable\nApplication Phase \nSAVE\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {
+        "apply": {
+          "value": "false",
+          "type": "radio",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        }
+      }
+    },
+    "section_school": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/detail/59702/demo-school-02",
+      "headings": [
+        ""
+      ],
+      "textPreview": " DEMO SCHOOL 02\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nACCOUNT APPLICATION\n\n\n\nWe are conducting a verification check of your account application. It normally takes 2 working days. The result will be sent to your registered email.\n\nAny enquiry about this account register, please contact us by account_register@britishschoolportal.co.uk\n\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {}
+    }
+  },
+  {
+    "id": "03",
+    "name": "Demo School 03",
+    "email": "demo_school_03@britishschoolportal.co.uk",
+    "loginSuccess": true,
+    "loginUrl": "https://www.britishschoolportal.co.uk/login",
+    "schoolLinks": [
+      {
+        "text": "Login / Register for FREE",
+        "href": "https://www.britishschoolportal.co.uk/en/login"
+      },
+      {
+        "text": "",
+        "href": "https://www.britishschoolportal.co.uk/en"
+      },
+      {
+        "text": "About Us",
+        "href": "https://www.britishschoolportal.co.uk/en/about_us"
+      },
+      {
+        "text": "Independent Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/independent-school"
+      },
+      {
+        "text": "Other Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/other-school"
+      },
+      {
+        "text": "Educational Consultant",
+        "href": "https://www.britishschoolportal.co.uk/en/consultant"
+      },
+      {
+        "text": "Business",
+        "href": "https://www.britishschoolportal.co.uk/en/business"
+      },
+      {
+        "text": "Blogs",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs"
+      },
+      {
+        "text": "Content Area",
+        "href": "https://www.britishschoolportal.co.uk/en/content"
+      },
+      {
+        "text": "繁",
+        "href": "https://www.britishschoolportal.co.uk/tc/login"
+      }
+    ],
+    "homeContent": {
+      "fields": {
+        "username": {
+          "value": "demo_school_03@britishschoolportal.co.uk",
+          "type": "email",
+          "placeholder": "Email Address",
+          "required": true,
+          "isEmpty": false
+        },
+        "password": {
+          "value": "hschoolport",
+          "type": "password",
+          "placeholder": "Password",
+          "required": true,
+          "isEmpty": false
+        }
+      },
+      "headings": [
+        "Login",
+        "Register",
+        "Registration Reminder"
+      ],
+      "pageText": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nLOGIN\nSign in with facebook\nSign in with Google\nLOGIN\nREGISTER\nPERSONAL ACCOUNT\nSCHOOL ACCOUNT\nEDUCATIONAL CONSULTANT ACCOUNT\nBUSINESS ACCOUNT\nForget password?\nRe-send the verification email\nBy logging into your account you confirm that you agree to our website term & condition of use, our privacy policy and consent to cookies being stored on your device.\nREGISTRATION REMINDER\n\nFacebook and Google register only for student registration.\n\nAre you sure register the student account?\n\n**If you are school staff or consultant, please click here.\n\nSURE\nCANCEL\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel"
+    },
+    "page__en_school_profile": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_school_dashboard": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/dashboard",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_school_settings": {
+      "url": "https://www.britishschoolportal.co.uk/en/school/settings",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_portal": {
+      "url": "https://www.britishschoolportal.co.uk/en/portal",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_member": {
+      "url": "https://www.britishschoolportal.co.uk/en/member",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_manage": {
+      "url": "https://www.britishschoolportal.co.uk/en/manage",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__en_schoolprofile": {
+      "url": "https://www.britishschoolportal.co.uk/en/school-profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "page__school_profile": {
+      "url": "https://www.britishschoolportal.co.uk/school/profile",
+      "content": {
+        "fields": {},
+        "headings": [],
+        "pageText": ""
+      }
+    },
+    "navLinks": [
+      {
+        "text": "Login / Register for FREE",
+        "href": "https://www.britishschoolportal.co.uk/en/login"
+      },
+      {
+        "text": "About Us",
+        "href": "https://www.britishschoolportal.co.uk/en/about_us"
+      },
+      {
+        "text": "Independent Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/independent-school"
+      },
+      {
+        "text": "Other Schools",
+        "href": "https://www.britishschoolportal.co.uk/en/other-school"
+      },
+      {
+        "text": "Educational Consultant",
+        "href": "https://www.britishschoolportal.co.uk/en/consultant"
+      },
+      {
+        "text": "Business",
+        "href": "https://www.britishschoolportal.co.uk/en/business"
+      },
+      {
+        "text": "Blogs",
+        "href": "https://www.britishschoolportal.co.uk/en/blogs"
+      },
+      {
+        "text": "Content Area",
+        "href": "https://www.britishschoolportal.co.uk/en/content"
+      },
+      {
+        "text": "繁",
+        "href": "https://www.britishschoolportal.co.uk/tc/login"
+      },
+      {
+        "text": "Sign in with facebook",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "Sign in with Google",
+        "href": "javascript:void(0);"
+      },
+      {
+        "text": "Personal Account",
+        "href": "https://www.britishschoolportal.co.uk/en/register/student"
+      },
+      {
+        "text": "School Account",
+        "href": "https://www.britishschoolportal.co.uk/en/register/school"
+      },
+      {
+        "text": "Educational Consultant Account",
+        "href": "https://www.britishschoolportal.co.uk/en/register/consultant"
+      },
+      {
+        "text": "Business Account",
+        "href": "https://www.britishschoolportal.co.uk/en/register/business"
+      },
+      {
+        "text": "Forget password?",
+        "href": "https://www.britishschoolportal.co.uk/en/forget_password"
+      },
+      {
+        "text": "Re-send the verification email",
+        "href": "https://www.britishschoolportal.co.uk/en/resend_verify"
+      },
+      {
+        "text": "term & condition of use",
+        "href": "https://www.britishschoolportal.co.uk/en/terms_and_conditions_of_use"
+      },
+      {
+        "text": "our privacy policy",
+        "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+      },
+      {
+        "text": "here",
+        "href": "https://www.britishschoolportal.co.uk/register"
+      },
+      {
+        "text": "Sure",
+        "href": "javascript:void(0)"
+      },
+      {
+        "text": "Cancel",
+        "href": "javascript:void(0)"
+      },
+      {
+        "text": "\"Privacy Policy\"",
+        "href": "https://www.britishschoolportal.co.uk/en/privacy_policy"
+      }
+    ],
+    "section_school": {
+      "url": "https://www.britishschoolportal.co.uk/en/login",
+      "headings": [
+        "Login",
+        "Register",
+        "Registration Reminder"
+      ],
+      "textPreview": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nLOGIN\nSign in with facebook\nSign in with Google\nLOGIN\nREGISTER\nPERSONAL ACCOUNT\nSCHOOL ACCOUNT\nEDUCATIONAL CONSULTANT ACCOUNT\nBUSINESS ACCOUNT\nForget password?\nRe-send the verification email\nBy logging into your account you confirm that you agree to our website term & condition of use, our privacy policy and consent to cookies being stored on your device.\nREGISTRATION REMINDER\n\nFacebook and Google register only for student registration.\n\nAre you sure register the student account?\n\n**If you are school staff or consultant, please click here.\n\nSURE\nCANCEL\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {
+        "username": {
+          "value": "",
+          "type": "email",
+          "placeholder": "Email Address",
+          "required": true,
+          "isEmpty": true
+        },
+        "password": {
+          "value": "",
+          "type": "password",
+          "placeholder": "Password",
+          "required": true,
+          "isEmpty": true
+        }
+      }
+    },
+    "section_account": {
+      "url": "https://www.britishschoolportal.co.uk/en/register/student",
+      "headings": [
+        "CreateYour Account",
+        "Personal Account",
+        "Personal Information",
+        "Login Information"
+      ],
+      "textPreview": " LOGIN / REGISTER FOR FREE\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\nHOME\nREGISTER\nPERSONAL ACCOUNT\nCREATEYOUR ACCOUNT\nPersonal Account\nPersonal Information\nFirst name (English)**\nSurname (English)**\nLogin Information\nUser Email**\nPassword**\nRe-enter Password**\nBy creating an account you confirm that you agree to our website term & condition of use, our privacy policy and consent to cookies being stored on your device.\n** NECESSARY TO FILL\nREGISTER\nCOOKIES AND SIMILAR TECHNOLOGIES\nWe use cookies and similar technologies to store data on your device to enhance your user experience. Clicking the \"Accept\" button means you accept analytics and cookies. For more information please refer to \"Privacy Policy\".\nAccept Cancel",
+      "fields": {
+        "first_name": {
+          "value": "",
+          "type": "text",
+          "placeholder": "",
+          "required": true,
+          "isEmpty": true
+        },
+        "last_name": {
+          "value": "",
+          "type": "text",
+          "placeholder": "",
+          "required": true,
+          "isEmpty": true
+        },
+        "email": {
+          "value": "",
+          "type": "email",
+          "placeholder": "",
+          "required": true,
+          "isEmpty": true
+        },
+        "password": {
+          "value": "",
+          "type": "password",
+          "placeholder": "",
+          "required": true,
+          "isEmpty": true
+        },
+        "password2": {
+          "value": "",
+          "type": "password",
+          "placeholder": "",
+          "required": true,
+          "isEmpty": true
+        },
+        "agree": {
+          "value": "on",
+          "type": "checkbox",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": false
+        },
+        "openid": {
+          "value": "",
+          "type": "hidden",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": true
+        },
+        "g-recaptcha-response": {
+          "value": "",
+          "type": "textarea",
+          "placeholder": "",
+          "required": false,
+          "isEmpty": true
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "step1": {
+    "status": "completed",
+    "url": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+    "consultant_mentions": [
+      "Line 1: About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁",
+      "Line 19: A.I. POWERED EDUCATIONAL CONSULTANT",
+      "Line 27: A.I. POWERED EDUCATIONAL CONSULTANT",
+      "Line 35: A.I. POWERED EDUCATIONAL CONSULTANT",
+      "Line 84: Educational consultant"
+    ],
+    "applications_found": false
+  },
+  "step2": {
+    "status": "completed",
+    "url": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+    "consultant_mentions": [
+      "About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁",
+      "A.I. POWERED EDUCATIONAL CONSULTANT",
+      "A.I. POWERED EDUCATIONAL CONSULTANT",
+      "A.I. POWERED EDUCATIONAL CONSULTANT",
+      "Educational consultant"
+    ]
+  },
+  "step3": {
+    "status": "completed",
+    "url": "https://www.britishschoolportal.co.uk/en/?msg=login-success",
+    "school_mentions": [
+      "BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE",
+      "About Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁",
+      "This is where you will find the most suitable school in the UK",
+      "We aim to provide a user-friendly platform assisting parents and students on schools and related services searching in the UK for FREE",
+      "FIND SCHOOL NEAR YOU",
+      "​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23",
+      "MERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!",
+      "​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23",
+      "MERRY CHRISTMAS FROM THE HEART OF BRITISH SCHOOL PORTAL!",
+      "​​​​​​​TOP 20 A-LEVEL SECONDARY SCHOOLS IN THE UK&NBSP;2022/23"
+    ],
+    "nav_items": [
+      "[BRITISH SCHOOL PORTAL - EDUCATIONAL CONSULTANCY SERVICE] -> /en/consultant/detail/36/british-school-portal--educational-consultancy-service",
+      "[Profile] -> /en/profile/consultant#/profile",
+      "[Consultant Photo] -> /en/profile/consultant#/photo",
+      "[Change Password] -> /en/profile/consultant#/password",
+      "[Q&A List] -> /en/profile/consultant#/faq",
+      "[Enquiry List] -> /en/profile/consultant#/enquiry",
+      "[School Admission List] -> /en/profile/consultant#/school_admission_list",
+      "[School Partnership Application] -> /en/profile/consultant#/partner_applies",
+      "[Partnered School] -> /en/profile/consultant#/partner",
+      "[Report] -> /en/profile/consultant#/report",
+      "[Membership & Transaction] -> /en/profile/consultant#/transaction",
+      "[Logout] -> /en/logout",
+      "[About Us] -> /en/about_us",
+      "[Independent Schools] -> /en/independent-school",
+      "[Other Schools] -> /en/other-school"
+    ]
+  },
+  "step4_school01_data": [
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More...",
+    "Read More..."
+  ],
+  "step4": {
+    "status": "completed",
+    "privacy_leaks_found": [
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More...",
+      "Read More..."
+    ],
+    "isolation_ok": false,
+    "school02_text_excerpt": " DEMO SCHOOL 02\nAbout Us Independent Schools Other Schools Educational Consultant Business Blogs Content Area 繁\n  Login successfully.\n×\nThis is where you will find the most suitable school in the UK\nWe aim to provide a user-friendly platform assisting parents and students on schools and related services searching in the UK for FREE\nFIND SCHOOL NEAR YOU\nSearch Radius\nWithin 10 miles\nWithin 8 miles\nWithin 3 miles\nWithin 2 miles\nWithin 1 mile\nResidency Types\nGender Group\nCurriculum Covered\nSEARCH\nN"
+  }
+}

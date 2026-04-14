@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>British School Portal — Find Your Perfect British School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #1B3A5C;
+    --navy-dark: #122843;
+    --navy-light: #254d78;
+    --red: #C0392B;
+    --red-hover: #a93226;
+    --gray-bg: #F8F9FA;
+    --gray-border: #E2E8F0;
+    --gray-text: #64748B;
+    --text: #1E293B;
+    --white: #FFFFFF;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+    --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-border);
+    box-shadow: var(--shadow-sm);
+  }
+  .navbar-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .navbar-logo-icon {
+    width: 40px; height: 40px;
+    background: var(--navy);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .navbar-logo-icon svg { width: 22px; height: 22px; }
+  .navbar-logo-text {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+  .navbar-logo-text span { color: var(--red); }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+  }
+  .navbar-nav a {
+    text-decoration: none;
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .navbar-nav a:hover { color: var(--navy); background: var(--gray-bg); }
+  .navbar-nav a.active { color: var(--navy); }
+  .navbar-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .btn-ghost {
+    padding: 9px 20px;
+    border: 2px solid var(--gray-border);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .btn-ghost:hover { border-color: var(--navy); background: var(--gray-bg); }
+  .btn-primary {
+    padding: 9px 20px;
+    background: var(--navy);
+    color: var(--white);
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .btn-primary:hover { background: var(--navy-dark); border-color: var(--navy-dark); }
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--navy);
+    font-size: 22px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 60%, #2d6a9f 100%);
+    padding: 72px 24px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 460px;
+    gap: 56px;
+    align-items: center;
+    position: relative;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.9);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+  .hero-title span { color: #FFD166; }
+  .hero-subtitle {
+    font-size: 17px;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 520px;
+  }
+  .hero-trust {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .hero-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .hero-trust-item i { color: #FFD166; }
+
+  /* Search Box */
+  .search-box {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow-lg);
+  }
+  .search-box h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .search-box h3 i { color: var(--red); font-size: 16px; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-group label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gray-text);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .form-group select,
+  .form-group input {
+    padding: 10px 14px;
+    border: 1.5px solid var(--gray-border);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--white);
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748B' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+  .form-group input { background-image: none; }
+  .form-group select:focus,
+  .form-group input:focus {
+    outline: none;
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(27,58,92,0.12);
+  }
+  .btn-search {
+    width: 100%;
+    padding: 13px;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 4px;
+  }
+  .btn-search:hover { background: var(--red-hover); transform: translateY(-1px); }
+
+  /* ===== STATS BAR ===== */
+  .stats-bar {
+    background: var(--navy-dark);
+    padding: 28px 24px;
+  }
+  .stats-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: center;
+  }
+  .stat-item { padding: 8px; }
+  .stat-number {
+    font-size: 36px;
+    font-weight: 800;
+    color: #FFD166;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.72);
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  .stat-divider {
+    border-left: 1px solid rgba(255,255,255,0.12);
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    padding: 72px 24px;
+  }
+  .section-alt { background: var(--gray-bg); }
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .section-header { text-align: center; margin-bottom: 48px; }
+  .section-tag {
+    display: inline-block;
+    background: rgba(27,58,92,0.08);
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 14px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+    color: var(--gray-text);
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  /* ===== HOW IT WORKS ===== */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .step-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px 28px;
+    text-align: center;
+    border: 1.5px solid var(--gray-border);
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+  }
+  .step-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+  .step-number {
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 28px; height: 28px;
+    background: var(--gray-bg);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gray-text);
+  }
+  .step-icon {
+    width: 72px; height: 72px;
+    background: linear-gradient(135deg, rgba(27,58,92,0.1), rgba(27,58,92,0.05));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+    color: var(--navy);
+  }
+  .step-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .step-desc {
+    font-size: 14px;
+    color: var(--gray-text);
+    line-height: 1.7;
+  }
+
+  /* ===== SCHOOL CARDS ===== */
+  .schools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .school-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    border: 1.5px solid var(--gray-border);
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  .school-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+  .school-card-img {
+    height: 140px;
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .school-card-img.c1 { background: linear-gradient(135deg, #1B3A5C, #2d6a9f); }
+  .school-card-img.c2 { background: linear-gradient(135deg, #1a4731, #2d7a50); }
+  .school-card-img.c3 { background: linear-gradient(135deg, #4a1a5c, #7d2d9f); }
+  .school-card-img.c4 { background: linear-gradient(135deg, #5c1a1a, #9f2d2d); }
+  .school-logo-placeholder {
+    width: 64px; height: 64px;
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 800;
+  }
+  .school-type-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 100px;
+    backdrop-filter: blur(4px);
+  }
+  .school-card-body {
+    padding: 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .school-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .school-location {
+    font-size: 12px;
+    color: var(--gray-text);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  .school-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .stars { color: #F59E0B; font-size: 13px; }
+  .rating-num { font-size: 13px; font-weight: 700; color: var(--text); }
+  .rating-count { font-size: 12px; color: var(--gray-text); }
+  .school-fee {
+    font-size: 13px;
+    color: var(--gray-text);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .school-fee strong { color: var(--text); font-weight: 700; }
+  .btn-view {
+    display: block;
+    text-align: center;
+    padding: 9px;
+    background: var(--gray-bg);
+    color: var(--navy);
+    border: 1.5px solid var(--gray-border);
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+    margin-top: auto;
+  }
+  .btn-view:hover { background: var(--navy); color: white; border-color: var(--navy); }
+  .schools-cta { text-align: center; margin-top: 36px; }
+  .btn-outline {
+    padding: 12px 32px;
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+  .btn-outline:hover { background: var(--navy); color: white; }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .testimonial-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    border: 1.5px solid var(--gray-border);
+    position: relative;
+  }
+  .testimonial-card::before {
+    content: '\201C';
+    position: absolute;
+    top: 20px; right: 24px;
+    font-size: 72px;
+    line-height: 1;
+    color: var(--gray-border);
+    font-family: Georgia, serif;
+  }
+  .testimonial-text {
+    font-size: 15px;
+    color: var(--gray-text);
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .author-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+  }
+  .av1 { background: linear-gradient(135deg, #1B3A5C, #2d6a9f); }
+  .av2 { background: linear-gradient(135deg, #1a4731, #2d7a50); }
+  .author-name { font-size: 14px; font-weight: 700; color: var(--text); }
+  .author-role { font-size: 12px; color: var(--gray-text); }
+  .testimonial-stars { color: #F59E0B; font-size: 13px; margin-bottom: 6px; }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--navy-dark);
+    padding: 56px 24px 24px;
+    color: rgba(255,255,255,0.75);
+  }
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-brand-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    margin: 12px 0 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .footer-brand-name span { color: #FFD166; }
+  .footer-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .footer-social { display: flex; gap: 10px; }
+  .footer-social a {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  .footer-social a:hover { background: rgba(255,255,255,0.2); color: white; }
+  .footer-heading {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 16px;
+  }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 10px; }
+  .footer-links a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: white; }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom-links { display: flex; gap: 20px; }
+  .footer-bottom-links a { color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s; }
+  .footer-bottom-links a:hover { color: rgba(255,255,255,0.8); }
+
+  /* ===== COOKIE BANNER ===== */
+  .cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 9999;
+    background: var(--white);
+    border-top: 1px solid var(--gray-border);
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.10);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease;
+  }
+  .cookie-banner.hidden { transform: translateY(100%); }
+  .cookie-text {
+    font-size: 13px;
+    color: var(--gray-text);
+    flex: 1;
+    min-width: 200px;
+  }
+  .cookie-text a { color: var(--navy); }
+  .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+  .btn-cookie-accept {
+    padding: 8px 20px;
+    background: var(--navy);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.2s;
+  }
+  .btn-cookie-accept:hover { background: var(--navy-dark); }
+  .btn-cookie-decline {
+    padding: 8px 16px;
+    background: transparent;
+    color: var(--gray-text);
+    border: 1px solid var(--gray-border);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+  }
+  .btn-cookie-decline:hover { background: var(--gray-bg); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1100px) {
+    .schools-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .search-box { max-width: 100%; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .navbar-nav { display: none; }
+    .hamburger { display: flex; }
+    .stats-inner { grid-template-columns: 1fr; gap: 8px; }
+    .stat-divider { border-left: none; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 16px; }
+  }
+  @media (max-width: 600px) {
+    .hero { padding: 48px 20px 56px; }
+    .schools-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .navbar-inner { padding: 0 16px; }
+    .search-box { padding: 20px; }
+    .form-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="navbar-logo">
+      <div class="navbar-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L3 7v10l9 5 9-5V7L12 2z" fill="white" opacity="0.9"/>
+          <path d="M12 2v15M3 7l9 5 9-5" stroke="rgba(27,58,92,0.4)" stroke-width="1"/>
+        </svg>
+      </div>
+      <span class="navbar-logo-text">British<span>School</span>Portal</span>
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Find Schools</a></li>
+      <li><a href="#">Advisors</a></li>
+      <li><a href="#">Compare</a></li>
+      <li><a href="#">Resources</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <a href="#" class="btn-ghost">Log In</a>
+      <a href="#" class="btn-primary">Register Free</a>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-graduation-cap"></i>
+        Trusted by 12,000+ families across the UK
+      </div>
+      <h1 class="hero-title">
+        Find the <span>Perfect British School</span> for Your Child
+      </h1>
+      <p class="hero-subtitle">
+        Compare fees, programmes, admissions, and reviews across hundreds of British independent and maintained schools — all in one place.
+      </p>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <i class="fa-solid fa-circle-check"></i>
+          Verified school data
+        </div>
+        <div class="hero-trust-item">
+          <i class="fa-solid fa-circle-check"></i>
+          No hidden fees
+        </div>
+        <div class="hero-trust-item">
+          <i class="fa-solid fa-circle-check"></i>
+          Expert advisors
+        </div>
+      </div>
+    </div>
+    <div class="search-box">
+      <h3><i class="fa-solid fa-magnifying-glass"></i> Search Schools</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Location</label>
+          <select>
+            <option value="">All Regions</option>
+            <option>London</option>
+            <option>South East</option>
+            <option>South West</option>
+            <option>Midlands</option>
+            <option>North West</option>
+            <option>Scotland</option>
+            <option>Wales</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>School Type</label>
+          <select>
+            <option value="">All Types</option>
+            <option>Independent</option>
+            <option>Grammar</option>
+            <option>Maintained</option>
+            <option>International</option>
+            <option>Boarding</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Year Group</label>
+          <select>
+            <option value="">Any Year</option>
+            <option>Year 1 – 2 (Age 5–7)</option>
+            <option>Year 3 – 6 (Age 7–11)</option>
+            <option>Year 7 – 9 (Age 11–14)</option>
+            <option>Year 10 – 11 (GCSE)</option>
+            <option>Year 12 – 13 (A-Level)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Annual Budget</label>
+          <select>
+            <option value="">Any Budget</option>
+            <option>Under £10,000</option>
+            <option>£10,000 – £20,000</option>
+            <option>£20,000 – £35,000</option>
+            <option>£35,000 – £50,000</option>
+            <option>Over £50,000</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <button class="btn-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Search Schools
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number">1,842</div>
+      <div class="stat-label">Registered Schools</div>
+    </div>
+    <div class="stat-item stat-divider">
+      <div class="stat-number">320+</div>
+      <div class="stat-label">Expert Advisors</div>
+    </div>
+    <div class="stat-item stat-divider">
+      <div class="stat-number">12,000+</div>
+      <div class="stat-label">Families Helped</div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">How It Works</div>
+      <h2 class="section-title">Find the Right School in 3 Easy Steps</h2>
+      <p class="section-subtitle">Our platform makes it simple to search, compare, and connect with British schools.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <h3 class="step-title">Search & Filter</h3>
+        <p class="step-desc">Use our powerful search tool to filter schools by location, type, year group, fees, and more. Narrow down your options effortlessly.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <h3 class="step-title">Compare Schools</h3>
+        <p class="step-desc">View detailed profiles, compare fees, read parent reviews, and explore each school's academic programmes and extracurriculars side by side.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-icon"><i class="fa-solid fa-paper-plane"></i></div>
+        <h3 class="step-title">Connect & Apply</h3>
+        <p class="step-desc">Contact schools directly, book open day visits, or get guidance from one of our expert admissions advisors — completely free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED SCHOOLS -->
+<section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">Featured Schools</div>
+      <h2 class="section-title">Top Rated British Schools</h2>
+      <p class="section-subtitle">Highly regarded schools trusted by thousands of families across the UK.</p>
+    </div>
+    <div class="schools-grid">
+
+      <div class="school-card">
+        <div class="school-card-img c1">
+          <span class="school-type-badge">Independent</span>
+          <div class="school-logo-placeholder">HB</div>
+        </div>
+        <div class="school-card-body">
+          <div class="school-name">Harrington Boys' College</div>
+          <div class="school-location"><i class="fa-solid fa-location-dot" style="color:#C0392B"></i> Richmond, Surrey</div>
+          <div class="school-rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+            <span class="rating-num">4.9</span>
+            <span class="rating-count">(142 reviews)</span>
+          </div>
+          <div class="school-fee"><i class="fa-solid fa-sterling-sign"></i> <strong>£28,000</strong> – £34,000 / year</div>
+          <button class="btn-view">View Details</button>
+        </div>
+      </div>
+
+      <div class="school-card">
+        <div class="school-card-img c2">
+          <span class="school-type-badge">Mixed</span>
+          <div class="school-logo-placeholder">WG</div>
+        </div>
+        <div class="school-card-body">
+          <div class="school-name">Westfield Grammar School</div>
+          <div class="school-location"><i class="fa-solid fa-location-dot" style="color:#C0392B"></i> Oxford, Oxfordshire</div>
+          <div class="school-rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></span>
+            <span class="rating-num">4.7</span>
+            <span class="rating-count">(98 reviews)</span>
+          </div>
+          <div class="school-fee"><i class="fa-solid fa-sterling-sign"></i> <strong>£18,500</strong> – £24,000 / year</div>
+          <button class="btn-view">View Details</button>
+        </div>
+      </div>
+
+      <div class="school-card">
+        <div class="school-card-img c3">
+          <span class="school-type-badge">Boarding</span>
+          <div class="school-logo-placeholder">ML</div>
+        </div>
+        <div class="school-card-body">
+          <div class="school-name">Marlowe Ladies' Academy</div>
+          <div class="school-location"><i class="fa-solid fa-location-dot" style="color:#C0392B"></i> Bath, Somerset</div>
+          <div class="school-rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+            <span class="rating-num">4.8</span>
+            <span class="rating-count">(76 reviews)</span>
+          </div>
+          <div class="school-fee"><i class="fa-solid fa-sterling-sign"></i> <strong>£42,000</strong> – £52,000 / year</div>
+          <button class="btn-view">View Details</button>
+        </div>
+      </div>
+
+      <div class="school-card">
+        <div class="school-card-img c4">
+          <span class="school-type-badge">International</span>
+          <div class="school-logo-placeholder">NB</div>
+        </div>
+        <div class="school-card-body">
+          <div class="school-name">Northbridge International</div>
+          <div class="school-location"><i class="fa-solid fa-location-dot" style="color:#C0392B"></i> Kensington, London</div>
+          <div class="school-rating">
+            <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+            <span class="rating-num">4.5</span>
+            <span class="rating-count">(203 reviews)</span>
+          </div>
+          <div class="school-fee"><i class="fa-solid fa-sterling-sign"></i> <strong>£22,000</strong> – £30,000 / year</div>
+          <button class="btn-view">View Details</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="schools-cta">
+      <a href="#" class="btn-outline">Browse All Schools <i class="fa-solid fa-arrow-right" style="margin-left:8px"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-tag">Testimonials</div>
+      <h2 class="section-title">What Parents Say</h2>
+      <p class="section-subtitle">Real experiences from families who found the right school through British School Portal.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial-text">
+          "British School Portal made what felt like an overwhelming process genuinely manageable. We compared five schools side by side, found one we'd never heard of that ticked every box, and my daughter's been thriving there for two years now."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar av1">SL</div>
+          <div>
+            <div class="author-name">Sarah Langford</div>
+            <div class="author-role">Parent of Year 9 student · London</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial-text">
+          "As an expat family relocating from Hong Kong, we had no idea where to start. The advisor we connected with through BSP was incredible — patient, knowledgeable, and genuinely invested in finding the right fit for our son."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar av2">MC</div>
+          <div>
+            <div class="author-name">Michael Chen</div>
+            <div class="author-role">Parent of Year 7 student · Surrey</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">
+          <span style="font-size:22px">🎓</span>
+          British<span>School</span>Portal
+        </div>
+        <p class="footer-desc">
+          The UK's most comprehensive independent school search platform. Helping families find the right school since 2012.
+        </p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">For Families</div>
+        <ul class="footer-links">
+          <li><a href="#">Search Schools</a></li>
+          <li><a href="#">Compare Schools</a></li>
+          <li><a href="#">Talk to an Advisor</a></li>
+          <li><a href="#">Term Dates</a></li>
+          <li><a href="#">School Reviews</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">For Schools</div>
+        <ul class="footer-links">
+          <li><a href="#">Register Your School</a></li>
+          <li><a href="#">Admin Dashboard</a></li>
+          <li><a href="#">Manage Profile</a></li>
+          <li><a href="#">Pricing Plans</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 British School Portal Ltd. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <p class="cookie-text">
+    <i class="fa-solid fa-cookie-bite" style="color:#F59E0B;margin-right:6px"></i>
+    We use cookies to improve your experience. By continuing to use BSP, you agree to our <a href="#">Cookie Policy</a>.
+  </p>
+  <div class="cookie-actions">
+    <button class="btn-cookie-decline" onclick="document.getElementById('cookieBanner').classList.add('hidden')">Decline</button>
+    <button class="btn-cookie-accept" onclick="document.getElementById('cookieBanner').classList.add('hidden')">Accept All</button>
+  </div>
+</div>
+
+</body>
+</html>

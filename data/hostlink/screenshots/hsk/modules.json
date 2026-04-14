@@ -1,0 +1,97 @@
+{
+  "modules": [
+    {
+      "text": "",
+      "href": "javascript:void(0);"
+    },
+    {
+      "text": "Profile",
+      "href": "/cms/User/profile"
+    },
+    {
+      "text": "Settings",
+      "href": "/cms/User/setting"
+    },
+    {
+      "text": "Logout",
+      "href": "/logout"
+    },
+    {
+      "text": "",
+      "href": "https://eminenceterrace1.hkhs.com/"
+    },
+    {
+      "text": "Dashboard",
+      "href": "/cms/Dashboard"
+    },
+    {
+      "text": "System",
+      "href": "javascript:void(0)"
+    },
+    {
+      "text": "List",
+      "href": "/cms/User"
+    },
+    {
+      "text": "Add",
+      "href": "/cms/User/ae"
+    },
+    {
+      "text": "List",
+      "href": "/cms/UserGroup"
+    },
+    {
+      "text": "Add",
+      "href": "/cms/UserGroup/ae"
+    },
+    {
+      "text": "List",
+      "href": "/cms/Config"
+    },
+    {
+      "text": "Add",
+      "href": "/cms/Config/ae"
+    },
+    {
+      "text": "EventLog",
+      "href": "/cms/EventLog"
+    },
+    {
+      "text": "MailLog",
+      "href": "/cms/MailLog"
+    },
+    {
+      "text": "User log",
+      "href": "/cms/UserLog"
+    },
+    {
+      "text": "File manager",
+      "href": "/cms/FileManager"
+    },
+    {
+      "text": "Gallery",
+      "href": "/cms/Gallery"
+    },
+    {
+      "text": "HeaderMenu",
+      "href": "/cms/HeaderMenu"
+    },
+    {
+      "text": "StaticPage",
+      "href": "/cms/StaticPage"
+    },
+    {
+      "text": "Updates",
+      "href": "/cms/Updates"
+    },
+    {
+      "text": "Home",
+      "href": "/cms/"
+    },
+    {
+      "text": "HostLink",
+      "href": "https://eminenceterrace1.hlhk.net/"
+    }
+  ],
+  "nav": []
+}

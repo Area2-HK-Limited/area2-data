@@ -1,0 +1,835 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Green Tea SEM Report</title>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+    
+    @page {
+        size: A4;
+        margin: 1.5cm 2cm;
+        @bottom-center {
+            content: "Page " counter(page);
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 10px;
+            color: #666;
+        }
+    }
+    
+    body {
+        font-family: 'Noto Sans TC', sans-serif;
+        color: #333;
+        line-height: 1.5;
+        font-size: 12px; /* Base font size for A4 readability */
+        margin: 0;
+        background-color: #ffffff; /* White bg for print/pdf */
+    }
+
+    /* Colors */
+    :root {
+        --primary: #1A4F8A;
+        --success: #2E7D32;
+        --warning: #E65100;
+        --bg: #F5F7FA;
+        --stripe: #EBF3FF;
+    }
+
+    h1, h2, h3 { color: var(--primary); margin-top: 20px; margin-bottom: 10px; }
+    h1 { font-size: 24px; font-weight: 700; }
+    h2 { font-size: 18px; border-bottom: 2px solid var(--primary); padding-bottom: 5px; margin-top: 30px; }
+    h3 { font-size: 14px; color: #555; font-weight: 700; margin-top: 15px; }
+
+    /* Cover Page */
+    .cover {
+        height: 250mm; /* A4 height approx minus margins, but we make it fill */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(135deg, #1A4F8A 0%, #0D2B4D 100%);
+        color: white;
+        margin: -1.5cm -2cm; /* Break out of page margins for full bleed feel if supported, otherwise just a box */
+        padding: 2cm;
+        page-break-after: always;
+    }
+    .cover h1 { color: white; font-size: 32px; border: none; margin-bottom: 10px; }
+    .cover .subtitle { font-size: 16px; opacity: 0.9; margin-bottom: 40px; }
+    .cover .logo { font-size: 14px; font-weight: 700; margin-bottom: 60px; letter-spacing: 2px; }
+    .cover .meta { margin-top: auto; font-size: 12px; opacity: 0.8; }
+
+    /* Tables */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    th {
+        background-color: var(--primary);
+        color: white;
+        padding: 8px;
+        text-align: left;
+        font-weight: 500;
+    }
+    td {
+        padding: 6px 8px;
+        border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) { background-color: var(--stripe); }
+    
+    /* KPI Grid */
+    .kpi-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    .kpi-card {
+        flex: 1 1 22%; /* 4 per row */
+        background: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+    .kpi-card.success { border-top: 3px solid var(--success); }
+    .kpi-card.warning { border-top: 3px solid var(--warning); }
+    .kpi-value { font-size: 18px; font-weight: 700; color: var(--primary); display: block; margin-bottom: 4px; }
+    .kpi-label { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    /* Charts (Pure CSS) */
+    .chart-container {
+        margin: 20px 0;
+        padding: 15px;
+        background: var(--bg);
+        border-radius: 8px;
+    }
+    .bar-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: 11px;
+    }
+    .bar-label { width: 120px; flex-shrink: 0; font-weight: 500; }
+    .bar-track { flex-grow: 1; background: #e0e0e0; height: 16px; border-radius: 3px; overflow: hidden; margin: 0 10px; }
+    .bar-fill { height: 100%; background: var(--primary); display: flex; align-items: center; padding-left: 5px; color: white; font-size: 9px; }
+    .bar-value { width: 40px; text-align: right; font-weight: 700; }
+
+    /* Highlights */
+    .highlight-gold { background-color: #FFF8E1 !important; border-left: 3px solid #FFC107; }
+    
+    /* Recommendations */
+    .rec-item {
+        margin-bottom: 15px;
+        background: white;
+        border: 1px solid #eee;
+        padding: 15px;
+        border-radius: 4px;
+        page-break-inside: avoid;
+    }
+    .rec-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+    .rec-title { font-weight: 700; color: var(--primary); font-size: 13px; }
+    .rec-tag { 
+        font-size: 9px; padding: 2px 6px; border-radius: 3px; color: white; font-weight: 700;
+    }
+    .tag-1 { background: #D32F2F; } /* High Priority */
+    .tag-2, .tag-3 { background: #F57C00; }
+    .tag-4, .tag-5 { background: #1976D2; }
+
+    .rec-content p { margin: 3px 0; font-size: 11px; }
+    .rec-label { font-weight: 700; color: #555; }
+
+    /* Footer */
+    .footer-section {
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        font-size: 9px;
+        color: #777;
+        text-align: center;
+    }
+    
+    .page-break { page-break-after: always; }
+    
+    /* Specific for CNY table colors */
+    .tr-pre-cny td { border-left: 3px solid #90CAF9; }
+    .tr-cny td { border-left: 3px solid #EF9A9A; background-color: #FFEBEE !important; }
+    .tr-post-cny td { border-left: 3px solid #A5D6A7; }
+</style>
+
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <div class="cover">
+        <div class="logo">Area2 ● DIGITAL MARKETING SOLUTIONS</div>
+        <h1>Green Tea</h1>
+        <div class="subtitle">Google Ads 成效分析報告</div>
+        <div style="width: 50px; height: 2px; background: white; margin: 20px 0;"></div>
+        <p>報告期間：2026-01-22 至 2026-02-22</p>
+        <p>客戶帳號：546-079-5892</p>
+        
+        <div class="meta">
+            <p>製作：Area2 (HK) Limited 廣告顧問團隊</p>
+            <p>日期：2026-03-12</p>
+        </div>
+    </div>
+
+    <!-- Page 1: Overview & Campaigns -->
+    <h2>管理層摘要 & 關鍵指標</h2>
+    <p style="margin-bottom: 20px;">本期投入 <b>HK$1,427.31</b>，獲得 <b>907</b> 次點擊。香港市場轉換表現穩定（CPA HK$46.11），日本市場點擊率優異但需完善追蹤。</p>
+    
+    <div class="kpi-grid">
+    <div class="kpi-card neutral">
+        <span class="kpi-value">HK$1,427.31</span>
+        <span class="kpi-label">總費用</span>
+    </div>
+    
+    <div class="kpi-card success">
+        <span class="kpi-value">907</span>
+        <span class="kpi-label">總點擊</span>
+    </div>
+    
+    <div class="kpi-card neutral">
+        <span class="kpi-value">42,405</span>
+        <span class="kpi-label">總展示</span>
+    </div>
+    
+    <div class="kpi-card success">
+        <span class="kpi-value">2.14%</span>
+        <span class="kpi-label">整體 CTR</span>
+    </div>
+    
+    <div class="kpi-card success">
+        <span class="kpi-value">HK$1.57</span>
+        <span class="kpi-label">平均 CPC</span>
+    </div>
+    
+    <div class="kpi-card success">
+        <span class="kpi-value">24</span>
+        <span class="kpi-label">總轉換</span>
+    </div>
+    
+    <div class="kpi-card success">
+        <span class="kpi-value">HK$46.11</span>
+        <span class="kpi-label">HK CPA</span>
+    </div>
+    
+    <div class="kpi-card warning">
+        <span class="kpi-value">3.05%</span>
+        <span class="kpi-label">JP CTR</span>
+    </div>
+    </div>
+    
+    <h3>Campaign 詳細數據</h3>
+    
+<table>
+    <thead>
+        <tr>
+            <th>指標</th>
+            <th>Green Tea - HK</th>
+            <th>Green Tea - JP</th>
+            <th>合計/平均</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>地區</td>
+        <td>香港</td>
+        <td>日本</td>
+        <td>-</td>
+    </tr>
+    
+    <tr>
+        <td>廣告費用</td>
+        <td>HK$1,106.63</td>
+        <td>HK$320.68</td>
+        <td>HK$1,427.31</td>
+    </tr>
+    
+    <tr>
+        <td>點擊次數</td>
+        <td>620</td>
+        <td>287</td>
+        <td>907</td>
+    </tr>
+    
+    <tr>
+        <td>展示次數</td>
+        <td>32,987</td>
+        <td>9,418</td>
+        <td>42,405</td>
+    </tr>
+    
+    <tr>
+        <td>點擊率 (CTR)</td>
+        <td>1.88%</td>
+        <td>3.05%</td>
+        <td>2.14%</td>
+    </tr>
+    
+    <tr>
+        <td>平均 CPC</td>
+        <td>HK$1.78</td>
+        <td>HK$1.12</td>
+        <td>HK$1.57</td>
+    </tr>
+    
+    <tr>
+        <td>轉換次數</td>
+        <td>24</td>
+        <td>0</td>
+        <td>24</td>
+    </tr>
+    
+    <tr>
+        <td>CPA</td>
+        <td>HK$46.11</td>
+        <td>-</td>
+        <td>HK$59.47</td>
+    </tr>
+    </tbody></table>
+
+    <h3>農曆新年特別分析</h3>
+    <p>假期期間流量明顯下跌，但節後反彈強勁。</p>
+    
+<table>
+    <thead>
+        <tr>
+            <th>時段</th>
+            <th>日期</th>
+            <th>費用</th>
+            <th>日均點擊</th>
+            <th>日均展示</th>
+            <th>CTR</th>
+            <th>CPC</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr class="tr-pre-cny">
+        <td>農曆新年前</td>
+        <td>01-22 - 01-28</td>
+        <td>HK$389.74</td>
+        <td>33.6</td>
+        <td>1475</td>
+        <td>2.28%</td>
+        <td>HK$1.66</td>
+    </tr>
+    
+    <tr class="tr-cny">
+        <td>農曆新年假期</td>
+        <td>01-29 - 02-05</td>
+        <td>HK$278.00</td>
+        <td>22.0</td>
+        <td>586</td>
+        <td>3.76%</td>
+        <td>HK$1.58</td>
+    </tr>
+    
+    <tr class="tr-post-cny">
+        <td>農曆新年後</td>
+        <td>02-06 - 02-22</td>
+        <td>HK$759.58</td>
+        <td>29.2</td>
+        <td>1612</td>
+        <td>1.81%</td>
+        <td>HK$1.53</td>
+    </tr>
+    </tbody></table>
+
+    <div class="page-break"></div>
+
+    <!-- Page 2: Analysis -->
+    <h2>投放成效深度分析</h2>
+    
+    <div style="display: flex; gap: 20px;">
+        <div style="flex: 1;">
+            <div class="chart-container"><h3>廣告展示位置分佈</h3>
+    <div class="bar-row">
+        <div class="bar-label">流動應用軟件</div>
+        <div class="bar-track">
+            <div class="bar-fill" style="width: 52.1%"></div>
+        </div>
+        <div class="bar-value">52.1%</div>
+    </div>
+    
+    <div class="bar-row">
+        <div class="bar-label">YouTube 影片</div>
+        <div class="bar-track">
+            <div class="bar-fill" style="width: 29.4%"></div>
+        </div>
+        <div class="bar-value">29.4%</div>
+    </div>
+    
+    <div class="bar-row">
+        <div class="bar-label">網站</div>
+        <div class="bar-track">
+            <div class="bar-fill" style="width: 21.4%"></div>
+        </div>
+        <div class="bar-value">21.4%</div>
+    </div>
+    
+    <div class="bar-row">
+        <div class="bar-label">Google 產品</div>
+        <div class="bar-track">
+            <div class="bar-fill" style="width: 0.5%"></div>
+        </div>
+        <div class="bar-value">0.5%</div>
+    </div>
+    </div>
+            <p style="font-size: 10px; color: #666; margin-top: 5px;">* 流動應用程式佔比較高，建議優化排除名單以提升流量質素。</p>
+        </div>
+        <div style="flex: 1;">
+            <h3>最佳投放時段</h3>
+            
+<table>
+    <thead>
+        <tr>
+            <th>排名</th>
+            <th>時段</th>
+            <th>點擊</th>
+            <th>CTR</th>
+            <th>費用</th>
+            <th>轉換</th>
+            <th>CPA</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr class="highlight-gold">
+        <td>#1</td>
+        <td>星期六 09:00-13:00</td>
+        <td>45</td>
+        <td>1.30%</td>
+        <td>HK$103.05</td>
+        <td>4</td>
+        <td>HK$25.76</td>
+    </tr>
+    
+    <tr class="">
+        <td>#2</td>
+        <td>星期四 14:00-19:00</td>
+        <td>38</td>
+        <td>2.56%</td>
+        <td>HK$42.56</td>
+        <td>1</td>
+        <td>HK$42.56</td>
+    </tr>
+    </tbody></table>
+            <p style="font-size: 10px; color: #666; margin-top: 5px;">* 星期六上午為轉換黃金時段。</p>
+        </div>
+    </div>
+
+    <h3>每日數據趨勢 (32天)</h3>
+    
+<table>
+    <thead>
+        <tr>
+            <th>日期</th>
+            <th>星期</th>
+            <th>費用</th>
+            <th>點擊</th>
+            <th>展示</th>
+            <th>CTR</th>
+            <th>CPC</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>2026-01-22</td>
+        <td>週四</td>
+        <td>HK$10.14</td>
+        <td>20</td>
+        <td>1092</td>
+        <td>1.83%</td>
+        <td>HK$0.51</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-23</td>
+        <td>週五</td>
+        <td>HK$53.83</td>
+        <td>23</td>
+        <td>892</td>
+        <td>2.58%</td>
+        <td>HK$2.34</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-24</td>
+        <td>週六</td>
+        <td>HK$77.18</td>
+        <td>51</td>
+        <td>3013</td>
+        <td>1.69%</td>
+        <td>HK$1.51</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-25</td>
+        <td>週日</td>
+        <td>HK$86.46</td>
+        <td>49</td>
+        <td>2117</td>
+        <td>2.31%</td>
+        <td>HK$1.76</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-26</td>
+        <td>週一</td>
+        <td>HK$36.20</td>
+        <td>21</td>
+        <td>546</td>
+        <td>3.85%</td>
+        <td>HK$1.72</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-27</td>
+        <td>週二</td>
+        <td>HK$78.16</td>
+        <td>51</td>
+        <td>1488</td>
+        <td>3.43%</td>
+        <td>HK$1.53</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-28</td>
+        <td>週三</td>
+        <td>HK$47.77</td>
+        <td>20</td>
+        <td>1175</td>
+        <td>1.70%</td>
+        <td>HK$2.39</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-29</td>
+        <td>週四</td>
+        <td>HK$35.65</td>
+        <td>15</td>
+        <td>709</td>
+        <td>2.12%</td>
+        <td>HK$2.38</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-30</td>
+        <td>週五</td>
+        <td>HK$2.74</td>
+        <td>4</td>
+        <td>92</td>
+        <td>4.35%</td>
+        <td>HK$0.68</td>
+    </tr>
+    
+    <tr>
+        <td>2026-01-31</td>
+        <td>週六</td>
+        <td>HK$29.05</td>
+        <td>36</td>
+        <td>424</td>
+        <td>8.49%</td>
+        <td>HK$0.81</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-01</td>
+        <td>週日</td>
+        <td>HK$8.75</td>
+        <td>15</td>
+        <td>195</td>
+        <td>7.69%</td>
+        <td>HK$0.58</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-02</td>
+        <td>週一</td>
+        <td>HK$20.98</td>
+        <td>19</td>
+        <td>223</td>
+        <td>8.52%</td>
+        <td>HK$1.10</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-03</td>
+        <td>週二</td>
+        <td>HK$11.25</td>
+        <td>6</td>
+        <td>219</td>
+        <td>2.74%</td>
+        <td>HK$1.88</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-04</td>
+        <td>週三</td>
+        <td>HK$80.09</td>
+        <td>35</td>
+        <td>1455</td>
+        <td>2.41%</td>
+        <td>HK$2.29</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-05</td>
+        <td>週四</td>
+        <td>HK$89.49</td>
+        <td>46</td>
+        <td>1369</td>
+        <td>3.36%</td>
+        <td>HK$1.95</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-06</td>
+        <td>週五</td>
+        <td>HK$82.23</td>
+        <td>65</td>
+        <td>1188</td>
+        <td>5.47%</td>
+        <td>HK$1.27</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-07</td>
+        <td>週六</td>
+        <td>HK$54.41</td>
+        <td>12</td>
+        <td>133</td>
+        <td>9.02%</td>
+        <td>HK$4.53</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-08</td>
+        <td>週日</td>
+        <td>HK$3.10</td>
+        <td>2</td>
+        <td>15</td>
+        <td>13.33%</td>
+        <td>HK$1.55</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-09</td>
+        <td>週一</td>
+        <td>HK$23.27</td>
+        <td>1</td>
+        <td>1165</td>
+        <td>0.09%</td>
+        <td>HK$23.27</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-10</td>
+        <td>週二</td>
+        <td>HK$86.12</td>
+        <td>39</td>
+        <td>1061</td>
+        <td>3.68%</td>
+        <td>HK$2.21</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-11</td>
+        <td>週三</td>
+        <td>HK$51.20</td>
+        <td>32</td>
+        <td>1166</td>
+        <td>2.74%</td>
+        <td>HK$1.60</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-12</td>
+        <td>週四</td>
+        <td>HK$26.50</td>
+        <td>44</td>
+        <td>1769</td>
+        <td>2.49%</td>
+        <td>HK$0.60</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-13</td>
+        <td>週五</td>
+        <td>HK$36.89</td>
+        <td>31</td>
+        <td>1484</td>
+        <td>2.09%</td>
+        <td>HK$1.19</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-14</td>
+        <td>週六</td>
+        <td>HK$40.15</td>
+        <td>26</td>
+        <td>589</td>
+        <td>4.41%</td>
+        <td>HK$1.54</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-15</td>
+        <td>週日</td>
+        <td>HK$48.81</td>
+        <td>48</td>
+        <td>1535</td>
+        <td>3.13%</td>
+        <td>HK$1.02</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-16</td>
+        <td>週一</td>
+        <td>HK$33.46</td>
+        <td>24</td>
+        <td>1042</td>
+        <td>2.30%</td>
+        <td>HK$1.39</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-17</td>
+        <td>週二</td>
+        <td>HK$33.73</td>
+        <td>27</td>
+        <td>1869</td>
+        <td>1.44%</td>
+        <td>HK$1.25</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-18</td>
+        <td>週三</td>
+        <td>HK$61.10</td>
+        <td>23</td>
+        <td>2695</td>
+        <td>0.85%</td>
+        <td>HK$2.66</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-19</td>
+        <td>週四</td>
+        <td>HK$43.59</td>
+        <td>17</td>
+        <td>2141</td>
+        <td>0.79%</td>
+        <td>HK$2.56</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-20</td>
+        <td>週五</td>
+        <td>HK$33.87</td>
+        <td>21</td>
+        <td>1779</td>
+        <td>1.18%</td>
+        <td>HK$1.61</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-21</td>
+        <td>週六</td>
+        <td>HK$59.22</td>
+        <td>58</td>
+        <td>3941</td>
+        <td>1.47%</td>
+        <td>HK$1.02</td>
+    </tr>
+    
+    <tr>
+        <td>2026-02-22</td>
+        <td>週日</td>
+        <td>HK$41.93</td>
+        <td>26</td>
+        <td>3824</td>
+        <td>0.68%</td>
+        <td>HK$1.61</td>
+    </tr>
+    </tbody></table>
+
+    <div class="page-break"></div>
+
+    <!-- Page 3: Recommendations -->
+    <h2>五大優化建議</h2>
+    <div class="recommendations">
+    <div class="rec-item">
+        <div class="rec-header">
+            <span class="rec-title">#1 立即為JP市場設置轉換追蹤</span>
+            <span class="rec-tag tag-1">P1</span>
+        </div>
+        <div class="rec-content">
+            <p><span class="rec-label">建議行動：</span>在Google Ads後台為Green Tea - JP設置轉換動作，追蹤網站訪問、表單提交或購買行為</p>
+            <p><span class="rec-label">預期成效：</span>可評估JP市場真實ROI，決定是否加大投放（JP CTR達3.05%，潛力顯著）</p>
+        </div>
+    </div>
+    
+    <div class="rec-item">
+        <div class="rec-header">
+            <span class="rec-title">#2 農曆新年投放策略優化</span>
+            <span class="rec-tag tag-2">P2</span>
+        </div>
+        <div class="rec-content">
+            <p><span class="rec-label">建議行動：</span>年初一至初三暫停廣告；年初四起逐步恢復；年後首週（2/6起）將日預算提高至HK$50+</p>
+            <p><span class="rec-label">預期成效：</span>預計節省年初低效費用約HK$40-60，同時捕捉節後消費反彈</p>
+        </div>
+    </div>
+    
+    <div class="rec-item">
+        <div class="rec-header">
+            <span class="rec-title">#3 集中資源於最佳時段</span>
+            <span class="rec-tag tag-3">P3</span>
+        </div>
+        <div class="rec-content">
+            <p><span class="rec-label">建議行動：</span>啟用廣告時間排程，重點投放星期六09:00-13:00及星期四14:00-19:00；非高效時段降低出價20-30%</p>
+            <p><span class="rec-label">預期成效：</span>預計將整體CPA從HK$46.11降至HK$35-40</p>
+        </div>
+    </div>
+    
+    <div class="rec-item">
+        <div class="rec-header">
+            <span class="rec-title">#4 設置CPC出價上限</span>
+            <span class="rec-tag tag-4">P4</span>
+        </div>
+        <div class="rec-content">
+            <p><span class="rec-label">建議行動：</span>在智能出價策略中設置最高CPC上限HK$5，防止類似2/9 HK$23.27異常消費</p>
+            <p><span class="rec-label">預期成效：</span>消除單日異常高CPC事件，提升預算使用效率</p>
+        </div>
+    </div>
+    
+    <div class="rec-item">
+        <div class="rec-header">
+            <span class="rec-title">#5 優化廣告刊登位置</span>
+            <span class="rec-tag tag-5">P5</span>
+        </div>
+        <div class="rec-content">
+            <p><span class="rec-label">建議行動：</span>排除低效流動應用軟件位置（特別是遊戲類App）；增加YouTube頻道白名單，專注本地時事娛樂類頻道</p>
+            <p><span class="rec-label">預期成效：</span>提升廣告相關性，預計CTR提升至2.5-3%，轉換率改善</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-section">
+        <p><b>免責聲明：</b>本報告基於 Google Ads 官方數據製作。所有建議僅供參考，實際成效受市場波動影響。</p>
+        <p>Area2 (HK) Limited | 旺角彌敦道 610 號荷李活商業中心 18 樓 1805-06 室 | info@area2.com</p>
+    </div>
+
+</body>
+</html>

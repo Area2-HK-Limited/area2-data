@@ -1,0 +1,37 @@
+[
+  {
+    "row": 1,
+    "title": "Landing Disclaimer (Teaser)",
+    "token": "QA-TEST-ROW1-1773728189249",
+    "found": false,
+    "frontendUrl": "https://cloudview-dev.hlhk.net/"
+  },
+  {
+    "row": 2,
+    "title": "Footer Disclaimer (Teaser)",
+    "token": "QA-TEST-ROW2-1773728215863",
+    "found": false,
+    "frontendUrl": "https://cloudview-dev.hlhk.net/"
+  },
+  {
+    "row": 3,
+    "title": "Landing Disclaimer",
+    "token": "QA-TEST-ROW3-1773728240814",
+    "found": false,
+    "frontendUrl": "https://cloudview-dev.hlhk.net/"
+  },
+  {
+    "row": 4,
+    "title": "Footer Disclaimer",
+    "token": "QA-TEST-ROW4-1773728267042",
+    "found": false,
+    "frontendUrl": "https://cloudview-dev.hlhk.net/"
+  },
+  {
+    "row": 10,
+    "title": "living_in_a_park-林中深活",
+    "token": "QA-TEST-ROW10-1773728286523",
+    "found": false,
+    "frontendUrl": "https://cloudview-dev.hlhk.net/"
+  }
+]

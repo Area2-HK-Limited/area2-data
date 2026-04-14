@@ -1,0 +1,5 @@
+const virtual_nuxt__2Fhome_2Fopenclaw_2F_openclaw_2Fworkspace_2Fdata_2Fprojects_2Fpersonai_2Fwebsite_2F_nuxt_2FnuxtFontsGlobal = "";
+export {
+  virtual_nuxt__2Fhome_2Fopenclaw_2F_openclaw_2Fworkspace_2Fdata_2Fprojects_2Fpersonai_2Fwebsite_2F_nuxt_2FnuxtFontsGlobal as default
+};
+//# sourceMappingURL=entry-styles-2.mjs-Cjv9Ja9U.js.map

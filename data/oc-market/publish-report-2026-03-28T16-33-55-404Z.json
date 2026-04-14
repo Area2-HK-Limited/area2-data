@@ -1,0 +1,2381 @@
+{
+  "startedAt": "2026-03-28T16:33:55.533Z",
+  "baseUrl": "http://oc-market:3180",
+  "totalSkills": 126,
+  "published": [],
+  "failed": [
+    {
+      "slug": "audio-handler",
+      "displayName": "Audio Handler",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/audio-handler",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "batch-image-processor",
+      "displayName": "batch-image-processor",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/batch-image-processor",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "documents"
+      ],
+      "fileCount": 4,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "bug-analyzer",
+      "displayName": "bug-analyzer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/bug-analyzer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development",
+        "video",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "cf-proxy",
+      "displayName": "cf-proxy",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/cf-proxy",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "security"
+      ],
+      "fileCount": 4,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "channel-aware-media-send",
+      "displayName": "channel-aware-media-send",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/channel-aware-media-send",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "channel-config",
+      "displayName": "channel-config",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/channel-config",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "clawteam",
+      "displayName": "clawteam",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/clawteam",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "cloudflare-deploy",
+      "displayName": "cloudflare-deploy",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/cloudflare-deploy",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "deployment",
+        "development",
+        "image",
+        "productivity",
+        "integrations"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "cms-manual-generator",
+      "displayName": "cms-manual-generator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/cms-manual-generator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "image",
+        "video",
+        "documents"
+      ],
+      "fileCount": 5,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "dashscope-audio",
+      "displayName": "Dashscope Audio",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/dashscope-audio",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 4,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "dashscope-vision",
+      "displayName": "Dashscope Vision",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/dashscope-vision",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "development-plan-writer",
+      "displayName": "development-plan-writer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/development-plan-writer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "docx-to-pdf",
+      "displayName": "Docx To Pdf",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/docx-to-pdf",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "docx-translator",
+      "displayName": "docx-translator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/docx-translator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "docx-translator-v2",
+      "displayName": "Docx Translator V2",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/docx-translator-v2",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 5,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "domain-checker",
+      "displayName": "domain-checker",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/domain-checker",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "deployment",
+        "development",
+        "research"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "edm-builder",
+      "displayName": "edm-builder",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/edm-builder",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "marketing"
+      ],
+      "fileCount": 5,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "email-security",
+      "displayName": "Email Security",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/email-security",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-contacts",
+      "displayName": "epost-contacts",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-contacts",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-delivery",
+      "displayName": "epost-delivery",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-delivery",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-groups",
+      "displayName": "epost-groups",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-groups",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-info",
+      "displayName": "epost-info",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-info",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-letters",
+      "displayName": "epost-letters",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-letters",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-schedules",
+      "displayName": "epost-schedules",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-schedules",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "marketing"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "epost-sms",
+      "displayName": "epost-sms",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/epost-sms",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "hk-open-data",
+      "displayName": "Hk Open Data",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/hk-open-data",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 7,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "image-generation",
+      "displayName": "image-generation",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/image-generation",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "communications"
+      ],
+      "fileCount": 5,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "invoice-ninja",
+      "displayName": "invoice-ninja",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/invoice-ninja",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio",
+        "billing"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "lark-tasks",
+      "displayName": "lark-tasks",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/lark-tasks",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "research",
+        "productivity",
+        "security"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "manual-generator",
+      "displayName": "Manual Generator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/manual-generator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "marketing-research",
+      "displayName": "marketing-research",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/marketing-research",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "video",
+        "documents",
+        "research",
+        "communications",
+        "scraping"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-lyrics",
+      "displayName": "minimax-lyrics",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-lyrics",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-music",
+      "displayName": "minimax-music",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-music",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-tts",
+      "displayName": "minimax-tts",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-tts",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio",
+        "documents"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-tts-async",
+      "displayName": "minimax-tts-async",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-tts-async",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-video",
+      "displayName": "minimax-video",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-video",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-video-agent",
+      "displayName": "minimax-video-agent",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-video-agent",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "minimax-voice-design",
+      "displayName": "minimax-voice-design",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/minimax-voice-design",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "oc-market",
+      "displayName": "oc-market",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/oc-market",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research"
+      ],
+      "fileCount": 15,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "openclaw-setup",
+      "displayName": "openclaw-setup",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/openclaw-setup",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 11,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "pdf-to-docx",
+      "displayName": "Pdf To Docx",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/pdf-to-docx",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "pdf-utils",
+      "displayName": "pdf-utils",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/pdf-utils",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "documents"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "perplexity-search",
+      "displayName": "perplexity-search",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/perplexity-search",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "planka",
+      "displayName": "Planka",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/planka",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "productivity"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "playwright-browser",
+      "displayName": "Playwright Browser",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/playwright-browser",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "browser",
+        "automation",
+        "development"
+      ],
+      "fileCount": 39,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "qa-testing",
+      "displayName": "qa-testing",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/qa-testing",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development",
+        "documents"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "qr-code-generator",
+      "displayName": "qr-code-generator",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/qr-code-generator",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "marketing"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "reminders",
+      "displayName": "Reminders",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/reminders",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "screen-to-script",
+      "displayName": "screen-to-script",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/screen-to-script",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "video",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "security-checker",
+      "displayName": "Security Checker",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/security-checker",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "sem-report",
+      "displayName": "sem-report",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/sem-report",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "documents",
+        "marketing"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "social-scraper",
+      "displayName": "social-scraper",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/social-scraper",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "scraping"
+      ],
+      "fileCount": 11,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "spellquest-dev",
+      "displayName": "Spellquest Dev",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/spellquest-dev",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "stock-market",
+      "displayName": "Stock Market",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/stock-market",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "taobao-search",
+      "displayName": "Taobao Search",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/taobao-search",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "documents",
+        "research",
+        "communications"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "task-router",
+      "displayName": "Task Router",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/task-router",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development",
+        "productivity"
+      ],
+      "fileCount": 6,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "tvp-report",
+      "displayName": "Tvp Report",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/tvp-report",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "development",
+        "documents"
+      ],
+      "fileCount": 4,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-accountant",
+      "displayName": "vc-accountant",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-accountant",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 6,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-ceo",
+      "displayName": "vc-ceo",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-ceo",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 10,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-designer",
+      "displayName": "vc-designer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-designer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 7,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-heartbeat",
+      "displayName": "vc-heartbeat",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-heartbeat",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 8,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-marketer",
+      "displayName": "vc-marketer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-marketer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "utility"
+      ],
+      "fileCount": 8,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-programmer",
+      "displayName": "vc-programmer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-programmer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "development"
+      ],
+      "fileCount": 13,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vc-worker",
+      "displayName": "vc-worker",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vc-worker",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "deployment"
+      ],
+      "fileCount": 7,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "video-analyzer",
+      "displayName": "video-analyzer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/video-analyzer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "video-tools",
+      "displayName": "Video Tools",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/video-tools",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "vpn-proxy",
+      "displayName": "Vpn Proxy",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/vpn-proxy",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "scraping",
+        "security"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "web-research-citation",
+      "displayName": "Web Research Citation",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/web-research-citation",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "web-tester",
+      "displayName": "web-tester",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/web-tester",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "qa",
+        "testing",
+        "browser",
+        "automation",
+        "image"
+      ],
+      "fileCount": 36,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "whatsapp-assistant",
+      "displayName": "whatsapp-assistant",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/whatsapp-assistant",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "productivity"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "whatsapp-smart-reminder",
+      "displayName": "Whatsapp Smart Reminder",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/whatsapp-smart-reminder",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "communications",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "xero-receipt-importer",
+      "displayName": "xero-receipt-importer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/xero-receipt-importer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "image",
+        "audio",
+        "documents",
+        "communications",
+        "billing"
+      ],
+      "fileCount": 4,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "youtube-summarizer",
+      "displayName": "youtube-summarizer",
+      "version": "1.0.0",
+      "source": "workspace",
+      "dir": "/home/openclaw/.openclaw/workspace/skills/youtube-summarizer",
+      "tags": [
+        "latest",
+        "workspace",
+        "custom",
+        "video"
+      ],
+      "fileCount": 6,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "1password",
+      "displayName": "1password",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/1password",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "security",
+        "integrations"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "apple-notes",
+      "displayName": "apple-notes",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/apple-notes",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "apple-reminders",
+      "displayName": "apple-reminders",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/apple-reminders",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "bear-notes",
+      "displayName": "bear-notes",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/bear-notes",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "blogwatcher",
+      "displayName": "blogwatcher",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/blogwatcher",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "blucli",
+      "displayName": "blucli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/blucli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "bluebubbles",
+      "displayName": "bluebubbles",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/bluebubbles",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "camsnap",
+      "displayName": "camsnap",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/camsnap",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "video"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "canvas",
+      "displayName": "Canvas",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/canvas",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "browser",
+        "automation"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "clawhub",
+      "displayName": "clawhub",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/clawhub",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "qa",
+        "testing",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "coding-agent",
+      "displayName": "coding-agent",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/coding-agent",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "communications",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "discord",
+      "displayName": "discord",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/discord",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "eightctl",
+      "displayName": "eightctl",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/eightctl",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "gemini",
+      "displayName": "gemini",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gemini",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "gh-issues",
+      "displayName": "gh-issues",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gh-issues",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "qa",
+        "testing",
+        "development",
+        "research",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "gifgrep",
+      "displayName": "gifgrep",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gifgrep",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "github",
+      "displayName": "github",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/github",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "browser",
+        "automation",
+        "development",
+        "documents",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "gog",
+      "displayName": "gog",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/gog",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "goplaces",
+      "displayName": "goplaces",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/goplaces",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "healthcheck",
+      "displayName": "healthcheck",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/healthcheck",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "deployment",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "himalaya",
+      "displayName": "himalaya",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/himalaya",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "marketing"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "imsg",
+      "displayName": "imsg",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/imsg",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "mcporter",
+      "displayName": "mcporter",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/mcporter",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "security",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "model-usage",
+      "displayName": "model-usage",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/model-usage",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development"
+      ],
+      "fileCount": 4,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "nano-banana-pro",
+      "displayName": "nano-banana-pro",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/nano-banana-pro",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "nano-pdf",
+      "displayName": "nano-pdf",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/nano-pdf",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "documents"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "notion",
+      "displayName": "notion",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/notion",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "deployment",
+        "productivity",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "obsidian",
+      "displayName": "obsidian",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/obsidian",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "openai-image-gen",
+      "displayName": "openai-image-gen",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openai-image-gen",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "openai-whisper",
+      "displayName": "openai-whisper",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openai-whisper",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "openai-whisper-api",
+      "displayName": "openai-whisper-api",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openai-whisper-api",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "audio"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "openhue",
+      "displayName": "openhue",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/openhue",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "oracle",
+      "displayName": "oracle",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/oracle",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "ordercli",
+      "displayName": "ordercli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/ordercli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "peekaboo",
+      "displayName": "peekaboo",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/peekaboo",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "sag",
+      "displayName": "sag",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/sag",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "utility"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "session-logs",
+      "displayName": "session-logs",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/session-logs",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "sherpa-onnx-tts",
+      "displayName": "sherpa-onnx-tts",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/sherpa-onnx-tts",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "skill-creator",
+      "displayName": "skill-creator",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/skill-creator",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "security"
+      ],
+      "fileCount": 7,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "slack",
+      "displayName": "slack",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/slack",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "songsee",
+      "displayName": "songsee",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/songsee",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "sonoscli",
+      "displayName": "sonoscli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/sonoscli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "image",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "spotify-player",
+      "displayName": "spotify-player",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/spotify-player",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "integrations"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "summarize",
+      "displayName": "summarize",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/summarize",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "development",
+        "video"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "things-mac",
+      "displayName": "things-mac",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/things-mac",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "tmux",
+      "displayName": "tmux",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/tmux",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "communications",
+        "scraping"
+      ],
+      "fileCount": 3,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "trello",
+      "displayName": "trello",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/trello",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "productivity"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "video-frames",
+      "displayName": "video-frames",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/video-frames",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "video"
+      ],
+      "fileCount": 2,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "voice-call",
+      "displayName": "voice-call",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/voice-call",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "audio"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "wacli",
+      "displayName": "wacli",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/wacli",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "communications"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "weather",
+      "displayName": "weather",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/weather",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "xurl",
+      "displayName": "xurl",
+      "version": "1.0.0",
+      "source": "global",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/skills/xurl",
+      "tags": [
+        "latest",
+        "global",
+        "builtin",
+        "research",
+        "billing",
+        "security"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    },
+    {
+      "slug": "acp-router",
+      "displayName": "acp-router",
+      "version": "1.0.0",
+      "source": "extension",
+      "dir": "/home/openclaw/.npm-global/lib/node_modules/openclaw/extensions/acpx/skills/acp-router",
+      "tags": [
+        "latest",
+        "extension",
+        "acpx",
+        "development"
+      ],
+      "fileCount": 1,
+      "status": 409,
+      "response": {
+        "error": "version already exists"
+      }
+    }
+  ],
+  "skipped": [],
+  "finishedAt": "2026-03-28T16:34:15.015Z"
+}
